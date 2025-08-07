@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>English Quiz</title>
+		<link rel="stylesheet" href="./styles/quiz_styles.css" />
+	</head>
+	<body>
+		<div class="quiz-container">
+			<div class="quiz-selector">
+				<label for="quiz-select">Selecciona un quiz:</label>
+				<select id="quiz-select">
+					<option value="passive-voice-quiz.json">Voz Pasiva</option>
+					<option value="verbs-and-verbs-forms.json">Verbos y Formas Verbales</option>
+					<option value="relative-pronouns.json">Pronombres Relativos</option>
+					<option value="general-vocabulary.json">Vocabulario General</option>
+					<option value="comunications-common-phrases.json">Frases Comunes</option>
+				</select>
+				<button id="load-quiz">Cargar Quiz</button>
+			</div>
+
+			<h1>Quiz de Inglés</h1>
+			<p>Selecciona un quiz para comenzar.</p>
+
+			<div id="quiz"></div>
+
+			<div class="navigation-buttons">
+				<button id="next-button">Siguiente Pregunta</button>
+			</div>
+
+			<div id="score-display" class="score-section"></div>
+		</div>
+
+		<script src="./js/quiz_script.js"></script>
+	</body>
+</html>

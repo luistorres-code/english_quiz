@@ -1,0 +1,106 @@
+{
+	"title": "Quiz: Verbos y Formas Verbales",
+	"description": "Esta prueba pondrá a prueba tu conocimiento sobre el uso de verbos en su forma correcta y el uso de verbos modales.",
+	"questions": [
+		{
+			"question": "Elige la opción correcta para completar la oración: 'You shouldn't be so rude to your family and friends, but you ____________.'",
+			"answerOptions": [
+				{ "text": "did", "rationale": "La palabra 'did' en este contexto se usa para enfatizar que la acción ('be rude') sí se realizó, contrastando con el consejo ('shouldn't').", "isCorrect": true },
+				{ "text": "do", "rationale": "El verbo auxiliar 'do' se usa para el presente, pero la frase original sugiere un evento pasado.", "isCorrect": false },
+				{ "text": "are", "rationale": "El verbo 'to be' no es el auxiliar correcto en este contexto para reemplazar la acción de 'be rude'.", "isCorrect": false },
+				{ "text": "have", "rationale": "El verbo 'have' no es el auxiliar correcto para este tiempo verbal y contexto.", "isCorrect": false }
+			],
+			"hint": "La segunda parte de la oración es una refutación de la primera, indicando que la acción desaconsejada sí ocurrió."
+		},
+		{
+			"question": "Completa la oración: 'I'm sorry, but I'm too tired (go) anywhere right now.'",
+			"answerOptions": [
+				{ "text": "to go", "rationale": "La estructura 'too + adjetivo + to + verbo' se usa para expresar que algo es excesivo para realizar una acción.", "isCorrect": true },
+				{ "text": "go", "rationale": "Le falta la partícula 'to' para formar el infinitivo después del adjetivo y 'too'.", "isCorrect": false },
+				{ "text": "going", "rationale": "El gerundio 'going' no se usa en esta estructura con 'too'.", "isCorrect": false },
+				{ "text": "went", "rationale": "Esto es pasado simple, pero la oración está en presente ('I'm tired').", "isCorrect": false }
+			],
+			"hint": "Esta es una estructura común con el adjetivo 'tired'. Piensa en el 'to' para el infinitivo."
+		},
+		{
+			"question": "Elige la forma correcta del verbo para completar: 'I can't lie down on our couch for a while because it has been _________ on by my dog.'",
+			"answerOptions": [
+				{ "text": "peed", "rationale": "El verbo 'pee' en pasado y participio pasado es 'peed'. Esta forma verbal se usa para completar la voz pasiva de la oración.", "isCorrect": true },
+				{ "text": "pee", "rationale": "Esta es la forma base del verbo, no el participio pasado necesario para la voz pasiva.", "isCorrect": false },
+				{ "text": "peeing", "rationale": "Esto es gerundio, que no es la forma verbal correcta para la estructura pasiva de 'has been'.", "isCorrect": false },
+				{ "text": "peeded", "rationale": "Esta forma no existe. El verbo es regular, por lo que su pasado y participio es 'peed'.", "isCorrect": false }
+			],
+			"hint": "La oración está en voz pasiva con un verbo regular. Piensa en la forma del participio pasado."
+		},
+		{
+			"question": "Completa la oración: 'You ____________ have a nice holiday with your family and friends.'",
+			"answerOptions": [
+				{ "text": "should", "rationale": "El verbo modal 'should' se utiliza para dar un consejo o hacer una recomendación.", "isCorrect": true },
+				{ "text": "must", "rationale": "El modal 'must' indica una obligación fuerte, que es más fuerte que un simple deseo para alguien.", "isCorrect": false },
+				{ "text": "can", "rationale": "El modal 'can' indica habilidad o permiso, no es el más apropiado para desear algo a alguien.", "isCorrect": false },
+				{ "text": "would", "rationale": "El modal 'would' se usa para acciones hipotéticas o peticiones corteses, no para deseos de este tipo.", "isCorrect": false }
+			],
+			"hint": "El modal correcto aquí es el que se usa para dar un buen deseo o un consejo amistoso."
+		},
+		{
+			"question": "Elige la opción correcta para completar: 'He's driving me up the wall, so I ____________ stop talking.'",
+			"answerOptions": [
+				{ "text": "can't make him", "rationale": "Esta opción significa 'no puedo hacer que él se calle' y encaja con la idea de que la otra persona está volviendo loco al narrador.", "isCorrect": true },
+				{ "text": "can make him", "rationale": "Esto significa 'puedo hacer que él se calle', lo cual contradice el sentimiento expresado de que 'me está volviendo loco'.", "isCorrect": false },
+				{ "text": "have to make him", "rationale": "Esto implica una obligación de hacerle callar, lo cual no es lo que se expresa en la conversación.", "isCorrect": false },
+				{ "text": "will make him", "rationale": "Esto indica una intención futura, no la incapacidad actual de controlarlo que expresa la frase.", "isCorrect": false }
+			],
+			"hint": "La frase 'driving me up the wall' implica frustración e incapacidad de detener a la otra persona."
+		},
+		{
+			"question": "Completa la oración con la forma correcta del verbo: 'I am sorry, but I ____________ a call when I get home.'",
+			"answerOptions": [
+				{ "text": "will have to make", "rationale": "La oración se refiere a una obligación futura ('when I get home'), por lo que 'will have to make' (tendré que hacer) es la opción correcta.", "isCorrect": true },
+				{ "text": "will make", "rationale": "Aunque es una acción futura, 'make' solo no expresa la obligación que el contexto implica ('I am sorry...').", "isCorrect": false },
+				{ "text": "make", "rationale": "Esto es presente simple, lo cual no encaja con la referencia a una acción futura.", "isCorrect": false },
+				{ "text": "am making", "rationale": "Esto es presente continuo, usado para acciones que suceden ahora o en un futuro cercano planificado, no para una obligación futura.", "isCorrect": false }
+			],
+			"hint": "La frase 'I am sorry...' sugiere una obligación o una necesidad futura."
+		},
+		{
+			"question": "Selecciona la forma verbal que completa la frase: 'The doctor will ____________ the child first.'",
+			"answerOptions": [
+				{ "text": "examine", "rationale": "Después del verbo modal 'will', siempre se utiliza la forma base del verbo ('examine').", "isCorrect": true },
+				{ "text": "examines", "rationale": "Esta forma verbal se usa en presente simple para la tercera persona del singular, no después de un modal.", "isCorrect": false },
+				{ "text": "examining", "rationale": "El gerundio ('examining') se usa con el verbo 'to be' para formar tiempos continuos, no con 'will'.", "isCorrect": false },
+				{ "text": "examined", "rationale": "El pasado simple y participio pasado ('examined') no se usa con el modal 'will'.", "isCorrect": false }
+			],
+			"hint": "Cuando usas un verbo modal como 'will', el verbo principal siempre va en su forma base."
+		},
+		{
+			"question": "Elige la opción correcta: 'I'm not leaving until I ____________ it back.'",
+			"answerOptions": [
+				{ "text": "get", "rationale": "En oraciones con 'until' que se refieren al futuro, se usa el presente simple ('get') en la cláusula de tiempo.", "isCorrect": true },
+				{ "text": "will get", "rationale": "El futuro 'will get' no se usa en cláusulas de tiempo introducidas por 'until', 'when', 'if', etc.", "isCorrect": false },
+				{ "text": "am getting", "rationale": "El presente continuo no es la forma correcta para esta cláusula de tiempo futura.", "isCorrect": false },
+				{ "text": "got", "rationale": "Esto es pasado simple, lo cual no concuerda con la acción futura ('I'm not leaving').", "isCorrect": false }
+			],
+			"hint": "Las oraciones con conjunciones de tiempo como 'until', 'when', y 'if' suelen usar el presente simple para referirse a eventos futuros."
+		},
+		{
+			"question": "Completa el diálogo: 'I suggest ____________ the truth.'",
+			"answerOptions": [
+				{ "text": "telling", "rationale": "Después del verbo 'suggest', se usa la forma de gerundio ('telling') del verbo siguiente.", "isCorrect": true },
+				{ "text": "to tell", "rationale": "El verbo 'suggest' no es seguido por un infinitivo ('to tell').", "isCorrect": false },
+				{ "text": "tell", "rationale": "La forma base del verbo no se usa directamente después de 'suggest' en esta estructura.", "isCorrect": false },
+				{ "text": "tells", "rationale": "Esto sería presente simple en tercera persona, que no se aplica en este caso.", "isCorrect": false }
+			],
+			"hint": "Hay una regla específica para los verbos que siguen a 'suggest'. Piensa en la forma '-ing'."
+		},
+		{
+			"question": "Selecciona la opción correcta para completar la oración: 'You ____________ have better visit a doctor before you get worse.'",
+			"answerOptions": [
+				{ "text": "had better", "rationale": "'Had better' se usa para dar un consejo fuerte o una advertencia, lo que se ajusta perfectamente al contexto de la oración.", "isCorrect": true },
+				{ "text": "should better", "rationale": "Esta combinación es incorrecta. 'Should' ya significa 'debería', y 'better' se usa con 'had'.", "isCorrect": false },
+				{ "text": "will better", "rationale": "Esta combinación es incorrecta. 'Will' se usa para el futuro, no para dar un consejo de este tipo.", "isCorrect": false },
+				{ "text": "could better", "rationale": "Esta combinación no es la frase idiomática correcta para dar un consejo fuerte.", "isCorrect": false }
+			],
+			"hint": "Esta es una frase idiomática para dar un consejo enfático. Se forma con 'had' y 'better'."
+		}
+	]
+}

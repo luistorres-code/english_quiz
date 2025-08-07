@@ -1,0 +1,266 @@
+{
+	"title": "Quiz: Pronombres Relativos",
+	"description": "Esta prueba se centra en los pronombres relativos (who, which, that, where), que te ayudan a unir ideas y dar más información en tus oraciones.",
+	"questions": [
+		{
+			"question": "Completa la oración: 'My cousin is a person ____________ gets upset very easily.'",
+			"answerOptions": [
+				{
+					"text": "who",
+					"rationale": "El pronombre 'who' se usa para referirse a personas, en este caso, 'my cousin'.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "'Which' se usa para objetos o cosas, no para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para lugares, no para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "that",
+					"rationale": "Aunque 'that' puede usarse para personas, 'who' es la opción más común y formal en esta situación.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en si la palabra que buscas se refiere a una persona, un objeto o un lugar."
+		},
+		{
+			"question": "Elige el pronombre relativo correcto para la frase: 'This is the digital photo frame ____________ I bought from the internet.'",
+			"answerOptions": [
+				{
+					"text": "which",
+					"rationale": "'Which' se usa para referirse a objetos o cosas, en este caso, 'the digital photo frame'.",
+					"isCorrect": true
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para lugares, no para objetos.",
+					"isCorrect": false
+				},
+				{
+					"text": "who",
+					"rationale": "'Who' se usa para personas, no para objetos.",
+					"isCorrect": false
+				},
+				{
+					"text": "whose",
+					"rationale": "'Whose' se usa para indicar posesión, lo cual no es el caso en esta oración.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase 'the digital photo frame' es un objeto. ¿Qué pronombre relativo se usa para objetos?"
+		},
+		{
+			"question": "Completa la oración: 'That's the waiter ____________ gave me the wrong change.'",
+			"answerOptions": [
+				{
+					"text": "who",
+					"rationale": "El pronombre 'who' se usa para referirse a una persona, en este caso, 'the waiter'.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "'Which' no se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' no se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "whose",
+					"rationale": "Aunque 'whose' se usa para personas, aquí no se está expresando posesión.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Elige el pronombre que se refiere a 'the waiter', una persona."
+		},
+		{
+			"question": "Selecciona la opción correcta: 'Madison Square Garden is the stadium ____________ the Knicks play.'",
+			"answerOptions": [
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para referirse a un lugar, en este caso, 'the stadium'.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "Aunque 'which' puede referirse al estadio como un objeto, 'where' es la opción más precisa cuando se habla del lugar donde ocurre una acción.",
+					"isCorrect": false
+				},
+				{
+					"text": "what",
+					"rationale": "'What' no es un pronombre relativo en este contexto.",
+					"isCorrect": false
+				},
+				{
+					"text": "who",
+					"rationale": "'Who' se usa para personas, no para lugares.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase 'the stadium' es un lugar. Piensa en el pronombre que se usa para lugares."
+		},
+		{
+			"question": "Completa la oración: 'That's the cleaner ____________ does a great job.'",
+			"answerOptions": [
+				{
+					"text": "who",
+					"rationale": "El pronombre 'who' se usa para referirse a 'the cleaner', una persona.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "'Which' no se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "what",
+					"rationale": "'What' no es un pronombre relativo para unir estas dos frases.",
+					"isCorrect": false
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para lugares, no para personas.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra clave es 'cleaner', una persona que realiza una acción."
+		},
+		{
+			"question": "Selecciona el pronombre relativo apropiado: 'I don't know the exact year ____________ the first airplane was invented.'",
+			"answerOptions": [
+				{
+					"text": "when",
+					"rationale": "'When' se usa como pronombre relativo para referirse a un momento o un período de tiempo, como en este caso 'the year'.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "Aunque 'which' podría usarse de forma similar, 'when' es más preciso al referirse a un momento en el tiempo.",
+					"isCorrect": false
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para lugares, no para momentos en el tiempo.",
+					"isCorrect": false
+				},
+				{
+					"text": "that",
+					"rationale": "Aunque 'that' puede referirse a un momento, 'when' es más específico y elegante en esta oración.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra 'year' te da una pista sobre el pronombre a elegir. ¿Qué pronombre se usa para el tiempo?"
+		},
+		{
+			"question": "Completa la oración: 'The new museum, ____________ opened last month, is very popular.'",
+			"answerOptions": [
+				{
+					"text": "which",
+					"rationale": "'Which' es el pronombre correcto para referirse a 'the new museum', que es un objeto o lugar. En este caso, la coma indica que es una cláusula no restrictiva, por lo que 'that' no sería la opción correcta.",
+					"isCorrect": true
+				},
+				{
+					"text": "where",
+					"rationale": "Aunque es un lugar, la oración se centra en el evento de su apertura, no en una acción que ocurre dentro de él.",
+					"isCorrect": false
+				},
+				{
+					"text": "who",
+					"rationale": "'Who' se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "that",
+					"rationale": "En las cláusulas no restrictivas (entre comas), 'that' no se puede usar como pronombre relativo.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La coma es una pista importante. Piensa en qué pronombre se usa para objetos en cláusulas no restrictivas."
+		},
+		{
+			"question": "Elige la opción correcta: 'This is the book ____________ I was telling you about.'",
+			"answerOptions": [
+				{
+					"text": "that",
+					"rationale": "'That' es el pronombre relativo más común para referirse a objetos en oraciones restrictivas (sin comas). 'Which' también sería correcto, pero 'that' es una opción sólida.",
+					"isCorrect": true
+				},
+				{
+					"text": "who",
+					"rationale": "'Who' se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "where",
+					"rationale": "'Where' se usa para lugares.",
+					"isCorrect": false
+				},
+				{
+					"text": "what",
+					"rationale": "'What' no es un pronombre relativo para unir estas dos ideas.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La oración se refiere a 'the book', un objeto."
+		},
+		{
+			"question": "Selecciona la opción que completa correctamente la frase: 'Is this the coffee shop ____________ lots of college students socialize?'",
+			"answerOptions": [
+				{
+					"text": "where",
+					"rationale": "'Where' es el pronombre apropiado para referirse al lugar ('the coffee shop') donde tiene lugar la acción ('socialize').",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "Aunque 'the coffee shop' es un objeto, la acción ('socialize') ocurre dentro de él, por lo que 'where' es más específico.",
+					"isCorrect": false
+				},
+				{
+					"text": "who",
+					"rationale": "'Who' se usa para personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "when",
+					"rationale": "'When' se usa para momentos en el tiempo.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La acción del verbo ('socialize') ocurre en un lugar. ¿Qué pronombre se usa para lugares?"
+		},
+		{
+			"question": "Completa la oración: 'The person ____________ I admire most is my mother.'",
+			"answerOptions": [
+				{
+					"text": "who",
+					"rationale": "El pronombre 'who' se refiere a la persona ('The person') que recibe la acción del verbo 'admire'.",
+					"isCorrect": true
+				},
+				{
+					"text": "which",
+					"rationale": "'Which' se usa para objetos.",
+					"isCorrect": false
+				},
+				{
+					"text": "that",
+					"rationale": "Aunque 'that' podría ser una opción, 'who' es la elección más formal y correcta para referirse a personas.",
+					"isCorrect": false
+				},
+				{
+					"text": "whose",
+					"rationale": "'Whose' se usa para posesión.",
+					"isCorrect": false
+				}
+			],
+			"hint": "El pronombre relativo debe referirse a 'The person'."
+		}
+	]
+}

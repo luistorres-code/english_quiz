@@ -1,0 +1,266 @@
+{
+	"title": "Quiz: Comunicación y Frases Comunes",
+	"description": "Este último quiz se enfoca en las habilidades de comunicación y las frases idiomáticas que se revisaron en clase, incluyendo la sección de 'Communication' y 'Speaking'.",
+	"questions": [
+		{
+			"question": "Selecciona la respuesta más adecuada para la pregunta: 'Are you sure about this?'",
+			"answerOptions": [
+				{
+					"text": "I know what I'm doing.",
+					"rationale": "Esta respuesta transmite confianza y seguridad en una decisión, que es una respuesta directa y apropiada a la pregunta.",
+					"isCorrect": true
+				},
+				{
+					"text": "I don't know.",
+					"rationale": "Esta respuesta es lo opuesto a la seguridad, lo que contradice el sentido de la pregunta.",
+					"isCorrect": false
+				},
+				{
+					"text": "Are you sure?",
+					"rationale": "Responder a una pregunta con la misma pregunta no es una respuesta útil y a menudo se considera evasivo.",
+					"isCorrect": false
+				},
+				{
+					"text": "I think so.",
+					"rationale": "Esta respuesta muestra cierta duda, lo cual no responde de forma segura a la pregunta de 'Are you sure?'.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La respuesta debe transmitir confianza y certeza."
+		},
+		{
+			"question": "Cuál es una respuesta adecuada a la afirmación: 'Here we go!'?",
+			"answerOptions": [
+				{
+					"text": "You're crazy!",
+					"rationale": "Esta es una de las respuestas vistas en clase que se usa para expresar sorpresa o incredulidad en una situación.",
+					"isCorrect": true
+				},
+				{
+					"text": "Thank you!",
+					"rationale": "Esta respuesta no es apropiada para la frase 'Here we go!'.",
+					"isCorrect": false
+				},
+				{
+					"text": "I agree.",
+					"rationale": "La frase 'Here we go!' no es una afirmación de opinión que requiera un acuerdo.",
+					"isCorrect": false
+				},
+				{
+					"text": "What are we doing?",
+					"rationale": "Esta respuesta es una pregunta, no una reacción al inicio de una actividad.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase 'Here we go!' a menudo precede a una situación inesperada o emocionante."
+		},
+		{
+			"question": "Completa el diálogo: 'What happened? ____________.'",
+			"answerOptions": [
+				{
+					"text": "We've had a fire.",
+					"rationale": "Esta es una de las frases usadas en la sección de 'Role Play' para describir un incidente de emergencia.",
+					"isCorrect": true
+				},
+				{
+					"text": "What happened?",
+					"rationale": "Repetir la pregunta no es una respuesta válida.",
+					"isCorrect": false
+				},
+				{
+					"text": "I am fine.",
+					"rationale": "Aunque es una posible respuesta, no responde a la pregunta de qué pasó en general.",
+					"isCorrect": false
+				},
+				{
+					"text": "I don't know.",
+					"rationale": "Esta es una respuesta posible, pero no es una de las opciones que se practicaron en la clase de 'Role Play'.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La respuesta debe describir el incidente de emergencia que se practicó en el 'role play'."
+		},
+		{
+			"question": "Elige la respuesta más apropiada para la pregunta: 'What did you really meet Brad Pitt at the restaurant last night?'",
+			"answerOptions": [
+				{
+					"text": "I was just kidding.",
+					"rationale": "La respuesta 'I was just kidding' es una forma de admitir que la historia no era real, lo que se ajusta al contexto del diálogo en el libro.",
+					"isCorrect": true
+				},
+				{
+					"text": "Yes, I did.",
+					"rationale": "Esta respuesta confirma la historia, lo cual contradice el diálogo original.",
+					"isCorrect": false
+				},
+				{
+					"text": "It was great.",
+					"rationale": "Aunque esta respuesta podría ser una continuación, no aborda el elemento de sorpresa o incredulidad de la pregunta.",
+					"isCorrect": false
+				},
+				{
+					"text": "I don't know who that is.",
+					"rationale": "Esta respuesta es incoherente con la historia inicial de haberlo visto.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Recuerda que en el diálogo original la persona estaba bromeando."
+		},
+		{
+			"question": "Selecciona la frase que se usa para dar un consejo:",
+			"answerOptions": [
+				{
+					"text": "You should...",
+					"rationale": "El modal 'should' se utiliza para dar un consejo o una sugerencia.",
+					"isCorrect": true
+				},
+				{
+					"text": "What happened?",
+					"rationale": "Esta es una pregunta para saber qué ocurrió.",
+					"isCorrect": false
+				},
+				{
+					"text": "Are you sure?",
+					"rationale": "Esta es una pregunta para confirmar la certeza de algo.",
+					"isCorrect": false
+				},
+				{
+					"text": "I know what I'm doing.",
+					"rationale": "Esta frase es una respuesta que muestra confianza, no un consejo.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en el modal que se usa para dar recomendaciones."
+		},
+		{
+			"question": "Cuál de las siguientes frases se usa para hablar de ventajas y desventajas?",
+			"answerOptions": [
+				{
+					"text": "positive and negative aspects",
+					"rationale": "Esta frase se usa explícitamente en el libro para describir los puntos a favor y en contra de un tema.",
+					"isCorrect": true
+				},
+				{
+					"text": "pros and cons",
+					"rationale": "Aunque 'pros and cons' también se usa para lo mismo, la frase exacta que se vio en el libro es 'positive and negative aspects'.",
+					"isCorrect": false
+				},
+				{
+					"text": "ups and downs",
+					"rationale": "Esta frase se refiere a los altibajos o momentos buenos y malos, no a las ventajas y desventajas de un tema en particular.",
+					"isCorrect": false
+				},
+				{
+					"text": "for and against",
+					"rationale": "Esta frase se usa para debatir a favor o en contra de un tema, no es un sustantivo para las ventajas y desventajas en sí mismas.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase exacta se encuentra en la sección de 'Speaking' sobre la descripción de objetos futuristas."
+		},
+		{
+			"question": "Elige la respuesta que muestra un acuerdo: 'It's a good idea to work out three times a week.'",
+			"answerOptions": [
+				{
+					"text": "I agree.",
+					"rationale": "La frase 'I agree' se usa para expresar que estás de acuerdo con una opinión o sugerencia.",
+					"isCorrect": true
+				},
+				{
+					"text": "I'm not sure.",
+					"rationale": "Esta respuesta expresa duda, no acuerdo.",
+					"isCorrect": false
+				},
+				{
+					"text": "I disagree.",
+					"rationale": "Esta respuesta expresa desacuerdo.",
+					"isCorrect": false
+				},
+				{
+					"text": "I can't.",
+					"rationale": "Esta respuesta indica una imposibilidad personal, no un acuerdo o desacuerdo con la idea en general.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La respuesta debe ser una expresión de consentimiento."
+		},
+		{
+			"question": "Cuál es una manera de pedir a alguien que repita algo que no escuchaste?",
+			"answerOptions": [
+				{
+					"text": "Pardon?",
+					"rationale": "La palabra 'Pardon?' es una forma corta y cortés de pedirle a alguien que repita lo que ha dicho.",
+					"isCorrect": true
+				},
+				{
+					"text": "I didn't hear you.",
+					"rationale": "Aunque es una respuesta válida, 'Pardon?' es una manera más corta y común en el contexto de la comunicación informal.",
+					"isCorrect": false
+				},
+				{
+					"text": "Say that again.",
+					"rationale": "Esta frase puede sonar un poco más directa o imperativa que 'Pardon?'.",
+					"isCorrect": false
+				},
+				{
+					"text": "What?",
+					"rationale": "Aunque es común, 'What?' puede ser percibido como descortés en algunas situaciones.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en una palabra corta y educada para pedir una repetición."
+		},
+		{
+			"question": "Elige la frase que usarías para expresar una sugerencia de forma cortés:",
+			"answerOptions": [
+				{
+					"text": "How about we go to the cinema?",
+					"rationale": "La frase 'How about...' es una forma común y cortés de hacer una sugerencia.",
+					"isCorrect": true
+				},
+				{
+					"text": "Go to the cinema.",
+					"rationale": "Esta frase es una orden, no una sugerencia cortés.",
+					"isCorrect": false
+				},
+				{
+					"text": "We will go to the cinema.",
+					"rationale": "Esto es una afirmación sobre el futuro, no una sugerencia para el interlocutor.",
+					"isCorrect": false
+				},
+				{
+					"text": "We should go to the cinema.",
+					"rationale": "Aunque 'should' es para sugerencias, la estructura de 'How about' es más conversacional y se ajusta más a un diálogo informal.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase debe empezar con una pregunta que presente una idea."
+		},
+		{
+			"question": "Completa el diálogo: 'I am sorry, but I ____________ a headache.'",
+			"answerOptions": [
+				{
+					"text": "have",
+					"rationale": "El verbo 'have' se usa comúnmente para expresar que uno tiene una enfermedad o un malestar físico.",
+					"isCorrect": true
+				},
+				{
+					"text": "am",
+					"rationale": "Aunque se podría decir 'I am sick', para 'headache' se usa el verbo 'have'.",
+					"isCorrect": false
+				},
+				{
+					"text": "get",
+					"rationale": "'Get' podría usarse para decir 'I get headaches', pero no se ajusta al 'I am sorry...' que sugiere una situación actual.",
+					"isCorrect": false
+				},
+				{
+					"text": "make",
+					"rationale": "El verbo 'make' no se usa para expresar que se tiene un dolor de cabeza.",
+					"isCorrect": false
+				}
+			],
+			"hint": "El verbo que buscas es un auxiliar que expresa posesión o tenencia en un sentido de malestar físico."
+		}
+	]
+}

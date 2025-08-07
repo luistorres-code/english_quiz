@@ -1,0 +1,266 @@
+{
+	"title": "Quiz: Vocabulario General",
+	"description": "Este quiz te ayudará a recordar las palabras y frases de vocabulario vistas en las páginas de tu libro de texto, incluyendo la sección 'Round-up'.",
+	"questions": [
+		{
+			"question": "Elige la palabra que se ajusta a la definición: 'A person you study with or work with.'",
+			"answerOptions": [
+				{
+					"text": "fellow",
+					"rationale": "La palabra 'fellow' se utiliza para referirse a un compañero, alguien con quien se comparte una actividad.",
+					"isCorrect": true
+				},
+				{
+					"text": "audience",
+					"rationale": "Una 'audience' es un grupo de personas que miran o escuchan algo, como un espectáculo o una charla.",
+					"isCorrect": false
+				},
+				{
+					"text": "crowd",
+					"rationale": "Una 'crowd' es un gran grupo de personas, no necesariamente compañeros de estudio o trabajo.",
+					"isCorrect": false
+				},
+				{
+					"text": "flock",
+					"rationale": "'Flock' se usa para un grupo de aves, ovejas u otros animales, no para personas.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra se parece a 'compañero' o 'colega'."
+		},
+		{
+			"question": "Completa la oración: 'I have a ____________ throat and a fever.'",
+			"answerOptions": [
+				{
+					"text": "sore",
+					"rationale": "'Sore' significa 'dolorido' y es la palabra correcta para describir una 'garganta dolorida'.",
+					"isCorrect": true
+				},
+				{
+					"text": "hurt",
+					"rationale": "'Hurt' es un verbo y no se usa como adjetivo para describir una parte del cuerpo de esta manera.",
+					"isCorrect": false
+				},
+				{
+					"text": "painful",
+					"rationale": "Aunque 'painful' significa 'doloroso', 'sore' es el adjetivo más común para describir una garganta dolorida.",
+					"isCorrect": false
+				},
+				{
+					"text": "ache",
+					"rationale": "'Ache' es un sustantivo (dolor) o verbo (doler), no un adjetivo para describir 'throat'.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra que buscas es un adjetivo que significa 'dolorido'."
+		},
+		{
+			"question": "Elige el sinónimo para 'ridiculous' en el contexto de 'That’s a ridiculous idea.'",
+			"answerOptions": [
+				{
+					"text": "absurd",
+					"rationale": "La palabra 'absurd' es un sinónimo directo de 'ridiculous', ya que ambos significan algo muy tonto o ilógico.",
+					"isCorrect": true
+				},
+				{
+					"text": "awkward",
+					"rationale": "'Awkward' significa 'incómodo' o 'torpe', no 'ridículo'.",
+					"isCorrect": false
+				},
+				{
+					"text": "harmful",
+					"rationale": "'Harmful' significa 'dañino', lo cual es un significado completamente diferente.",
+					"isCorrect": false
+				},
+				{
+					"text": "sore",
+					"rationale": "'Sore' significa 'dolorido' y no es un sinónimo de 'ridiculous'.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en una palabra que signifique 'muy tonto' o 'sin sentido'."
+		},
+		{
+			"question": "Selecciona la palabra que describe un gran grupo de personas que miran o escuchan algo:",
+			"answerOptions": [
+				{
+					"text": "audience",
+					"rationale": "'Audience' es el término específico para un grupo de espectadores o oyentes.",
+					"isCorrect": true
+				},
+				{
+					"text": "flock",
+					"rationale": "'Flock' se refiere a un grupo de animales, como aves u ovejas.",
+					"isCorrect": false
+				},
+				{
+					"text": "herd",
+					"rationale": "'Herd' se refiere a un grupo de animales, como vacas o elefantes.",
+					"isCorrect": false
+				},
+				{
+					"text": "mob",
+					"rationale": "Un 'mob' es un grupo grande y desorganizado de personas que a menudo son violentas o problemáticas.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en el público de una obra de teatro o un concierto."
+		},
+		{
+			"question": "Elige la opción que significa 'to examine in detail'.",
+			"answerOptions": [
+				{
+					"text": "scrutinize",
+					"rationale": "El verbo 'scrutinize' significa examinar o inspeccionar algo con mucho detalle, lo que se ajusta a la definición.",
+					"isCorrect": true
+				},
+				{
+					"text": "suggest",
+					"rationale": "'Suggest' significa proponer una idea o plan.",
+					"isCorrect": false
+				},
+				{
+					"text": "suppose",
+					"rationale": "'Suppose' significa asumir o creer que algo es probable.",
+					"isCorrect": false
+				},
+				{
+					"text": "propose",
+					"rationale": "'Propose' significa sugerir un plan formalmente.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra que buscas se parece a 'escudriñar' o 'analizar'."
+		},
+		{
+			"question": "Cuál es la palabra que describe un olor fuerte y desagradable?",
+			"answerOptions": [
+				{
+					"text": "fetid",
+					"rationale": "'Fetid' es un adjetivo que describe un olor que es muy fuerte y desagradable, a menudo asociado con la putrefacción.",
+					"isCorrect": true
+				},
+				{
+					"text": "fragrant",
+					"rationale": "'Fragrant' se usa para describir un olor dulce y agradable, lo opuesto a desagradable.",
+					"isCorrect": false
+				},
+				{
+					"text": "aromatic",
+					"rationale": "'Aromatic' describe un olor fuerte y distintivo, que puede ser agradable.",
+					"isCorrect": false
+				},
+				{
+					"text": "odorous",
+					"rationale": "'Odorous' simplemente significa 'que tiene olor', sin especificar si es agradable o desagradable.",
+					"isCorrect": false
+				}
+			],
+			"hint": "Piensa en una palabra que se use para describir un olor a descomposición."
+		},
+		{
+			"question": "Elige la frase idiomática que significa 'to get crazy or angry'.",
+			"answerOptions": [
+				{
+					"text": "drive someone up the wall",
+					"rationale": "La frase 'drive someone up the wall' significa irritar o enfadar mucho a alguien.",
+					"isCorrect": true
+				},
+				{
+					"text": "get your teeth into something",
+					"rationale": "Esta frase significa empezar a trabajar en algo con mucha energía.",
+					"isCorrect": false
+				},
+				{
+					"text": "have a whale of a time",
+					"rationale": "Esta frase significa pasarlo muy bien.",
+					"isCorrect": false
+				},
+				{
+					"text": "break a leg",
+					"rationale": "Esta frase se usa para desear buena suerte, especialmente a un actor.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase se mencionó en una de las secciones de comunicación en clase. Se refiere a una pared."
+		},
+		{
+			"question": "Cuál de estas palabras describe un problema o defecto en un objeto?",
+			"answerOptions": [
+				{
+					"text": "flaw",
+					"rationale": "Un 'flaw' es una marca, defecto o debilidad en un objeto o persona.",
+					"isCorrect": true
+				},
+				{
+					"text": "virtue",
+					"rationale": "Una 'virtue' es un rasgo de alta calidad moral, lo opuesto a un defecto.",
+					"isCorrect": false
+				},
+				{
+					"text": "asset",
+					"rationale": "Un 'asset' es un bien o una cualidad valiosa, no un defecto.",
+					"isCorrect": false
+				},
+				{
+					"text": "attribute",
+					"rationale": "Un 'attribute' es una característica o cualidad de algo, sin connotación negativa.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra se usa para describir un fallo en algo, como un diamante o un plan."
+		},
+		{
+			"question": "Selecciona el término que se usa para describir una persona que recibe un regalo:",
+			"answerOptions": [
+				{
+					"text": "recipient",
+					"rationale": "Un 'recipient' es la persona que recibe algo, como un regalo o una carta.",
+					"isCorrect": true
+				},
+				{
+					"text": "donor",
+					"rationale": "Un 'donor' es la persona que da algo.",
+					"isCorrect": false
+				},
+				{
+					"text": "sender",
+					"rationale": "Un 'sender' es la persona que envía algo.",
+					"isCorrect": false
+				},
+				{
+					"text": "giver",
+					"rationale": "Un 'giver' es la persona que da un regalo, no la que lo recibe.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La palabra comienza con 'r' y se refiere a quien recibe algo."
+		},
+		{
+			"question": "Qué frase significa 'to make a decision about something with a clear plan or purpose'?",
+			"answerOptions": [
+				{
+					"text": "make a specific decision",
+					"rationale": "La frase 'make a specific decision' se usa para referirse a la toma de una decisión concreta y deliberada sobre un tema.",
+					"isCorrect": true
+				},
+				{
+					"text": "make a random decision",
+					"rationale": "Esta frase significa tomar una decisión sin un plan claro, lo opuesto a la definición.",
+					"isCorrect": false
+				},
+				{
+					"text": "make up your mind",
+					"rationale": "Esta frase significa decidirse, pero no necesariamente implica un plan o propósito específico.",
+					"isCorrect": false
+				},
+				{
+					"text": "make a big deal",
+					"rationale": "Esta frase significa darle demasiada importancia a algo, no tomar una decisión.",
+					"isCorrect": false
+				}
+			],
+			"hint": "La frase fue anotada en la pizarra. Piensa en el adjetivo que describe la decisión."
+		}
+	]
+}

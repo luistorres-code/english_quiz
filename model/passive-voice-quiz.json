@@ -1,0 +1,106 @@
+{
+	"title": "Quiz: La Voz Pasiva (Presente y Pasado)",
+	"description": "Esta prueba se enfoca en tu habilidad para identificar y construir oraciones en voz pasiva.",
+	"questions": [
+		{
+			"question": "Selecciona la oración correcta en voz pasiva:",
+			"answerOptions": [
+				{ "text": "The answers were published on Facebook by him.", "rationale": "Esta es la estructura correcta de la voz pasiva en pasado simple, utilizando el verbo 'to be' en pasado ('were') seguido del participio pasado del verbo principal ('published').", "isCorrect": true },
+				{ "text": "He published the answers on Facebook.", "rationale": "Esta oración está en voz activa, no en voz pasiva.", "isCorrect": false },
+				{ "text": "The answers published on Facebook.", "rationale": "Le falta el verbo 'to be' para formar la estructura de la voz pasiva.", "isCorrect": false },
+				{ "text": "The answers were publish on Facebook.", "rationale": "El verbo principal 'publish' debe estar en su forma de participio pasado ('published').", "isCorrect": false }
+			],
+			"hint": "Recuerda la estructura de la voz pasiva: objeto + verbo 'to be' (en el tiempo correcto) + participio pasado."
+		},
+		{
+			"question": "Transforma la siguiente oración a voz pasiva: 'The new mayor built a school last month.'",
+			"answerOptions": [
+				{ "text": "A school was built by the new mayor last month.", "rationale": "Esta opción usa la estructura correcta de la voz pasiva en pasado simple: 'A school' (objeto) + 'was built' (verbo 'to be' + participio) + 'by the new mayor' (agente).", "isCorrect": true },
+				{ "text": "A school was built by the new mayor.", "rationale": "Aunque la estructura es correcta, le falta el complemento de tiempo 'last month'.", "isCorrect": false },
+				{ "text": "A school built by the new mayor last month.", "rationale": "Le falta el verbo 'to be' para que la oración esté gramaticalmente completa en voz pasiva.", "isCorrect": false },
+				{ "text": "A school is built by the new mayor last month.", "rationale": "Esta opción usa el presente simple ('is built') en lugar del pasado simple ('was built'), que es el tiempo original de la oración.", "isCorrect": false }
+			],
+			"hint": "Identifica el objeto de la oración activa para que se convierta en el sujeto de la oración pasiva."
+		},
+		{
+			"question": "Completa la oración: 'The guitar __________ by an audience.'",
+			"answerOptions": [
+				{ "text": "is played", "rationale": "El verbo 'to be' en presente ('is') y el participio pasado ('played') forman la voz pasiva en presente simple, que concuerda con el contexto.", "isCorrect": true },
+				{ "text": "was played", "rationale": "Esto sería voz pasiva en pasado, pero el contexto de 'by an audience' sugiere una acción habitual, no una pasada y terminada.", "isCorrect": false },
+				{ "text": "plays", "rationale": "Esta es la forma de la voz activa en presente, no la voz pasiva.", "isCorrect": false },
+				{ "text": "is playing", "rationale": "Esto es presente continuo en voz activa, no voz pasiva.", "isCorrect": false }
+			],
+			"hint": "Considera si la acción es un evento único en el pasado o una acción repetida o general."
+		},
+		{
+			"question": "Elige la oración que no está en voz pasiva:",
+			"answerOptions": [
+				{ "text": "Many people were injured in an accident.", "rationale": "Esta oración sí está en voz pasiva: 'people' (objeto) + 'were injured' (verbo 'to be' + participio).", "isCorrect": false },
+				{ "text": "Some buildings were damaged by the tsunami.", "rationale": "Esta oración sí está en voz pasiva: 'buildings' (objeto) + 'were damaged' (verbo 'to be' + participio).", "isCorrect": false },
+				{ "text": "Gonda broke all the cashews yesterday.", "rationale": "Esta oración está en voz activa, ya que el sujeto ('Gonda') realiza la acción ('broke').", "isCorrect": true },
+				{ "text": "A school was built last month.", "rationale": "Esta oración sí está en voz pasiva, aunque el agente no se menciona. 'A school' (objeto) + 'was built' (verbo 'to be' + participio).", "isCorrect": false }
+			],
+			"hint": "La voz pasiva se usa cuando el foco está en la acción, no en quien la realiza."
+		},
+		{
+			"question": "Selecciona la forma correcta de voz pasiva para completar: 'The film __________ last night.'",
+			"answerOptions": [
+				{ "text": "was seen", "rationale": "La frase 'last night' indica pasado simple, por lo que la forma correcta de voz pasiva es con el verbo 'to be' en pasado ('was') y el participio ('seen').", "isCorrect": true },
+				{ "text": "is seen", "rationale": "Esta opción usa voz pasiva en presente, lo cual no concuerda con el adverbio de tiempo 'last night'.", "isCorrect": false },
+				{ "text": "seen", "rationale": "Le falta el verbo 'to be' para formar la estructura de la voz pasiva.", "isCorrect": false },
+				{ "text": "was seeing", "rationale": "Esto es pasado continuo en voz activa, no la forma pasiva.", "isCorrect": false }
+			],
+			"hint": "Presta atención al adverbio de tiempo para elegir el tiempo verbal correcto del verbo 'to be'."
+		},
+		{
+			"question": "Transforma la oración: 'They are building a new hospital.'",
+			"answerOptions": [
+				{ "text": "A new hospital is being built by them.", "rationale": "La voz pasiva en presente continuo se forma con 'is being' + participio pasado ('built').", "isCorrect": true },
+				{ "text": "A new hospital was being built by them.", "rationale": "Esta opción usa el pasado continuo, no el presente continuo de la oración original.", "isCorrect": false },
+				{ "text": "A new hospital is built by them.", "rationale": "Esta es la voz pasiva en presente simple, no en presente continuo.", "isCorrect": false },
+				{ "text": "They were building a new hospital.", "rationale": "Esta es la voz activa en pasado continuo, no la voz pasiva en presente continuo.", "isCorrect": false }
+			],
+			"hint": "Recuerda que para el presente continuo en voz pasiva, necesitas la forma 'being'."
+		},
+		{
+			"question": "Cuál es la forma pasiva correcta de la oración: 'The mechanic fixes my car.'",
+			"answerOptions": [
+				{ "text": "My car is fixed by the mechanic.", "rationale": "La oración original está en presente simple. La voz pasiva se forma con el verbo 'to be' en presente ('is') y el participio 'fixed'.", "isCorrect": true },
+				{ "text": "My car was fixed by the mechanic.", "rationale": "Esta opción usa el pasado, no el presente de la oración original.", "isCorrect": false },
+				{ "text": "My car is being fixed by the mechanic.", "rationale": "Esto sería voz pasiva en presente continuo, pero la oración original está en presente simple.", "isCorrect": false },
+				{ "text": "The mechanic's car is fixed by him.", "rationale": "Esta opción cambia el sujeto y el objeto de forma incorrecta.", "isCorrect": false }
+			],
+			"hint": "El tiempo verbal de la oración pasiva debe ser el mismo que el de la oración activa."
+		},
+		{
+			"question": "Completa la oración: 'The house __________ by the storm last night.'",
+			"answerOptions": [
+				{ "text": "was damaged", "rationale": "La oración describe un evento pasado ('last night'). La voz pasiva en pasado simple se forma con 'was' y el participio 'damaged'.", "isCorrect": true },
+				{ "text": "is damaged", "rationale": "Esta es la forma en presente simple, lo cual no concuerda con 'last night'.", "isCorrect": false },
+				{ "text": "damaged", "rationale": "El verbo 'to be' es necesario para formar la voz pasiva.", "isCorrect": false },
+				{ "text": "is damaging", "rationale": "Esto es presente continuo en voz activa, no la voz pasiva.", "isCorrect": false }
+			],
+			"hint": "Presta atención a las palabras que te dan una pista sobre cuándo ocurrió la acción."
+		},
+		{
+			"question": "Selecciona la oración correcta en voz pasiva:",
+			"answerOptions": [
+				{ "text": "The car was stolen last week.", "rationale": "La estructura 'was stolen' (verbo 'to be' en pasado + participio pasado) es la correcta para la voz pasiva en pasado simple.", "isCorrect": true },
+				{ "text": "The car stolen last week.", "rationale": "Le falta el verbo 'to be' para formar una oración completa en voz pasiva.", "isCorrect": false },
+				{ "text": "The car stole last week.", "rationale": "Esto es pasado simple en voz activa, lo que significa que 'el coche robó' en lugar de 'fue robado'.", "isCorrect": false },
+				{ "text": "Someone stolen the car last week.", "rationale": "Esta opción tiene un error gramatical: 'stolen' es el participio pasado, no la forma de pasado simple ('stole').", "isCorrect": false }
+			],
+			"hint": "Asegúrate de que la forma verbal concuerde con el objeto que recibe la acción."
+		},
+		{
+			"question": "Transforma la oración: 'Someone broke the window.'",
+			"answerOptions": [
+				{ "text": "The window was broken.", "rationale": "Esta es la forma correcta de la voz pasiva en pasado simple. El agente ('someone') puede omitirse cuando es desconocido o irrelevante.", "isCorrect": true },
+				{ "text": "The window broke.", "rationale": "Esta oración podría dar a entender que la ventana se rompió por sí misma, no por alguien. Carece de la estructura de voz pasiva.", "isCorrect": false },
+				{ "text": "The window is broken.", "rationale": "Esto es voz pasiva en presente simple, pero la oración original está en pasado.", "isCorrect": false },
+				{ "text": "The window was broke.", "rationale": "'Broke' es la forma en pasado simple, no el participio pasado, que es 'broken'.", "isCorrect": false }
+			],
+			"hint": "Recuerda que no siempre es necesario mencionar al agente ('by someone') en la voz pasiva."
+		}
+	]
+}
