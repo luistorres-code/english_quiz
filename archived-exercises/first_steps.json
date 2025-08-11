@@ -1,0 +1,118 @@
+{
+	"title": "A1: Primeros Pasos en Inglés",
+	"description": "¡Vamos a construir las bases! Practica el verbo 'to be', los artículos y el vocabulario básico para hablar de ti mismo y de tu entorno.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta del verbo 'to be': 'I ______ a student.'",
+			"answerOptions": [
+				{ "text": "is", "isCorrect": false },
+				{ "text": "am", "isCorrect": true },
+				{ "text": "are", "isCorrect": false }
+			],
+			"hint": "Con el pronombre 'I', usamos 'am'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración: 'They live in ______ big house.'",
+			"questionParts": ["They live in ", { "answer": "a", "label": "" }, " big house."],
+			"hint": "Usa un artículo indefinido antes de la palabra 'big'."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Qué día viene después del miércoles?",
+			"correctAnswer": "Thursday",
+			"hint": "El día de la semana en inglés es 'Thursday'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta: 'He ______ to work by bus every day.'",
+			"answerOptions": [
+				{ "text": "go", "isCorrect": false },
+				{ "text": "goes", "isCorrect": true },
+				{ "text": "went", "isCorrect": false }
+			],
+			"hint": "Con 'he', 'she' o 'it', a los verbos se les añade 'es' o 's'."
+		},
+		{
+			"type": "true_false",
+			"question": "¿Es correcto decir 'You is from Spain'?",
+			"answer": "false",
+			"explanation": "Con 'you', 'we' y 'they' usamos 'are'."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada palabra con su opuesto.",
+			"pairs": [
+				{ "text1": "big", "text2": "small" },
+				{ "text1": "hot", "text2": "cold" },
+				{ "text1": "happy", "text2": "sad" }
+			],
+			"hint": "Piensa en los contrarios."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'hola' en inglés?",
+			"correctAnswer": "hello",
+			"hint": "Es una de las primeras palabras que se aprenden."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración: 'are / from / They / Italy'.",
+			"items": ["They", "are", "from", "Italy"],
+			"correctOrder": [0, 1, 2, 3],
+			"hint": "La oración completa es 'They are from Italy'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración: 'She has ______ old book.'",
+			"questionParts": ["She has ", { "answer": "an", "label": "" }, " old book."],
+			"hint": "La palabra 'old' comienza con sonido de vocal."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona el pronombre correcto: 'This is my sister. ______ is a doctor.'",
+			"answerOptions": [
+				{ "text": "He", "isCorrect": false },
+				{ "text": "She", "isCorrect": true },
+				{ "text": "It", "isCorrect": false }
+			],
+			"hint": "La palabra 'sister' es femenina."
+		},
+		{
+			"type": "short_answer",
+			"question": "En inglés, ¿cómo se dice 'uno, dos, tres'?",
+			"correctAnswer": "one, two, three",
+			"hint": "Los números en inglés son 'one', 'two', 'three'."
+		},
+		{
+			"type": "true_false",
+			"question": "La palabra 'children' es el plural de 'child'.",
+			"answer": "true",
+			"explanation": "'Children' es un plural irregular muy común."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta: 'you / Are / tired / ?'.",
+			"items": ["Are", "you", "tired", "?"],
+			"correctOrder": [0, 1, 2, 3],
+			"hint": "La pregunta correcta es 'Are you tired?'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el adjetivo posesivo correcto: 'I love ______ dog.'",
+			"questionParts": ["I love ", { "answer": "my", "label": "" }, " dog."],
+			"hint": "El adjetivo posesivo para 'I' es 'my'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la hora correcta: 'It's 9 o'clock.'",
+			"answerOptions": [
+				{ "text": "It's nine o'clock", "isCorrect": true },
+				{ "text": "It's ninet o'clock", "isCorrect": false },
+				{ "text": "It's ninty o'clock", "isCorrect": false }
+			],
+			"hint": "La pronunciación correcta de 9 es 'nine'."
+		}
+	]
+}

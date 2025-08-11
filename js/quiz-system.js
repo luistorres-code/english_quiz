@@ -23,7 +23,77 @@ function initializeSystem() {
 	};
 
 	setupEventListeners();
+	loadAvailableExercises();
 	initializeFromURL();
+}
+
+// Auto-load available exercises
+async function loadAvailableExercises() {
+	try {
+		// Lista de ejercicios en la carpeta exercises/
+		const knownExercises = ["first_steps.json"];
+
+		const exerciseOptions = [];
+
+		// Intentar cargar cada archivo para obtener su título
+		for (const fileName of knownExercises) {
+			try {
+				const response = await fetch(`./exercises/${fileName}`);
+				if (response.ok) {
+					const data = await response.json();
+					const cleanName = fileToExerciseName(fileName);
+					exerciseOptions.push({
+						value: cleanName,
+						title: data.title || formatFileName(cleanName),
+						description: data.description || "",
+					});
+				}
+			} catch (error) {
+				console.warn(`Could not load ${fileName}:`, error);
+			}
+		}
+
+		// Ordenar alfabéticamente por título
+		exerciseOptions.sort((a, b) => a.title.localeCompare(b.title));
+
+		// Poblar el select
+		populateExerciseSelect(exerciseOptions);
+	} catch (error) {
+		console.error("Error loading available exercises:", error);
+		// Fallback con opciones básicas
+		populateExerciseSelect([{ value: "first_steps", title: "Primeros Pasos", description: "" }]);
+	}
+}
+
+// Populate select with exercise options
+function populateExerciseSelect(exercises) {
+	if (!elements.selector) return;
+
+	// Limpiar opciones existentes (excepto la primera)
+	const defaultOption = elements.selector.querySelector('option[value=""]');
+	elements.selector.innerHTML = "";
+	if (defaultOption) {
+		elements.selector.appendChild(defaultOption);
+	}
+
+	// Agregar opciones de ejercicios
+	exercises.forEach((exercise) => {
+		const option = document.createElement("option");
+		option.value = exercise.value;
+		option.textContent = exercise.title;
+		if (exercise.description) {
+			option.title = exercise.description; // Tooltip con descripción
+		}
+		elements.selector.appendChild(option);
+	});
+}
+
+// Format filename for display (fallback)
+function formatFileName(fileName) {
+	return fileName
+		.split("-")
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(" ");
 }
 
 function setupEventListeners() {
@@ -33,7 +103,8 @@ function setupEventListeners() {
 			const selectedExercise = elements.selector?.value;
 			if (selectedExercise) {
 				updateURL(selectedExercise);
-				loadExercise(selectedExercise);
+				const exerciseFileName = exerciseNameToFile(selectedExercise);
+				loadExercise(exerciseFileName);
 			}
 		});
 	}
@@ -64,7 +135,7 @@ function setupEventListeners() {
 
 async function loadExercise(exerciseFile) {
 	try {
-		const response = await fetch(`./model/${exerciseFile}`);
+		const response = await fetch(`./exercises/${exerciseFile}`);
 		if (!response.ok) {
 			throw new Error(`Error loading exercise: ${response.status}`);
 		}

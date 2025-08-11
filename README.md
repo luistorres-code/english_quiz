@@ -25,11 +25,11 @@ La aplicación cuenta con una mascota medusita que representa la fluidez y adapt
 
 ### Assets disponibles:
 
-- **Logo principal**: `assets/logo-englifish-detailed.svg` - Medusita con elementos de letras flotantes
-- **Logo horizontal**: `assets/logo-englifish-horizontal.svg` - Para headers con efectos de agua
-- **Logo simple**: `assets/logo-medusa.svg` - Medusita básica sin texto
-- **Favicon**: `assets/favicon.svg` - Versión simplificada para navegador
-- **Generador de favicon**: `favicon-generator.html` - Tool para generar versiones PNG
+- **Logo principal**: `assets/logos/logo-englifish-detailed.svg` - Medusita con elementos de letras flotantes
+- **Logo horizontal**: `assets/logos/logo-englifish-horizontal.svg` - Para headers con efectos de agua
+- **Logo simple**: `assets/logos/logo-medusa.svg` - Medusita básica sin texto
+- **Favicon**: `assets/icons/favicon.svg` - Versión simplificada para navegador
+- **Herramientas**: Ver carpeta `tools/` para generadores y validadores
 
 ## 🚀 Instalación y Uso
 
@@ -54,16 +54,16 @@ Abrir directamente `index.html` en cualquier navegador moderno.
 
 ### 📋 **Templates Disponibles**
 
-- **`exercise-templates.json`** - Templates completos de todos los tipos de ejercicios
-- **`EXERCISE-TEMPLATES-README.md`** - Guía detallada para crear ejercicios
-- **`sample-quiz-example.json`** - Ejemplo práctico de quiz mixto
-- **`json-validator.html`** - Validador web para verificar JSON de quiz
+- **`templates/exercise-templates.json`** - Templates completos de todos los tipos de ejercicios
+- **`docs/EXERCISE-TEMPLATES-README.md`** - Guía detallada para crear ejercicios
+- **`templates/sample-quiz-example.json`** - Ejemplo práctico de quiz mixto
+- **`tools/json-validator.html`** - Validador web para verificar JSON de quiz
 
 ### 🎯 **Proceso de Creación**
 
-1. Consultar templates en `exercise-templates.json`
+1. Consultar templates en `templates/exercise-templates.json`
 2. Crear nuevo archivo en `/model/`
-3. Validar con `json-validator.html`
+3. Validar con `tools/json-validator.html`
 4. Probar en la aplicación
 
 ## �📚 Tipos de Ejercicios Disponibles
@@ -158,16 +158,21 @@ Textos con preguntas de comprensión múltiple.
 
 ```
 english_quiz/
-├── quiz_page.html       # Estructura principal
+├── index.html               # Aplicación principal
 ├── js/
-│   ├── app.js          # Inicialización
-│   ├── quiz-system.js  # Lógica principal
-│   └── quiz-functions.js # Renderizado
+│   ├── app.js              # Inicialización
+│   ├── quiz-system.js      # Lógica principal
+│   └── quiz-functions.js   # Renderizado de ejercicios
 ├── styles/
-│   └── quiz_styles.css # Estilos
-└── model/              # Datos de ejercicios
-    └── *.json
+│   └── quiz_styles.css     # Estilos glassmorphism
+├── model/                  # Datos de ejercicios JSON
+├── assets/                 # Logos, iconos y recursos
+├── templates/              # Plantillas para crear ejercicios
+├── tools/                  # Herramientas de desarrollo
+└── docs/                   # Documentación técnica
 ```
+
+Ver [`PROJECT-STRUCTURE.md`](./PROJECT-STRUCTURE.md) para detalles completos de la organización.
 
 ### Tecnologías
 
@@ -176,7 +181,7 @@ english_quiz/
 - **Diseño**: Glassmorphism, CSS Grid/Flexbox
 - **Algoritmos**: Levenshtein distance, string similarity
 
-Ver [DOCUMENTATION.md](./DOCUMENTATION.md) para detalles técnicos completos.
+Ver [docs/DOCUMENTATION.md](./docs/DOCUMENTATION.md) para detalles técnicos completos.
 
 ## 🎯 Próximas Mejoras
 
