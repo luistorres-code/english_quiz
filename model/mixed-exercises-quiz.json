@@ -1,0 +1,72 @@
+{
+	"title": "Quiz Mixto: Diferentes Tipos de Ejercicios",
+	"description": "Este quiz incluye ejercicios variados: rellenar espacios, emparejar y opción múltiple.",
+	"questions": [
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración con la palabra correcta:",
+			"questionParts": ["I have a ", { "answer": "sore", "label": "dolorido" }, " throat and need to see a doctor."],
+			"hint": "La palabra que buscas es un adjetivo que significa 'dolorido' en inglés."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada palabra con su definición correcta:",
+			"pairs": [
+				{ "text1": "audience", "text2": "A group of people who watch a performance" },
+				{ "text1": "fellow", "text2": "A person you study or work with" },
+				{ "text1": "ridiculous", "text2": "Very silly or unreasonable" }
+			],
+			"hint": "Piensa en el contexto donde usarías cada palabra."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta del pronombre relativo:",
+			"answerOptions": [
+				{
+					"text": "The book which I read yesterday was amazing.",
+					"isCorrect": true,
+					"rationale": "'Which' es correcto para referirse a objetos/cosas como 'book'."
+				},
+				{
+					"text": "The book who I read yesterday was amazing.",
+					"isCorrect": false,
+					"rationale": "'Who' se usa solo para personas, no para objetos."
+				},
+				{
+					"text": "The book where I read yesterday was amazing.",
+					"isCorrect": false,
+					"rationale": "'Where' se usa para lugares, no para objetos."
+				}
+			],
+			"hint": "Recuerda: 'who' para personas, 'which' para cosas, 'where' para lugares."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el tiempo verbal correcto:",
+			"questionParts": ["She ", { "answer": "has been", "label": "tiempo perfecto continuo" }, " working here for five years."],
+			"hint": "Necesitas el presente perfecto continuo para una acción que comenzó en el pasado y continúa."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la forma pasiva correcta de 'They built the house last year'?",
+			"answerOptions": [
+				{
+					"text": "The house was built last year.",
+					"isCorrect": true,
+					"rationale": "Estructura correcta: objeto + was/were + participio pasado."
+				},
+				{
+					"text": "The house is built last year.",
+					"isCorrect": false,
+					"rationale": "El tiempo verbal debe ser pasado ('was'), no presente ('is')."
+				},
+				{
+					"text": "The house built last year.",
+					"isCorrect": false,
+					"rationale": "Falta el verbo auxiliar 'was' para formar la voz pasiva."
+				}
+			],
+			"hint": "La voz pasiva en pasado simple usa 'was/were + participio pasado'."
+		}
+	]
+}

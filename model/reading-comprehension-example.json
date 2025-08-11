@@ -1,0 +1,44 @@
+{
+	"title": "Reading Comprehension: The Pigeon Post",
+	"description": "Lee el texto y responde las preguntas sobre la comunicación en el pasado.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Lee el siguiente texto y responde las preguntas.",
+			"readingText": ["Nowadays, we have the Internet and the telephone. So, we are able to communicate with people instantly, no matter how far away they are. But, in the past, it wasn't always this easy.", "In the past, people had other ways of getting their messages across. For example, some used pigeons (known as messenger pigeons or carrier pigeons) while others used different animals. One of the most common ways was to use carrier pigeons.", "The ancient Egyptians and Persians were the first people to use carrier pigeons to send messages. They would attach a small message to the pigeon's leg in a tiny tube. The pigeon would then fly back to its home, delivering the message.", "This method was very reliable because pigeons have an excellent sense of direction and can find their way home from very long distances. During both World Wars, carrier pigeons played an important role in military communications. Many pigeons even received medals for their brave service!"],
+			"questions": [
+				{
+					"type": "short_answer",
+					"questionText": "How did people send messages in the past?",
+					"correctAnswer": "They used carrier pigeons or other animals"
+				},
+				{
+					"type": "short_answer",
+					"questionText": "Where was the message attached on the carrier pigeon?",
+					"correctAnswer": "In a small tube attached to the pigeon's leg"
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "Who were the first people to use carrier pigeons?",
+					"answerOptions": [
+						{ "text": "The ancient Egyptians and Persians", "isCorrect": true },
+						{ "text": "The ancient Greeks and Romans", "isCorrect": false },
+						{ "text": "The British and the French", "isCorrect": false },
+						{ "text": "The Chinese and Japanese", "isCorrect": false }
+					]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "Why were carrier pigeons reliable for sending messages?",
+					"answerOptions": [
+						{ "text": "They were very fast", "isCorrect": false },
+						{ "text": "They had excellent sense of direction", "isCorrect": true },
+						{ "text": "They were cheap to maintain", "isCorrect": false },
+						{ "text": "They could carry heavy messages", "isCorrect": false }
+					]
+				}
+			],
+			"hint": "Recuerda leer el texto cuidadosamente para encontrar las respuestas exactas."
+		}
+	]
+}

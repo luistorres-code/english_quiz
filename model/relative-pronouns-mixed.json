@@ -1,0 +1,72 @@
+{
+	"title": "Quiz: Pronombres Relativos con Ejercicios Mixtos",
+	"description": "Practica los pronombres relativos con diferentes tipos de ejercicios interactivos.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona el pronombre relativo correcto:",
+			"answerOptions": [
+				{
+					"text": "The person who called you is my sister.",
+					"isCorrect": true,
+					"rationale": "'Who' es correcto para referirse a personas."
+				},
+				{
+					"text": "The person which called you is my sister.",
+					"isCorrect": false,
+					"rationale": "'Which' se usa para cosas, no para personas."
+				},
+				{
+					"text": "The person where called you is my sister.",
+					"isCorrect": false,
+					"rationale": "'Where' se usa para lugares, no para personas."
+				}
+			],
+			"hint": "Recuerda: 'who' para personas, 'which' para cosas, 'where' para lugares."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración con el pronombre relativo correcto:",
+			"questionParts": ["The book ", { "answer": "which", "label": "pronombre" }, " I bought yesterday is very interesting."],
+			"hint": "¿Se refiere a una persona, cosa o lugar?"
+		},
+		{
+			"type": "matching",
+			"question": "Une cada pronombre relativo con su uso correcto:",
+			"pairs": [
+				{ "text1": "who", "text2": "Se usa para personas" },
+				{ "text1": "which", "text2": "Se usa para cosas o animales" },
+				{ "text1": "where", "text2": "Se usa para lugares" }
+			],
+			"hint": "Piensa en qué tipo de sustantivo acompaña cada pronombre."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el pronombre relativo apropiado:",
+			"questionParts": ["The restaurant ", { "answer": "where", "label": "lugar" }, " we had dinner last night was excellent."],
+			"hint": "Esta oración habla de un lugar específico."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál de estas oraciones usa correctamente 'whose'?",
+			"answerOptions": [
+				{
+					"text": "The student whose homework was excellent got an A.",
+					"isCorrect": true,
+					"rationale": "'Whose' indica posesión y está correctamente usado aquí."
+				},
+				{
+					"text": "The student whose is smart got an A.",
+					"isCorrect": false,
+					"rationale": "'Whose' debe ir seguido de un sustantivo, no puede estar solo."
+				},
+				{
+					"text": "The student whose the homework was excellent got an A.",
+					"isCorrect": false,
+					"rationale": "No se usa artículo después de 'whose'."
+				}
+			],
+			"hint": "'Whose' indica posesión y va seguido directamente de un sustantivo."
+		}
+	]
+}
