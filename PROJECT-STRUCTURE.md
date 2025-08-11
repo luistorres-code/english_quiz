@@ -6,19 +6,19 @@
 │ ├── first_steps.json # Ejercicio de fundamentos
 │ └── 📄 README.md # Guía de ejercicios
 ├──
-├── 📂 archived-exercises/     # Ejercicios legacy (respaldo)
-│   ├── passive-voice-quiz.json
-│   ├── verbs-and-verbs-forms.json
-│   ├── relative-pronouns.json
-│   ├── general-vocabulary.json
-│   ├── comunications-common-phrases.json
-│   ├── mixed-exercises-quiz.json
-│   ├── reading-comprehension-example.json
-│   ├── true-false-quiz.json
-│   ├── short-answer-quiz.json
-│   ├── ordering-quiz.json
-│   ├── relative-pronouns-mixed.json
-│   └── 📄 README.md          # Documentación de archivos legacy
+├── 📂 archived-exercises/ # Ejercicios legacy (respaldo)
+│ ├── passive-voice-quiz.json
+│ ├── verbs-and-verbs-forms.json
+│ ├── relative-pronouns.json
+│ ├── general-vocabulary.json
+│ ├── comunications-common-phrases.json
+│ ├── mixed-exercises-quiz.json
+│ ├── reading-comprehension-example.json
+│ ├── true-false-quiz.json
+│ ├── short-answer-quiz.json
+│ ├── ordering-quiz.json
+│ ├── relative-pronouns-mixed.json
+│ └── 📄 README.md # Documentación de archivos legacy
 ├──```
 english_quiz/
 ├── 📄 README.md # Documentación principal del proyecto
@@ -45,9 +45,9 @@ english_quiz/
 ├──
 ├── 📂 styles/ # Estilos CSS
 │ └── quiz_styles.css # Estilos principales
-├── 
-├── 📂 templates/              # Templates para crear ejercicios
-│   ├── exercise-templates.json    # Templates principales
+├──
+├── 📂 templates/ # Templates para crear ejercicios
+│ ├── exercise-templates.json # Templates principales
 │ ├── sample-quiz-example.json # Ejemplo práctico
 │ └── 📄 README.md # Guía de templates
 ├──

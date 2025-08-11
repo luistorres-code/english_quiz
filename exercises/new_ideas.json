@@ -1,0 +1,124 @@
+{
+	"title": "Explorando Nuevas Ideas",
+	"description": "¡Vamos a expandir tus habilidades! Usa el pasado para contar historias, compara cosas y exprésate sobre planes futuros de manera más completa.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Elige la forma correcta del pasado simple: 'She ______ a new car last week.'",
+			"answerOptions": [
+				{ "text": "buy", "isCorrect": false },
+				{ "text": "bought", "isCorrect": true },
+				{ "text": "buys", "isCorrect": false }
+			],
+			"hint": "Recuerda que 'buy' es un verbo irregular en pasado."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración: 'London is ______ than Paris.'",
+			"questionParts": ["London is ", { "answer": "bigger", "label": "" }, " than Paris."],
+			"hint": "Usa la forma comparativa del adjetivo 'big'."
+		},
+		{
+			"type": "true_false",
+			"question": "'I can swim' significa que tienes permitido nadar.",
+			"answer": "false",
+			"explanation": "'Can' se usa para expresar una habilidad, no un permiso. Para permiso se usaría 'may' o 'can' en un contexto de pregunta."
+		},
+		{
+			"type": "short_answer",
+			"question": "Completa la oración: 'She is ______ the piano now.'",
+			"correctAnswer": "playing",
+			"alternatives": ["Playing"],
+			"caseSensitive": false,
+			"explanation": "Se usa el presente continuo (-ing) con el verbo 'play' para acciones en progreso."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta coherente en pasado simple.",
+			"items": ["you", "did", "where", "go", "yesterday?"],
+			"correctOrder": [2, 1, 0, 3, 4],
+			"hint": "La pregunta correcta es 'Where did you go yesterday?'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Elige la opción correcta: 'This is the most ______ book I have ever read.'",
+			"answerOptions": [
+				{ "text": "interesting", "isCorrect": true },
+				{ "text": "interestinger", "isCorrect": false },
+				{ "text": "more interesting", "isCorrect": false }
+			],
+			"hint": "Usa el superlativo de 'interesting'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración: 'We have ______ homework to do.'",
+			"questionParts": ["We have ", { "answer": "some", "label": "" }, " homework to do."],
+			"hint": "'Homework' es un sustantivo incontable. Usa 'some'."
+		},
+		{
+			"type": "matching",
+			"question": "Une el adjetivo con su opuesto.",
+			"pairs": [
+				{ "text1": "fast", "text2": "slow" },
+				{ "text1": "quiet", "text2": "noisy" },
+				{ "text1": "cheap", "text2": "expensive" }
+			],
+			"hint": "Piensa en el significado de los contrarios."
+		},
+		{
+			"type": "short_answer",
+			"question": "Completa la oración: 'I think it ______ rain tomorrow.'",
+			"correctAnswer": "will",
+			"alternatives": ["Will"],
+			"caseSensitive": false,
+			"explanation": "Se usa el modal 'will' para hacer predicciones sobre el futuro."
+		},
+		{
+			"type": "true_false",
+			"question": "'I am going to visit my friends this weekend' expresa una decisión espontánea.",
+			"answer": "false",
+			"explanation": "'Going to' se usa para expresar planes ya decididos."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración lógica con 'sometimes'.",
+			"items": ["eats", "She", "sometimes", "out"],
+			"correctOrder": [1, 2, 0, 3],
+			"hint": "El adverbio de frecuencia va antes del verbo principal."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Elige la opción correcta para una pregunta con 'any': 'Are there ______ students in the class?'",
+			"answerOptions": [
+				{ "text": "some", "isCorrect": false },
+				{ "text": "an", "isCorrect": false },
+				{ "text": "any", "isCorrect": true }
+			],
+			"hint": "Para preguntas con sustantivos contables en plural, usamos 'any'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración con un adjetivo comparativo: 'A mountain is ______ than a hill.'",
+			"questionParts": ["A mountain is ", { "answer": "higher", "label": "" }, " than a hill."],
+			"hint": "Usa la forma comparativa de 'high'."
+		},
+		{
+			"type": "short_answer",
+			"question": "Responde la pregunta en pasado: 'Did you see the movie yesterday?' (Sí)",
+			"correctAnswer": "Yes, I did.",
+			"alternatives": ["Yes, I did", "yes, I did", "Yes I did", "yes i did"],
+			"caseSensitive": false,
+			"explanation": "Para respuestas cortas afirmativas en pasado simple se usa 'Yes, I did' con el auxiliar 'did'."
+		},
+		{
+			"type": "matching",
+			"question": "Une el lugar con la actividad que harías allí.",
+			"pairs": [
+				{ "text1": "library", "text2": "read a book" },
+				{ "text1": "park", "text2": "play sports" },
+				{ "text1": "museum", "text2": "see paintings" }
+			],
+			"hint": "Asocia cada lugar con su propósito."
+		}
+	]
+}

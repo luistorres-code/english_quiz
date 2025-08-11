@@ -26,17 +26,55 @@ Cada ejercicio es un archivo JSON que contiene:
 3. **Agregar a la lista** en `js/quiz-system.js` función `loadAvailableExercises()`
 4. **Probar** en la aplicación
 
-## 📖 Plantillas Disponibles
+# � Ejercicios - EngliFish
 
-Consulta `/templates/exercise-templates.json` para ver ejemplos de:
+Este directorio contiene todos los ejercicios disponibles en EngliFish.
 
-- Multiple choice
-- Fill in the blanks
-- True/False
-- Short answer
-- Matching
-- Ordering
-- Reading comprehension
+## 📁 Archivos
+
+- **`index.json`** - Índice automático de ejercicios disponibles
+- **`first_steps.json`** - Ejercicios básicos de introducción al inglés
+- **`new_ideas.json`** - Ejercicios intermedios con diferentes temas
+
+## 🔄 Agregar Nuevos Ejercicios
+
+1. **Crear el archivo JSON** siguiendo la estructura de templates
+2. **Actualizar el índice** ejecutando:
+   ```bash
+   ./tools/update-exercises-index.sh
+   ```
+3. **Validar** el JSON con `../tools/json-validator.html`
+4. **Probar** en la aplicación
+
+## 📋 Estructura Requerida
+
+Cada archivo de ejercicio debe tener:
+
+```json
+{
+	"title": "Título del ejercicio",
+	"description": "Descripción breve",
+	"questions": [
+		// Array de preguntas siguiendo los templates
+	]
+}
+```
+
+## ⚡ Carga Automática
+
+Los ejercicios se cargan automáticamente en el selector de la aplicación desde el archivo `index.json`.
+
+**No edites `index.json` manualmente** - usa el script de actualización.
+
+## 🎯 Tipos Soportados
+
+- `multiple_choice` - Opción múltiple
+- `fill_in_the_blanks` - Completar espacios
+- `matching` - Emparejar elementos
+- `true_false` - Verdadero/Falso
+- `short_answer` - Respuesta corta
+- `ordering` - Ordenar palabras
+- `reading_comprehension` - Comprensión lectora
 
 ## 🎨 Convenciones de Nomenclatura
 

@@ -5,6 +5,7 @@ Esta carpeta contiene ejercicios legacy que han sido archivados para referencia 
 ## 📚 Propósito
 
 Los ejercicios en esta carpeta son:
+
 - **Material de referencia** para crear nuevos ejercicios
 - **Contenido legacy** del desarrollo anterior
 - **Ejemplos completos** de diferentes tipos de ejercicios
@@ -43,6 +44,7 @@ Para mover un ejercicio desde archivo a activo:
 ## 📖 Estructura de Referencia
 
 Los archivos aquí contienen ejemplos completos de:
+
 - Todos los tipos de ejercicios soportados
 - Diferentes niveles de dificultad
 - Variedad de contenido temático

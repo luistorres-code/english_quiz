@@ -1,5 +1,5 @@
 {
-	"title": "A1: Primeros Pasos en Inglés",
+	"title": "De vuelta a las bases",
 	"description": "¡Vamos a construir las bases! Practica el verbo 'to be', los artículos y el vocabulario básico para hablar de ti mismo y de tu entorno.",
 	"questions": [
 		{
@@ -22,7 +22,9 @@
 			"type": "short_answer",
 			"question": "¿Qué día viene después del miércoles?",
 			"correctAnswer": "Thursday",
-			"hint": "El día de la semana en inglés es 'Thursday'."
+			"alternatives": ["thursday"],
+			"caseSensitive": false,
+			"explanation": "El día después del miércoles es Thursday (jueves)."
 		},
 		{
 			"type": "multiple_choice",
@@ -54,7 +56,9 @@
 			"type": "short_answer",
 			"question": "¿Cómo se dice 'hola' en inglés?",
 			"correctAnswer": "hello",
-			"hint": "Es una de las primeras palabras que se aprenden."
+			"alternatives": ["Hello", "hi", "Hi"],
+			"caseSensitive": false,
+			"explanation": "La forma más común de decir 'hola' en inglés es 'hello' o 'hi'."
 		},
 		{
 			"type": "ordering",
@@ -83,7 +87,9 @@
 			"type": "short_answer",
 			"question": "En inglés, ¿cómo se dice 'uno, dos, tres'?",
 			"correctAnswer": "one, two, three",
-			"hint": "Los números en inglés son 'one', 'two', 'three'."
+			"alternatives": ["One, two, three", "1, 2, 3"],
+			"caseSensitive": false,
+			"explanation": "Los primeros tres números en inglés son: one, two, three."
 		},
 		{
 			"type": "true_false",

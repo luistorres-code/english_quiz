@@ -30,8 +30,16 @@ function initializeSystem() {
 // Auto-load available exercises
 async function loadAvailableExercises() {
 	try {
-		// Lista de ejercicios en la carpeta exercises/
-		const knownExercises = ["first_steps.json"];
+		// Cargar el índice de ejercicios disponibles
+		const indexResponse = await fetch("./exercises/index.json");
+		let knownExercises = ["first_steps.json"]; // Fallback
+
+		if (indexResponse.ok) {
+			const indexData = await indexResponse.json();
+			knownExercises = indexData.exercises || knownExercises;
+		} else {
+			console.warn("Could not load exercises index, using fallback list");
+		}
 
 		const exerciseOptions = [];
 

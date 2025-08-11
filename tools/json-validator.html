@@ -338,8 +338,10 @@ Ejemplo:
 					case "reading_comprehension":
 						validateReadingComprehension(question, prefix, result);
 						break;
+					case "short_answer":
+						validateShortAnswer(question, prefix, result);
+						break;
 				}
-
 				return result;
 			}
 
@@ -398,6 +400,33 @@ Ejemplo:
 				}
 			}
 
+			function validateShortAnswer(question, prefix, result) {
+				// Validar alternatives si existe
+				if (question.alternatives && !Array.isArray(question.alternatives)) {
+					result.errors.push(`${prefix}: El campo "alternatives" debe ser un array`);
+					result.isValid = false;
+				}
+
+				// Validar caseSensitive si existe
+				if (question.caseSensitive !== undefined && typeof question.caseSensitive !== "boolean") {
+					result.errors.push(`${prefix}: El campo "caseSensitive" debe ser true o false`);
+					result.isValid = false;
+				}
+
+				// Advertencias para campos recomendados
+				if (!question.explanation && !question.hint) {
+					result.warnings.push(`${prefix}: Se recomienda incluir "explanation" para proporcionar retroalimentación`);
+				}
+
+				if (!question.alternatives || question.alternatives.length === 0) {
+					result.warnings.push(`${prefix}: Considera agregar "alternatives" para aceptar múltiples respuestas válidas`);
+				}
+
+				// Validar que no tenga hint (campo obsoleto)
+				if (question.hint) {
+					result.warnings.push(`${prefix}: El campo "hint" está obsoleto para short_answer, usa "explanation" en su lugar`);
+				}
+			}
 			function showSuccessResult(validation) {
 				const typesList = Object.entries(validation.stats.questionTypes)
 					.map(([type, count]) => `${type}: ${count}`)
@@ -495,6 +524,14 @@ Ejemplo:
 								},
 							],
 							hint: "Think about third person singular verb forms",
+						},
+						{
+							type: "short_answer",
+							question: "What is the past tense of the verb 'go'?",
+							correctAnswer: "went",
+							alternatives: ["gone"],
+							caseSensitive: false,
+							explanation: "'Went' is the simple past tense of the irregular verb 'go'. 'Gone' is the past participle.",
 						},
 						{
 							type: "true_false",

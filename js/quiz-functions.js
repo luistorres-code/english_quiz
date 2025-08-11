@@ -1185,7 +1185,14 @@ function renderShortAnswerStandalone(container, questionData, onAnswer) {
 		}
 
 		attemptCount++;
-		const analysis = analyzeUserAnswer(userAnswer, questionData.answer);
+
+		// Preparar todas las respuestas posibles (correctAnswer + alternatives)
+		const allAnswers = [questionData.correctAnswer];
+		if (questionData.alternatives && Array.isArray(questionData.alternatives)) {
+			allAnswers.push(...questionData.alternatives);
+		}
+
+		const analysis = analyzeUserAnswer(userAnswer, allAnswers);
 
 		if (analysis.isCorrect) {
 			input.disabled = true;
@@ -1203,6 +1210,7 @@ function renderShortAnswerStandalone(container, questionData, onAnswer) {
 
 			setTimeout(() => {
 				input.value = "";
+				input.classList.remove("warning");
 				input.focus();
 			}, 2000);
 		} else {

@@ -29,7 +29,7 @@ Templates y ejemplos para crear ejercicios de EngliFish.
 2. **`fill_in_the_blanks`** - Completar espacios con ayudas
 3. **`matching`** - Emparejar elementos
 4. **`true_false`** - Verdadero/falso con explicaciones
-5. **`short_answer`** - Respuestas cortas con alternativas
+5. **`short_answer`** - Respuestas cortas con alternativas y reintentos
 6. **`ordering`** - Ordenar palabras (tipo Duolingo)
 7. **`reading_comprehension`** - Comprensión lectora con sub-preguntas
 

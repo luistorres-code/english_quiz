@@ -1,0 +1,117 @@
+{
+	"title": "Dominando la Conversación",
+	"description": "¡Hora de pulir tus habilidades! Practica la voz pasiva y los pronombres relativos para sonar más natural. También revisaremos frases comunes y vocabulario interesante.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la oración correcta en voz pasiva: 'The photo ____________ in 1990.'",
+			"answerOptions": [
+				{ "text": "was taken", "isCorrect": true },
+				{ "text": "took", "isCorrect": false },
+				{ "text": "is taken", "isCorrect": false }
+			],
+			"hint": "Recuerda la estructura de la voz pasiva en pasado (objeto + 'was/were' + participio pasado)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración con 'who' o 'which'.",
+			"questionParts": ["This is the book ", { "answer": "which", "label": "" }, " I told you about."],
+			"hint": "Usa 'which' para referirte a objetos."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada palabra del vocabulario con su sinónimo.",
+			"pairs": [
+				{ "text1": "ridiculous", "text2": "absurd" },
+				{ "text1": "flaw", "text2": "defect" },
+				{ "text1": "scrutinize", "text2": "examine" }
+			],
+			"hint": "Piensa en el significado de cada palabra para encontrar su equivalente."
+		},
+		{
+			"type": "true_false",
+			"question": "'You had better leave now' es un consejo más fuerte que 'You should leave now'.",
+			"answer": "true",
+			"explanation": "'Had better' implica que hay consecuencias si no se sigue el consejo, por lo que es más fuerte que 'should'."
+		},
+		{
+			"type": "short_answer",
+			"question": "Completa el diálogo con un verbo modal: 'I am sorry, but you ____________ not park here.'",
+			"correctAnswer": "must",
+			"hint": "El modal se usa para expresar una prohibición u obligación fuerte."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración correcta en voz pasiva.",
+			"items": ["The building", "was damaged", "last month", "by the tsunami."],
+			"correctOrder": [0, 1, 2, 3],
+			"hint": "Comienza con el sujeto ('The building') y sigue con la estructura pasiva."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Elige el pronombre relativo correcto: 'That’s the building ____________ we work.'",
+			"answerOptions": [
+				{ "text": "where", "isCorrect": true },
+				{ "text": "who", "isCorrect": false },
+				{ "text": "which", "isCorrect": false }
+			],
+			"hint": "La palabra que buscas se refiere a un lugar ('the building')."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración usando 'too' o 'enough': 'He is not fast ____________ to win the race.'",
+			"questionParts": ["He is not fast ", { "answer": "enough", "label": "" }, " to win the race."],
+			"hint": "Usa 'enough' después del adjetivo para indicar que algo es suficiente."
+		},
+		{
+			"type": "true_false",
+			"question": "La frase 'get your teeth into something' significa no tener interés en una actividad.",
+			"answer": "false",
+			"explanation": "Esta frase significa 'poner mucho esfuerzo y entusiasmo en algo'."
+		},
+		{
+			"type": "matching",
+			"question": "Une la frase idiomática con su significado.",
+			"pairs": [
+				{ "text1": "drive me up the wall", "text2": "annoy or irritate me" },
+				{ "text1": "have a whale of a time", "text2": "have a great time" }
+			],
+			"hint": "Una 'ballena' es un animal grande, por lo que la expresión significa que algo fue genial."
+		},
+		{
+			"type": "short_answer",
+			"question": "Completa la oración: 'The letter was ____________ by the postman.' (verbo 'deliver' en voz pasiva)",
+			"correctAnswer": "delivered",
+			"hint": "El verbo en voz pasiva va en participio pasado."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta coherente: 'do / not / What / you / like / to / do?'",
+			"items": ["What", "do", "you", "like", "to", "do", "?"],
+			"correctOrder": [0, 1, 2, 3, 4, 5, 6],
+			"hint": "La pregunta correcta es 'What do you like to do?'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Elige la mejor opción: 'He is a technician ____________ fixes computers.'",
+			"answerOptions": [
+				{ "text": "who", "isCorrect": true },
+				{ "text": "where", "isCorrect": false },
+				{ "text": "which", "isCorrect": false }
+			],
+			"hint": "'Who' se usa para referirse a personas."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa la oración: 'I will call you ____________ I arrive home.'",
+			"questionParts": ["I will call you ", { "answer": "as soon as", "label": "" }, " I arrive home."],
+			"hint": "Esta frase significa 'tan pronto como' y se usa para unir dos acciones en el futuro."
+		},
+		{
+			"type": "true_false",
+			"question": "La palabra 'recipient' se refiere a la persona que envía algo.",
+			"answer": "false",
+			"explanation": "El 'recipient' es la persona que recibe algo, mientras que el 'sender' es quien lo envía."
+		}
+	]
+}

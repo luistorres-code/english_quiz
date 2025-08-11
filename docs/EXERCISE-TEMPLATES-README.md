@@ -39,9 +39,10 @@ Este directorio contiene templates y ejemplos para crear nuevos ejercicios en En
 ### 5. **Short Answer** (`short_answer`)
 
 - ✅ Respuestas cortas escritas
-- ✅ Múltiples respuestas correctas aceptadas
-- ✅ Análisis de similitud inteligente
-- ✅ Configuración de sensibilidad de mayúsculas
+- ✅ Múltiples alternativas aceptadas (`alternatives`)
+- ✅ Control de sensibilidad de mayúsculas (`caseSensitive`)
+- ✅ Análisis de similitud inteligente con reintentos
+- ✅ Sistema de doble oportunidad para errores menores
 
 ### 6. **Ordering** (`ordering`)
 
@@ -84,16 +85,16 @@ Este directorio contiene templates y ejemplos para crear nuevos ejercicios en En
 - **Fill in the Blanks**: `questionParts` con objetos `answer`
 - **Matching**: `pairs` array
 - **True/False**: `answer` (boolean), `explanation`
-- **Short Answer**: `correctAnswer`
+- **Short Answer**: `correctAnswer`, `alternatives` (opcional), `caseSensitive` (opcional), `explanation` (recomendado)
 - **Ordering**: `items` array, `correctOrder` array
 - **Reading Comprehension**: `readingText` array, `questions` array
 
 ### Paso 4: Campos Opcionales
 
-- `hint` - Pista mostrada después del primer intento incorrecto
+- `hint` - **Obsoleto** para `short_answer`, usar `explanation`
 - `explanation` - Explicación mostrada al completar el ejercicio
 - `rationale` - Específico para opciones de respuesta
-- `alternatives` - Para ejercicios de respuesta corta
+- `alternatives` - Array de respuestas alternativas válidas (para `short_answer`)
 - `caseSensitive` - Para respuestas cortas (default: false)
 
 ## ✅ Mejores Prácticas
@@ -158,6 +159,14 @@ Antes de crear nuevos ejercicios:
 				}
 			],
 			"hint": "Piensa en..."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'hola' en inglés?",
+			"correctAnswer": "hello",
+			"alternatives": ["Hello", "hi", "Hi"],
+			"caseSensitive": false,
+			"explanation": "La forma más común de decir 'hola' en inglés es 'hello' o 'hi'."
 		}
 	]
 }
