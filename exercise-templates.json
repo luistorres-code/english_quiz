@@ -1,0 +1,202 @@
+{
+	"title": "📋 EngliFish Exercise Templates",
+	"description": "Este archivo contiene templates de todos los tipos de ejercicios disponibles en EngliFish. Usa estos ejemplos como referencia para crear nuevos ejercicios.",
+	"version": "1.0",
+	"lastUpdated": "2025-08-11",
+	"author": "EngliFish Team",
+
+	"exerciseTypes": {
+		"multiple_choice": {
+			"description": "Ejercicio de opción múltiple con una respuesta correcta",
+			"template": {
+				"type": "multiple_choice",
+				"question": "Select the correct answer:",
+				"answerOptions": [
+					{
+						"text": "Option A - This is the correct answer",
+						"isCorrect": true,
+						"rationale": "Explanation of why this is the correct answer"
+					},
+					{
+						"text": "Option B - This is incorrect",
+						"isCorrect": false,
+						"rationale": "Explanation of why this is wrong"
+					},
+					{
+						"text": "Option C - This is also incorrect",
+						"isCorrect": false,
+						"rationale": "Another explanation for incorrect option"
+					}
+				],
+				"hint": "Optional hint to help the student (appears after first wrong attempt)"
+			}
+		},
+
+		"fill_in_the_blanks": {
+			"description": "Ejercicio de completar espacios en blanco dentro de una oración",
+			"template": {
+				"type": "fill_in_the_blanks",
+				"question": "Complete the sentence with the correct word:",
+				"questionParts": [
+					"I have been ",
+					{
+						"answer": "working",
+						"label": "trabajando"
+					},
+					" here for five years."
+				],
+				"hint": "Think about the present perfect continuous tense"
+			}
+		},
+
+		"matching": {
+			"description": "Ejercicio de emparejar elementos de dos columnas",
+			"template": {
+				"type": "matching",
+				"question": "Match each word with its correct definition:",
+				"pairs": [
+					{
+						"text1": "Beautiful",
+						"text2": "Attractive to look at"
+					},
+					{
+						"text1": "Intelligent",
+						"text2": "Having great mental capacity"
+					},
+					{
+						"text1": "Generous",
+						"text2": "Willing to give and share"
+					}
+				],
+				"hint": "Think about the context where you would use each word"
+			}
+		},
+
+		"true_false": {
+			"description": "Ejercicio de verdadero o falso",
+			"template": {
+				"type": "true_false",
+				"question": "The sentence 'She don't like pizza' is grammatically correct.",
+				"answer": false,
+				"explanation": "The correct form should be 'She doesn't like pizza' because 'she' is third person singular and requires 'doesn't'."
+			}
+		},
+
+		"short_answer": {
+			"description": "Ejercicio de respuesta corta (standalone)",
+			"template": {
+				"type": "short_answer",
+				"question": "What is the past tense of the verb 'go'?",
+				"correctAnswer": "went",
+				"alternatives": ["gone"],
+				"caseSensitive": false,
+				"explanation": "'Went' is the simple past tense of the irregular verb 'go'. 'Gone' is the past participle."
+			}
+		},
+
+		"ordering": {
+			"description": "Ejercicio de ordenar palabras para formar una oración correcta",
+			"template": {
+				"type": "ordering",
+				"question": "Arrange these words to form a correct sentence:",
+				"items": ["yesterday", "went", "to the store", "I"],
+				"correctOrder": ["I", "went", "to the store", "yesterday"],
+				"explanation": "The correct sentence is: 'I went to the store yesterday.' This follows the Subject-Verb-Object-Time structure."
+			}
+		},
+
+		"reading_comprehension": {
+			"description": "Ejercicio de comprensión lectora con múltiples preguntas",
+			"template": {
+				"type": "reading_comprehension",
+				"question": "Read the following text and answer the questions:",
+				"readingText": ["Paragraph 1: This is the first paragraph of the reading passage. It introduces the main topic.", "Paragraph 2: This is the second paragraph. It develops the main idea with examples and details.", "Paragraph 3: This final paragraph concludes the passage with a summary or final thoughts."],
+				"questions": [
+					{
+						"type": "multiple_choice",
+						"questionText": "What is the main topic of the passage?",
+						"answerOptions": [
+							{ "text": "The correct answer about the main topic", "isCorrect": true },
+							{ "text": "An incorrect option", "isCorrect": false },
+							{ "text": "Another incorrect option", "isCorrect": false }
+						]
+					},
+					{
+						"type": "short_answer",
+						"questionText": "What example is given in paragraph 2?",
+						"correctAnswer": "The example mentioned in the passage",
+						"alternatives": ["Alternative correct answer"]
+					}
+				]
+			}
+		}
+	},
+
+	"completeQuizStructure": {
+		"description": "Estructura completa de un archivo de quiz con múltiples ejercicios",
+		"template": {
+			"title": "Quiz Title: Topic Name",
+			"description": "Brief description of what this quiz covers and its learning objectives.",
+			"questions": ["// Array of question objects using the templates above", "// Mix different exercise types for variety", "// Each question should follow one of the templates from exerciseTypes"]
+		}
+	},
+
+	"guidelines": {
+		"bestPractices": ["Always provide clear, concise questions", "Include helpful explanations and rationales", "Use hints to guide students without giving away answers", "Mix different exercise types for engagement", "Ensure cultural sensitivity and inclusivity", "Test difficulty should be appropriate for target level"],
+		"requiredFields": {
+			"all_exercises": ["type", "question"],
+			"multiple_choice": ["answerOptions with isCorrect"],
+			"fill_in_the_blanks": ["questionParts with answer objects"],
+			"matching": ["pairs array"],
+			"true_false": ["answer (boolean)", "explanation"],
+			"short_answer": ["correctAnswer"],
+			"ordering": ["items array", "correctOrder array"],
+			"reading_comprehension": ["readingText array", "questions array"]
+		},
+		"optionalFields": ["hint - Shown after first incorrect attempt", "explanation - Shown after exercise completion", "rationale - Specific to answer options", "alternatives - For short_answer exercises", "caseSensitive - For short_answer exercises (default: false)"]
+	},
+
+	"exampleMixedQuiz": {
+		"title": "Example: Mixed Exercise Quiz",
+		"description": "A sample quiz showing how to combine different exercise types",
+		"questions": [
+			{
+				"type": "multiple_choice",
+				"question": "Which sentence is correct?",
+				"answerOptions": [
+					{
+						"text": "I have been living here for five years.",
+						"isCorrect": true,
+						"rationale": "Present perfect continuous is correct for actions that started in the past and continue to the present."
+					},
+					{
+						"text": "I am living here for five years.",
+						"isCorrect": false,
+						"rationale": "Present continuous doesn't work with 'for five years' time expression."
+					}
+				],
+				"hint": "Think about which tense is used for actions that started in the past and continue now."
+			},
+			{
+				"type": "true_false",
+				"question": "The word 'data' is always singular in English.",
+				"answer": false,
+				"explanation": "'Data' can be both singular and plural. In formal writing, it's often treated as plural ('data are'), but in everyday usage, it's commonly used as singular ('data is')."
+			},
+			{
+				"type": "ordering",
+				"question": "Arrange these words to form a question:",
+				"items": ["you", "where", "do", "live", "?"],
+				"correctOrder": ["where", "do", "you", "live", "?"],
+				"explanation": "In English questions with 'where', the structure is: Question word + auxiliary verb + subject + main verb + ?"
+			}
+		]
+	},
+
+	"notes": {
+		"fileUsage": "This template file is for reference only and should not be loaded as an actual quiz in the application.",
+		"integration": "Use these templates to create new JSON files in the /model directory.",
+		"validation": "Always test new exercises in the application before deploying.",
+		"maintenance": "Update this template file when new exercise types are added to the application."
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"title": "True or False: English Grammar Basics",
+	"description": "Test your knowledge of basic English grammar rules.",
+	"questions": [
+		{
+			"type": "true_false",
+			"question": "The sentence 'She don't like pizza' is grammatically correct.",
+			"answer": false,
+			"explanation": "The correct form should be 'She doesn't like pizza' because 'she' is third person singular and requires 'doesn't'."
+		},
+		{
+			"type": "true_false",
+			"question": "In English, adjectives always come before nouns.",
+			"answer": false,
+			"explanation": "While adjectives usually come before nouns (e.g., 'red car'), they can also come after linking verbs (e.g., 'The car is red')."
+		},
+		{
+			"type": "true_false",
+			"question": "The past tense of 'go' is 'went'.",
+			"answer": true,
+			"explanation": "'Went' is indeed the correct past tense form of the irregular verb 'go'."
+		},
+		{
+			"type": "true_false",
+			"question": "You can use 'a' before words that start with vowel sounds.",
+			"answer": false,
+			"explanation": "You should use 'an' before words that start with vowel sounds (e.g., 'an apple', 'an hour')."
+		},
+		{
+			"type": "true_false",
+			"question": "The word 'information' is countable in English.",
+			"answer": false,
+			"explanation": "'Information' is an uncountable noun in English. You cannot say 'informations' or 'an information'."
+		},
+		{
+			"type": "true_false",
+			"question": "Double negatives are acceptable in standard English.",
+			"answer": false,
+			"explanation": "In standard English, double negatives are considered incorrect. Instead of 'I don't know nothing', use 'I don't know anything'."
+		},
+		{
+			"type": "true_false",
+			"question": "The present perfect tense describes actions that happened at a specific time in the past.",
+			"answer": false,
+			"explanation": "The present perfect tense (have/has + past participle) describes actions with relevance to the present, often without specifying when they occurred."
+		},
+		{
+			"type": "true_false",
+			"question": "All English words that end in '-ly' are adverbs.",
+			"answer": false,
+			"explanation": "While many adverbs end in '-ly', some adjectives also end in '-ly' (e.g., 'friendly', 'lonely', 'lovely')."
+		}
+	]
+}

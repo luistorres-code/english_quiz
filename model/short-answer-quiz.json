@@ -1,0 +1,62 @@
+{
+	"title": "Short Answer: English Vocabulary and Usage",
+	"description": "Answer these questions with short, precise responses to test your English knowledge.",
+	"questions": [
+		{
+			"type": "short_answer",
+			"question": "What is the past tense of the verb 'swim'?",
+			"answer": ["swam"],
+			"hints": ["This is an irregular verb", "Think about the vowel change pattern"],
+			"explanation": "The past tense of 'swim' is 'swam'. This follows the pattern of irregular verbs like ring-rang, sing-sang."
+		},
+		{
+			"type": "short_answer",
+			"question": "What word describes a person who writes novels?",
+			"answer": ["novelist", "author", "writer"],
+			"hints": ["This person creates fictional stories", "The word ends with '-ist'"],
+			"explanation": "A novelist is someone who writes novels. Author and writer are also acceptable broader terms."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the comparative form of the adjective 'good'?",
+			"answer": ["better"],
+			"hints": ["This is an irregular comparative", "It doesn't follow the '-er' pattern"],
+			"explanation": "The comparative form of 'good' is 'better', not 'gooder'. This is an irregular comparative form."
+		},
+		{
+			"type": "short_answer",
+			"question": "What do you call a group of sheep?",
+			"answer": ["flock", "herd"],
+			"hints": ["This is a collective noun", "It's also used for birds"],
+			"explanation": "A group of sheep is called a 'flock'. 'Herd' is also sometimes used, though it's more commonly associated with cattle."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the plural form of 'child'?",
+			"answer": ["children"],
+			"hints": ["This is an irregular plural", "It doesn't just add '-s' or '-es'"],
+			"explanation": "The plural of 'child' is 'children'. This is an irregular plural form that doesn't follow standard rules."
+		},
+		{
+			"type": "short_answer",
+			"question": "What word means 'afraid of heights'?",
+			"answer": ["acrophobic", "acrophobia"],
+			"hints": ["This is a phobia term", "It comes from Greek 'akron' meaning height"],
+			"explanation": "Someone afraid of heights is 'acrophobic' or has 'acrophobia'. The term comes from Greek roots."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the third person singular present of 'have'?",
+			"answer": ["has"],
+			"hints": ["Used with he, she, it", "Very common irregular verb"],
+			"explanation": "The third person singular present form of 'have' is 'has' (he has, she has, it has)."
+		},
+		{
+			"type": "short_answer",
+			"question": "What punctuation mark is used to show possession?",
+			"answer": ["apostrophe", "'"],
+			"hints": ["It looks like a comma but higher up", "Used in contractions too"],
+			"explanation": "An apostrophe (') is used to show possession (John's book) and in contractions (don't, can't)."
+		}
+	]
+}

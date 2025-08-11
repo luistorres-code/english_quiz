@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#8b9ddc"/>
+      <stop offset="100%" style="stop-color:#667eea"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Tentáculos simplificados -->
+  <path d="M8 20 Q6 24 4 28 Q6 30 8 26 Q10 22 12 20" fill="#667eea" opacity="0.8"/>
+  <path d="M12 21 Q10 26 8 30 Q10 32 12 28 Q14 24 16 21" fill="#667eea" opacity="0.8"/>
+  <path d="M20 21 Q22 26 24 30 Q22 32 20 28 Q18 24 16 21" fill="#667eea" opacity="0.8"/>
+  <path d="M24 20 Q26 24 28 28 Q26 30 24 26 Q22 22 20 20" fill="#667eea" opacity="0.8"/>
+  
+  <!-- Cuerpo principal -->
+  <ellipse cx="16" cy="13" rx="11" ry="8" fill="url(#bodyGrad)"/>
+  
+  <!-- Patrón interior -->
+  <ellipse cx="16" cy="12" rx="7" ry="5" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  
+  <!-- Ojos -->
+  <circle cx="12" cy="11" r="2" fill="#2d3748"/>
+  <circle cx="20" cy="11" r="2" fill="#2d3748"/>
+  <circle cx="12.5" cy="10.5" r="0.8" fill="white"/>
+  <circle cx="20.5" cy="10.5" r="0.8" fill="white"/>
+  
+  <!-- Sonrisa -->
+  <path d="M13 15 Q16 17 19 15" stroke="#2d3748" stroke-width="1" fill="none"/>
+</svg>

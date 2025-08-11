@@ -1,0 +1,62 @@
+{
+	"title": "Ordering Exercise: Sentence Structure",
+	"description": "Arrange the words or phrases in the correct order to form proper sentences.",
+	"questions": [
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct sentence:",
+			"items": ["yesterday", "went", "to the store", "I"],
+			"correctOrder": ["I", "went", "to the store", "yesterday"],
+			"explanation": "The correct sentence is: 'I went to the store yesterday.' This follows the Subject-Verb-Object-Time structure."
+		},
+		{
+			"type": "ordering",
+			"question": "Put these sentence parts in the correct order:",
+			"items": ["because it was raining", "we stayed inside", "all day"],
+			"correctOrder": ["we stayed inside", "all day", "because it was raining"],
+			"explanation": "The correct sentence is: 'We stayed inside all day because it was raining.' The main clause comes before the subordinate clause."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a question:",
+			"items": ["you", "are", "where", "going"],
+			"correctOrder": ["where", "are", "you", "going"],
+			"explanation": "The correct question is: 'Where are you going?' This follows the WH-word + auxiliary verb + subject + main verb pattern."
+		},
+		{
+			"type": "ordering",
+			"question": "Put these parts in order to form a conditional sentence:",
+			"items": ["I would call you", "if I had", "your phone number"],
+			"correctOrder": ["I would call you", "if I had", "your phone number"],
+			"explanation": "The correct conditional sentence is: 'I would call you if I had your phone number.' This is a second conditional structure."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these adjectives in the correct order before the noun:",
+			"items": ["car", "red", "small", "Japanese"],
+			"correctOrder": ["small", "red", "Japanese", "car"],
+			"explanation": "The correct order is: 'small red Japanese car.' Adjectives follow the order: size, color, origin/nationality, noun."
+		},
+		{
+			"type": "ordering",
+			"question": "Put these time expressions in chronological order:",
+			"items": ["next week", "yesterday", "now", "tomorrow"],
+			"correctOrder": ["yesterday", "now", "tomorrow", "next week"],
+			"explanation": "The chronological order is: yesterday (past), now (present), tomorrow (near future), next week (further future)."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a passive voice sentence:",
+			"items": ["was built", "the house", "in 1995", "by my grandfather"],
+			"correctOrder": ["the house", "was built", "by my grandfather", "in 1995"],
+			"explanation": "The correct passive sentence is: 'The house was built by my grandfather in 1995.' Subject + passive verb + agent + time."
+		},
+		{
+			"type": "ordering",
+			"question": "Put these phrases in order to form a complex sentence:",
+			"items": ["she decided to study abroad", "after graduating from university", "to improve her career prospects"],
+			"correctOrder": ["after graduating from university", "she decided to study abroad", "to improve her career prospects"],
+			"explanation": "The correct sentence is: 'After graduating from university, she decided to study abroad to improve her career prospects.' Time clause + main clause + purpose."
+		}
+	]
+}

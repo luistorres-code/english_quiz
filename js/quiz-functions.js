@@ -1,15 +1,133 @@
-/**
- * Funciones simples para el sistema de ejercicios de inglés
- * Enfoque funcional directo sin clases
- */
+// Análisis de respuestas
 
-// =============================================================================
-// UTILIDADES DOM
-// =============================================================================
+function levenshteinDistance(str1, str2) {
+	const matrix = [];
 
-/**
- * Crea un elemento DOM de manera segura
- */
+	for (let i = 0; i <= str2.length; i++) {
+		matrix[i] = [i];
+	}
+
+	for (let j = 0; j <= str1.length; j++) {
+		matrix[0][j] = j;
+	}
+
+	for (let i = 1; i <= str2.length; i++) {
+		for (let j = 1; j <= str1.length; j++) {
+			if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+				matrix[i][j] = matrix[i - 1][j - 1];
+			} else {
+				matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j] + 1);
+			}
+		}
+	}
+
+	return matrix[str2.length][str1.length];
+}
+
+function calculateSimilarity(str1, str2) {
+	const maxLength = Math.max(str1.length, str2.length);
+	if (maxLength === 0) return 100;
+
+	const distance = levenshteinDistance(str1, str2);
+	return ((maxLength - distance) / maxLength) * 100;
+}
+
+function normalizeString(str) {
+	// Verificar que str sea un string
+	if (typeof str !== "string") {
+		return "";
+	}
+
+	return str
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.replace(/[^\w\s]/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
+}
+
+function analyzeUserAnswer(userAnswer, correctAnswers) {
+	const normalizedUser = normalizeString(userAnswer);
+
+	// Si correctAnswers es un array, verificamos cada respuesta posible
+	const answersArray = Array.isArray(correctAnswers) ? correctAnswers : [correctAnswers];
+
+	// Buscar coincidencia exacta primero
+	for (const correctAnswer of answersArray) {
+		const normalizedCorrect = normalizeString(correctAnswer);
+		if (normalizedUser === normalizedCorrect) {
+			return {
+				isCorrect: true,
+				confidence: 100,
+				feedback: "¡Perfecto!",
+				allowRetry: false,
+			};
+		}
+	}
+
+	// Si no hay coincidencia exacta, buscar la mejor similitud
+	let bestSimilarity = 0;
+	let bestMatch = answersArray[0];
+
+	for (const correctAnswer of answersArray) {
+		const normalizedCorrect = normalizeString(correctAnswer);
+		const similarity = calculateSimilarity(normalizedUser, normalizedCorrect);
+		if (similarity > bestSimilarity) {
+			bestSimilarity = similarity;
+			bestMatch = correctAnswer;
+		}
+	}
+
+	if (bestSimilarity >= 85) {
+		return {
+			isCorrect: false,
+			confidence: bestSimilarity,
+			feedback: `Muy cerca! Hay un pequeño error. Inténtalo de nuevo.`,
+			allowRetry: true,
+			hint: `La respuesta esperada es similar a lo que escribiste.`,
+		};
+	}
+
+	// Moderadamente similar (algunos errores)
+	if (bestSimilarity >= 60) {
+		return {
+			isCorrect: false,
+			confidence: bestSimilarity,
+			feedback: `Tu respuesta tiene algunos errores. Te damos una segunda oportunidad.`,
+			allowRetry: true,
+			hint: `Pista: Las respuestas aceptables son: "${answersArray.join('", "')}"`,
+		};
+	}
+
+	// Contiene palabras clave importantes (usar la mejor coincidencia)
+	const normalizedBestMatch = normalizeString(bestMatch);
+	const userWords = normalizedUser.split(" ").filter((w) => w.length > 2);
+	const correctWords = normalizedBestMatch.split(" ").filter((w) => w.length > 2);
+	const matchingWords = userWords.filter((word) => correctWords.includes(word));
+
+	if (matchingWords.length > 0 && matchingWords.length >= correctWords.length * 0.5) {
+		return {
+			isCorrect: false,
+			confidence: 50,
+			feedback: `Tu respuesta contiene algunas palabras clave correctas, pero necesita mejoras.`,
+			allowRetry: true,
+			hint: `La respuesta correcta es: "${bestMatch}"`,
+		};
+	}
+
+	// Respuesta muy diferente
+	return {
+		isCorrect: false,
+		confidence: bestSimilarity,
+		feedback: `Tu respuesta no es correcta.`,
+		allowRetry: false,
+		hint: `La respuesta correcta es: "${bestMatch}"`,
+	};
+}
+
+// DOM utilities
+
 function createElement(tag, options = {}) {
 	const element = document.createElement(tag);
 
@@ -36,18 +154,12 @@ function createElement(tag, options = {}) {
 	return element;
 }
 
-/**
- * Limpia un contenedor
- */
 function clearContainer(container) {
 	while (container.firstChild) {
 		container.removeChild(container.firstChild);
 	}
 }
 
-/**
- * Mezcla un array
- */
 function shuffleArray(array) {
 	const shuffled = [...array];
 	for (let i = shuffled.length - 1; i > 0; i--) {
@@ -57,13 +169,10 @@ function shuffleArray(array) {
 	return shuffled;
 }
 
-// =============================================================================
+// ---
 // RENDERIZADO DE PREGUNTAS
-// =============================================================================
+// ---
 
-/**
- * Renderiza pregunta de opción múltiple
- */
 function renderMultipleChoice(container, questionData, onAnswerSelect) {
 	clearContainer(container);
 
@@ -117,9 +226,6 @@ function renderMultipleChoice(container, questionData, onAnswerSelect) {
 	container.appendChild(questionSection);
 }
 
-/**
- * Maneja click en respuesta
- */
 function handleAnswerClick(event, questionData, callback) {
 	const selectedButton = event.target;
 	const selectedIndex = parseInt(selectedButton.getAttribute("data-index"));
@@ -151,9 +257,6 @@ function handleAnswerClick(event, questionData, callback) {
 	callback(isCorrect, selectedIndex);
 }
 
-/**
- * Renderiza ejercicios de rellenar espacios
- */
 function renderFillInTheBlanks(container, questionData, onCheck) {
 	clearContainer(container);
 
@@ -234,9 +337,6 @@ function renderFillInTheBlanks(container, questionData, onCheck) {
 	container.appendChild(questionSection);
 }
 
-/**
- * Obtiene respuestas de espacios en blanco
- */
 function getFillInTheBlankAnswers(container) {
 	const inputs = container.querySelectorAll(".fill-blank-input");
 	return Array.from(inputs).map((input) => ({
@@ -246,9 +346,6 @@ function getFillInTheBlankAnswers(container) {
 	}));
 }
 
-/**
- * Renderiza ejercicios de matching
- */
 function renderMatching(container, questionData, onComplete) {
 	clearContainer(container);
 
@@ -299,9 +396,6 @@ function renderMatching(container, questionData, onComplete) {
 	initializeMatchingLogic(container, questionData, onComplete);
 }
 
-/**
- * Crea columna para matching
- */
 function createMatchingColumn(items, side, label) {
 	const column = createElement("div", {
 		className: `matching-column matching-${side}`,
@@ -330,9 +424,6 @@ function createMatchingColumn(items, side, label) {
 	return column;
 }
 
-/**
- * Inicializa lógica de matching
- */
 function initializeMatchingLogic(container, questionData, onComplete) {
 	let selectedLeft = null;
 	let selectedRight = null;
@@ -403,10 +494,7 @@ function initializeMatchingLogic(container, questionData, onComplete) {
 	});
 }
 
-/**
- * Renderiza comprensión lectora
- */
-function renderReadingComprehension(container, questionData, onAnswerSelect) {
+function renderReadingComprehension(container, questionData, mainQuestionIndex, onAnswerSelect) {
 	clearContainer(container);
 
 	const questionSection = createElement("section", {
@@ -423,6 +511,7 @@ function renderReadingComprehension(container, questionData, onAnswerSelect) {
 		attributes: { id: "reading-title" },
 	});
 
+	// Crear contenedor para el texto de lectura
 	const passageContainer = createElement("article", {
 		className: "reading-passage",
 		attributes: {
@@ -431,13 +520,255 @@ function renderReadingComprehension(container, questionData, onAnswerSelect) {
 		},
 	});
 
+	// Procesar el texto de lectura (puede ser array de párrafos o texto único)
 	const passageText = createElement("div", {
 		className: "passage-text",
-		textContent: questionData.passage,
 	});
+
+	if (questionData.readingText && Array.isArray(questionData.readingText)) {
+		// Si es un array de párrafos
+		questionData.readingText.forEach((paragraph) => {
+			const paragraphElement = createElement("p", {
+				textContent: paragraph,
+			});
+			passageText.appendChild(paragraphElement);
+		});
+	} else if (questionData.passage) {
+		// Si es texto único
+		passageText.textContent = questionData.passage;
+	}
 
 	passageContainer.appendChild(passageText);
 
+	// Agregar título y pasaje al contenedor principal
+	questionSection.appendChild(readingTitle);
+	questionSection.appendChild(passageContainer);
+
+	// Procesar las preguntas (puede haber múltiples)
+	if (questionData.questions && Array.isArray(questionData.questions)) {
+		// Múltiples preguntas dentro del ejercicio
+		renderMultipleReadingQuestions(questionSection, questionData.questions, mainQuestionIndex, onAnswerSelect);
+	} else if (questionData.answerOptions) {
+		// Pregunta única con opciones múltiples
+		renderSingleReadingQuestion(questionSection, questionData, onAnswerSelect);
+	}
+
+	container.appendChild(questionSection);
+}
+
+function renderMultipleReadingQuestions(container, questions, mainQuestionIndex, onAnswerSelect) {
+	let currentQuestionIndex = 0;
+	let answers = [];
+
+	function showNextReadingQuestion() {
+		if (currentQuestionIndex < questions.length) {
+			const question = questions[currentQuestionIndex];
+
+			// Actualizar progreso para esta sub-pregunta
+			if (window.exerciseSystem && window.exerciseSystem.updateReadingProgress) {
+				window.exerciseSystem.updateReadingProgress(currentQuestionIndex, questions.length, mainQuestionIndex);
+			}
+
+			// Limpiar pregunta anterior (pero mantener el pasaje)
+			const existingQuestion = container.querySelector(".current-reading-question");
+			if (existingQuestion) {
+				existingQuestion.remove();
+			}
+
+			const questionContainer = createElement("div", {
+				className: "current-reading-question",
+			});
+
+			if (question.type === "multiple_choice") {
+				renderReadingMultipleChoice(questionContainer, question, currentQuestionIndex, (isCorrect, selectedIndex) => {
+					answers.push({ questionIndex: currentQuestionIndex, isCorrect, selectedIndex });
+					currentQuestionIndex++;
+
+					setTimeout(() => {
+						if (currentQuestionIndex < questions.length) {
+							showNextReadingQuestion();
+						} else {
+							// Todas las preguntas respondidas - pasar información detallada
+							const correctAnswers = answers.filter((a) => a.isCorrect).length;
+							const totalQuestions = questions.length;
+							onAnswerSelect({
+								isComplete: true,
+								correctAnswers,
+								totalQuestions,
+								allCorrect: correctAnswers === totalQuestions,
+							});
+						}
+					}, 2000);
+				});
+			} else if (question.type === "short_answer") {
+				renderReadingShortAnswer(questionContainer, question, currentQuestionIndex, (isCorrect) => {
+					answers.push({ questionIndex: currentQuestionIndex, isCorrect });
+					currentQuestionIndex++;
+
+					setTimeout(() => {
+						if (currentQuestionIndex < questions.length) {
+							showNextReadingQuestion();
+						} else {
+							// Todas las preguntas respondidas - pasar información detallada
+							const correctAnswers = answers.filter((a) => a.isCorrect).length;
+							const totalQuestions = questions.length;
+							onAnswerSelect({
+								isComplete: true,
+								correctAnswers,
+								totalQuestions,
+								allCorrect: correctAnswers === totalQuestions,
+							});
+						}
+					}, 2000);
+				});
+			}
+
+			container.appendChild(questionContainer);
+		}
+	}
+
+	// Mostrar la primera pregunta
+	showNextReadingQuestion();
+}
+
+function renderReadingMultipleChoice(container, question, questionIndex, onAnswer) {
+	const questionTitle = createElement("h3", {
+		className: "comprehension-question",
+		textContent: `${questionIndex + 1}. ${question.questionText}`,
+		attributes: { id: `comprehension-question-${questionIndex}` },
+	});
+
+	const optionsContainer = createElement("fieldset", {
+		className: "comprehension-options",
+		attributes: {
+			role: "radiogroup",
+			"aria-labelledby": `comprehension-question-${questionIndex}`,
+		},
+	});
+
+	const legend = createElement("legend", {
+		textContent: "Selecciona la respuesta correcta:",
+		className: "visually-hidden",
+	});
+	optionsContainer.appendChild(legend);
+
+	question.answerOptions.forEach((option, index) => {
+		const optionButton = createElement("button", {
+			className: "comprehension-answer-button",
+			textContent: option.text,
+			attributes: {
+				type: "button",
+				"data-index": index,
+				role: "radio",
+				"aria-checked": "false",
+			},
+			events: {
+				click: (event) => handleReadingComprehensionAnswer(event, question, onAnswer),
+			},
+		});
+		optionsContainer.appendChild(optionButton);
+	});
+
+	container.appendChild(questionTitle);
+	container.appendChild(optionsContainer);
+}
+
+function renderReadingShortAnswer(container, question, questionIndex, onAnswer) {
+	const questionTitle = createElement("h3", {
+		className: "comprehension-question",
+		textContent: `${questionIndex + 1}. ${question.questionText}`,
+		attributes: { id: `short-answer-question-${questionIndex}` },
+	});
+
+	const inputContainer = createElement("div", {
+		className: "short-answer-container",
+	});
+
+	const input = createElement("input", {
+		className: "short-answer-input",
+		attributes: {
+			type: "text",
+			placeholder: "Escribe tu respuesta aquí...",
+			"aria-labelledby": `short-answer-question-${questionIndex}`,
+		},
+	});
+
+	// Agregar contador de intentos
+	let attemptCount = 0;
+	const maxAttempts = 2;
+
+	const submitButton = createElement("button", {
+		className: "short-answer-submit",
+		textContent: "Responder",
+		attributes: { type: "button" },
+		events: {
+			click: () => handleShortAnswerSubmit(),
+		},
+	});
+
+	// También permitir envío con Enter
+	input.addEventListener("keypress", (e) => {
+		if (e.key === "Enter" && !input.disabled) {
+			handleShortAnswerSubmit();
+		}
+	});
+
+	function handleShortAnswerSubmit() {
+		const userAnswer = input.value.trim();
+
+		if (!userAnswer) {
+			showTemporaryFeedback(inputContainer, "Por favor, escribe una respuesta.", false);
+			return;
+		}
+
+		attemptCount++;
+		const analysis = analyzeUserAnswer(userAnswer, question.correctAnswer);
+
+		// Si es correcto
+		if (analysis.isCorrect) {
+			input.disabled = true;
+			submitButton.disabled = true;
+			input.classList.add("correct");
+			showFeedback(container.closest(".question-section"), true, analysis.feedback);
+			onAnswer(true);
+			return;
+		}
+
+		// Si permite reintento y aún tiene intentos
+		if (analysis.allowRetry && attemptCount < maxAttempts) {
+			input.classList.add("warning");
+			submitButton.textContent = `Reintenta (${maxAttempts - attemptCount} ${maxAttempts - attemptCount === 1 ? "intento" : "intentos"} restante${maxAttempts - attemptCount === 1 ? "" : "s"})`;
+			showTemporaryFeedback(inputContainer, analysis.feedback + " " + (analysis.hint || ""), false);
+
+			// Limpiar el input para nuevo intento
+			setTimeout(() => {
+				input.value = "";
+				input.focus();
+			}, 2000);
+		} else {
+			// No más intentos o no permite reintento
+			input.disabled = true;
+			submitButton.disabled = true;
+			input.classList.add("incorrect");
+
+			const finalFeedback = attemptCount >= maxAttempts ? `Se agotaron los intentos. ${analysis.hint}` : analysis.hint;
+
+			showFeedback(container.closest(".question-section"), false, finalFeedback);
+			onAnswer(false);
+		}
+	}
+
+	inputContainer.appendChild(input);
+	inputContainer.appendChild(submitButton);
+
+	container.appendChild(questionTitle);
+	container.appendChild(inputContainer);
+
+	// Enfocar el input automáticamente
+	setTimeout(() => input.focus(), 100);
+}
+
+function renderSingleReadingQuestion(container, questionData, onAnswerSelect) {
 	const questionTitle = createElement("h3", {
 		className: "comprehension-question",
 		textContent: questionData.question,
@@ -475,16 +806,10 @@ function renderReadingComprehension(container, questionData, onAnswerSelect) {
 		optionsContainer.appendChild(optionButton);
 	});
 
-	questionSection.appendChild(readingTitle);
-	questionSection.appendChild(passageContainer);
-	questionSection.appendChild(questionTitle);
-	questionSection.appendChild(optionsContainer);
-	container.appendChild(questionSection);
+	container.appendChild(questionTitle);
+	container.appendChild(optionsContainer);
 }
 
-/**
- * Maneja respuesta de comprensión lectora
- */
 function handleReadingComprehensionAnswer(event, questionData, callback) {
 	const selectedButton = event.target;
 	const selectedIndex = parseInt(selectedButton.getAttribute("data-index"));
@@ -515,13 +840,10 @@ function handleReadingComprehensionAnswer(event, questionData, callback) {
 	callback(isCorrect, selectedIndex);
 }
 
-// =============================================================================
+// ---
 // FEEDBACK Y UTILIDADES
-// =============================================================================
+// ---
 
-/**
- * Muestra feedback
- */
 function showFeedback(container, isCorrect, message = "") {
 	const existingFeedback = container.querySelector(".feedback");
 	if (existingFeedback) {
@@ -556,9 +878,6 @@ function showFeedback(container, isCorrect, message = "") {
 	});
 }
 
-/**
- * Muestra feedback para matching
- */
 function showMatchingFeedback(container, isCorrect, message) {
 	const existingFeedback = container.querySelector(".matching-feedback");
 	if (existingFeedback) {
@@ -583,13 +902,10 @@ function showMatchingFeedback(container, isCorrect, message) {
 	}, 3000);
 }
 
-// =============================================================================
+// ---
 // RENDERIZADO DE RESULTADOS
-// =============================================================================
+// ---
 
-/**
- * Renderiza pantalla de resultados
- */
 function renderResults(container, resultsData) {
 	clearContainer(container);
 
@@ -704,9 +1020,6 @@ function renderResults(container, resultsData) {
 	container.style.display = "block";
 }
 
-/**
- * Crea item de detalle de puntuación
- */
 function createScoreDetailItem(number, label) {
 	const item = createElement("div", {
 		className: "score-detail-item",
@@ -727,24 +1040,459 @@ function createScoreDetailItem(number, label) {
 	return item;
 }
 
-/**
- * Determina clase de rendimiento
- */
 function getPerformanceClass(percentage) {
 	if (percentage >= 90) return "performance-excellent score-excellent";
 	if (percentage >= 70) return "performance-good score-good";
 	return "performance-fair score-fair";
 }
 
-// =============================================================================
-// PROGRESS BAR
-// =============================================================================
+// ---
+// FEEDBACK Y PROGRESS BAR
+// ---
 
-/**
- * Actualiza barra de progreso
- */
-function updateProgressBar(container, currentQuestion, totalQuestions) {
-	if (!container) return;
+function showTemporaryFeedback(container, message, isPositive = false) {
+	// Remover feedback anterior si existe
+	const existingFeedback = container.querySelector(".temporary-feedback");
+	if (existingFeedback) {
+		existingFeedback.remove();
+	}
+
+	const feedbackElement = createElement("div", {
+		className: `temporary-feedback ${isPositive ? "positive" : "negative"}`,
+		textContent: message,
+	});
+
+	container.appendChild(feedbackElement);
+
+	// Remover después de 3 segundos
+	setTimeout(() => {
+		if (feedbackElement.parentNode) {
+			feedbackElement.remove();
+		}
+	}, 3000);
+}
+
+function renderTrueFalse(container, questionData, onAnswer) {
+	clearContainer(container);
+
+	const questionSection = createElement("section", {
+		className: "question-section true-false",
+		attributes: { role: "main" },
+	});
+
+	const questionTitle = createElement("h2", {
+		className: "question-title",
+		textContent: questionData.question,
+	});
+
+	const optionsContainer = createElement("div", {
+		className: "true-false-buttons",
+	});
+
+	const trueButton = createElement("button", {
+		className: "true-false-button",
+		textContent: "Verdadero",
+		attributes: { "data-answer": "true" },
+		events: {
+			click: () => handleTrueFalseAnswer(true, questionData.answer, onAnswer),
+		},
+	});
+
+	const falseButton = createElement("button", {
+		className: "true-false-button",
+		textContent: "Falso",
+		attributes: { "data-answer": "false" },
+		events: {
+			click: () => handleTrueFalseAnswer(false, questionData.answer, onAnswer),
+		},
+	});
+
+	optionsContainer.appendChild(trueButton);
+	optionsContainer.appendChild(falseButton);
+
+	questionSection.appendChild(questionTitle);
+	questionSection.appendChild(optionsContainer);
+
+	container.appendChild(questionSection);
+
+	function handleTrueFalseAnswer(userAnswer, correctAnswer, callback) {
+		const isCorrect = userAnswer === correctAnswer;
+
+		trueButton.disabled = true;
+		falseButton.disabled = true;
+
+		if (isCorrect) {
+			(userAnswer ? trueButton : falseButton).classList.add("correct");
+			showFeedback(questionSection, true, questionData.explanation || "¡Correcto!");
+		} else {
+			(userAnswer ? trueButton : falseButton).classList.add("incorrect");
+			(correctAnswer ? trueButton : falseButton).classList.add("correct");
+			showFeedback(questionSection, false, questionData.explanation || "Respuesta incorrecta");
+		}
+
+		callback(isCorrect);
+	}
+}
+
+function renderShortAnswerStandalone(container, questionData, onAnswer) {
+	clearContainer(container);
+
+	const questionSection = createElement("section", {
+		className: "question-section short-answer-standalone",
+		attributes: { role: "main" },
+	});
+
+	const questionTitle = createElement("h2", {
+		className: "question-title",
+		textContent: questionData.question,
+	});
+
+	const inputContainer = createElement("div", {
+		className: "short-answer-container",
+	});
+
+	const input = createElement("input", {
+		className: "short-answer-input",
+		attributes: {
+			type: "text",
+			placeholder: "Escribe tu respuesta aquí...",
+		},
+	});
+
+	let attemptCount = 0;
+	const maxAttempts = 2;
+
+	const submitButton = createElement("button", {
+		className: "short-answer-submit",
+		textContent: "Responder",
+		events: {
+			click: () => handleShortAnswerSubmit(),
+		},
+	});
+
+	input.addEventListener("keypress", (e) => {
+		if (e.key === "Enter" && !input.disabled) {
+			handleShortAnswerSubmit();
+		}
+	});
+
+	function handleShortAnswerSubmit() {
+		const userAnswer = input.value.trim();
+
+		if (!userAnswer) {
+			showTemporaryFeedback(inputContainer, "Por favor, escribe una respuesta.", false);
+			return;
+		}
+
+		attemptCount++;
+		const analysis = analyzeUserAnswer(userAnswer, questionData.answer);
+
+		if (analysis.isCorrect) {
+			input.disabled = true;
+			submitButton.disabled = true;
+			input.classList.add("correct");
+			showFeedback(questionSection, true, questionData.explanation || analysis.feedback);
+			onAnswer(true);
+			return;
+		}
+
+		if (analysis.allowRetry && attemptCount < maxAttempts) {
+			input.classList.add("warning");
+			submitButton.textContent = `Reintenta (${maxAttempts - attemptCount} ${maxAttempts - attemptCount === 1 ? "intento" : "intentos"} restante${maxAttempts - attemptCount === 1 ? "" : "s"})`;
+			showTemporaryFeedback(inputContainer, analysis.feedback + " " + (questionData.hints && questionData.hints[0] ? questionData.hints[0] : ""), false);
+
+			setTimeout(() => {
+				input.value = "";
+				input.focus();
+			}, 2000);
+		} else {
+			input.disabled = true;
+			submitButton.disabled = true;
+			input.classList.add("incorrect");
+
+			const finalFeedback = attemptCount >= maxAttempts ? `Se agotaron los intentos. ${questionData.explanation || analysis.hint}` : questionData.explanation || analysis.hint;
+
+			showFeedback(questionSection, false, finalFeedback);
+			onAnswer(false);
+		}
+	}
+
+	inputContainer.appendChild(input);
+	inputContainer.appendChild(submitButton);
+
+	questionSection.appendChild(questionTitle);
+	questionSection.appendChild(inputContainer);
+
+	container.appendChild(questionSection);
+
+	setTimeout(() => input.focus(), 100);
+}
+
+function renderOrdering(container, questionData, onAnswer) {
+	clearContainer(container);
+
+	const questionSection = createElement("section", {
+		className: "question-section ordering",
+		attributes: { role: "main" },
+	});
+
+	const questionTitle = createElement("h2", {
+		className: "question-title",
+		textContent: questionData.question,
+	});
+
+	const instructionsText = createElement("p", {
+		className: "ordering-instructions",
+		textContent: "Haz clic en las palabras para formar la oración en el orden correcto:",
+	});
+
+	// Área donde se construye la oración
+	const sentenceBuilder = createElement("div", {
+		className: "sentence-builder",
+	});
+
+	const sentenceBuilderLabel = createElement("p", {
+		className: "sentence-builder-label",
+		textContent: "Tu oración:",
+	});
+
+	const sentenceContainer = createElement("div", {
+		className: "sentence-container",
+	});
+
+	const sentencePlaceholder = createElement("p", {
+		className: "sentence-placeholder",
+		textContent: "Haz clic en las palabras de abajo para construir tu oración...",
+	});
+
+	sentenceContainer.appendChild(sentencePlaceholder);
+
+	// Contenedor de palabras disponibles
+	const wordsContainer = createElement("div", {
+		className: "words-container",
+	});
+
+	const wordsLabel = createElement("p", {
+		className: "words-label",
+		textContent: "Palabras disponibles:",
+	});
+
+	const wordsGrid = createElement("div", {
+		className: "words-grid",
+	});
+
+	// Estado del ejercicio
+	let selectedWords = [];
+	let availableWords = shuffleArray([...questionData.items]);
+
+	// Crear botones de palabras
+	function createWordButtons() {
+		wordsGrid.innerHTML = "";
+
+		availableWords.forEach((word, index) => {
+			const wordButton = createElement("button", {
+				className: "word-button",
+				textContent: word,
+				attributes: {
+					"data-word": word,
+					"data-index": index,
+				},
+				events: {
+					click: () => selectWord(word, index),
+				},
+			});
+			wordsGrid.appendChild(wordButton);
+		});
+	}
+
+	// Actualizar la visualización de la oración construida
+	function updateSentenceDisplay() {
+		sentenceContainer.innerHTML = "";
+
+		if (selectedWords.length === 0) {
+			sentenceContainer.appendChild(sentencePlaceholder);
+			return;
+		}
+
+		selectedWords.forEach((word, index) => {
+			const wordChip = createElement("span", {
+				className: "sentence-word-chip",
+				textContent: word,
+				attributes: {
+					"data-word": word,
+					"data-position": index,
+				},
+				events: {
+					click: () => removeWord(index),
+				},
+			});
+
+			// Agregar botones de reordenamiento si hay más de una palabra
+			if (selectedWords.length > 1) {
+				if (index > 0) {
+					const moveLeftBtn = createElement("button", {
+						className: "move-button move-left",
+						textContent: "←",
+						attributes: {
+							title: "Mover a la izquierda",
+						},
+						events: {
+							click: (e) => {
+								e.stopPropagation();
+								moveWord(index, index - 1);
+							},
+						},
+					});
+					wordChip.appendChild(moveLeftBtn);
+				}
+
+				if (index < selectedWords.length - 1) {
+					const moveRightBtn = createElement("button", {
+						className: "move-button move-right",
+						textContent: "→",
+						attributes: {
+							title: "Mover a la derecha",
+						},
+						events: {
+							click: (e) => {
+								e.stopPropagation();
+								moveWord(index, index + 1);
+							},
+						},
+					});
+					wordChip.appendChild(moveRightBtn);
+				}
+			}
+
+			sentenceContainer.appendChild(wordChip);
+		});
+	}
+
+	// Seleccionar una palabra
+	function selectWord(word, buttonIndex) {
+		selectedWords.push(word);
+		availableWords.splice(buttonIndex, 1);
+		updateSentenceDisplay();
+		createWordButtons();
+		updateCheckButton();
+	}
+
+	// Remover una palabra de la oración
+	function removeWord(wordIndex) {
+		const word = selectedWords[wordIndex];
+		selectedWords.splice(wordIndex, 1);
+		availableWords.push(word);
+		availableWords = shuffleArray(availableWords); // Mezclar nuevamente
+		updateSentenceDisplay();
+		createWordButtons();
+		updateCheckButton();
+	}
+
+	// Mover una palabra en la oración
+	function moveWord(fromIndex, toIndex) {
+		const word = selectedWords[fromIndex];
+		selectedWords.splice(fromIndex, 1);
+		selectedWords.splice(toIndex, 0, word);
+		updateSentenceDisplay();
+	}
+
+	const checkButton = createElement("button", {
+		className: "ordering-check-button",
+		textContent: "Comprobar Orden",
+		attributes: {
+			disabled: "true",
+		},
+		events: {
+			click: () => checkOrderingAnswer(),
+		},
+	});
+
+	// Actualizar estado del botón de verificación
+	function updateCheckButton() {
+		if (selectedWords.length === questionData.items.length) {
+			checkButton.disabled = false;
+			checkButton.classList.remove("disabled");
+		} else {
+			checkButton.disabled = true;
+			checkButton.classList.add("disabled");
+		}
+	}
+
+	// Inicializar
+	createWordButtons();
+	updateCheckButton();
+
+	// Ensamblar la interfaz
+	sentenceBuilder.appendChild(sentenceBuilderLabel);
+	sentenceBuilder.appendChild(sentenceContainer);
+
+	wordsContainer.appendChild(wordsLabel);
+	wordsContainer.appendChild(wordsGrid);
+
+	questionSection.appendChild(questionTitle);
+	questionSection.appendChild(instructionsText);
+	questionSection.appendChild(sentenceBuilder);
+	questionSection.appendChild(wordsContainer);
+	questionSection.appendChild(checkButton);
+
+	container.appendChild(questionSection);
+
+	container.appendChild(questionSection);
+
+	function checkOrderingAnswer() {
+		const userOrder = selectedWords;
+		const correctOrder = questionData.correctOrder;
+
+		const isCorrect = JSON.stringify(userOrder) === JSON.stringify(correctOrder);
+
+		// Mostrar resultado en las palabras seleccionadas
+		const wordChips = sentenceContainer.querySelectorAll(".sentence-word-chip");
+		wordChips.forEach((chip, index) => {
+			// Deshabilitar botones de movimiento
+			const moveButtons = chip.querySelectorAll(".move-button");
+			moveButtons.forEach((btn) => btn.remove());
+
+			// Agregar clases de estado
+			if (userOrder[index] === correctOrder[index]) {
+				chip.classList.add("correct");
+			} else {
+				chip.classList.add("incorrect");
+			}
+
+			// Deshabilitar click para remover
+			chip.style.cursor = "default";
+			chip.onclick = null;
+		});
+
+		// Deshabilitar botones de palabras
+		const wordButtons = wordsGrid.querySelectorAll(".word-button");
+		wordButtons.forEach((button) => {
+			button.disabled = true;
+			button.classList.add("disabled");
+		});
+
+		checkButton.disabled = true;
+		checkButton.classList.add("disabled");
+		showFeedback(questionSection, isCorrect, questionData.explanation || (isCorrect ? "¡Orden correcto!" : "El orden no es correcto"));
+		onAnswer(isCorrect);
+	}
+}
+
+function shuffleArray(array) {
+	const shuffled = [...array];
+	for (let i = shuffled.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+	}
+	return shuffled;
+}
+
+function updateProgressBar(currentQuestion, totalQuestions) {
+	const container = document.getElementById("progress-container");
+
+	if (!container) {
+		return;
+	}
 
 	const percentage = Math.round((currentQuestion / totalQuestions) * 100);
 
@@ -768,9 +1516,6 @@ function updateProgressBar(container, currentQuestion, totalQuestions) {
 	}
 }
 
-/**
- * Oculta barra de progreso
- */
 function hideProgressBar(container) {
 	if (container) {
 		container.style.display = "none";

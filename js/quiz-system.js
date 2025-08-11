@@ -1,42 +1,31 @@
-// =============================================================================
-// VARIABLES GLOBALES
-// =============================================================================
-
+// Global state
 let exerciseData = null;
 let currentQuestionIndex = 0;
 let score = 0;
 let selectedMatchingItems = [];
 let matchedPairs = 0;
 let totalPairs = 0;
+let elements = {};
 
-// Referencias DOM
-const elements = {
-	container: document.getElementById("quiz"),
-	nextButton: document.getElementById("next-button"),
-	homeButton: document.getElementById("home-button"),
-	scoreDisplay: document.getElementById("score-display"),
-	progressContainer: document.getElementById("progress-container"),
-	selector: document.getElementById("quiz-select"),
-	loadButton: document.getElementById("load-quiz"),
-	selectorDiv: document.querySelector(".quiz-selector"),
-};
+// System initialization
 
-// =============================================================================
-// INICIALIZACIÓN
-// =============================================================================
-
-/**
- * Inicializa el sistema
- */
 function initializeSystem() {
+	// Inicializar referencias DOM cuando el sistema se inicializa
+	elements = {
+		container: document.getElementById("quiz"),
+		nextButton: document.getElementById("next-button"),
+		homeButton: document.getElementById("home-button"),
+		scoreDisplay: document.getElementById("score-display"),
+		progressContainer: document.getElementById("progress-container"),
+		selector: document.getElementById("quiz-select"),
+		loadButton: document.getElementById("load-quiz"),
+		selectorDiv: document.querySelector(".quiz-selector"),
+	};
+
 	setupEventListeners();
 	initializeFromURL();
-	console.log("Sistema de ejercicios inicializado correctamente");
 }
 
-/**
- * Configura los event listeners
- */
 function setupEventListeners() {
 	// Botón cargar ejercicio
 	if (elements.loadButton) {
@@ -69,13 +58,10 @@ function setupEventListeners() {
 	});
 }
 
-// =============================================================================
+// ---
 // CARGA Y GESTIÓN DE EJERCICIOS
-// =============================================================================
+// ---
 
-/**
- * Carga un ejercicio desde archivo JSON
- */
 async function loadExercise(exerciseFile) {
 	try {
 		const response = await fetch(`./model/${exerciseFile}`);
@@ -86,6 +72,9 @@ async function loadExercise(exerciseFile) {
 		exerciseData = await response.json();
 		exerciseData.questions = shuffleArray(exerciseData.questions);
 
+		// Calcular el total real de preguntas (incluyendo sub-preguntas)
+		exerciseData.totalRealQuestions = calculateTotalQuestions(exerciseData.questions);
+
 		resetExerciseState();
 		showExerciseInterface();
 		showQuestion(0);
@@ -95,17 +84,32 @@ async function loadExercise(exerciseFile) {
 	}
 }
 
-/**
- * Muestra una pregunta específica
- */
+function calculateTotalQuestions(questions) {
+	let total = 0;
+	questions.forEach((question) => {
+		if (question.type === "reading_comprehension" && question.questions && Array.isArray(question.questions)) {
+			// Comprensión lectora con múltiples sub-preguntas
+			total += question.questions.length;
+		} else {
+			// Pregunta normal
+			total += 1;
+		}
+	});
+	return total;
+}
+
 function showQuestion(questionIndex) {
 	if (!exerciseData?.questions) return;
 
 	const questionData = exerciseData.questions[questionIndex];
 	resetQuestionState();
 
+	// Calcular progreso considerando sub-preguntas de comprensión lectora
+	const totalQuestions = calculateTotalQuestions(exerciseData);
+	const currentQuestionNumber = calculateCurrentQuestionNumber(exerciseData, questionIndex);
+
 	// Actualizar progreso
-	updateProgressBar(elements.progressContainer, questionIndex + 1, exerciseData.questions.length);
+	updateProgressBar(currentQuestionNumber, totalQuestions);
 
 	// Renderizar según el tipo de ejercicio
 	const exerciseType = questionData.type || "multiple_choice";
@@ -121,16 +125,21 @@ function showQuestion(questionIndex) {
 		case "reading_comprehension":
 			renderReadingComprehensionExercise(questionData);
 			break;
+		case "true_false":
+			renderTrueFalseExercise(questionData);
+			break;
+		case "short_answer":
+			renderShortAnswerExercise(questionData);
+			break;
+		case "ordering":
+			renderOrderingExercise(questionData);
+			break;
 		case "multiple_choice":
 		default:
 			renderMultipleChoiceExercise(questionData);
 			break;
 	}
 }
-
-/**
- * Renderiza ejercicio de opción múltiple
- */
 function renderMultipleChoiceExercise(questionData) {
 	renderMultipleChoice(elements.container, questionData, (isCorrect) => {
 		if (isCorrect) score++;
@@ -138,9 +147,6 @@ function renderMultipleChoiceExercise(questionData) {
 	});
 }
 
-/**
- * Renderiza ejercicio de rellenar espacios
- */
 function renderFillInTheBlankExercise(questionData) {
 	renderFillInTheBlanks(elements.container, questionData, (answers) => {
 		let isCorrect = true;
@@ -170,9 +176,6 @@ function renderFillInTheBlankExercise(questionData) {
 	});
 }
 
-/**
- * Renderiza ejercicio de matching
- */
 function renderMatchingExercise(questionData) {
 	renderMatching(elements.container, questionData, (isComplete, isCorrect) => {
 		if (isComplete) {
@@ -184,23 +187,46 @@ function renderMatchingExercise(questionData) {
 	});
 }
 
-/**
- * Renderiza ejercicio de comprensión lectora
- */
 function renderReadingComprehensionExercise(questionData) {
-	renderReadingComprehension(elements.container, questionData, (isCorrect) => {
+	renderReadingComprehension(elements.container, questionData, currentQuestionIndex, (result) => {
+		if (typeof result === "object" && result.isComplete) {
+			// Comprensión lectora con múltiples preguntas
+			score += result.correctAnswers;
+			// Ajustar el índice para reflejar las preguntas múltiples
+			currentQuestionIndex += result.totalQuestions - 1;
+		} else {
+			// Comprensión lectora tradicional (una sola pregunta)
+			if (result) score++;
+		}
+		showNextButton();
+	});
+}
+
+function renderTrueFalseExercise(questionData) {
+	renderTrueFalse(elements.container, questionData, (isCorrect) => {
 		if (isCorrect) score++;
 		showNextButton();
 	});
 }
 
-// =============================================================================
-// UTILIDADES DE EJERCICIOS
-// =============================================================================
+function renderShortAnswerExercise(questionData) {
+	renderShortAnswerStandalone(elements.container, questionData, (isCorrect) => {
+		if (isCorrect) score++;
+		showNextButton();
+	});
+}
 
-/**
- * Muestra respuesta correcta para input incorrecto
- */
+function renderOrderingExercise(questionData) {
+	renderOrdering(elements.container, questionData, (isCorrect) => {
+		if (isCorrect) score++;
+		showNextButton();
+	});
+}
+
+// ---
+// UTILIDADES DE EJERCICIOS
+// ---
+
 function showCorrectAnswer(input, correctAnswer) {
 	const correctSpan = createElement("span", {
 		className: "correct-answer",
@@ -209,9 +235,6 @@ function showCorrectAnswer(input, correctAnswer) {
 	input.parentNode.insertBefore(correctSpan, input.nextSibling);
 }
 
-/**
- * Crea mensaje de feedback para fill-in-the-blanks
- */
 function createFillInFeedbackMessage(answers, questionData) {
 	const incorrectAnswers = answers.filter(({ userAnswer, correctAnswer }) => userAnswer.toLowerCase() !== correctAnswer.toLowerCase());
 
@@ -230,13 +253,57 @@ function createFillInFeedbackMessage(answers, questionData) {
 	return message;
 }
 
-// =============================================================================
-// NAVEGACIÓN Y FLUJO
-// =============================================================================
+// ---
+// UTILIDADES DE CONTEO
+// ---
 
-/**
- * Pasa a la siguiente pregunta o muestra resultados
- */
+function updateReadingProgress(subQuestionIndex, totalSubQuestions, mainQuestionIndex) {
+	const totalQuestions = calculateTotalQuestions(exerciseData);
+	const questionsBeforeCurrent = calculateCurrentQuestionNumber(exerciseData, mainQuestionIndex) - 1;
+	const currentQuestionNumber = questionsBeforeCurrent + subQuestionIndex + 1;
+
+	updateProgressBar(currentQuestionNumber, totalQuestions);
+}
+
+function calculateTotalQuestions(exerciseData) {
+	if (!exerciseData?.questions) return 0;
+
+	let total = 0;
+	exerciseData.questions.forEach((question) => {
+		if (question.type === "reading_comprehension" && question.questions && Array.isArray(question.questions)) {
+			// Para comprensión lectora, contar las sub-preguntas
+			total += question.questions.length;
+		} else {
+			// Para otros tipos, contar como 1
+			total += 1;
+		}
+	});
+	return total;
+}
+
+function calculateCurrentQuestionNumber(exerciseData, currentIndex) {
+	if (!exerciseData?.questions) return 0;
+
+	let currentNumber = 0;
+
+	// Contar preguntas hasta el índice actual
+	for (let i = 0; i < currentIndex && i < exerciseData.questions.length; i++) {
+		const question = exerciseData.questions[i];
+		if (question.type === "reading_comprehension" && question.questions && Array.isArray(question.questions)) {
+			currentNumber += question.questions.length;
+		} else {
+			currentNumber += 1;
+		}
+	}
+
+	// Agregar 1 para la pregunta actual (siempre mostramos "pregunta X de Y")
+	return currentNumber + 1;
+}
+
+// ---
+// NAVEGACIÓN Y FLUJO
+// ---
+
 function nextQuestion() {
 	currentQuestionIndex++;
 	if (currentQuestionIndex < exerciseData.questions.length) {
@@ -246,16 +313,14 @@ function nextQuestion() {
 	}
 }
 
-/**
- * Muestra los resultados finales
- */
 function showResults() {
 	// Ocultar elementos del ejercicio
 	elements.container.style.display = "none";
 	elements.nextButton.style.display = "none";
 	hideProgressBar(elements.progressContainer);
 
-	const totalQuestions = exerciseData.questions.length;
+	// Usar el total real de preguntas (incluyendo sub-preguntas)
+	const totalQuestions = exerciseData.totalRealQuestions || exerciseData.questions.length;
 	const percentage = Math.round((score / totalQuestions) * 100);
 
 	// Determinar nivel de rendimiento
@@ -276,9 +341,6 @@ function showResults() {
 	renderResults(elements.scoreDisplay, resultsData);
 }
 
-/**
- * Obtiene datos de rendimiento basados en el porcentaje
- */
 function getPerformanceData(percentage) {
 	if (percentage >= 90) {
 		return {
@@ -303,9 +365,6 @@ function getPerformanceData(percentage) {
 	}
 }
 
-/**
- * Reinicia el ejercicio actual
- */
 function retryExercise() {
 	currentQuestionIndex = 0;
 	score = 0;
@@ -320,18 +379,12 @@ function retryExercise() {
 	showQuestion(0);
 }
 
-/**
- * Vuelve al estado inicial
- */
 function goHome() {
 	resetSystem();
 	showHomeInterface();
 	updateURL(null);
 }
 
-/**
- * Comparte los resultados
- */
 function shareResults(percentage, score, total) {
 	const shareText = `¡Acabo de completar el ejercicio "${exerciseData.title}" con un ${percentage}% de aciertos! (${score}/${total})`;
 
@@ -355,13 +408,10 @@ function shareResults(percentage, score, total) {
 	}
 }
 
-// =============================================================================
+// ---
 // GESTIÓN DE ESTADO
-// =============================================================================
+// ---
 
-/**
- * Resetea el estado del sistema completo
- */
 function resetSystem() {
 	exerciseData = null;
 	currentQuestionIndex = 0;
@@ -369,18 +419,12 @@ function resetSystem() {
 	resetQuestionState();
 }
 
-/**
- * Resetea el estado específico de la pregunta
- */
 function resetQuestionState() {
 	selectedMatchingItems = [];
 	matchedPairs = 0;
 	totalPairs = 0;
 }
 
-/**
- * Resetea el estado del ejercicio
- */
 function resetExerciseState() {
 	clearContainer(elements.container);
 	elements.nextButton.style.display = "none";
@@ -388,13 +432,10 @@ function resetExerciseState() {
 	clearContainer(elements.scoreDisplay);
 }
 
-// =============================================================================
+// ---
 // INTERFAZ
-// =============================================================================
+// ---
 
-/**
- * Muestra la interfaz del ejercicio
- */
 function showExerciseInterface() {
 	elements.container.style.display = "block";
 
@@ -409,9 +450,6 @@ function showExerciseInterface() {
 	updatePageContent();
 }
 
-/**
- * Muestra la interfaz inicial
- */
 function showHomeInterface() {
 	if (elements.homeButton) {
 		elements.homeButton.style.display = "none";
@@ -432,9 +470,6 @@ function showHomeInterface() {
 	hideProgressBar(elements.progressContainer);
 }
 
-/**
- * Actualiza el contenido de la página con datos del ejercicio
- */
 function updatePageContent() {
 	const titleElement = document.querySelector("h1");
 	const descriptionElement = document.querySelector("#main-description");
@@ -448,9 +483,6 @@ function updatePageContent() {
 	}
 }
 
-/**
- * Restaura el contenido original de la página
- */
 function restoreOriginalContent() {
 	const titleElement = document.querySelector("h1");
 	const descriptionElement = document.querySelector("#main-description");
@@ -464,22 +496,16 @@ function restoreOriginalContent() {
 	}
 }
 
-// =============================================================================
+// ---
 // UTILIDADES DE UI
-// =============================================================================
+// ---
 
-/**
- * Muestra el botón siguiente
- */
 function showNextButton() {
 	if (elements.nextButton) {
 		elements.nextButton.style.display = "block";
 	}
 }
 
-/**
- * Oculta el botón de check
- */
 function hideCheckButton() {
 	const checkButton = elements.container.querySelector(".check-button");
 	if (checkButton) {
@@ -487,9 +513,6 @@ function hideCheckButton() {
 	}
 }
 
-/**
- * Muestra un error
- */
 function showError(message) {
 	clearContainer(elements.container);
 
@@ -510,20 +533,14 @@ function showError(message) {
 	elements.container.style.display = "block";
 }
 
-/**
- * Muestra un mensaje temporal
- */
 function showTemporaryMessage(message) {
 	console.log(message); // Placeholder - se puede mejorar con un toast
 }
 
-// =============================================================================
+// ---
 // GESTIÓN DE URL
-// =============================================================================
+// ---
 
-/**
- * Inicializa desde la URL si hay parámetros
- */
 function initializeFromURL() {
 	const exerciseFromURL = getExerciseFromURL();
 	if (exerciseFromURL && elements.selector) {
@@ -533,9 +550,6 @@ function initializeFromURL() {
 	}
 }
 
-/**
- * Maneja la navegación del navegador
- */
 function handleBrowserNavigation() {
 	const exerciseFromURL = getExerciseFromURL();
 
@@ -548,31 +562,19 @@ function handleBrowserNavigation() {
 	}
 }
 
-/**
- * Obtiene el ejercicio desde la URL
- */
 function getExerciseFromURL() {
 	const urlParams = new URLSearchParams(window.location.search);
 	return urlParams.get("exercise") || urlParams.get("quiz");
 }
 
-/**
- * Convierte nombre de ejercicio a nombre de archivo
- */
 function exerciseNameToFile(exerciseName) {
 	return exerciseName.includes(".json") ? exerciseName : `${exerciseName}.json`;
 }
 
-/**
- * Convierte nombre de archivo a nombre limpio
- */
 function fileToExerciseName(fileName) {
 	return fileName.replace(".json", "");
 }
 
-/**
- * Actualiza la URL con el ejercicio seleccionado
- */
 function updateURL(exerciseFile) {
 	const url = new URL(window.location);
 	if (exerciseFile) {

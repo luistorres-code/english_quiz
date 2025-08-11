@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EngliFish - JSON Quiz Validator</title>
+		<style>
+			body {
+				font-family: Inter, Arial, sans-serif;
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 20px;
+				background: linear-gradient(135deg, #667eea 0%, #8b9ddc 100%);
+				min-height: 100vh;
+			}
+
+			.container {
+				background: rgba(255, 255, 255, 0.95);
+				border-radius: 20px;
+				padding: 30px;
+				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			}
+
+			h1 {
+				color: #2d3748;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			.subtitle {
+				text-align: center;
+				color: #718096;
+				margin-bottom: 30px;
+			}
+
+			textarea {
+				width: 100%;
+				height: 400px;
+				padding: 15px;
+				border: 2px solid #e2e8f0;
+				border-radius: 12px;
+				font-family: "Courier New", monospace;
+				font-size: 14px;
+				resize: vertical;
+				box-sizing: border-box;
+			}
+
+			.button-group {
+				display: flex;
+				gap: 15px;
+				margin: 20px 0;
+				justify-content: center;
+			}
+
+			button {
+				padding: 12px 24px;
+				border: none;
+				border-radius: 12px;
+				font-weight: 500;
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}
+
+			.validate-btn {
+				background: linear-gradient(135deg, #48bb78 0%, #68d391 100%);
+				color: white;
+			}
+
+			.validate-btn:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+			}
+
+			.clear-btn {
+				background: linear-gradient(135deg, #667eea 0%, #8b9ddc 100%);
+				color: white;
+			}
+
+			.clear-btn:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+			}
+
+			.load-template-btn {
+				background: rgba(255, 255, 255, 0.9);
+				color: #4a5568;
+				border: 2px solid #e2e8f0;
+			}
+
+			.load-template-btn:hover {
+				background: white;
+				border-color: #cbd5e0;
+				transform: translateY(-1px);
+			}
+
+			.result {
+				margin-top: 20px;
+				padding: 15px;
+				border-radius: 12px;
+				font-weight: 500;
+			}
+
+			.success {
+				background: linear-gradient(135deg, #f0fff4 0%, #e6ffed 100%);
+				border: 2px solid #9ae6b4;
+				color: #22543d;
+			}
+
+			.error {
+				background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+				border: 2px solid #fc8181;
+				color: #742a2a;
+			}
+
+			.warning {
+				background: linear-gradient(135deg, #fffbeb 0%, #fef9e7 100%);
+				border: 2px solid #f6ad55;
+				color: #744210;
+			}
+
+			.details {
+				margin-top: 10px;
+				font-size: 0.9em;
+				line-height: 1.5;
+			}
+
+			.stats {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 15px;
+				margin-top: 15px;
+			}
+
+			.stat-card {
+				background: rgba(255, 255, 255, 0.7);
+				padding: 15px;
+				border-radius: 10px;
+				text-align: center;
+			}
+
+			.stat-number {
+				font-size: 1.5em;
+				font-weight: 600;
+				color: #667eea;
+			}
+
+			.stat-label {
+				font-size: 0.9em;
+				color: #718096;
+				margin-top: 5px;
+			}
+
+			.instructions {
+				background: rgba(102, 126, 234, 0.1);
+				padding: 15px;
+				border-radius: 10px;
+				margin-bottom: 20px;
+				border-left: 4px solid #667eea;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>🧞‍♀️ EngliFish JSON Quiz Validator</h1>
+			<p class="subtitle">Valida la estructura de tus archivos JSON de quiz antes de usar en EngliFish</p>
+
+			<div class="instructions">
+				<strong>Instrucciones:</strong>
+				<ol>
+					<li>Pega tu JSON de quiz en el área de texto</li>
+					<li>Haz clic en "Validar JSON" para verificar la estructura</li>
+					<li>Revisa los resultados y corrige cualquier error</li>
+					<li>¡Tu quiz estará listo para usar en EngliFish!</li>
+				</ol>
+			</div>
+
+			<textarea
+				id="jsonInput"
+				placeholder='Pega tu JSON aquí... 
+
+Ejemplo:
+{
+  "title": "Mi Quiz",
+  "description": "Descripción del quiz",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "¿Cuál es la respuesta correcta?",
+      "answerOptions": [
+        {
+          "text": "Opción A",
+          "isCorrect": true,
+          "rationale": "Esta es correcta porque..."
+        }
+      ]
+    }
+  ]
+}'></textarea>
+
+			<div class="button-group">
+				<button class="validate-btn" onclick="validateJSON()">🔍 Validar JSON</button>
+				<button class="load-template-btn" onclick="loadSampleTemplate()">📋 Cargar Ejemplo</button>
+				<button class="clear-btn" onclick="clearInput()">🗑️ Limpiar</button>
+			</div>
+
+			<div id="result"></div>
+		</div>
+
+		<script>
+			const requiredFields = {
+				all: ["type", "question"],
+				multiple_choice: ["answerOptions"],
+				fill_in_the_blanks: ["questionParts"],
+				matching: ["pairs"],
+				true_false: ["answer", "explanation"],
+				short_answer: ["correctAnswer"],
+				ordering: ["items", "correctOrder"],
+				reading_comprehension: ["readingText", "questions"],
+			};
+
+			function validateJSON() {
+				const input = document.getElementById("jsonInput").value.trim();
+				const resultDiv = document.getElementById("result");
+
+				if (!input) {
+					showResult("error", "Por favor, ingresa un JSON para validar.");
+					return;
+				}
+
+				try {
+					const quiz = JSON.parse(input);
+					const validation = validateQuizStructure(quiz);
+
+					if (validation.isValid) {
+						showSuccessResult(validation);
+					} else {
+						showErrorResult(validation);
+					}
+				} catch (error) {
+					showResult("error", "Error de sintaxis JSON", `El JSON no es válido: ${error.message}`);
+				}
+			}
+
+			function validateQuizStructure(quiz) {
+				const result = {
+					isValid: true,
+					errors: [],
+					warnings: [],
+					stats: {
+						totalQuestions: 0,
+						questionTypes: {},
+						hasTitle: !!quiz.title,
+						hasDescription: !!quiz.description,
+					},
+				};
+
+				// Validar estructura básica
+				if (!quiz.title) {
+					result.warnings.push("Se recomienda incluir un título para el quiz");
+				}
+
+				if (!quiz.description) {
+					result.warnings.push("Se recomienda incluir una descripción del quiz");
+				}
+
+				if (!quiz.questions || !Array.isArray(quiz.questions)) {
+					result.isValid = false;
+					result.errors.push('El quiz debe tener un array "questions"');
+					return result;
+				}
+
+				if (quiz.questions.length === 0) {
+					result.isValid = false;
+					result.errors.push("El quiz debe tener al menos una pregunta");
+					return result;
+				}
+
+				// Validar cada pregunta
+				quiz.questions.forEach((question, index) => {
+					const questionResult = validateQuestion(question, index + 1);
+
+					if (!questionResult.isValid) {
+						result.isValid = false;
+						result.errors.push(...questionResult.errors);
+					}
+
+					result.warnings.push(...questionResult.warnings);
+
+					// Estadísticas
+					if (question.type) {
+						result.stats.questionTypes[question.type] = (result.stats.questionTypes[question.type] || 0) + 1;
+					}
+				});
+
+				result.stats.totalQuestions = quiz.questions.length;
+
+				return result;
+			}
+
+			function validateQuestion(question, questionNumber) {
+				const result = {
+					isValid: true,
+					errors: [],
+					warnings: [],
+				};
+
+				const prefix = `Pregunta ${questionNumber}`;
+
+				// Validar campos requeridos básicos
+				requiredFields.all.forEach((field) => {
+					if (!question[field]) {
+						result.isValid = false;
+						result.errors.push(`${prefix}: Falta el campo requerido "${field}"`);
+					}
+				});
+
+				if (!question.type) return result;
+
+				// Validar campos específicos por tipo
+				const specificFields = requiredFields[question.type];
+				if (specificFields) {
+					specificFields.forEach((field) => {
+						if (!question[field]) {
+							result.isValid = false;
+							result.errors.push(`${prefix}: El tipo "${question.type}" requiere el campo "${field}"`);
+						}
+					});
+				}
+
+				// Validaciones específicas por tipo
+				switch (question.type) {
+					case "multiple_choice":
+						validateMultipleChoice(question, prefix, result);
+						break;
+					case "matching":
+						validateMatching(question, prefix, result);
+						break;
+					case "reading_comprehension":
+						validateReadingComprehension(question, prefix, result);
+						break;
+				}
+
+				return result;
+			}
+
+			function validateMultipleChoice(question, prefix, result) {
+				if (question.answerOptions && Array.isArray(question.answerOptions)) {
+					const correctAnswers = question.answerOptions.filter((opt) => opt.isCorrect);
+
+					if (correctAnswers.length === 0) {
+						result.errors.push(`${prefix}: Debe haber al menos una respuesta correcta`);
+						result.isValid = false;
+					}
+
+					if (correctAnswers.length > 1) {
+						result.warnings.push(`${prefix}: Hay múltiples respuestas correctas. ¿Es intencional?`);
+					}
+
+					question.answerOptions.forEach((option, idx) => {
+						if (!option.text) {
+							result.errors.push(`${prefix}: La opción ${idx + 1} necesita texto`);
+							result.isValid = false;
+						}
+
+						if (typeof option.isCorrect !== "boolean") {
+							result.errors.push(`${prefix}: La opción ${idx + 1} necesita isCorrect (true/false)`);
+							result.isValid = false;
+						}
+					});
+				}
+			}
+
+			function validateMatching(question, prefix, result) {
+				if (question.pairs && Array.isArray(question.pairs)) {
+					question.pairs.forEach((pair, idx) => {
+						if (!pair.text1 || !pair.text2) {
+							result.errors.push(`${prefix}: El par ${idx + 1} necesita text1 y text2`);
+							result.isValid = false;
+						}
+					});
+
+					if (question.pairs.length < 2) {
+						result.warnings.push(`${prefix}: Se recomienda tener al menos 2 pares para matching`);
+					}
+				}
+			}
+
+			function validateReadingComprehension(question, prefix, result) {
+				if (question.questions && Array.isArray(question.questions)) {
+					question.questions.forEach((subQ, idx) => {
+						const subResult = validateQuestion(subQ, `${prefix}.${idx + 1}`);
+						if (!subResult.isValid) {
+							result.isValid = false;
+							result.errors.push(...subResult.errors);
+						}
+						result.warnings.push(...subResult.warnings);
+					});
+				}
+			}
+
+			function showSuccessResult(validation) {
+				const typesList = Object.entries(validation.stats.questionTypes)
+					.map(([type, count]) => `${type}: ${count}`)
+					.join(", ");
+
+				let details = `
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">${validation.stats.totalQuestions}</div>
+                        <div class="stat-label">Total Preguntas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${Object.keys(validation.stats.questionTypes).length}</div>
+                        <div class="stat-label">Tipos de Ejercicios</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${validation.stats.hasTitle ? "✅" : "❌"}</div>
+                        <div class="stat-label">Título</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${validation.stats.hasDescription ? "✅" : "❌"}</div>
+                        <div class="stat-label">Descripción</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <strong>Tipos de ejercicios:</strong> ${typesList || "Ninguno detectado"}
+                </div>
+            `;
+
+				if (validation.warnings.length > 0) {
+					details += `
+                    <div class="details" style="margin-top: 15px;">
+                        <strong>⚠️ Advertencias:</strong>
+                        <ul style="margin: 5px 0 0 20px;">
+                            ${validation.warnings.map((w) => `<li>${w}</li>`).join("")}
+                        </ul>
+                    </div>
+                `;
+				}
+
+				showResult("success", "✅ JSON Válido - Listo para usar en EngliFish", details);
+			}
+
+			function showErrorResult(validation) {
+				let details = `
+                <div class="details">
+                    <strong>❌ Errores encontrados:</strong>
+                    <ul style="margin: 5px 0 0 20px;">
+                        ${validation.errors.map((error) => `<li>${error}</li>`).join("")}
+                    </ul>
+                </div>
+            `;
+
+				if (validation.warnings.length > 0) {
+					details += `
+                    <div class="details" style="margin-top: 15px;">
+                        <strong>⚠️ Advertencias:</strong>
+                        <ul style="margin: 5px 0 0 20px;">
+                            ${validation.warnings.map((w) => `<li>${w}</li>`).join("")}
+                        </ul>
+                    </div>
+                `;
+				}
+
+				showResult("error", "JSON Inválido - Corrige los errores", details);
+			}
+
+			function showResult(type, message, details = "") {
+				const resultDiv = document.getElementById("result");
+				resultDiv.className = `result ${type}`;
+				resultDiv.innerHTML = `
+                <div>${message}</div>
+                ${details}
+            `;
+			}
+
+			function loadSampleTemplate() {
+				const template = {
+					title: "Quiz de Ejemplo - EngliFish",
+					description: "Un quiz de ejemplo que demuestra diferentes tipos de ejercicios",
+					questions: [
+						{
+							type: "multiple_choice",
+							question: "Which sentence is grammatically correct?",
+							answerOptions: [
+								{
+									text: "She doesn't like pizza",
+									isCorrect: true,
+									rationale: "Correct use of third person singular with 'doesn't'",
+								},
+								{
+									text: "She don't like pizza",
+									isCorrect: false,
+									rationale: "Incorrect - should use 'doesn't' with third person singular",
+								},
+							],
+							hint: "Think about third person singular verb forms",
+						},
+						{
+							type: "true_false",
+							question: "English is the most spoken language in the world.",
+							answer: false,
+							explanation: "Mandarin Chinese is actually the most spoken language by number of native speakers, though English is widely used as a second language globally.",
+						},
+					],
+				};
+
+				document.getElementById("jsonInput").value = JSON.stringify(template, null, 2);
+			}
+
+			function clearInput() {
+				document.getElementById("jsonInput").value = "";
+				document.getElementById("result").innerHTML = "";
+			}
+		</script>
+	</body>
+</html>

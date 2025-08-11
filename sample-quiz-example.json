@@ -1,0 +1,128 @@
+{
+	"title": "🧪 Sample Quiz - Using Templates",
+	"description": "Este es un ejemplo práctico de cómo usar los templates para crear un quiz variado. NO cargar en la aplicación - solo para referencia.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence uses the present perfect continuous correctly?",
+			"answerOptions": [
+				{
+					"text": "I have been studying English for three years.",
+					"isCorrect": true,
+					"rationale": "Present perfect continuous (have/has been + -ing) is correct for actions that started in the past and continue to the present with 'for' time expressions."
+				},
+				{
+					"text": "I am studying English for three years.",
+					"isCorrect": false,
+					"rationale": "Present continuous doesn't work with 'for three years' - it's used for temporary actions happening now."
+				},
+				{
+					"text": "I study English for three years.",
+					"isCorrect": false,
+					"rationale": "Simple present is for habits and permanent situations, but doesn't work with 'for' duration in this context."
+				}
+			],
+			"hint": "Think about which tense shows an action that started in the past and is still continuing."
+		},
+
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the sentence with the correct preposition:",
+			"questionParts": [
+				"She is interested ",
+				{
+					"answer": "in",
+					"label": "en"
+				},
+				" learning new languages."
+			],
+			"hint": "What preposition commonly follows 'interested'?"
+		},
+
+		{
+			"type": "matching",
+			"question": "Match each job with its main responsibility:",
+			"pairs": [
+				{
+					"text1": "Chef",
+					"text2": "Prepares and cooks food in restaurants"
+				},
+				{
+					"text1": "Nurse",
+					"text2": "Provides medical care and assists patients"
+				},
+				{
+					"text1": "Teacher",
+					"text2": "Educates students in various subjects"
+				},
+				{
+					"text1": "Engineer",
+					"text2": "Designs and builds technical systems"
+				}
+			],
+			"hint": "Think about what each professional does in their daily work."
+		},
+
+		{
+			"type": "true_false",
+			"question": "In English, all plural nouns end with the letter 's'.",
+			"answer": false,
+			"explanation": "While many plural nouns end in 's' (book/books), there are irregular plurals like 'children' (not 'childs'), 'feet' (not 'foots'), 'mice' (not 'mouses'), and 'sheep' (same for singular and plural)."
+		},
+
+		{
+			"type": "short_answer",
+			"question": "What do you call a person who writes books?",
+			"correctAnswer": "author",
+			"alternatives": ["writer", "novelist"],
+			"caseSensitive": false,
+			"explanation": "An 'author' is someone who writes books. 'Writer' and 'novelist' are also correct - 'writer' is more general, and 'novelist' specifically writes novels."
+		},
+
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a proper English question:",
+			"items": ["are", "you", "where", "from", "?"],
+			"correctOrder": ["where", "are", "you", "from", "?"],
+			"explanation": "In English questions with 'where', the structure is: Question word + auxiliary/be verb + subject + (main verb/complement) + ? So: 'Where are you from?'"
+		},
+
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about sustainable living and answer the questions:",
+			"readingText": ["Sustainable living has become increasingly important in our modern world. It involves making choices that reduce our negative impact on the environment while maintaining a good quality of life.", "There are many simple ways to live more sustainably. For example, you can reduce energy consumption by using LED light bulbs, which use up to 80% less energy than traditional bulbs. You can also reduce water waste by taking shorter showers and fixing leaky faucets.", "Another important aspect of sustainable living is reducing waste. This can be achieved through the three R's: Reduce, Reuse, and Recycle. By buying only what you need, finding new uses for old items, and properly recycling materials, you can significantly decrease your environmental footprint.", "Transportation choices also matter. Walking, cycling, using public transport, or carpooling instead of driving alone can greatly reduce carbon emissions. Even small changes in our daily habits can make a big difference for the planet."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "According to the text, LED light bulbs use how much less energy than traditional bulbs?",
+					"answerOptions": [
+						{ "text": "Up to 80% less energy", "isCorrect": true },
+						{ "text": "Up to 60% less energy", "isCorrect": false },
+						{ "text": "Up to 90% less energy", "isCorrect": false },
+						{ "text": "Exactly 50% less energy", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What are the three R's mentioned in the text?",
+					"correctAnswer": "Reduce, Reuse, and Recycle",
+					"alternatives": ["reduce, reuse, recycle", "Reduce, Reuse, Recycle"]
+				},
+				{
+					"type": "true_false",
+					"questionText": "According to the passage, sustainable living means reducing quality of life.",
+					"answer": false,
+					"explanation": "The text states that sustainable living involves 'reducing our negative impact on the environment while MAINTAINING a good quality of life' - not reducing it."
+				}
+			]
+		}
+	],
+
+	"_metadata": {
+		"purpose": "Demonstration of template usage",
+		"do_not_load": "This file is for reference only - not meant to be loaded in the EngliFish application",
+		"created": "2025-08-11",
+		"exercise_count": 7,
+		"types_demonstrated": ["multiple_choice", "fill_in_the_blanks", "matching", "true_false", "short_answer", "ordering", "reading_comprehension"]
+	}
+}
