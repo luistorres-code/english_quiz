@@ -1,0 +1,57 @@
+{
+	"title": "Reading Comprehension A1: Sarah's Daily Routine",
+	"description": "Nivel A1 - Lee sobre la rutina diaria de Sarah y responde las preguntas básicas.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about Sarah's daily routine and answer the questions:",
+			"readingText": ["My name is Sarah and I am 25 years old. I live in a small apartment in London with my cat, Whiskers.", "Every morning, I wake up at 7:00 AM. I brush my teeth and take a shower. Then I eat breakfast. I usually have toast and coffee.", "At 8:30 AM, I go to work by bus. I work in an office. I like my job because my colleagues are very friendly.", "I have lunch at 12:30 PM. After work, I go home at 5:00 PM. In the evening, I watch TV or read a book. I go to bed at 10:00 PM."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "How old is Sarah?",
+					"answerOptions": [
+						{ "text": "23 years old", "isCorrect": false },
+						{ "text": "25 years old", "isCorrect": true },
+						{ "text": "27 years old", "isCorrect": false },
+						{ "text": "30 years old", "isCorrect": false }
+					]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does Sarah have for breakfast?",
+					"answerOptions": [
+						{ "text": "Cereal and milk", "isCorrect": false },
+						{ "text": "Toast and coffee", "isCorrect": true },
+						{ "text": "Eggs and juice", "isCorrect": false },
+						{ "text": "Fruit and tea", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What time does Sarah wake up?",
+					"correctAnswer": "7:00 AM",
+					"alternatives": ["7 AM", "seven o'clock", "7:00", "seven", "7 in the morning", "7 o'clock", "7 ", "seven in the morning", "at 7 o'clock", "at 7 in the morning", "at 7:00", "at 7 AM"],
+					"caseSensitive": false
+				},
+				{
+					"type": "true_false",
+					"questionText": "Sarah goes to work by car.",
+					"answer": false,
+					"explanation": "Sarah goes to work by bus, not by car."
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What is the name of Sarah's cat?",
+					"answerOptions": [
+						{ "text": "Fluffy", "isCorrect": false },
+						{ "text": "Whiskers", "isCorrect": true },
+						{ "text": "Mittens", "isCorrect": false },
+						{ "text": "Shadow", "isCorrect": false }
+					]
+				}
+			],
+			"hint": "Read the text carefully. All the answers are directly stated in the passage."
+		}
+	]
+}

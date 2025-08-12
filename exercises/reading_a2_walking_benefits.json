@@ -1,0 +1,60 @@
+{
+	"title": "Reading Comprehension A2: The Benefits of Walking",
+	"description": "Nivel A2 - Lee sobre los beneficios de caminar y responde preguntas de comprensión intermedia.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about walking and answer the questions:",
+			"readingText": ["Walking is one of the easiest and most popular forms of exercise. You don't need special equipment or expensive gym memberships. You can walk anywhere - in your neighborhood, at the park, or even inside a shopping mall.", "Regular walking has many health benefits. It helps strengthen your heart and lungs. Walking for 30 minutes a day can help you lose weight and feel more energetic. It also reduces stress and improves your mood.", "Walking is also good for your bones and muscles. As you get older, walking helps prevent bone loss and keeps your muscles strong. Many doctors recommend walking to their patients because it's a safe exercise for people of all ages.", "The best thing about walking is that you can do it with friends or family. It's a great way to spend time together while staying healthy. You can talk and enjoy nature at the same time."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "According to the text, what makes walking so popular?",
+					"answerOptions": [
+						{ "text": "It's expensive but effective", "isCorrect": false },
+						{ "text": "It's easy and doesn't require special equipment", "isCorrect": true },
+						{ "text": "It can only be done at the gym", "isCorrect": false },
+						{ "text": "It requires a lot of training", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "How many minutes of walking per day does the text recommend?",
+					"correctAnswer": "30 minutes",
+					"alternatives": ["thirty minutes", "30 mins", "thirty mins"],
+					"caseSensitive": false
+				},
+				{
+					"type": "true_false",
+					"questionText": "Walking is only recommended for young people.",
+					"answer": false,
+					"explanation": "The text states that walking is a safe exercise for people of all ages, not just young people."
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What are two benefits of walking mentioned in the text?",
+					"answerOptions": [
+						{ "text": "It strengthens heart and lungs, and reduces stress", "isCorrect": true },
+						{ "text": "It's expensive and requires equipment", "isCorrect": false },
+						{ "text": "It can only be done alone", "isCorrect": false },
+						{ "text": "It's only good for losing weight", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "Why do doctors recommend walking to their patients?",
+					"correctAnswer": "Because it's a safe exercise for people of all ages",
+					"alternatives": ["it's safe for all ages", "it's safe exercise", "safe for everyone"],
+					"caseSensitive": false
+				},
+				{
+					"type": "true_false",
+					"questionText": "Walking can help prevent bone loss as you get older.",
+					"answer": true,
+					"explanation": "The text specifically mentions that walking helps prevent bone loss and keeps muscles strong as you age."
+				}
+			],
+			"hint": "Pay attention to the specific benefits mentioned in each paragraph. Some questions require you to understand the main ideas, not just details."
+		}
+	]
+}

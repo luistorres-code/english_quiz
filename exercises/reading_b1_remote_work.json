@@ -1,0 +1,64 @@
+{
+	"title": "Reading Comprehension B1: The Future of Remote Work",
+	"description": "Nivel B1 - Lee sobre el futuro del trabajo remoto y responde preguntas que requieren análisis y comprensión avanzada.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about remote work and answer the questions:",
+			"readingText": ["The COVID-19 pandemic fundamentally changed how we think about work. Before 2020, remote work was considered a luxury available to only a few professionals. However, when lockdowns forced millions of employees to work from home, companies quickly discovered that productivity didn't necessarily decrease when people worked remotely.", "Recent surveys indicate that approximately 60% of employees now prefer a hybrid work model, combining both office and home-based work. This shift has prompted many organizations to reconsider their traditional office-centric policies. Companies are realizing that offering flexible work arrangements can help them attract and retain top talent, particularly among younger generations who prioritize work-life balance.", "Nevertheless, remote work isn't without its challenges. Communication can become more difficult when team members are scattered across different locations. Some employees struggle with isolation and miss the social aspects of office life. Additionally, not all jobs are suitable for remote work - healthcare workers, teachers, and manufacturing employees often need to be physically present to perform their duties effectively.", "Looking ahead, experts predict that the future workplace will be more flexible than ever before. Technology will continue to evolve, making virtual collaboration even more seamless. However, the most successful companies will likely be those that can balance the benefits of remote work with the advantages of in-person collaboration, creating a work environment that serves both business needs and employee preferences."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "What was the main catalyst for the widespread adoption of remote work?",
+					"answerOptions": [
+						{ "text": "Companies wanted to save money on office space", "isCorrect": false },
+						{ "text": "Employees demanded more flexible schedules", "isCorrect": false },
+						{ "text": "The COVID-19 pandemic forced lockdowns", "isCorrect": true },
+						{ "text": "Technology finally became advanced enough", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What percentage of employees prefer a hybrid work model according to the surveys mentioned?",
+					"correctAnswer": "60%",
+					"alternatives": ["60 percent", "sixty percent", "approximately 60%"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "Which of the following is NOT mentioned as a challenge of remote work?",
+					"answerOptions": [
+						{ "text": "Communication difficulties", "isCorrect": false },
+						{ "text": "Employee isolation", "isCorrect": false },
+						{ "text": "Higher operational costs", "isCorrect": true },
+						{ "text": "Missing social aspects of office life", "isCorrect": false }
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "According to the text, all types of jobs can be performed remotely with equal effectiveness.",
+					"answer": false,
+					"explanation": "The text explicitly mentions that healthcare workers, teachers, and manufacturing employees often need to be physically present, indicating that not all jobs are suitable for remote work."
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What do companies use flexible work arrangements for, according to the passage?",
+					"correctAnswer": "To attract and retain top talent",
+					"alternatives": ["attract and retain talent", "attract talent", "retain employees", "hiring and keeping employees"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does the text suggest about the most successful companies in the future?",
+					"answerOptions": [
+						{ "text": "They will work entirely remotely", "isCorrect": false },
+						{ "text": "They will return to traditional office-only models", "isCorrect": false },
+						{ "text": "They will balance remote work with in-person collaboration", "isCorrect": true },
+						{ "text": "They will focus only on technology improvements", "isCorrect": false }
+					]
+				}
+			],
+			"hint": "This text requires you to understand both explicit information and implied meanings. Pay attention to the author's tone and the logical connections between ideas."
+		}
+	]
+}

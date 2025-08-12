@@ -604,48 +604,77 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 				className: "current-reading-question",
 			});
 
-			if (question.type === "multiple_choice") {
-				renderReadingMultipleChoice(questionContainer, question, currentQuestionIndex, (isCorrect, selectedIndex) => {
-					answers.push({ questionIndex: currentQuestionIndex, isCorrect, selectedIndex });
-					currentQuestionIndex++;
+			// Agregar título numerado para la pregunta
+			const questionTitle = createElement("h3", {
+				className: "comprehension-question-number",
+				textContent: `${currentQuestionIndex + 1}. ${question.questionText || question.question}`,
+				attributes: { id: `comprehension-question-${currentQuestionIndex}` },
+			});
+			questionContainer.appendChild(questionTitle);
 
-					setTimeout(() => {
-						if (currentQuestionIndex < questions.length) {
-							showNextReadingQuestion();
-						} else {
-							// Todas las preguntas respondidas - pasar información detallada
-							const correctAnswers = answers.filter((a) => a.isCorrect).length;
-							const totalQuestions = questions.length;
-							onAnswerSelect({
-								isComplete: true,
-								correctAnswers,
-								totalQuestions,
-								allCorrect: correctAnswers === totalQuestions,
-							});
-						}
-					}, 2000);
-				});
-			} else if (question.type === "short_answer") {
-				renderReadingShortAnswer(questionContainer, question, currentQuestionIndex, (isCorrect) => {
-					answers.push({ questionIndex: currentQuestionIndex, isCorrect });
-					currentQuestionIndex++;
+			// Crear un contenedor para la pregunta individual
+			const individualQuestionContainer = createElement("div", {
+				className: "individual-question-container",
+			});
+			questionContainer.appendChild(individualQuestionContainer);
 
-					setTimeout(() => {
-						if (currentQuestionIndex < questions.length) {
-							showNextReadingQuestion();
-						} else {
-							// Todas las preguntas respondidas - pasar información detallada
-							const correctAnswers = answers.filter((a) => a.isCorrect).length;
-							const totalQuestions = questions.length;
-							onAnswerSelect({
-								isComplete: true,
-								correctAnswers,
-								totalQuestions,
-								allCorrect: correctAnswers === totalQuestions,
-							});
-						}
-					}, 2000);
+			// Función callback universal para manejar respuestas
+			const handleQuestionAnswer = (isCorrect, additionalData = {}) => {
+				answers.push({
+					questionIndex: currentQuestionIndex,
+					isCorrect,
+					...additionalData,
 				});
+				currentQuestionIndex++;
+
+				setTimeout(() => {
+					if (currentQuestionIndex < questions.length) {
+						showNextReadingQuestion();
+					} else {
+						// Todas las preguntas respondidas - pasar información detallada
+						const correctAnswers = answers.filter((a) => a.isCorrect).length;
+						const totalQuestions = questions.length;
+						onAnswerSelect({
+							isComplete: true,
+							correctAnswers,
+							totalQuestions,
+							allCorrect: correctAnswers === totalQuestions,
+						});
+					}
+				}, 2000);
+			};
+
+			// Modificar la pregunta para adaptarla al formato individual
+			const adaptedQuestion = {
+				...question,
+				question: question.questionText || question.question,
+			};
+
+			// Reutilizar las funciones existentes según el tipo de pregunta
+			switch (question.type) {
+				case "multiple_choice":
+					renderMultipleChoice(individualQuestionContainer, adaptedQuestion, (isCorrect, selectedIndex) => {
+						handleQuestionAnswer(isCorrect, { selectedIndex });
+					});
+					break;
+
+				case "short_answer":
+					renderShortAnswerStandalone(individualQuestionContainer, adaptedQuestion, (isCorrect) => {
+						handleQuestionAnswer(isCorrect);
+					});
+					break;
+
+				case "true_false":
+					renderTrueFalse(individualQuestionContainer, adaptedQuestion, (isCorrect) => {
+						handleQuestionAnswer(isCorrect);
+					});
+					break;
+
+				default:
+					console.warn(`Tipo de pregunta no soportado en reading comprehension: ${question.type}`);
+					// Saltar a la siguiente pregunta si no se reconoce el tipo
+					handleQuestionAnswer(false);
+					break;
 			}
 
 			container.appendChild(questionContainer);
@@ -654,143 +683,6 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 
 	// Mostrar la primera pregunta
 	showNextReadingQuestion();
-}
-
-function renderReadingMultipleChoice(container, question, questionIndex, onAnswer) {
-	const questionTitle = createElement("h3", {
-		className: "comprehension-question",
-		textContent: `${questionIndex + 1}. ${question.questionText}`,
-		attributes: { id: `comprehension-question-${questionIndex}` },
-	});
-
-	const optionsContainer = createElement("fieldset", {
-		className: "comprehension-options",
-		attributes: {
-			role: "radiogroup",
-			"aria-labelledby": `comprehension-question-${questionIndex}`,
-		},
-	});
-
-	const legend = createElement("legend", {
-		textContent: "Selecciona la respuesta correcta:",
-		className: "visually-hidden",
-	});
-	optionsContainer.appendChild(legend);
-
-	question.answerOptions.forEach((option, index) => {
-		const optionButton = createElement("button", {
-			className: "comprehension-answer-button",
-			textContent: option.text,
-			attributes: {
-				type: "button",
-				"data-index": index,
-				role: "radio",
-				"aria-checked": "false",
-			},
-			events: {
-				click: (event) => handleReadingComprehensionAnswer(event, question, onAnswer),
-			},
-		});
-		optionsContainer.appendChild(optionButton);
-	});
-
-	container.appendChild(questionTitle);
-	container.appendChild(optionsContainer);
-}
-
-function renderReadingShortAnswer(container, question, questionIndex, onAnswer) {
-	const questionTitle = createElement("h3", {
-		className: "comprehension-question",
-		textContent: `${questionIndex + 1}. ${question.questionText}`,
-		attributes: { id: `short-answer-question-${questionIndex}` },
-	});
-
-	const inputContainer = createElement("div", {
-		className: "short-answer-container",
-	});
-
-	const input = createElement("input", {
-		className: "short-answer-input",
-		attributes: {
-			type: "text",
-			placeholder: "Escribe tu respuesta aquí...",
-			"aria-labelledby": `short-answer-question-${questionIndex}`,
-		},
-	});
-
-	// Agregar contador de intentos
-	let attemptCount = 0;
-	const maxAttempts = 2;
-
-	const submitButton = createElement("button", {
-		className: "short-answer-submit",
-		textContent: "Responder",
-		attributes: { type: "button" },
-		events: {
-			click: () => handleShortAnswerSubmit(),
-		},
-	});
-
-	// También permitir envío con Enter
-	input.addEventListener("keypress", (e) => {
-		if (e.key === "Enter" && !input.disabled) {
-			handleShortAnswerSubmit();
-		}
-	});
-
-	function handleShortAnswerSubmit() {
-		const userAnswer = input.value.trim();
-
-		if (!userAnswer) {
-			showTemporaryFeedback(inputContainer, "Por favor, escribe una respuesta.", false);
-			return;
-		}
-
-		attemptCount++;
-		const analysis = analyzeUserAnswer(userAnswer, question.correctAnswer);
-
-		// Si es correcto
-		if (analysis.isCorrect) {
-			input.disabled = true;
-			submitButton.disabled = true;
-			input.classList.add("correct");
-			showFeedback(container.closest(".question-section"), true, analysis.feedback);
-			onAnswer(true);
-			return;
-		}
-
-		// Si permite reintento y aún tiene intentos
-		if (analysis.allowRetry && attemptCount < maxAttempts) {
-			input.classList.add("warning");
-			submitButton.textContent = `Reintenta (${maxAttempts - attemptCount} ${maxAttempts - attemptCount === 1 ? "intento" : "intentos"} restante${maxAttempts - attemptCount === 1 ? "" : "s"})`;
-			showTemporaryFeedback(inputContainer, analysis.feedback + " " + (analysis.hint || ""), false);
-
-			// Limpiar el input para nuevo intento
-			setTimeout(() => {
-				input.value = "";
-				input.focus();
-			}, 2000);
-		} else {
-			// No más intentos o no permite reintento
-			input.disabled = true;
-			submitButton.disabled = true;
-			input.classList.add("incorrect");
-
-			const finalFeedback = attemptCount >= maxAttempts ? `Se agotaron los intentos. ${analysis.hint}` : analysis.hint;
-
-			showFeedback(container.closest(".question-section"), false, finalFeedback);
-			onAnswer(false);
-		}
-	}
-
-	inputContainer.appendChild(input);
-	inputContainer.appendChild(submitButton);
-
-	container.appendChild(questionTitle);
-	container.appendChild(inputContainer);
-
-	// Enfocar el input automáticamente
-	setTimeout(() => input.focus(), 100);
 }
 
 function renderSingleReadingQuestion(container, questionData, onAnswerSelect) {
@@ -825,7 +717,7 @@ function renderSingleReadingQuestion(container, questionData, onAnswerSelect) {
 				"aria-checked": "false",
 			},
 			events: {
-				click: (event) => handleReadingComprehensionAnswer(event, questionData, onAnswerSelect),
+				click: (event) => handleAnswerClick(event, questionData, onAnswerSelect),
 			},
 		});
 		optionsContainer.appendChild(optionButton);
@@ -833,36 +725,6 @@ function renderSingleReadingQuestion(container, questionData, onAnswerSelect) {
 
 	container.appendChild(questionTitle);
 	container.appendChild(optionsContainer);
-}
-
-function handleReadingComprehensionAnswer(event, questionData, callback) {
-	const selectedButton = event.target;
-	const selectedIndex = parseInt(selectedButton.getAttribute("data-index"));
-	const container = selectedButton.closest(".question-section");
-
-	const allButtons = container.querySelectorAll(".comprehension-answer-button");
-	allButtons.forEach((button) => {
-		button.disabled = true;
-		button.setAttribute("aria-checked", "false");
-	});
-
-	selectedButton.setAttribute("aria-checked", "true");
-
-	const selectedOption = questionData.answerOptions[selectedIndex];
-	const isCorrect = selectedOption.isCorrect;
-
-	if (isCorrect) {
-		selectedButton.classList.add("correct");
-	} else {
-		selectedButton.classList.add("incorrect");
-		const correctIndex = questionData.answerOptions.findIndex((opt) => opt.isCorrect);
-		if (correctIndex !== -1) {
-			allButtons[correctIndex].classList.add("correct");
-		}
-	}
-
-	showFeedback(container, isCorrect, selectedOption.rationale || questionData.hint);
-	callback(isCorrect, selectedIndex);
 }
 
 // ---
