@@ -18,9 +18,13 @@
 		<div class="quiz-container">
 			<!-- Logo Header -->
 			<header class="app-header">
-				<img src="./assets/logos/logo-englifish-horizontal.svg" alt="EngliFish - Aprende inglés con la medusita" class="app-logo" />
+				<div class="app-header-content">
+					<img src="./assets/logos/logo-englifish-horizontal.svg" alt="EngliFish - Aprende inglés con la medusita" class="app-logo" />
+					<button id="theme-toggle" class="theme-toggle" aria-label="Cambiar modo oscuro" title="Cambiar modo oscuro">
+						<span class="theme-icon">🌙</span>
+					</button>
+				</div>
 			</header>
-
 			<section class="quiz-selector" role="region" aria-labelledby="selector-title">
 				<h2 id="selector-title" class="visually-hidden">Selección de ejercicio</h2>
 				<label for="quiz-select">Selecciona un ejercicio:</label>
@@ -63,6 +67,7 @@
 		</div>
 
 		<!-- Scripts modulares funcionales -->
+		<script src="./js/theme-manager.js"></script>
 		<script src="./js/quiz-functions.js"></script>
 		<script src="./js/quiz-system.js"></script>
 		<script src="./js/app.js"></script>
