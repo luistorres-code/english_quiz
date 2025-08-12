@@ -1116,7 +1116,10 @@ function renderTrueFalse(container, questionData, onAnswer) {
 	container.appendChild(questionSection);
 
 	function handleTrueFalseAnswer(userAnswer, correctAnswer, callback) {
-		const isCorrect = userAnswer === correctAnswer;
+		// Convertir ambas respuestas a strings para comparación consistente
+		const userAnswerStr = String(userAnswer);
+		const correctAnswerStr = String(correctAnswer);
+		const isCorrect = userAnswerStr === correctAnswerStr;
 
 		trueButton.disabled = true;
 		falseButton.disabled = true;
@@ -1126,7 +1129,7 @@ function renderTrueFalse(container, questionData, onAnswer) {
 			showFeedback(questionSection, true, questionData.explanation || "¡Correcto!");
 		} else {
 			(userAnswer ? trueButton : falseButton).classList.add("incorrect");
-			(correctAnswer ? trueButton : falseButton).classList.add("correct");
+			(correctAnswerStr === "true" ? trueButton : falseButton).classList.add("correct");
 			showFeedback(questionSection, false, questionData.explanation || "Respuesta incorrecta");
 		}
 
@@ -1451,17 +1454,25 @@ function renderOrdering(container, questionData, onAnswer) {
 		const userOrder = selectedWords;
 		const correctOrder = questionData.correctOrder;
 
-		const isCorrect = JSON.stringify(userOrder) === JSON.stringify(correctOrder);
+		// Verificar si correctOrder son índices (formato viejo) o palabras directas (formato template)
+		const correctSequence =
+			Array.isArray(correctOrder) && typeof correctOrder[0] === "number"
+				? correctOrder.map((index) => questionData.items[index]) // Formato viejo con índices
+				: correctOrder; // Formato template con palabras directas
+
+		// Comparar la secuencia de palabras del usuario con la correcta
+		const isCorrect = JSON.stringify(userOrder) === JSON.stringify(correctSequence);
 
 		// Mostrar resultado en las palabras seleccionadas
 		const wordChips = sentenceContainer.querySelectorAll(".sentence-word-chip");
+
 		wordChips.forEach((chip, index) => {
 			// Deshabilitar botones de movimiento
 			const moveButtons = chip.querySelectorAll(".move-button");
 			moveButtons.forEach((btn) => btn.remove());
 
-			// Agregar clases de estado
-			if (userOrder[index] === correctOrder[index]) {
+			// Agregar clases de estado comparando con la secuencia correcta
+			if (userOrder[index] === correctSequence[index]) {
 				chip.classList.add("correct");
 			} else {
 				chip.classList.add("incorrect");

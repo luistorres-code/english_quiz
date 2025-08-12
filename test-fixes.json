@@ -1,0 +1,32 @@
+{
+	"title": "Prueba de Correcciones",
+	"description": "Ejercicios para probar las correcciones de True/False y Ordering",
+	"questions": [
+		{
+			"type": "true_false",
+			"question": "¿Es correcto decir 'You is from Spain'?",
+			"answer": "false",
+			"explanation": "Con 'you', 'we' y 'they' usamos 'are'."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración: 'are / from / They / Italy'.",
+			"items": ["They", "are", "from", "Italy"],
+			"correctOrder": [0, 1, 2, 3],
+			"hint": "La oración completa es 'They are from Italy'."
+		},
+		{
+			"type": "true_false",
+			"question": "La palabra 'children' es el plural de 'child'.",
+			"answer": "true",
+			"explanation": "'Children' es un plural irregular muy común."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta: 'you / Are / tired / ?'.",
+			"items": ["Are", "you", "tired", "?"],
+			"correctOrder": [0, 1, 2, 3],
+			"hint": "La pregunta correcta es 'Are you tired?'."
+		}
+	]
+}

@@ -36,8 +36,8 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una pregunta coherente en pasado simple.",
 			"items": ["you", "did", "where", "go", "yesterday?"],
-			"correctOrder": [2, 1, 0, 3, 4],
-			"hint": "La pregunta correcta es 'Where did you go yesterday?'."
+			"correctOrder": ["where", "did", "you", "go", "yesterday?"],
+			"explanation": "La pregunta correcta es 'Where did you go yesterday?' siguiendo la estructura: Question word + auxiliary + subject + main verb + complement + ?"
 		},
 		{
 			"type": "multiple_choice",
@@ -83,8 +83,8 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una oración lógica con 'sometimes'.",
 			"items": ["eats", "She", "sometimes", "out"],
-			"correctOrder": [1, 2, 0, 3],
-			"hint": "El adverbio de frecuencia va antes del verbo principal."
+			"correctOrder": ["She", "sometimes", "eats", "out"],
+			"explanation": "El adverbio de frecuencia 'sometimes' va antes del verbo principal: 'She sometimes eats out'."
 		},
 		{
 			"type": "multiple_choice",

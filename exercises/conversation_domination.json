@@ -44,8 +44,8 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una oración correcta en voz pasiva.",
 			"items": ["The building", "was damaged", "last month", "by the tsunami."],
-			"correctOrder": [0, 1, 2, 3],
-			"hint": "Comienza con el sujeto ('The building') y sigue con la estructura pasiva."
+			"correctOrder": ["The building", "was damaged", "by the tsunami", "last month"],
+			"explanation": "En voz pasiva, la estructura típica es: Sujeto + was/were + participio pasado + by + agente + tiempo."
 		},
 		{
 			"type": "multiple_choice",
@@ -88,8 +88,8 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una pregunta coherente: 'do / not / What / you / like / to / do?'",
 			"items": ["What", "do", "you", "like", "to", "do", "?"],
-			"correctOrder": [0, 1, 2, 3, 4, 5, 6],
-			"hint": "La pregunta correcta es 'What do you like to do?'."
+			"correctOrder": ["What", "do", "you", "like", "to", "do", "?"],
+			"explanation": "La pregunta correcta es 'What do you like to do?' siguiendo la estructura: Question word + auxiliary + subject + main verb + complement + ?"
 		},
 		{
 			"type": "multiple_choice",

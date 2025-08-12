@@ -14,9 +14,9 @@
 		},
 		{
 			"type": "fill_in_the_blanks",
-			"question": "Completa la oración: 'They live in ______ big house.'",
+			"question": "Completa la oración",
 			"questionParts": ["They live in ", { "answer": "a", "label": "" }, " big house."],
-			"hint": "Usa un artículo indefinido antes de la palabra 'big'."
+			"explanation": "Se usa 'a' antes de consonantes como 'big'. No se usa 'an' porque 'big' empieza con consonante."
 		},
 		{
 			"type": "short_answer",
@@ -28,7 +28,7 @@
 		},
 		{
 			"type": "multiple_choice",
-			"question": "Selecciona la forma correcta: 'He ______ to work by bus every day.'",
+			"question": "Selecciona la forma correcta: 'He ______ to work by bus every day.",
 			"answerOptions": [
 				{ "text": "go", "isCorrect": false },
 				{ "text": "goes", "isCorrect": true },
@@ -64,18 +64,18 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una oración: 'are / from / They / Italy'.",
 			"items": ["They", "are", "from", "Italy"],
-			"correctOrder": [0, 1, 2, 3],
-			"hint": "La oración completa es 'They are from Italy'."
+			"correctOrder": ["They", "are", "from", "Italy"],
+			"explanation": "La oración completa es 'They are from Italy'."
 		},
 		{
 			"type": "fill_in_the_blanks",
-			"question": "Completa la oración: 'She has ______ old book.'",
+			"question": "Completa la oración",
 			"questionParts": ["She has ", { "answer": "an", "label": "" }, " old book."],
-			"hint": "La palabra 'old' comienza con sonido de vocal."
+			"explanation": "Se usa 'an' antes de palabras que comienzan con sonido de vocal como 'old'. No se usa 'a' porque 'old' empieza con vocal."
 		},
 		{
 			"type": "multiple_choice",
-			"question": "Selecciona el pronombre correcto: 'This is my sister. ______ is a doctor.'",
+			"question": "Selecciona el pronombre correcto: This is my sister. ___ is a doctor.",
 			"answerOptions": [
 				{ "text": "He", "isCorrect": false },
 				{ "text": "She", "isCorrect": true },
@@ -101,12 +101,12 @@
 			"type": "ordering",
 			"question": "Ordena las palabras para formar una pregunta: 'you / Are / tired / ?'.",
 			"items": ["Are", "you", "tired", "?"],
-			"correctOrder": [0, 1, 2, 3],
-			"hint": "La pregunta correcta es 'Are you tired?'."
+			"correctOrder": ["Are", "you", "tired", "?"],
+			"explanation": "La pregunta correcta es 'Are you tired?'."
 		},
 		{
 			"type": "fill_in_the_blanks",
-			"question": "Completa con el adjetivo posesivo correcto: 'I love ______ dog.'",
+			"question": "Completa con el adjetivo posesivo correcto",
 			"questionParts": ["I love ", { "answer": "my", "label": "" }, " dog."],
 			"hint": "El adjetivo posesivo para 'I' es 'my'."
 		},

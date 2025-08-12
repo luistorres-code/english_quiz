@@ -229,29 +229,62 @@ function renderMultipleChoiceExercise(questionData) {
 function renderFillInTheBlankExercise(questionData) {
 	renderFillInTheBlanks(elements.container, questionData, (answers) => {
 		let isCorrect = true;
+		let hasRetryableAnswers = false;
 
 		answers.forEach(({ userAnswer, correctAnswer, input }) => {
-			const isAnswerCorrect = userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+			// Obtener alternativas si existen (buscar en questionParts)
+			const partIndex = parseInt(input.getAttribute("data-index"));
+			const questionPart = questionData.questionParts[partIndex];
+			const alternatives = questionPart.alternatives || [];
+			const allValidAnswers = [correctAnswer, ...alternatives];
 
-			if (isAnswerCorrect) {
+			// Usar el algoritmo inteligente de análisis de respuestas
+			const analysis = analyzeUserAnswer(userAnswer, allValidAnswers);
+
+			if (analysis.isCorrect) {
 				input.classList.add("correct");
+				// Mostrar feedback positivo específico
+				if (analysis.confidence === 100) {
+					input.setAttribute("data-feedback", "¡Perfecto!");
+				}
 			} else {
 				input.classList.add("incorrect");
 				isCorrect = false;
-				showCorrectAnswer(input, correctAnswer);
+
+				// Si permite reintento, dar una segunda oportunidad
+				if (analysis.allowRetry) {
+					hasRetryableAnswers = true;
+					input.setAttribute("data-feedback", analysis.feedback);
+					input.setAttribute("data-hint", analysis.hint || "");
+					// No deshabilitar el input todavía para permitir corrección
+				} else {
+					// Mostrar la respuesta correcta si no permite reintento
+					showCorrectAnswer(input, correctAnswer);
+					input.disabled = true;
+				}
 			}
-			input.disabled = true;
 		});
 
-		if (isCorrect) {
-			score++;
+		// Si hay respuestas que permiten reintento, mostrar feedback y permitir corrección
+		if (hasRetryableAnswers && !isCorrect) {
+			showRetryFeedback(elements.container.querySelector(".question-section"), answers);
+			// No avanzar automáticamente, permitir corrección
+		} else {
+			// Completar el ejercicio
+			answers.forEach(({ input }) => {
+				input.disabled = true;
+			});
+
+			if (isCorrect) {
+				score++;
+			}
+
+			const feedbackMessage = createFillInFeedbackMessage(answers, questionData);
+			showFeedback(elements.container.querySelector(".question-section"), isCorrect, feedbackMessage);
+
+			hideCheckButton();
+			showNextButton();
 		}
-
-		const feedbackMessage = createFillInFeedbackMessage(answers, questionData);
-		showFeedback(elements.container.querySelector(".question-section"), isCorrect, feedbackMessage);
-
-		hideCheckButton();
-		showNextButton();
 	});
 }
 
@@ -664,4 +697,65 @@ function updateURL(exerciseFile) {
 		url.searchParams.delete("quiz");
 	}
 	window.history.pushState({}, "", url);
+}
+
+// ---
+// FUNCIONES AUXILIARES PARA FILL IN THE BLANKS
+// ---
+
+function showRetryFeedback(questionSection, answers) {
+	// Remover feedback anterior si existe
+	const existingFeedback = questionSection.querySelector(".retry-feedback");
+	if (existingFeedback) {
+		existingFeedback.remove();
+	}
+
+	const retryFeedback = createElement("div", {
+		className: "retry-feedback",
+	});
+
+	const retryMessage = createElement("p", {
+		className: "retry-message",
+		textContent: "Tienes una segunda oportunidad. Revisa tus respuestas:",
+	});
+
+	retryFeedback.appendChild(retryMessage);
+
+	// Mostrar hints específicos para cada respuesta incorrecta
+	answers.forEach(({ input }, index) => {
+		const feedback = input.getAttribute("data-feedback");
+		const hint = input.getAttribute("data-hint");
+
+		if (feedback && input.classList.contains("incorrect")) {
+			const itemFeedback = createElement("div", {
+				className: "item-feedback",
+			});
+
+			const feedbackText = createElement("p", {
+				className: "feedback-text",
+				textContent: `Campo ${index + 1}: ${feedback}`,
+			});
+
+			itemFeedback.appendChild(feedbackText);
+
+			if (hint) {
+				const hintText = createElement("p", {
+					className: "hint-text",
+					textContent: hint,
+				});
+				itemFeedback.appendChild(hintText);
+			}
+
+			retryFeedback.appendChild(itemFeedback);
+		}
+	});
+
+	questionSection.appendChild(retryFeedback);
+
+	// Auto-remover el feedback después de unos segundos
+	setTimeout(() => {
+		if (retryFeedback.parentNode) {
+			retryFeedback.remove();
+		}
+	}, 8000);
 }
