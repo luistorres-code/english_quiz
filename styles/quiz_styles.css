@@ -71,16 +71,20 @@
 }
 
 .matching-item.correct {
-	background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(139, 195, 74, 0.2) 100%);
+	background: linear-gradient(135deg, #f0fff4 0%, #e6ffed 100%);
 	border-color: #4caf50;
-	color: #2e7d32;
+	color: #1b5e20;
+	font-weight: 600;
+	box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
 
 .matching-item.incorrect {
-	background: linear-gradient(135deg, rgba(244, 67, 54, 0.2) 0%, rgba(255, 87, 34, 0.2) 100%);
+	background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
 	border-color: #f44336;
 	color: #c62828;
+	font-weight: 600;
 	animation: shake 0.5s ease-in-out;
+	box-shadow: 0 4px 12px rgba(244, 67, 84, 0.3);
 }
 
 .matching-item:disabled {
@@ -831,6 +835,23 @@ h1 {
 	box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
+#next-button:disabled,
+#next-button.disabled {
+	background: linear-gradient(135deg, #a0a0a0 0%, #b8b8b8 100%);
+	color: #ffffff;
+	cursor: not-allowed;
+	transform: none;
+	box-shadow: 0 2px 8px rgba(160, 160, 160, 0.2);
+	opacity: 0.6;
+}
+
+#next-button:disabled:hover,
+#next-button.disabled:hover {
+	background: linear-gradient(135deg, #a0a0a0 0%, #b8b8b8 100%);
+	transform: none;
+	box-shadow: 0 2px 8px rgba(160, 160, 160, 0.2);
+}
+
 /* Estilos para el progress bar */
 #progress-container {
 	margin: 30px 0;
@@ -1238,20 +1259,6 @@ h1 {
 	background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
 	border-color: #667eea;
 	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
-}
-
-.matching-item.correct {
-	background: linear-gradient(135deg, #f0fff4 0%, #e6ffed 100%);
-	border-color: #9ae6b4;
-	color: #22543d;
-	font-weight: 500;
-}
-
-.matching-item.incorrect {
-	background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
-	border-color: #fc8181;
-	color: #742a2a;
-	font-weight: 500;
 }
 
 .matching-instructions {

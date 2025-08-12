@@ -424,6 +424,14 @@ function createMatchingColumn(items, side, label) {
 	return column;
 }
 
+// Función auxiliar para limpiar completamente el estado de un elemento matching
+function clearMatchingItemState(element) {
+	if (!element) return;
+
+	element.classList.remove("selected", "incorrect", "correct");
+	element.setAttribute("aria-selected", "false");
+}
+
 function initializeMatchingLogic(container, questionData, onComplete) {
 	let selectedLeft = null;
 	let selectedRight = null;
@@ -442,16 +450,22 @@ function initializeMatchingLogic(container, questionData, onComplete) {
 
 		if (side === "left") {
 			if (selectedLeft) {
-				selectedLeft.classList.remove("selected");
+				// Limpiar estado anterior
+				clearMatchingItemState(selectedLeft);
 			}
 			selectedLeft = event.target;
+			// Limpiar cualquier clase anterior del nuevo elemento seleccionado
+			clearMatchingItemState(selectedLeft);
 			selectedLeft.classList.add("selected");
 			selectedLeft.setAttribute("aria-selected", "true");
 		} else {
 			if (selectedRight) {
-				selectedRight.classList.remove("selected");
+				// Limpiar estado anterior
+				clearMatchingItemState(selectedRight);
 			}
 			selectedRight = event.target;
+			// Limpiar cualquier clase anterior del nuevo elemento seleccionado
+			clearMatchingItemState(selectedRight);
 			selectedRight.classList.add("selected");
 			selectedRight.setAttribute("aria-selected", "true");
 		}
@@ -460,6 +474,10 @@ function initializeMatchingLogic(container, questionData, onComplete) {
 			const leftValue = selectedLeft.getAttribute("data-value");
 			const rightValue = selectedRight.getAttribute("data-value");
 			const isCorrect = correctPairs.get(leftValue) === rightValue;
+
+			// Limpiar todas las clases de estado anteriores
+			clearMatchingItemState(selectedLeft);
+			clearMatchingItemState(selectedRight);
 
 			if (isCorrect) {
 				selectedLeft.classList.add("correct");
@@ -475,11 +493,18 @@ function initializeMatchingLogic(container, questionData, onComplete) {
 
 				showMatchingFeedback(container, false, `Incorrecto. "${leftValue}" no se empareja con "${rightValue}"`);
 
+				// Guardar referencias antes de limpiarlas
+				const leftElement = selectedLeft;
+				const rightElement = selectedRight;
+
+				// Después de mostrar el error, limpiar las clases incorrectas
 				setTimeout(() => {
-					selectedLeft.classList.remove("incorrect", "selected");
-					selectedRight.classList.remove("incorrect", "selected");
-					selectedLeft.setAttribute("aria-selected", "false");
-					selectedRight.setAttribute("aria-selected", "false");
+					if (leftElement && !leftElement.disabled) {
+						clearMatchingItemState(leftElement);
+					}
+					if (rightElement && !rightElement.disabled) {
+						clearMatchingItemState(rightElement);
+					}
 				}, 1500);
 			}
 

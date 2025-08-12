@@ -193,6 +193,14 @@ function showQuestion(questionIndex) {
 	// Renderizar según el tipo de ejercicio
 	const exerciseType = questionData.type || "multiple_choice";
 
+	// Determinar si el ejercicio requiere verificación manual
+	const requiresManualCheck = ["fill_in_the_blanks", "short_answer", "ordering"].includes(exerciseType);
+
+	// Si requiere verificación manual, deshabilitar el botón siguiente
+	if (requiresManualCheck) {
+		disableNextButton();
+	}
+
 	switch (exerciseType) {
 		case "fill_in_the_blanks":
 			renderFillInTheBlankExercise(questionData);
@@ -535,6 +543,8 @@ function resetQuestionState() {
 	selectedMatchingItems = [];
 	matchedPairs = 0;
 	totalPairs = 0;
+	// Ocultar el botón siguiente al cambiar de pregunta
+	hideNextButton();
 }
 
 function resetExerciseState() {
@@ -615,6 +625,21 @@ function restoreOriginalContent() {
 function showNextButton() {
 	if (elements.nextButton) {
 		elements.nextButton.style.display = "block";
+		elements.nextButton.disabled = false;
+		elements.nextButton.classList.remove("disabled");
+	}
+}
+
+function hideNextButton() {
+	if (elements.nextButton) {
+		elements.nextButton.style.display = "none";
+	}
+}
+
+function disableNextButton() {
+	if (elements.nextButton) {
+		elements.nextButton.disabled = true;
+		elements.nextButton.classList.add("disabled");
 	}
 }
 
