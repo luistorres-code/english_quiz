@@ -8,4 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		nextQuestion,
 		updateReadingProgress,
 	};
+
+	// Exponer funciones para debugging (solo en desarrollo)
+	window.debugQuizSystem = {
+		calculateTotalQuestions,
+		calculateCurrentQuestionNumber,
+	};
 });

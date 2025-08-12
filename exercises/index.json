@@ -1,12 +1,5 @@
 {
-	"exercises": [
-  "conversation_domination.json",
-  "first_steps.json",
-  "new_ideas.json",
-  "reading_a1_daily_routine.json",
-  "reading_a2_walking_benefits.json",
-  "reading_b1_remote_work.json"
-],
-	"lastUpdated": "2025-08-11",
+	"exercises": ["conversation_domination.json", "first_steps.json", "new_ideas.json", "reading_a1_daily_routine.json", "reading_a2_walking_benefits.json", "reading_b1_remote_work.json"],
+	"lastUpdated": "2025-08-12",
 	"version": "1.0"
 }

@@ -20,6 +20,7 @@ function initializeSystem() {
 		selector: document.getElementById("quiz-select"),
 		loadButton: document.getElementById("load-quiz"),
 		selectorDiv: document.querySelector(".quiz-selector"),
+		feedbackContainer: document.getElementById("feedback-container"),
 	};
 
 	setupEventListeners();
@@ -163,7 +164,10 @@ async function loadExercise(exerciseFile) {
 	}
 }
 
-function calculateTotalQuestions(questions) {
+function calculateTotalQuestions(questionsOrExerciseData) {
+	const questions = Array.isArray(questionsOrExerciseData) ? questionsOrExerciseData : questionsOrExerciseData?.questions;
+	if (!questions) return 0;
+
 	let total = 0;
 	questions.forEach((question) => {
 		if (question.type === "reading_comprehension" && question.questions && Array.isArray(question.questions)) {
@@ -201,145 +205,31 @@ function showQuestion(questionIndex) {
 		disableNextButton();
 	}
 
-	switch (exerciseType) {
-		case "fill_in_the_blanks":
-			renderFillInTheBlankExercise(questionData);
-			break;
-		case "matching":
-			totalPairs = questionData.pairs.length;
-			renderMatchingExercise(questionData);
-			break;
-		case "reading_comprehension":
-			renderReadingComprehensionExercise(questionData);
-			break;
-		case "true_false":
-			renderTrueFalseExercise(questionData);
-			break;
-		case "short_answer":
-			renderShortAnswerExercise(questionData);
-			break;
-		case "ordering":
-			renderOrderingExercise(questionData);
-			break;
-		case "multiple_choice":
-		default:
-			renderMultipleChoiceExercise(questionData);
-			break;
-	}
+	// Renderizar usando el sistema unificado
+	renderExerciseByType(exerciseType, questionData);
 }
-function renderMultipleChoiceExercise(questionData) {
-	renderMultipleChoice(elements.container, questionData, (isCorrect) => {
-		if (isCorrect) score++;
-		showNextButton();
-	});
-}
+// Usar el sistema unificado de renderizado de ejercicios
+function renderExerciseByType(exerciseType, questionData) {
+	const context = {
+		container: elements.container,
+		feedbackContainer: elements.feedbackContainer,
+		elements: elements,
+		currentQuestionIndex: currentQuestionIndex,
+		questionData: questionData,
+		// Agregar función para actualizar score
+		updateScore: (increment = 1) => {
+			score += increment;
+		},
+	};
 
-function renderFillInTheBlankExercise(questionData) {
-	renderFillInTheBlanks(elements.container, questionData, (answers) => {
-		let isCorrect = true;
-		let hasRetryableAnswers = false;
-
-		answers.forEach(({ userAnswer, correctAnswer, input }) => {
-			// Obtener alternativas si existen (buscar en questionParts)
-			const partIndex = parseInt(input.getAttribute("data-index"));
-			const questionPart = questionData.questionParts[partIndex];
-			const alternatives = questionPart.alternatives || [];
-			const allValidAnswers = [correctAnswer, ...alternatives];
-
-			// Usar el algoritmo inteligente de análisis de respuestas
-			const analysis = analyzeUserAnswer(userAnswer, allValidAnswers);
-
-			if (analysis.isCorrect) {
-				input.classList.add("correct");
-				// Mostrar feedback positivo específico
-				if (analysis.confidence === 100) {
-					input.setAttribute("data-feedback", "¡Perfecto!");
-				}
-			} else {
-				input.classList.add("incorrect");
-				isCorrect = false;
-
-				// Si permite reintento, dar una segunda oportunidad
-				if (analysis.allowRetry) {
-					hasRetryableAnswers = true;
-					input.setAttribute("data-feedback", analysis.feedback);
-					input.setAttribute("data-hint", analysis.hint || "");
-					// No deshabilitar el input todavía para permitir corrección
-				} else {
-					// Mostrar la respuesta correcta si no permite reintento
-					showCorrectAnswer(input, correctAnswer);
-					input.disabled = true;
-				}
-			}
-		});
-
-		// Si hay respuestas que permiten reintento, mostrar feedback y permitir corrección
-		if (hasRetryableAnswers && !isCorrect) {
-			showRetryFeedback(elements.container.querySelector(".question-section"), answers);
-			// No avanzar automáticamente, permitir corrección
-		} else {
-			// Completar el ejercicio
-			answers.forEach(({ input }) => {
-				input.disabled = true;
-			});
-
-			if (isCorrect) {
-				score++;
-			}
-
-			const feedbackMessage = createFillInFeedbackMessage(answers, questionData);
-			showFeedback(elements.container.querySelector(".question-section"), isCorrect, feedbackMessage);
-
-			hideCheckButton();
-			showNextButton();
+	renderUnifiedExercise(exerciseType, questionData, context, (result) => {
+		// El manejo del puntaje ya se hace en renderUnifiedExercise
+		// Solo necesitamos manejar lógica específica adicional si es necesario
+		if (result.exerciseType === "reading_comprehension" && result.originalResult.isComplete) {
+			// No ajustar currentQuestionIndex aquí, se manejará en nextQuestion()
 		}
-	});
-}
 
-function renderMatchingExercise(questionData) {
-	renderMatching(elements.container, questionData, (isComplete, isCorrect) => {
-		if (isComplete) {
-			if (isCorrect) {
-				score++;
-			}
-			showNextButton();
-		}
-	});
-}
-
-function renderReadingComprehensionExercise(questionData) {
-	renderReadingComprehension(elements.container, questionData, currentQuestionIndex, (result) => {
-		if (typeof result === "object" && result.isComplete) {
-			// Comprensión lectora con múltiples preguntas
-			score += result.correctAnswers;
-			// Ajustar el índice para reflejar las preguntas múltiples
-			currentQuestionIndex += result.totalQuestions - 1;
-		} else {
-			// Comprensión lectora tradicional (una sola pregunta)
-			if (result) score++;
-		}
-		showNextButton();
-	});
-}
-
-function renderTrueFalseExercise(questionData) {
-	renderTrueFalse(elements.container, questionData, (isCorrect) => {
-		if (isCorrect) score++;
-		showNextButton();
-	});
-}
-
-function renderShortAnswerExercise(questionData) {
-	renderShortAnswerStandalone(elements.container, questionData, (isCorrect) => {
-		if (isCorrect) score++;
-		showNextButton();
-	});
-}
-
-function renderOrderingExercise(questionData) {
-	renderOrdering(elements.container, questionData, (isCorrect) => {
-		if (isCorrect) score++;
-		showNextButton();
+		console.log(`Exercise completed: ${result.exerciseType}, scoreIncrement: ${result.scoreIncrement}, total score: ${score}`);
 	});
 }
 
@@ -385,22 +275,6 @@ function updateReadingProgress(subQuestionIndex, totalSubQuestions, mainQuestion
 	updateProgressBar(currentQuestionNumber, totalQuestions);
 }
 
-function calculateTotalQuestions(exerciseData) {
-	if (!exerciseData?.questions) return 0;
-
-	let total = 0;
-	exerciseData.questions.forEach((question) => {
-		if (question.type === "reading_comprehension" && question.questions && Array.isArray(question.questions)) {
-			// Para comprensión lectora, contar las sub-preguntas
-			total += question.questions.length;
-		} else {
-			// Para otros tipos, contar como 1
-			total += 1;
-		}
-	});
-	return total;
-}
-
 function calculateCurrentQuestionNumber(exerciseData, currentIndex) {
 	if (!exerciseData?.questions) return 0;
 
@@ -434,10 +308,8 @@ function nextQuestion() {
 }
 
 function showResults() {
-	// Ocultar elementos del ejercicio
-	elements.container.style.display = "none";
-	elements.nextButton.style.display = "none";
-	hideProgressBar(elements.progressContainer);
+	// Usar el manager de elementos para mostrar la interfaz de resultados
+	ExerciseElementsManager.showResultsInterface(elements);
 
 	// Usar el total real de preguntas (incluyendo sub-preguntas)
 	const totalQuestions = exerciseData.totalRealQuestions || exerciseData.questions.length;
@@ -548,10 +420,7 @@ function resetQuestionState() {
 }
 
 function resetExerciseState() {
-	clearContainer(elements.container);
-	elements.nextButton.style.display = "none";
-	elements.scoreDisplay.style.display = "none";
-	clearContainer(elements.scoreDisplay);
+	ExerciseElementsManager.resetExerciseState(elements);
 }
 
 // ---
@@ -559,37 +428,13 @@ function resetExerciseState() {
 // ---
 
 function showExerciseInterface() {
-	elements.container.style.display = "block";
-
-	if (elements.homeButton) {
-		elements.homeButton.style.display = "flex";
-	}
-
-	if (elements.selectorDiv) {
-		elements.selectorDiv.style.display = "none";
-	}
-
+	ExerciseElementsManager.showExerciseInterface(elements);
 	updatePageContent();
 }
 
 function showHomeInterface() {
-	if (elements.homeButton) {
-		elements.homeButton.style.display = "none";
-	}
-
-	if (elements.selectorDiv) {
-		elements.selectorDiv.style.display = "flex";
-	}
-
-	if (elements.selector) {
-		elements.selector.value = "";
-	}
-
+	ExerciseElementsManager.showHomeInterface(elements);
 	restoreOriginalContent();
-
-	elements.container.style.display = "none";
-	elements.scoreDisplay.style.display = "none";
-	hideProgressBar(elements.progressContainer);
 }
 
 function updatePageContent() {
@@ -619,35 +464,25 @@ function restoreOriginalContent() {
 }
 
 // ---
-// UTILIDADES DE UI
+// UTILIDADES DE UI - Refactorizadas
 // ---
 
 function showNextButton() {
-	if (elements.nextButton) {
-		elements.nextButton.style.display = "block";
-		elements.nextButton.disabled = false;
-		elements.nextButton.classList.remove("disabled");
-	}
+	showButton(elements.nextButton);
+	enableButton(elements.nextButton);
 }
 
 function hideNextButton() {
-	if (elements.nextButton) {
-		elements.nextButton.style.display = "none";
-	}
+	hideButton(elements.nextButton);
 }
 
 function disableNextButton() {
-	if (elements.nextButton) {
-		elements.nextButton.disabled = true;
-		elements.nextButton.classList.add("disabled");
-	}
+	disableButton(elements.nextButton);
 }
 
 function hideCheckButton() {
 	const checkButton = elements.container.querySelector(".check-button");
-	if (checkButton) {
-		checkButton.style.display = "none";
-	}
+	hideButton(checkButton);
 }
 
 function showError(message) {
@@ -667,7 +502,7 @@ function showError(message) {
 
 	errorElement.appendChild(errorText);
 	elements.container.appendChild(errorElement);
-	elements.container.style.display = "block";
+	showContainer(elements.container);
 }
 
 function showTemporaryMessage(message) {
@@ -724,63 +559,30 @@ function updateURL(exerciseFile) {
 	window.history.pushState({}, "", url);
 }
 
-// ---
-// FUNCIONES AUXILIARES PARA FILL IN THE BLANKS
-// ---
+// Funciones auxiliares específicas remanentes (se moverán a sus módulos apropiados)
 
-function showRetryFeedback(questionSection, answers) {
-	// Remover feedback anterior si existe
-	const existingFeedback = questionSection.querySelector(".retry-feedback");
-	if (existingFeedback) {
-		existingFeedback.remove();
+function createFillInFeedbackMessage(answers, questionData) {
+	const incorrectAnswers = answers.filter(({ userAnswer, correctAnswer }) => userAnswer.toLowerCase() !== correctAnswer.toLowerCase());
+
+	if (incorrectAnswers.length === 0) {
+		return questionData.hint || "";
 	}
 
-	const retryFeedback = createElement("div", {
-		className: "retry-feedback",
+	const correctAnswersList = incorrectAnswers.map(({ correctAnswer }) => `"${correctAnswer}"`).join(", ");
+
+	let message = incorrectAnswers.length === 1 ? `La respuesta correcta es: ${correctAnswersList}` : `Las respuestas correctas son: ${correctAnswersList}`;
+
+	if (questionData.hint) {
+		message += `\nPista: ${questionData.hint}`;
+	}
+
+	return message;
+}
+
+function showCorrectAnswer(input, correctAnswer) {
+	const correctSpan = createElement("span", {
+		className: "correct-answer",
+		textContent: correctAnswer,
 	});
-
-	const retryMessage = createElement("p", {
-		className: "retry-message",
-		textContent: "Tienes una segunda oportunidad. Revisa tus respuestas:",
-	});
-
-	retryFeedback.appendChild(retryMessage);
-
-	// Mostrar hints específicos para cada respuesta incorrecta
-	answers.forEach(({ input }, index) => {
-		const feedback = input.getAttribute("data-feedback");
-		const hint = input.getAttribute("data-hint");
-
-		if (feedback && input.classList.contains("incorrect")) {
-			const itemFeedback = createElement("div", {
-				className: "item-feedback",
-			});
-
-			const feedbackText = createElement("p", {
-				className: "feedback-text",
-				textContent: `Campo ${index + 1}: ${feedback}`,
-			});
-
-			itemFeedback.appendChild(feedbackText);
-
-			if (hint) {
-				const hintText = createElement("p", {
-					className: "hint-text",
-					textContent: hint,
-				});
-				itemFeedback.appendChild(hintText);
-			}
-
-			retryFeedback.appendChild(itemFeedback);
-		}
-	});
-
-	questionSection.appendChild(retryFeedback);
-
-	// Auto-remover el feedback después de unos segundos
-	setTimeout(() => {
-		if (retryFeedback.parentNode) {
-			retryFeedback.remove();
-		}
-	}, 8000);
+	input.parentNode.insertBefore(correctSpan, input.nextSibling);
 }

@@ -426,10 +426,7 @@ function createMatchingColumn(items, side, label) {
 
 // Función auxiliar para limpiar completamente el estado de un elemento matching
 function clearMatchingItemState(element) {
-	if (!element) return;
-
-	element.classList.remove("selected", "incorrect", "correct");
-	element.setAttribute("aria-selected", "false");
+	AnswerStateManager.clearState(element);
 }
 
 function initializeMatchingLogic(container, questionData, onComplete) {
@@ -728,65 +725,41 @@ function renderSingleReadingQuestion(container, questionData, onAnswerSelect) {
 }
 
 // ---
-// FEEDBACK Y UTILIDADES
+// FEEDBACK Y UTILIDADES - Refactorizadas para usar sistema unificado
 // ---
 
+// Las funciones de feedback ahora usan el sistema unificado
+// pero mantenemos compatibilidad hacia atrás
+
 function showFeedback(container, isCorrect, message = "") {
-	const existingFeedback = container.querySelector(".feedback");
-	if (existingFeedback) {
-		existingFeedback.remove();
-	}
-
-	const feedbackContainer = createElement("div", {
-		className: `feedback ${isCorrect ? "correct" : "incorrect"}`,
-		attributes: {
-			role: "alert",
-			"aria-live": "polite",
-		},
-	});
-
-	const feedbackTitle = createElement("strong", {
-		textContent: isCorrect ? "¡Correcto!" : "Incorrecto.",
-	});
-	feedbackContainer.appendChild(feedbackTitle);
-
-	if (message) {
-		const feedbackMessage = createElement("div", {
-			className: "feedback-details",
-			textContent: message,
-		});
-		feedbackContainer.appendChild(feedbackMessage);
-	}
-
-	container.appendChild(feedbackContainer);
-
-	requestAnimationFrame(() => {
-		feedbackContainer.style.display = "block";
+	return showUnifiedFeedback(container, {
+		type: "general",
+		isCorrect,
+		message,
 	});
 }
 
 function showMatchingFeedback(container, isCorrect, message) {
-	const existingFeedback = container.querySelector(".matching-feedback");
-	if (existingFeedback) {
-		existingFeedback.remove();
-	}
-
-	const feedback = createElement("div", {
-		className: `matching-feedback ${isCorrect ? "correct" : "incorrect"}`,
-		textContent: message,
-		attributes: {
-			role: "status",
-			"aria-live": "polite",
-		},
+	return showUnifiedFeedback(container, {
+		type: "matching",
+		isCorrect,
+		message,
 	});
+}
 
-	container.appendChild(feedback);
+function showTemporaryFeedback(container, message, isPositive = false) {
+	return showUnifiedFeedback(container, {
+		type: "temporary",
+		isCorrect: isPositive,
+		message,
+	});
+}
 
-	setTimeout(() => {
-		if (feedback && feedback.parentNode) {
-			feedback.remove();
-		}
-	}, 3000);
+function showRetryFeedback(container, answers) {
+	return showUnifiedFeedback(container, {
+		type: "retry",
+		additionalData: { answers },
+	});
 }
 
 // ---
@@ -936,28 +909,6 @@ function getPerformanceClass(percentage) {
 // ---
 // FEEDBACK Y PROGRESS BAR
 // ---
-
-function showTemporaryFeedback(container, message, isPositive = false) {
-	// Remover feedback anterior si existe
-	const existingFeedback = container.querySelector(".temporary-feedback");
-	if (existingFeedback) {
-		existingFeedback.remove();
-	}
-
-	const feedbackElement = createElement("div", {
-		className: `temporary-feedback ${isPositive ? "positive" : "negative"}`,
-		textContent: message,
-	});
-
-	container.appendChild(feedbackElement);
-
-	// Remover después de 3 segundos
-	setTimeout(() => {
-		if (feedbackElement.parentNode) {
-			feedbackElement.remove();
-		}
-	}, 3000);
-}
 
 function renderTrueFalse(container, questionData, onAnswer) {
 	clearContainer(container);
@@ -1419,12 +1370,5 @@ function updateProgressBar(currentQuestion, totalQuestions) {
 	if (progressFill) {
 		progressFill.style.width = `${percentage}%`;
 		progressFill.setAttribute("aria-valuenow", percentage);
-	}
-}
-
-function hideProgressBar(container) {
-	if (container) {
-		container.style.display = "none";
-		container.setAttribute("aria-hidden", "true");
 	}
 }
