@@ -10,7 +10,7 @@
 				{ "text": "has / been", "isCorrect": false },
 				{ "text": "have / be", "isCorrect": false }
 			],
-			"hint": "Presente perfecto: have/has + past participle. Con 'I' usamos 'have'."
+			"explanation": "Presente perfecto: have/has + participio pasado. Con 'I' usamos 'have' y el participio de 'be' es 'been'."
 		},
 		{
 			"type": "fill_in_the_blanks",
@@ -26,7 +26,7 @@
 				{ "text": "will be", "isCorrect": false },
 				{ "text": "will to", "isCorrect": false }
 			],
-			"hint": "Con 'will' usamos el infinitivo sin 'to'."
+			"explanation": "Después de 'will' usamos el infinitivo SIN 'to': will + infinitivo base. 'It will rain' es correcto."
 		},
 		{
 			"type": "short_answer",
@@ -56,7 +56,7 @@
 				{ "text": "have / left", "isCorrect": false },
 				{ "text": "had / leave", "isCorrect": false }
 			],
-			"hint": "Pasado perfecto: had + past participle."
+			"explanation": "Pasado perfecto: had + participio pasado. Se usa para acciones que ocurrieron antes que otra acción en el pasado."
 		},
 		{
 			"type": "ordering",
@@ -79,7 +79,7 @@
 				{ "text": "'Since' para períodos, 'for' para puntos específicos", "isCorrect": false },
 				{ "text": "Son sinónimos", "isCorrect": false }
 			],
-			"hint": "'Since 2020' (punto específico), 'for 3 years' (período de tiempo)."
+			"explanation": "Usamos 'since' para el momento específico cuando comenzó la acción (since 2020) y 'for' para la duración (for 3 years)."
 		},
 		{
 			"type": "short_answer",
@@ -98,7 +98,7 @@
 				{ "text1": "Future 'will'", "text2": "Spontaneous decisions" },
 				{ "text1": "Conditional 'would'", "text2": "Hypothetical situations" }
 			],
-			"hint": "Piensa en cuándo usas cada tiempo verbal."
+			"explanation": "Cada tiempo verbal tiene usos específicos: Present Perfect para experiencias, Past Continuous para acciones en progreso en el pasado, Will para decisiones espontáneas, Would para situaciones hipotéticas."
 		},
 		{
 			"type": "fill_in_the_blanks",
@@ -120,7 +120,7 @@
 				{ "text": "will finish", "isCorrect": false },
 				{ "text": "will be finishing", "isCorrect": false }
 			],
-			"hint": "Futuro perfecto: will + have + past participle."
+			"explanation": "Futuro perfecto: will + have + participio pasado. Se usa para acciones que estarán completadas en un momento futuro específico."
 		}
 	]
 }

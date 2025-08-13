@@ -253,7 +253,9 @@ function handleAnswerClick(event, questionData, callback) {
 		}
 	}
 
-	showFeedback(container, isCorrect, selectedOption.rationale || questionData.hint);
+	// Priorizar explanation general, luego rationale específico de la opción, luego hint
+	const feedbackMessage = questionData.explanation || selectedOption.rationale || questionData.hint;
+	showFeedback(container, isCorrect, feedbackMessage);
 	callback(isCorrect, selectedIndex);
 }
 

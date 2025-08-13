@@ -206,11 +206,52 @@ function handleExerciseResult(context, isCorrect, exerciseType, questionIndex) {
 	// Determinar el contenedor para el feedback - usar container por defecto
 	let feedbackContainer = context.container || context.feedbackContainer || document.getElementById("quiz") || document.body;
 
+	// Obtener questionData del contexto
+	const questionData = context.questionData || {};
+
+	// Priorizar explanation del ejercicio, si no existe usar mensajes genéricos
+	let correctMessage;
+	let incorrectMessage;
+
+	if (isCorrect) {
+		// Para respuestas correctas, usar explanation si existe o mensaje genérico
+		correctMessage = questionData.explanation || "¡Correcto!";
+	} else {
+		// Para respuestas incorrectas, usar explanation si existe, sino mensajes específicos por tipo
+		if (questionData.explanation) {
+			incorrectMessage = questionData.explanation;
+		} else {
+			// Fallback a mensajes genéricos según el tipo
+			switch (exerciseType) {
+				case "multiple_choice":
+					incorrectMessage = "Incorrecto. Revisa las opciones y selecciona la respuesta correcta.";
+					break;
+				case "true_false":
+					incorrectMessage = "Incorrecto. La respuesta era la opción contraria.";
+					break;
+				case "short_answer":
+					incorrectMessage = "Incorrecto. Revisa tu respuesta e intenta de nuevo.";
+					break;
+				case "fill_in_the_blanks":
+					incorrectMessage = "Algunas respuestas son incorrectas. Revisa los campos marcados.";
+					break;
+				case "ordering":
+					incorrectMessage = "El orden no es correcto. Intenta de nuevo.";
+					break;
+				case "matching":
+					incorrectMessage = "La combinación no es correcta.";
+					break;
+				default:
+					incorrectMessage = "Incorrecto.";
+			}
+		}
+	}
+
 	// Usar el sistema unificado de feedback
 	const feedbackOptions = {
 		type: "general",
 		isCorrect,
-		message: isCorrect ? "¡Correcto!" : "Incorrecto. Intenta de nuevo.",
+		message: isCorrect ? correctMessage : incorrectMessage,
 	};
 
 	if (feedbackContainer && typeof feedbackContainer.querySelector === "function") {
@@ -329,15 +370,27 @@ function handleReadingComprehensionResult(result, context) {
 		}
 	}
 
-	// Mostrar feedback y botón siguiente
+	// Mostrar feedback apropiado para reading comprehension
 	const feedbackContainer = context.container || document.getElementById("quiz") || document.body;
 	const isAllCorrect = correctAnswers === totalQuestions;
 	const percentage = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
 
+	// Crear mensaje de feedback apropiado (no estadísticas)
+	let feedbackMessage;
+	if (isAllCorrect) {
+		feedbackMessage = "¡Excelente! Has respondido correctamente todas las preguntas de comprensión.";
+	} else if (percentage >= 70) {
+		feedbackMessage = "¡Bien hecho! Has demostrado una buena comprensión del texto.";
+	} else if (percentage >= 50) {
+		feedbackMessage = "Comprensión aceptable, pero puedes mejorar tu análisis del texto.";
+	} else {
+		feedbackMessage = "Necesitas practicar más la comprensión lectora. Intenta releer el texto.";
+	}
+
 	const feedbackOptions = {
 		type: "general",
 		isCorrect: isAllCorrect,
-		message: `Respuestas correctas: ${correctAnswers} de ${totalQuestions} (${percentage}%)`,
+		message: feedbackMessage,
 	};
 
 	if (feedbackContainer && typeof feedbackContainer.querySelector === "function") {

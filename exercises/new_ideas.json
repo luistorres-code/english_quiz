@@ -10,13 +10,13 @@
 				{ "text": "bought", "isCorrect": true },
 				{ "text": "buys", "isCorrect": false }
 			],
-			"hint": "Recuerda que 'buy' es un verbo irregular en pasado."
+			"explanation": "'Buy' es un verbo irregular. Su pasado es 'bought', no 'buyed'. Los verbos irregulares deben memorizarse."
 		},
 		{
 			"type": "fill_in_the_blanks",
 			"question": "Completa la oración: 'London is ______ than Paris.'",
 			"questionParts": ["London is ", { "answer": "bigger", "label": "" }, " than Paris."],
-			"hint": "Usa la forma comparativa del adjetivo 'big'."
+			"explanation": "Para adjetivos cortos (una sílaba) como 'big', añadimos '-er' para el comparativo: big → bigger."
 		},
 		{
 			"type": "true_false",
@@ -47,13 +47,13 @@
 				{ "text": "interestinger", "isCorrect": false },
 				{ "text": "more interesting", "isCorrect": false }
 			],
-			"hint": "Usa el superlativo de 'interesting'."
+			"explanation": "Para adjetivos largos (3+ sílabas), el superlativo se forma con 'the most + adjective': most interesting."
 		},
 		{
 			"type": "fill_in_the_blanks",
 			"question": "Completa la oración: 'We have ______ homework to do.'",
 			"questionParts": ["We have ", { "answer": "some", "label": "" }, " homework to do."],
-			"hint": "'Homework' es un sustantivo incontable. Usa 'some'."
+			"explanation": "Con sustantivos incontables como 'homework' usamos 'some' en oraciones afirmativas, no 'a' ni 'many'."
 		},
 		{
 			"type": "matching",
@@ -63,7 +63,7 @@
 				{ "text1": "quiet", "text2": "noisy" },
 				{ "text1": "cheap", "text2": "expensive" }
 			],
-			"hint": "Piensa en el significado de los contrarios."
+			"explanation": "Los antónimos son palabras con significados opuestos: fast/slow (rápido/lento), quiet/noisy (silencioso/ruidoso), cheap/expensive (barato/caro)."
 		},
 		{
 			"type": "short_answer",
@@ -94,13 +94,13 @@
 				{ "text": "an", "isCorrect": false },
 				{ "text": "any", "isCorrect": true }
 			],
-			"hint": "Para preguntas con sustantivos contables en plural, usamos 'any'."
+			"explanation": "En preguntas y oraciones negativas usamos 'any' con sustantivos contables e incontables. 'Some' se usa en afirmaciones."
 		},
 		{
 			"type": "fill_in_the_blanks",
 			"question": "Completa la oración con un adjetivo comparativo: 'A mountain is ______ than a hill.'",
 			"questionParts": ["A mountain is ", { "answer": "higher", "label": "" }, " than a hill."],
-			"hint": "Usa la forma comparativa de 'high'."
+			"explanation": "Para adjetivos de una sílaba como 'high', el comparativo se forma añadiendo '-er': high → higher."
 		},
 		{
 			"type": "short_answer",
@@ -118,7 +118,7 @@
 				{ "text1": "park", "text2": "play sports" },
 				{ "text1": "museum", "text2": "see paintings" }
 			],
-			"hint": "Asocia cada lugar con su propósito."
+			"explanation": "Cada lugar tiene actividades específicas: library (biblioteca) para leer, park (parque) para deportes, museum (museo) para ver arte."
 		}
 	]
 }

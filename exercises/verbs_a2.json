@@ -10,7 +10,8 @@
 				{ "text": "went", "isCorrect": true },
 				{ "text": "goed", "isCorrect": false }
 			],
-			"hint": "'Go' es un verbo irregular. Su pasado es 'went'."
+			"hint": "'Go' es un verbo irregular. Su pasado es 'went'.",
+			"explanation": "'Go' es un verbo irregular. Su forma en pasado es 'went', no 'goed'."
 		},
 		{
 			"type": "fill_in_the_blanks",
@@ -26,7 +27,8 @@
 				{ "text": "bought", "isCorrect": true },
 				{ "text": "buied", "isCorrect": false }
 			],
-			"hint": "'Buy' es irregular. Su pasado es 'bought'."
+			"hint": "'Buy' es irregular. Su pasado es 'bought'.",
+			"explanation": "'Buy' es un verbo irregular. Su pasado es 'bought'. Los verbos irregulares no siguen la regla de añadir '-ed'."
 		},
 		{
 			"type": "short_answer",
@@ -56,7 +58,8 @@
 				{ "text": "speaks", "isCorrect": true },
 				{ "text": "speaking", "isCorrect": false }
 			],
-			"hint": "Con 'he', 'she', 'it' añadimos 's' o 'es' al verbo en presente simple."
+			"hint": "Con 'he', 'she', 'it' añadimos 's' o 'es' al verbo en presente simple.",
+			"explanation": "En presente simple, con tercera persona singular (he/she/it) añadimos 's' al verbo: speak → speaks."
 		},
 		{
 			"type": "ordering",
@@ -79,7 +82,8 @@
 				{ "text": "I don't like", "isCorrect": true },
 				{ "text": "I doesn't like", "isCorrect": false }
 			],
-			"hint": "Con 'I', 'you', 'we', 'they' usamos 'don't' para negar."
+			"hint": "Con 'I', 'you', 'we', 'they' usamos 'don't' para negar.",
+			"explanation": "Para negar en presente simple usamos 'don't' (do not) con I/you/we/they y 'doesn't' (does not) con he/she/it."
 		},
 		{
 			"type": "short_answer",
@@ -98,7 +102,8 @@
 				{ "text1": "take", "text2": "took" },
 				{ "text1": "see", "text2": "saw" }
 			],
-			"hint": "Estos son verbos irregulares muy comunes."
+			"hint": "Estos son verbos irregulares muy comunes.",
+			"explanation": "Los verbos irregulares cambian completamente en el pasado. Es importante memorizar estas formas: come→came, give→gave, take→took, see→saw."
 		},
 		{
 			"type": "fill_in_the_blanks",
@@ -120,7 +125,8 @@
 				{ "text": "What are you doing?", "isCorrect": true },
 				{ "text": "What do you doing?", "isCorrect": false }
 			],
-			"hint": "En presente continuo: What + am/is/are + pronoun + verb + ing?"
+			"hint": "En presente continuo: What + am/is/are + pronoun + verb + ing?",
+			"explanation": "Para preguntas en presente continuo: Question word + am/is/are + subject + verb+ing. El auxiliar va antes del sujeto."
 		}
 	]
 }
