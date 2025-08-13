@@ -26,25 +26,24 @@
 				</div>
 			</header>
 			<section class="quiz-selector" role="region" aria-labelledby="selector-title">
-				<h2 id="selector-title" class="visually-hidden">Selección de ejercicio</h2>
-				<label for="quiz-select">Selecciona un ejercicio:</label>
-				<select id="quiz-select" aria-describedby="selector-help">
-					<option value="" selected disabled>-- Elige un ejercicio --</option>
-					<!-- Los ejercicios se cargan dinámicamente desde exercises/index.json -->
-				</select>
-				<button id="load-quiz" type="button">Cargar Ejercicio</button>
-				<div id="selector-help" class="visually-hidden">Selecciona un ejercicio de la lista para comenzar a practicar inglés</div>
+				<h2 id="selector-title">Selecciona un ejercicio para comenzar:</h2>
+				<div id="exercise-cards-container" class="exercise-cards-grid">
+					<!-- Las tarjetas de ejercicios se cargan dinámicamente -->
+					<div class="loading-card">
+						<div class="loading-spinner"></div>
+						<p>Cargando ejercicios...</p>
+					</div>
+				</div>
+				<div id="selector-help" class="visually-hidden">Selecciona un ejercicio de las tarjetas para comenzar a practicar inglés</div>
 			</section>
 
-			<header class="quiz-header">
+			<header class="quiz-header" style="display: none">
 				<h1>Ejercicios de Inglés</h1>
 				<button id="home-button" class="header-home-button" style="display: none" type="button" aria-label="Volver al inicio">
 					<span class="home-icon" aria-hidden="true">🏠</span>
 					<span class="home-text">Inicio</span>
 				</button>
 			</header>
-
-			<p id="main-description">Selecciona un ejercicio para comenzar.</p>
 
 			<!-- Progress Bar -->
 			<div id="progress-container" style="display: none" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-labelledby="progress-text">

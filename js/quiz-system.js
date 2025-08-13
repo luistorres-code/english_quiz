@@ -17,8 +17,7 @@ function initializeSystem() {
 		homeButton: document.getElementById("home-button"),
 		scoreDisplay: document.getElementById("score-display"),
 		progressContainer: document.getElementById("progress-container"),
-		selector: document.getElementById("quiz-select"),
-		loadButton: document.getElementById("load-quiz"),
+		exerciseCardsContainer: document.getElementById("exercise-cards-container"),
 		selectorDiv: document.querySelector(".quiz-selector"),
 		feedbackContainer: document.getElementById("feedback-container"),
 	};
@@ -65,36 +64,107 @@ async function loadAvailableExercises() {
 		// Ordenar alfabéticamente por título
 		exerciseOptions.sort((a, b) => a.title.localeCompare(b.title));
 
-		// Poblar el select
-		populateExerciseSelect(exerciseOptions);
+		// Crear las tarjetas de ejercicios
+		createExerciseCards(exerciseOptions);
 	} catch (error) {
 		console.error("Error loading available exercises:", error);
 		// Fallback con opciones básicas
-		populateExerciseSelect([{ value: "first_steps", title: "Primeros Pasos", description: "" }]);
+		createExerciseCards([{ value: "first_steps", title: "Primeros Pasos", description: "" }]);
 	}
 }
 
-// Populate select with exercise options
-function populateExerciseSelect(exercises) {
-	if (!elements.selector) return;
+// Create interactive exercise cards
+function createExerciseCards(exercises) {
+	if (!elements.exerciseCardsContainer) return;
 
-	// Limpiar opciones existentes (excepto la primera)
-	const defaultOption = elements.selector.querySelector('option[value=""]');
-	elements.selector.innerHTML = "";
-	if (defaultOption) {
-		elements.selector.appendChild(defaultOption);
+	// Limpiar contenedor
+	elements.exerciseCardsContainer.innerHTML = "";
+
+	if (exercises.length === 0) {
+		// Estado vacío
+		const emptyState = document.createElement("div");
+		emptyState.className = "empty-exercises";
+		emptyState.innerHTML = `
+			<h3>No hay ejercicios disponibles</h3>
+			<p>Parece que no se pudieron cargar los ejercicios. Intenta recargar la página.</p>
+		`;
+		elements.exerciseCardsContainer.appendChild(emptyState);
+		return;
 	}
 
-	// Agregar opciones de ejercicios
+	// Crear tarjeta para cada ejercicio
 	exercises.forEach((exercise) => {
-		const option = document.createElement("option");
-		option.value = exercise.value;
-		option.textContent = exercise.title;
-		if (exercise.description) {
-			option.title = exercise.description; // Tooltip con descripción
-		}
-		elements.selector.appendChild(option);
+		const card = createExerciseCard(exercise);
+		elements.exerciseCardsContainer.appendChild(card);
 	});
+}
+
+// Create individual exercise card
+function createExerciseCard(exercise) {
+	const card = document.createElement("div");
+	card.className = "exercise-card";
+	card.tabIndex = 0;
+	card.setAttribute("data-exercise", exercise.value);
+	card.setAttribute("role", "button");
+	card.setAttribute("aria-label", `Cargar ejercicio: ${exercise.title}`);
+
+	// Determinar el nivel del ejercicio basado en el nombre del archivo
+	const level = determineExerciseLevel(exercise.value);
+
+	card.innerHTML = `
+		<div class="exercise-card-content">
+			<h3 class="exercise-card-title">${exercise.title}</h3>
+		</div>
+		<div class="exercise-card-meta">
+			<span class="exercise-card-level ${level.className}">${level.label}</span>
+		</div>
+	`;
+
+	// Agregar event listeners
+	card.addEventListener("click", () => selectExercise(exercise.value, card));
+	card.addEventListener("keydown", (e) => {
+		if (e.key === "Enter" || e.key === " ") {
+			e.preventDefault();
+			selectExercise(exercise.value, card);
+		}
+	});
+
+	return card;
+}
+
+// Determine exercise level from filename/title
+function determineExerciseLevel(exerciseValue) {
+	const value = exerciseValue.toLowerCase();
+
+	if (value.includes("a1") || value.includes("first_steps")) {
+		return { label: "A1", className: "level-a1" };
+	} else if (value.includes("a2")) {
+		return { label: "A2", className: "level-a2" };
+	} else if (value.includes("b1")) {
+		return { label: "B1", className: "level-b1" };
+	} else if (value.includes("b2")) {
+		return { label: "B2", className: "level-b2" };
+	} else {
+		// Default para ejercicios sin nivel específico
+		return { label: "Mixed", className: "level-mixed" };
+	}
+}
+
+// Select and load exercise
+function selectExercise(exerciseValue, cardElement) {
+	// Remover selección previa
+	const previouslySelected = elements.exerciseCardsContainer.querySelector(".exercise-card.selected");
+	if (previouslySelected) {
+		previouslySelected.classList.remove("selected");
+	}
+
+	// Marcar como seleccionado
+	cardElement.classList.add("selected");
+
+	// Cargar ejercicio inmediatamente
+	updateURL(exerciseValue);
+	const exerciseFileName = exerciseNameToFile(exerciseValue);
+	loadExercise(exerciseFileName);
 }
 
 // Format filename for display (fallback)
@@ -106,18 +176,6 @@ function formatFileName(fileName) {
 }
 
 function setupEventListeners() {
-	// Botón cargar ejercicio
-	if (elements.loadButton) {
-		elements.loadButton.addEventListener("click", () => {
-			const selectedExercise = elements.selector?.value;
-			if (selectedExercise) {
-				updateURL(selectedExercise);
-				const exerciseFileName = exerciseNameToFile(selectedExercise);
-				loadExercise(exerciseFileName);
-			}
-		});
-	}
-
 	// Botón siguiente
 	if (elements.nextButton) {
 		elements.nextButton.addEventListener("click", () => {

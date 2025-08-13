@@ -1,0 +1,126 @@
+{
+	"title": "Verbos B1 - Tiempos Complejos",
+	"description": "Perfecciona tu uso de los tiempos verbales del nivel B1. Incluye presente perfecto, pasado continuo, futuro y condicionales.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta del presente perfecto: 'I ______ never ______ to Japan.'",
+			"answerOptions": [
+				{ "text": "have / been", "isCorrect": true },
+				{ "text": "has / been", "isCorrect": false },
+				{ "text": "have / be", "isCorrect": false }
+			],
+			"hint": "Presente perfecto: have/has + past participle. Con 'I' usamos 'have'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con pasado continuo",
+			"questionParts": ["While I ", { "answer": "was studying", "label": "past continuous" }, ", my friend called me."],
+			"explanation": "Pasado continuo: was/were + verb + ing. Usamos 'was' con 'I'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la forma correcta del futuro 'will'?: 'Tomorrow it ______ rain.'",
+			"answerOptions": [
+				{ "text": "will", "isCorrect": true },
+				{ "text": "will be", "isCorrect": false },
+				{ "text": "will to", "isCorrect": false }
+			],
+			"hint": "Con 'will' usamos el infinitivo sin 'to'."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cuál es el participio pasado de 'write'?",
+			"correctAnswer": "written",
+			"alternatives": ["Written"],
+			"caseSensitive": false,
+			"explanation": "Write - wrote - written. Es un verbo irregular."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el presente perfecto",
+			"questionParts": ["She ", { "answer": "has lived", "label": "present perfect" }, " in London for five years."],
+			"explanation": "Present perfect con 'she': has + past participle. Usamos 'for' con períodos de tiempo."
+		},
+		{
+			"type": "true_false",
+			"question": "El condicional 'would' siempre va seguido de infinitivo con 'to'.",
+			"answer": "false",
+			"explanation": "Después de 'would' usamos infinitivo SIN 'to': I would go, not 'I would to go'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta del pasado perfecto: 'When I arrived, they ______ already ______.'",
+			"answerOptions": [
+				{ "text": "had / left", "isCorrect": true },
+				{ "text": "have / left", "isCorrect": false },
+				{ "text": "had / leave", "isCorrect": false }
+			],
+			"hint": "Pasado perfecto: had + past participle."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta en presente perfecto: 'Have / ever / you / been / to / Paris / ?'",
+			"items": ["Have", "you", "ever", "been", "to", "Paris", "?"],
+			"correctOrder": ["Have", "you", "ever", "been", "to", "Paris", "?"],
+			"explanation": "Pregunta en presente perfecto: Have + pronoun + ever + past participle + complement?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con 'going to' future",
+			"questionParts": ["Look at those clouds! It ", { "answer": "is going to", "label": "going to future" }, " rain."],
+			"explanation": "Usamos 'going to' para predicciones basadas en evidencia presente."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la diferencia entre 'since' y 'for' en presente perfecto?",
+			"answerOptions": [
+				{ "text": "'Since' para puntos específicos, 'for' para períodos", "isCorrect": true },
+				{ "text": "'Since' para períodos, 'for' para puntos específicos", "isCorrect": false },
+				{ "text": "Son sinónimos", "isCorrect": false }
+			],
+			"hint": "'Since 2020' (punto específico), 'for 3 years' (período de tiempo)."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cuál es el participio pasado de 'break'?",
+			"correctAnswer": "broken",
+			"alternatives": ["Broken"],
+			"caseSensitive": false,
+			"explanation": "Break - broke - broken. Es un verbo irregular."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada tiempo verbal con su uso típico.",
+			"pairs": [
+				{ "text1": "Present Perfect", "text2": "Experience in life" },
+				{ "text1": "Past Continuous", "text2": "Action in progress in past" },
+				{ "text1": "Future 'will'", "text2": "Spontaneous decisions" },
+				{ "text1": "Conditional 'would'", "text2": "Hypothetical situations" }
+			],
+			"hint": "Piensa en cuándo usas cada tiempo verbal."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el condicional",
+			"questionParts": ["If I won the lottery, I ", { "answer": "would travel", "label": "conditional" }, " around the world."],
+			"explanation": "Second conditional: If + past simple, would + infinitive (without 'to')."
+		},
+		{
+			"type": "true_false",
+			"question": "En presente perfecto, usamos 'have' con 'he', 'she', 'it'.",
+			"answer": "false",
+			"explanation": "Con 'he', 'she', 'it' usamos 'has' en presente perfecto."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la forma correcta del futuro perfecto?: 'By 2030, I ______ my studies.'",
+			"answerOptions": [
+				{ "text": "will have finished", "isCorrect": true },
+				{ "text": "will finish", "isCorrect": false },
+				{ "text": "will be finishing", "isCorrect": false }
+			],
+			"hint": "Futuro perfecto: will + have + past participle."
+		}
+	]
+}

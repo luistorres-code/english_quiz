@@ -1,0 +1,126 @@
+{
+	"title": "Verbos A2 - Tiempos Básicos",
+	"description": "Domina los verbos más importantes del nivel A2. Practica presente simple, pasado simple y presente continuo con verbos de uso cotidiano.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta del verbo 'go' en pasado: 'Yesterday I ______ to the cinema.'",
+			"answerOptions": [
+				{ "text": "go", "isCorrect": false },
+				{ "text": "went", "isCorrect": true },
+				{ "text": "goed", "isCorrect": false }
+			],
+			"hint": "'Go' es un verbo irregular. Su pasado es 'went'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el presente continuo",
+			"questionParts": ["She ", { "answer": "is watching", "label": "present continuous" }, " TV right now."],
+			"explanation": "Present continuous: am/is/are + verb + ing. Con 'she' usamos 'is'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es el pasado de 'buy'?",
+			"answerOptions": [
+				{ "text": "buyed", "isCorrect": false },
+				{ "text": "bought", "isCorrect": true },
+				{ "text": "buied", "isCorrect": false }
+			],
+			"hint": "'Buy' es irregular. Su pasado es 'bought'."
+		},
+		{
+			"type": "short_answer",
+			"question": "Escribe el pasado del verbo 'eat':",
+			"correctAnswer": "ate",
+			"alternatives": ["Ate"],
+			"caseSensitive": false,
+			"explanation": "El pasado de 'eat' es 'ate'. Es un verbo irregular."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con la forma correcta de 'have'",
+			"questionParts": ["They ", { "answer": "have", "label": "present simple" }, " breakfast at 8 AM every day."],
+			"explanation": "Con 'they' usamos 'have' en presente simple."
+		},
+		{
+			"type": "true_false",
+			"question": "El presente continuo de 'run' es 'runing'.",
+			"answer": "false",
+			"explanation": "El presente continuo de 'run' es 'running' (se dobla la 'n')."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la forma correcta: 'He ______ English and Spanish.'",
+			"answerOptions": [
+				{ "text": "speak", "isCorrect": false },
+				{ "text": "speaks", "isCorrect": true },
+				{ "text": "speaking", "isCorrect": false }
+			],
+			"hint": "Con 'he', 'she', 'it' añadimos 's' o 'es' al verbo en presente simple."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una pregunta en pasado: 'did / you / yesterday / What / do / ?'",
+			"items": ["What", "did", "you", "do", "yesterday", "?"],
+			"correctOrder": ["What", "did", "you", "do", "yesterday", "?"],
+			"explanation": "La estructura de pregunta en pasado simple es: What + did + pronoun + verb + complement?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el verbo 'be' en pasado",
+			"questionParts": ["Last week I ", { "answer": "was", "label": "past simple" }, " very busy."],
+			"explanation": "Con 'I' usamos 'was' como pasado del verbo 'be'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la forma negativa correcta en presente simple con 'like'?",
+			"answerOptions": [
+				{ "text": "I not like", "isCorrect": false },
+				{ "text": "I don't like", "isCorrect": true },
+				{ "text": "I doesn't like", "isCorrect": false }
+			],
+			"hint": "Con 'I', 'you', 'we', 'they' usamos 'don't' para negar."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cuál es el pasado de 'think'?",
+			"correctAnswer": "thought",
+			"alternatives": ["Thought"],
+			"caseSensitive": false,
+			"explanation": "'Think' es irregular. Su pasado es 'thought'."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada verbo con su pasado irregular.",
+			"pairs": [
+				{ "text1": "come", "text2": "came" },
+				{ "text1": "give", "text2": "gave" },
+				{ "text1": "take", "text2": "took" },
+				{ "text1": "see", "text2": "saw" }
+			],
+			"hint": "Estos son verbos irregulares muy comunes."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con presente continuo",
+			"questionParts": ["We ", { "answer": "are playing", "label": "present continuous" }, " football in the park."],
+			"explanation": "Present continuous con 'we': are + verb + ing"
+		},
+		{
+			"type": "true_false",
+			"question": "Para formar el pasado de verbos regulares, añadimos '-ed'.",
+			"answer": "true",
+			"explanation": "Los verbos regulares forman el pasado añadiendo '-ed': walk → walked, play → played."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Selecciona la pregunta correcta en presente continuo:",
+			"answerOptions": [
+				{ "text": "What you are doing?", "isCorrect": false },
+				{ "text": "What are you doing?", "isCorrect": true },
+				{ "text": "What do you doing?", "isCorrect": false }
+			],
+			"hint": "En presente continuo: What + am/is/are + pronoun + verb + ing?"
+		}
+	]
+}

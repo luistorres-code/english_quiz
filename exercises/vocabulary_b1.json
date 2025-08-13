@@ -1,0 +1,129 @@
+{
+	"title": "Vocabulario B1 - Temas Avanzados",
+	"description": "Expande tu vocabulario para el nivel B1. Incluye temas como tecnología, medio ambiente, educación y relaciones sociales.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "¿Qué significa 'achievement'?",
+			"answerOptions": [
+				{ "text": "logro", "isCorrect": true },
+				{ "text": "fracaso", "isCorrect": false },
+				{ "text": "problema", "isCorrect": false }
+			],
+			"hint": "Algo que consigues después de trabajar duro."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el adjetivo correcto",
+			"questionParts": ["The movie was so ", { "answer": "boring", "label": "-ing adjective" }, " that I fell asleep."],
+			"explanation": "Usamos '-ing' adjectives para describir cómo algo nos hace sentir a otros."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada problema ambiental con su definición.",
+			"pairs": [
+				{ "text1": "global warming", "text2": "Earth's temperature rising" },
+				{ "text1": "deforestation", "text2": "cutting down forests" },
+				{ "text1": "pollution", "text2": "contamination of air/water" },
+				{ "text1": "extinction", "text2": "species disappearing forever" }
+			],
+			"hint": "Piensa en los principales problemas del medio ambiente."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'desarrollar' (una habilidad) en inglés?",
+			"correctAnswer": "develop",
+			"alternatives": ["Develop"],
+			"caseSensitive": false,
+			"explanation": "'Develop' significa hacer crecer o mejorar algo gradualmente."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Qué significa 'reliable'?",
+			"answerOptions": [
+				{ "text": "confiable", "isCorrect": true },
+				{ "text": "relajado", "isCorrect": false },
+				{ "text": "relacionado", "isCorrect": false }
+			],
+			"hint": "Una persona o cosa en la que puedes confiar."
+		},
+		{
+			"type": "true_false",
+			"question": "'Mandatory' significa 'opcional'.",
+			"answer": "false",
+			"explanation": "'Mandatory' significa 'obligatorio'. Lo contrario es 'optional'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el sustantivo correcto",
+			"questionParts": ["The ", { "answer": "consequences", "label": "plural noun" }, " of climate change are serious."],
+			"explanation": "'Consequences' son los resultados o efectos de una acción."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es el significado de 'advocate'?",
+			"answerOptions": [
+				{ "text": "abogar por", "isCorrect": true },
+				{ "text": "evitar", "isCorrect": false },
+				{ "text": "atacar", "isCorrect": false }
+			],
+			"hint": "Apoyar públicamente una causa o idea."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración sobre tecnología: 'has / society / Technology / transformed / modern'.",
+			"items": ["Technology", "has", "transformed", "modern", "society"],
+			"correctOrder": ["Technology", "has", "transformed", "modern", "society"],
+			"explanation": "La oración correcta es 'Technology has transformed modern society'."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'investigación' en inglés?",
+			"correctAnswer": "research",
+			"alternatives": ["Research"],
+			"caseSensitive": false,
+			"explanation": "'Research' es el proceso de estudiar algo sistemáticamente para descubrir nuevos hechos."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada palabra relacionada con educación con su definición.",
+			"pairs": [
+				{ "text1": "curriculum", "text2": "course content" },
+				{ "text1": "scholarship", "text2": "financial aid for studies" },
+				{ "text1": "assignment", "text2": "task given by teacher" },
+				{ "text1": "graduation", "text2": "completion of studies" }
+			],
+			"hint": "Términos comunes en el ámbito educativo."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Qué significa 'overwhelming'?",
+			"answerOptions": [
+				{ "text": "abrumador", "isCorrect": true },
+				{ "text": "sobrenatural", "isCorrect": false },
+				{ "text": "sobresaliente", "isCorrect": false }
+			],
+			"hint": "Cuando algo es demasiado intenso o difícil de manejar."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con el phrasal verb correcto",
+			"questionParts": ["Scientists are trying to ", { "answer": "figure out", "label": "phrasal verb" }, " how to solve this problem."],
+			"explanation": "'Figure out' significa 'descubrir' o 'resolver' algo."
+		},
+		{
+			"type": "true_false",
+			"question": "'Sustainable' significa que algo puede continuar por mucho tiempo sin dañar el medio ambiente.",
+			"answer": "true",
+			"explanation": "'Sustainable' se refiere a prácticas que no agotan los recursos naturales."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cuál es el adjetivo que describe algo 'controvertido' o 'polémico'?",
+			"correctAnswer": "controversial",
+			"alternatives": ["Controversial"],
+			"caseSensitive": false,
+			"explanation": "'Controversial' describe algo que causa debate o desacuerdo."
+		}
+	]
+}

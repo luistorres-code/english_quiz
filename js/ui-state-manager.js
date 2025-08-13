@@ -169,8 +169,18 @@ const ExerciseElementsManager = {
 	 */
 	showExerciseInterface(elements) {
 		showContainer(elements.container);
-		showButton(elements.homeButton);
 		hideContainer(elements.selectorDiv);
+
+		// Mostrar header del quiz manteniendo su display flex
+		const quizHeader = document.querySelector(".quiz-header");
+		if (quizHeader) {
+			quizHeader.style.display = "flex";
+		}
+
+		// Mostrar botón home con display flex para que funcione con el header
+		if (elements.homeButton) {
+			elements.homeButton.style.display = "flex";
+		}
 	},
 
 	/**
@@ -181,6 +191,12 @@ const ExerciseElementsManager = {
 		showContainer(elements.selectorDiv);
 		hideContainer([elements.container, elements.scoreDisplay]);
 		hideProgressBar(elements.progressContainer);
+
+		// Ocultar header del quiz
+		const quizHeader = document.querySelector(".quiz-header");
+		if (quizHeader) {
+			quizHeader.style.display = "none";
+		}
 
 		// Restaurar estado inicial completo
 		this.restoreInitialState(elements);
@@ -224,15 +240,10 @@ const ExerciseElementsManager = {
 			}
 		}
 
-		// Restaurar select y botón de carga
-		if (elements.selector) {
-			elements.selector.value = "";
-			elements.selector.disabled = false;
-		}
-
-		if (elements.loadButton) {
-			elements.loadButton.disabled = false;
-			elements.loadButton.style.display = "";
+		// Limpiar selección de tarjetas de ejercicios
+		if (elements.exerciseCardsContainer) {
+			const selectedCards = elements.exerciseCardsContainer.querySelectorAll(".exercise-card.selected");
+			selectedCards.forEach((card) => card.classList.remove("selected"));
 		}
 
 		// Restaurar contenedor principal

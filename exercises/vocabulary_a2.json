@@ -1,0 +1,128 @@
+{
+	"title": "Vocabulario A2 - Vida Cotidiana",
+	"description": "Amplía tu vocabulario con palabras esenciales para el nivel A2. Incluye temas como trabajo, tiempo libre, salud y viajes.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es la traducción de 'chef' en español?",
+			"answerOptions": [
+				{ "text": "cocinero", "isCorrect": true },
+				{ "text": "camarero", "isCorrect": false },
+				{ "text": "panadero", "isCorrect": false }
+			],
+			"hint": "La persona que cocina en un restaurante."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa con la palabra correcta sobre el tiempo",
+			"questionParts": ["It's ", { "answer": "raining", "label": "present continuous" }, " outside. Take an umbrella."],
+			"explanation": "Usamos el present continuous para describir el clima en este momento."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada profesión con su lugar de trabajo.",
+			"pairs": [
+				{ "text1": "teacher", "text2": "school" },
+				{ "text1": "doctor", "text2": "hospital" },
+				{ "text1": "waiter", "text2": "restaurant" },
+				{ "text1": "librarian", "text2": "library" }
+			],
+			"hint": "Piensa dónde trabaja cada persona."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'supermercado' en inglés?",
+			"correctAnswer": "supermarket",
+			"alternatives": ["Supermarket"],
+			"caseSensitive": false,
+			"explanation": "Supermarket es donde compramos comida y productos para el hogar."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Qué significa 'appointment'?",
+			"answerOptions": [
+				{ "text": "cita", "isCorrect": true },
+				{ "text": "desayuno", "isCorrect": false },
+				{ "text": "apartamento", "isCorrect": false }
+			],
+			"hint": "Algo que planificas con anticipación, como ir al médico."
+		},
+		{
+			"type": "true_false",
+			"question": "'Expensive' significa 'barato'.",
+			"answer": "false",
+			"explanation": "'Expensive' significa 'caro'. Lo contrario de 'expensive' es 'cheap'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa sobre actividades de tiempo libre",
+			"questionParts": ["I enjoy ", { "answer": "reading", "label": "gerund" }, " books in my free time."],
+			"explanation": "Después de 'enjoy' usamos gerundio (-ing form)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Cuál es el opuesto de 'healthy'?",
+			"answerOptions": [
+				{ "text": "sick", "isCorrect": true },
+				{ "text": "happy", "isCorrect": false },
+				{ "text": "strong", "isCorrect": false }
+			],
+			"hint": "Cuando no te sientes bien físicamente."
+		},
+		{
+			"type": "ordering",
+			"question": "Ordena las palabras para formar una oración sobre transporte: 'by / go / I / work / to / bus'.",
+			"items": ["I", "go", "to", "work", "by", "bus"],
+			"correctOrder": ["I", "go", "to", "work", "by", "bus"],
+			"explanation": "La estructura correcta es 'I go to work by bus'."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'farmacia' en inglés?",
+			"correctAnswer": "pharmacy",
+			"alternatives": ["Pharmacy", "drugstore", "Drugstore"],
+			"caseSensitive": false,
+			"explanation": "Pharmacy o drugstore es donde compramos medicamentos."
+		},
+		{
+			"type": "matching",
+			"question": "Une cada comida con su momento del día.",
+			"pairs": [
+				{ "text1": "breakfast", "text2": "morning" },
+				{ "text1": "lunch", "text2": "afternoon" },
+				{ "text1": "dinner", "text2": "evening" }
+			],
+			"hint": "Piensa en cuándo comes cada comida."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "¿Qué significa 'pollution'?",
+			"answerOptions": [
+				{ "text": "contaminación", "isCorrect": true },
+				{ "text": "población", "isCorrect": false },
+				{ "text": "posición", "isCorrect": false }
+			],
+			"hint": "Problema ambiental en las ciudades grandes."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Completa sobre el clima",
+			"questionParts": ["The weather is ", { "answer": "sunny", "label": "adjective" }, " today. Perfect for a picnic!"],
+			"explanation": "'Sunny' describe un día con mucho sol."
+		},
+		{
+			"type": "true_false",
+			"question": "'Customer' significa 'cliente'.",
+			"answer": "true",
+			"explanation": "Customer es la persona que compra productos o servicios."
+		},
+		{
+			"type": "short_answer",
+			"question": "¿Cómo se dice 'equipaje' en inglés?",
+			"correctAnswer": "luggage",
+			"alternatives": ["Luggage", "baggage", "Baggage"],
+			"caseSensitive": false,
+			"explanation": "Luggage o baggage son las maletas y bolsas que llevas cuando viajas."
+		}
+	]
+}

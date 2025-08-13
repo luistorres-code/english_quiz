@@ -12,13 +12,13 @@ const FEEDBACK_CONFIG = {
 		ariaLive: "polite",
 	},
 	matching: {
-		duration: 3000,
+		duration: 5000,
 		className: "matching-feedback",
 		role: "status",
 		ariaLive: "polite",
 	},
 	temporary: {
-		duration: 3000,
+		duration: 5000,
 		className: "temporary-feedback",
 		role: "status",
 		ariaLive: "polite",

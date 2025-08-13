@@ -542,6 +542,31 @@ function renderReadingComprehension(container, questionData, mainQuestionIndex, 
 		},
 	});
 
+	// Crear header con botón de colapso
+	const passageHeader = createElement("div", {
+		className: "reading-passage-header",
+	});
+
+	const toggleButton = createElement("button", {
+		className: "reading-toggle-button",
+		textContent: "Mostrar menos ▲",
+		attributes: {
+			type: "button",
+			"aria-expanded": "true",
+			"aria-controls": "passage-content",
+			title: "Mostrar/Ocultar texto completo de lectura",
+		},
+	});
+
+	// Crear contenedor para el contenido que se puede colapsar
+	const passageContent = createElement("div", {
+		className: "passage-content",
+		attributes: {
+			id: "passage-content",
+			"aria-labelledby": "reading-title",
+		},
+	});
+
 	// Procesar el texto de lectura (puede ser array de párrafos o texto único)
 	const passageText = createElement("div", {
 		className: "passage-text",
@@ -560,7 +585,34 @@ function renderReadingComprehension(container, questionData, mainQuestionIndex, 
 		passageText.textContent = questionData.passage;
 	}
 
-	passageContainer.appendChild(passageText);
+	// Ensamblar la estructura
+	passageContent.appendChild(passageText);
+	passageHeader.appendChild(toggleButton);
+	passageContainer.appendChild(passageHeader);
+	passageContainer.appendChild(passageContent);
+
+	// Comenzar en estado expandido (primera pregunta siempre muestra texto completo)
+	// NO agregar la clase "collapsed" inicialmente
+
+	// Agregar funcionalidad de colapso
+	toggleButton.addEventListener("click", () => {
+		const isCollapsed = passageContainer.classList.contains("collapsed");
+
+		if (isCollapsed) {
+			// Expandir - mostrar texto completo
+			passageContainer.classList.remove("collapsed");
+			toggleButton.textContent = "Mostrar menos ▲";
+			toggleButton.setAttribute("aria-expanded", "true");
+		} else {
+			// Colapsar - mostrar solo preview
+			passageContainer.classList.add("collapsed");
+			toggleButton.textContent = "Leer completo ▼";
+			toggleButton.setAttribute("aria-expanded", "false");
+		}
+	});
+
+	// Guardar referencia para poder colapsar automáticamente
+	passageContainer._toggleButton = toggleButton;
 
 	// Agregar título y pasaje al contenedor principal
 	questionSection.appendChild(readingTitle);
@@ -585,6 +637,16 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 	function showNextReadingQuestion() {
 		if (currentQuestionIndex < questions.length) {
 			const question = questions[currentQuestionIndex];
+
+			// Auto-colapsar el texto de lectura al pasar a la siguiente pregunta
+			if (currentQuestionIndex > 0) {
+				const passageContainer = container.querySelector(".reading-passage");
+				if (passageContainer && passageContainer._toggleButton && !passageContainer.classList.contains("collapsed")) {
+					passageContainer.classList.add("collapsed");
+					passageContainer._toggleButton.textContent = "Leer completo ▼";
+					passageContainer._toggleButton.setAttribute("aria-expanded", "false");
+				}
+			}
 
 			// Actualizar progreso para esta sub-pregunta
 			if (window.exerciseSystem && window.exerciseSystem.updateReadingProgress) {
