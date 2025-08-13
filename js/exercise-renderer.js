@@ -90,12 +90,7 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
 
 	// Crear callback unificado que maneja todos los tipos de respuesta
 	const unifiedCallback = (...args) => {
-		console.log(`=== UNIFIED CALLBACK CALLED ===`);
-		console.log(`Exercise type: ${exerciseType}`);
-		console.log(`Args:`, args);
-
 		const result = config.callback(...args);
-		console.log(`Callback result:`, result);
 
 		// Extraer información del resultado según el tipo de ejercicio
 		let isCorrect = false;
@@ -123,7 +118,6 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
 			// IMPORTANTE: Actualizar el score manualmente porque handleFillInTheBlanksResult no lo hace
 			if (correctAnswers > 0 && context.updateScore) {
 				context.updateScore();
-				console.log(`Fill in the blanks: Updated score by ${correctAnswers}`);
 			}
 		} else {
 			// Para todos los demás (multiple_choice, true_false, short_answer, ordering)
@@ -204,12 +198,6 @@ function showNextButtonAfterAnswer(context) {
 }
 
 function handleExerciseResult(context, isCorrect, exerciseType, questionIndex) {
-	console.log(`=== HANDLE EXERCISE RESULT ===`);
-	console.log(`Exercise type: ${exerciseType}`);
-	console.log(`Is correct: ${isCorrect}`);
-	console.log(`Context elements:`, context.elements);
-	console.log(`Next button:`, context.elements?.nextButton);
-
 	// Incrementar score si la respuesta es correcta
 	if (isCorrect && context.updateScore) {
 		context.updateScore();
@@ -232,24 +220,14 @@ function handleExerciseResult(context, isCorrect, exerciseType, questionIndex) {
 	}
 
 	// Mostrar botón "Siguiente" y ocultar botón "Comprobar"
-	console.log(`=== TRYING TO SHOW NEXT BUTTON ===`);
 	if (context.elements && context.elements.nextButton) {
-		console.log(`Next button found, showing...`);
-
 		// Usar solo el sistema unificado, sin manipulación directa
 		manageUIState([context.elements.nextButton], "button", "show");
 		manageUIState([context.elements.nextButton], "button", "enable");
 
-		console.log(`Next button styles after showing:`, {
-			display: context.elements.nextButton.style.display,
-			visibility: context.elements.nextButton.style.visibility,
-			disabled: context.elements.nextButton.disabled,
-		});
-
 		// Ocultar botones de comprobar si existen
 		const checkButtons = feedbackContainer.querySelectorAll(".check-answer-btn");
 		if (checkButtons.length > 0) {
-			console.log(`Hiding check buttons:`, checkButtons);
 			manageUIState(checkButtons, "button", "hide");
 		}
 	} else {

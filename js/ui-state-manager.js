@@ -384,8 +384,6 @@ function showError(message, container) {
 }
 
 function showTemporaryMessage(message, duration = 3000) {
-	console.log(message); // Placeholder - se puede mejorar con un toast
-
 	// TODO: Implementar sistema de toast unificado
 	// const toast = createToast(message, duration);
 	// document.body.appendChild(toast);

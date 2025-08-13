@@ -316,8 +316,6 @@ function renderExerciseByType(exerciseType, questionData) {
 		if (result.exerciseType === "reading_comprehension" && result.originalResult.isComplete) {
 			// No ajustar currentQuestionIndex aquí, se manejará en nextQuestion()
 		}
-
-		console.log(`Exercise completed: ${result.exerciseType}, scoreIncrement: ${result.scoreIncrement}, total score: ${score}`);
 	});
 }
 
@@ -474,14 +472,14 @@ function shareResults(percentage, score, total) {
 				text: shareText,
 				url: window.location.href,
 			})
-			.catch((err) => console.log("Error sharing:", err));
+			.catch((err) => console.error("Error sharing:", err));
 	} else if (navigator.clipboard) {
 		navigator.clipboard
 			.writeText(shareText + " - " + window.location.href)
 			.then(() => {
 				showTemporaryMessage("¡Resultado copiado al portapapeles!");
 			})
-			.catch((err) => console.log("Error copying to clipboard:", err));
+			.catch((err) => console.error("Error copying to clipboard:", err));
 	} else {
 		alert(shareText + "\n\n" + window.location.href);
 	}
@@ -579,7 +577,8 @@ function showError(message) {
 }
 
 function showTemporaryMessage(message) {
-	console.log(message); // Placeholder - se puede mejorar con un toast
+	// TODO: Implementar sistema de toast notifications
+	// Por ahora, simplemente mostrar un alert temporal
 }
 
 // ---
