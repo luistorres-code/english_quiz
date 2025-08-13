@@ -374,43 +374,5 @@ function handleReadingComprehensionResult(result, context) {
 	}
 }
 
-/**
- * Funciones de conveniencia para mantener la interfaz existente
- */
-function renderMultipleChoiceExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("multiple_choice", questionData, context, onComplete);
-}
-
-function renderFillInTheBlankExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("fill_in_the_blanks", questionData, context, onComplete);
-}
-
-function renderMatchingExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("matching", questionData, context, onComplete);
-}
-
-function renderReadingComprehensionExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("reading_comprehension", questionData, context, onComplete);
-}
-
-function renderTrueFalseExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("true_false", questionData, context, onComplete);
-}
-
-function renderShortAnswerExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("short_answer", questionData, context, onComplete);
-}
-
-function renderOrderingExercise(questionData, context, onComplete) {
-	return renderUnifiedExercise("ordering", questionData, context, onComplete);
-}
-
-// Hacer funciones disponibles globalmente
+// Hacer función principal disponible globalmente
 window.renderUnifiedExercise = renderUnifiedExercise;
-window.renderMultipleChoiceExercise = renderMultipleChoiceExercise;
-window.renderFillInTheBlankExercise = renderFillInTheBlankExercise;
-window.renderMatchingExercise = renderMatchingExercise;
-window.renderReadingComprehensionExercise = renderReadingComprehensionExercise;
-window.renderTrueFalseExercise = renderTrueFalseExercise;
-window.renderShortAnswerExercise = renderShortAnswerExercise;
-window.renderOrderingExercise = renderOrderingExercise;

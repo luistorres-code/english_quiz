@@ -181,6 +181,12 @@ const ExerciseElementsManager = {
 		if (elements.homeButton) {
 			elements.homeButton.style.display = "flex";
 		}
+
+		// Preparar área de feedback para el quiz (inicialmente oculta)
+		const feedbackArea = document.getElementById("feedback-area");
+		if (feedbackArea) {
+			feedbackArea.style.display = "none";
+		}
 	},
 
 	/**
@@ -198,6 +204,12 @@ const ExerciseElementsManager = {
 			quizHeader.style.display = "none";
 		}
 
+		// Ocultar área de feedback
+		const feedbackArea = document.getElementById("feedback-area");
+		if (feedbackArea) {
+			feedbackArea.style.display = "none";
+		}
+
 		// Restaurar estado inicial completo
 		this.restoreInitialState(elements);
 	},
@@ -210,6 +222,12 @@ const ExerciseElementsManager = {
 		hideButton(elements.nextButton);
 		hideProgressBar(elements.progressContainer);
 		showContainer(elements.scoreDisplay);
+
+		// Ocultar área de feedback en resultados
+		const feedbackArea = document.getElementById("feedback-area");
+		if (feedbackArea) {
+			feedbackArea.style.display = "none";
+		}
 	},
 
 	/**
@@ -220,6 +238,19 @@ const ExerciseElementsManager = {
 		hideButton(elements.nextButton);
 		hideContainer(elements.scoreDisplay);
 		clearContainer(elements.scoreDisplay);
+
+		// Limpiar área de feedback al resetear ejercicio
+		if (typeof clearFeedbackArea === "function") {
+			clearFeedbackArea();
+		} else {
+			const feedbackArea = document.getElementById("feedback-area");
+			if (feedbackArea) {
+				feedbackArea.style.display = "none";
+				while (feedbackArea.firstChild) {
+					feedbackArea.removeChild(feedbackArea.firstChild);
+				}
+			}
+		}
 
 		// Restaurar estado inicial completo
 		this.restoreInitialState(elements);

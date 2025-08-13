@@ -504,6 +504,20 @@ function resetQuestionState() {
 	totalPairs = 0;
 	// Ocultar el botón siguiente al cambiar de pregunta
 	hideNextButton();
+
+	// Limpiar el área de feedback al pasar a la siguiente pregunta
+	if (typeof clearFeedbackArea === "function") {
+		clearFeedbackArea();
+	} else {
+		// Fallback si la función no está disponible
+		const feedbackArea = document.getElementById("feedback-area");
+		if (feedbackArea) {
+			feedbackArea.style.display = "none";
+			while (feedbackArea.firstChild) {
+				feedbackArea.removeChild(feedbackArea.firstChild);
+			}
+		}
+	}
 }
 
 function resetExerciseState() {

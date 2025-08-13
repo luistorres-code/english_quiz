@@ -434,6 +434,84 @@ function clearMatchingItemState(element) {
 	AnswerStateManager.clearState(element);
 }
 
+/**
+ * Maneja la selección de elementos del lado izquierdo
+ */
+function handleLeftSelection(element, currentSelected) {
+	if (currentSelected) {
+		clearMatchingItemState(currentSelected);
+	}
+	clearMatchingItemState(element);
+	element.classList.add("selected");
+	element.setAttribute("aria-selected", "true");
+	return element;
+}
+
+/**
+ * Maneja la selección de elementos del lado derecho
+ */
+function handleRightSelection(element, currentSelected) {
+	if (currentSelected) {
+		clearMatchingItemState(currentSelected);
+	}
+	clearMatchingItemState(element);
+	element.classList.add("selected");
+	element.setAttribute("aria-selected", "true");
+	return element;
+}
+
+/**
+ * Procesa el emparejamiento de dos elementos seleccionados
+ */
+function processMatching(leftElement, rightElement, correctPairs, container) {
+	const leftValue = leftElement.getAttribute("data-value");
+	const rightValue = rightElement.getAttribute("data-value");
+	const isCorrect = correctPairs.get(leftValue) === rightValue;
+
+	// Limpiar todas las clases de estado anteriores
+	clearMatchingItemState(leftElement);
+	clearMatchingItemState(rightElement);
+
+	if (isCorrect) {
+		leftElement.classList.add("correct");
+		rightElement.classList.add("correct");
+		leftElement.disabled = true;
+		rightElement.disabled = true;
+
+		showMatchingFeedback(container, true, `¡Correcto! "${leftValue}" se empareja con "${rightValue}"`);
+		return true; // Par correcto
+	} else {
+		leftElement.classList.add("incorrect");
+		rightElement.classList.add("incorrect");
+
+		showMatchingFeedback(container, false, `Incorrecto. "${leftValue}" no se empareja con "${rightValue}"`);
+
+		// Limpiar clases incorrectas después de un tiempo
+		setTimeout(() => {
+			if (leftElement && !leftElement.disabled) {
+				clearMatchingItemState(leftElement);
+			}
+			if (rightElement && !rightElement.disabled) {
+				clearMatchingItemState(rightElement);
+			}
+		}, 1500);
+
+		return false; // Par incorrecto
+	}
+}
+
+/**
+ * Verifica si el ejercicio de matching está completo
+ */
+function checkMatchingComplete(matchedPairs, totalPairs, container, onComplete) {
+	if (matchedPairs === totalPairs) {
+		showMatchingFeedback(container, true, "¡Excelente! Has completado todos los emparejamientos.");
+		onComplete(true, true);
+		return true;
+	}
+	return false;
+}
+
 function initializeMatchingLogic(container, questionData, onComplete) {
 	let selectedLeft = null;
 	let selectedRight = null;
@@ -448,75 +526,27 @@ function initializeMatchingLogic(container, questionData, onComplete) {
 		if (event.target.disabled) return;
 
 		const side = event.target.getAttribute("data-side");
-		const value = event.target.getAttribute("data-value");
 
 		if (side === "left") {
-			if (selectedLeft) {
-				// Limpiar estado anterior
-				clearMatchingItemState(selectedLeft);
-			}
-			selectedLeft = event.target;
-			// Limpiar cualquier clase anterior del nuevo elemento seleccionado
-			clearMatchingItemState(selectedLeft);
-			selectedLeft.classList.add("selected");
-			selectedLeft.setAttribute("aria-selected", "true");
+			selectedLeft = handleLeftSelection(event.target, selectedLeft);
 		} else {
-			if (selectedRight) {
-				// Limpiar estado anterior
-				clearMatchingItemState(selectedRight);
-			}
-			selectedRight = event.target;
-			// Limpiar cualquier clase anterior del nuevo elemento seleccionado
-			clearMatchingItemState(selectedRight);
-			selectedRight.classList.add("selected");
-			selectedRight.setAttribute("aria-selected", "true");
+			selectedRight = handleRightSelection(event.target, selectedRight);
 		}
 
+		// Procesar emparejamiento si ambos lados están seleccionados
 		if (selectedLeft && selectedRight) {
-			const leftValue = selectedLeft.getAttribute("data-value");
-			const rightValue = selectedRight.getAttribute("data-value");
-			const isCorrect = correctPairs.get(leftValue) === rightValue;
+			const isCorrectPair = processMatching(selectedLeft, selectedRight, correctPairs, container);
 
-			// Limpiar todas las clases de estado anteriores
-			clearMatchingItemState(selectedLeft);
-			clearMatchingItemState(selectedRight);
-
-			if (isCorrect) {
-				selectedLeft.classList.add("correct");
-				selectedRight.classList.add("correct");
-				selectedLeft.disabled = true;
-				selectedRight.disabled = true;
+			if (isCorrectPair) {
 				matchedPairs++;
-
-				showMatchingFeedback(container, true, `¡Correcto! "${leftValue}" se empareja con "${rightValue}"`);
-			} else {
-				selectedLeft.classList.add("incorrect");
-				selectedRight.classList.add("incorrect");
-
-				showMatchingFeedback(container, false, `Incorrecto. "${leftValue}" no se empareja con "${rightValue}"`);
-
-				// Guardar referencias antes de limpiarlas
-				const leftElement = selectedLeft;
-				const rightElement = selectedRight;
-
-				// Después de mostrar el error, limpiar las clases incorrectas
-				setTimeout(() => {
-					if (leftElement && !leftElement.disabled) {
-						clearMatchingItemState(leftElement);
-					}
-					if (rightElement && !rightElement.disabled) {
-						clearMatchingItemState(rightElement);
-					}
-				}, 1500);
 			}
 
+			// Resetear selecciones
 			selectedLeft = null;
 			selectedRight = null;
 
-			if (matchedPairs === totalPairs) {
-				showMatchingFeedback(container, true, "¡Excelente! Has completado todos los emparejamientos.");
-				onComplete(true, true);
-			}
+			// Verificar si el ejercicio está completo
+			checkMatchingComplete(matchedPairs, totalPairs, container, onComplete);
 		}
 	});
 }
@@ -635,6 +665,101 @@ function renderReadingComprehension(container, questionData, mainQuestionIndex, 
 	container.appendChild(questionSection);
 }
 
+/**
+ * Auto-colapsa el texto de lectura al avanzar a la siguiente pregunta
+ */
+function autoCollapseReadingPassage(container) {
+	const passageContainer = container.querySelector(".reading-passage");
+	if (passageContainer && passageContainer._toggleButton && !passageContainer.classList.contains("collapsed")) {
+		passageContainer.classList.add("collapsed");
+		passageContainer._toggleButton.textContent = "Leer completo ▼";
+		passageContainer._toggleButton.setAttribute("aria-expanded", "false");
+	}
+}
+
+/**
+ * Actualiza el progreso para sub-preguntas de comprensión lectora
+ */
+function updateReadingSubProgress(currentQuestionIndex, totalQuestions, mainQuestionIndex) {
+	if (window.exerciseSystem && window.exerciseSystem.updateReadingProgress) {
+		window.exerciseSystem.updateReadingProgress(currentQuestionIndex, totalQuestions, mainQuestionIndex);
+	}
+}
+
+/**
+ * Crea el contenedor para una pregunta individual de comprensión lectora
+ */
+function createReadingQuestionContainer(question, currentQuestionIndex) {
+	const questionContainer = createElement("div", {
+		className: "current-reading-question",
+	});
+
+	const questionTitle = createElement("h3", {
+		className: "comprehension-question-number",
+		textContent: `${currentQuestionIndex + 1}. ${question.questionText || question.question}`,
+		attributes: { id: `comprehension-question-${currentQuestionIndex}` },
+	});
+	questionContainer.appendChild(questionTitle);
+
+	const individualQuestionContainer = createElement("div", {
+		className: "individual-question-container",
+	});
+	questionContainer.appendChild(individualQuestionContainer);
+
+	return { questionContainer, individualQuestionContainer };
+}
+
+/**
+ * Renderiza una pregunta individual según su tipo
+ */
+function renderIndividualReadingQuestion(question, container, handleAnswerCallback) {
+	const adaptedQuestion = {
+		...question,
+		question: question.questionText || question.question,
+	};
+
+	switch (question.type) {
+		case "multiple_choice":
+			renderMultipleChoice(container, adaptedQuestion, (isCorrect, selectedIndex) => {
+				handleAnswerCallback(isCorrect, { selectedIndex });
+			});
+			break;
+
+		case "short_answer":
+			renderShortAnswerStandalone(container, adaptedQuestion, (isCorrect) => {
+				handleAnswerCallback(isCorrect);
+			});
+			break;
+
+		case "true_false":
+			renderTrueFalse(container, adaptedQuestion, (isCorrect) => {
+				handleAnswerCallback(isCorrect);
+			});
+			break;
+
+		default:
+			console.warn(`Tipo de pregunta no soportado en reading comprehension: ${question.type}`);
+			// Saltar a la siguiente pregunta si no se reconoce el tipo
+			handleAnswerCallback(false);
+			break;
+	}
+}
+
+/**
+ * Procesa la finalización de todas las preguntas de comprensión lectora
+ */
+function completeReadingQuestions(answers, onAnswerSelect) {
+	const correctAnswers = answers.filter((a) => a.isCorrect).length;
+	const totalQuestions = answers.length;
+
+	onAnswerSelect({
+		isComplete: true,
+		correctAnswers,
+		totalQuestions,
+		allCorrect: correctAnswers === totalQuestions,
+	});
+}
+
 function renderMultipleReadingQuestions(container, questions, mainQuestionIndex, onAnswerSelect) {
 	let currentQuestionIndex = 0;
 	let answers = [];
@@ -645,18 +770,11 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 
 			// Auto-colapsar el texto de lectura al pasar a la siguiente pregunta
 			if (currentQuestionIndex > 0) {
-				const passageContainer = container.querySelector(".reading-passage");
-				if (passageContainer && passageContainer._toggleButton && !passageContainer.classList.contains("collapsed")) {
-					passageContainer.classList.add("collapsed");
-					passageContainer._toggleButton.textContent = "Leer completo ▼";
-					passageContainer._toggleButton.setAttribute("aria-expanded", "false");
-				}
+				autoCollapseReadingPassage(container);
 			}
 
 			// Actualizar progreso para esta sub-pregunta
-			if (window.exerciseSystem && window.exerciseSystem.updateReadingProgress) {
-				window.exerciseSystem.updateReadingProgress(currentQuestionIndex, questions.length, mainQuestionIndex);
-			}
+			updateReadingSubProgress(currentQuestionIndex, questions.length, mainQuestionIndex);
 
 			// Limpiar pregunta anterior (pero mantener el pasaje)
 			const existingQuestion = container.querySelector(".current-reading-question");
@@ -664,25 +782,10 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 				existingQuestion.remove();
 			}
 
-			const questionContainer = createElement("div", {
-				className: "current-reading-question",
-			});
+			// Crear contenedores para la nueva pregunta
+			const { questionContainer, individualQuestionContainer } = createReadingQuestionContainer(question, currentQuestionIndex);
 
-			// Agregar título numerado para la pregunta
-			const questionTitle = createElement("h3", {
-				className: "comprehension-question-number",
-				textContent: `${currentQuestionIndex + 1}. ${question.questionText || question.question}`,
-				attributes: { id: `comprehension-question-${currentQuestionIndex}` },
-			});
-			questionContainer.appendChild(questionTitle);
-
-			// Crear un contenedor para la pregunta individual
-			const individualQuestionContainer = createElement("div", {
-				className: "individual-question-container",
-			});
-			questionContainer.appendChild(individualQuestionContainer);
-
-			// Función callback universal para manejar respuestas
+			// Función callback para manejar respuestas
 			const handleQuestionAnswer = (isCorrect, additionalData = {}) => {
 				answers.push({
 					questionIndex: currentQuestionIndex,
@@ -695,51 +798,13 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 					if (currentQuestionIndex < questions.length) {
 						showNextReadingQuestion();
 					} else {
-						// Todas las preguntas respondidas - pasar información detallada
-						const correctAnswers = answers.filter((a) => a.isCorrect).length;
-						const totalQuestions = questions.length;
-						onAnswerSelect({
-							isComplete: true,
-							correctAnswers,
-							totalQuestions,
-							allCorrect: correctAnswers === totalQuestions,
-						});
+						completeReadingQuestions(answers, onAnswerSelect);
 					}
 				}, 2000);
 			};
 
-			// Modificar la pregunta para adaptarla al formato individual
-			const adaptedQuestion = {
-				...question,
-				question: question.questionText || question.question,
-			};
-
-			// Reutilizar las funciones existentes según el tipo de pregunta
-			switch (question.type) {
-				case "multiple_choice":
-					renderMultipleChoice(individualQuestionContainer, adaptedQuestion, (isCorrect, selectedIndex) => {
-						handleQuestionAnswer(isCorrect, { selectedIndex });
-					});
-					break;
-
-				case "short_answer":
-					renderShortAnswerStandalone(individualQuestionContainer, adaptedQuestion, (isCorrect) => {
-						handleQuestionAnswer(isCorrect);
-					});
-					break;
-
-				case "true_false":
-					renderTrueFalse(individualQuestionContainer, adaptedQuestion, (isCorrect) => {
-						handleQuestionAnswer(isCorrect);
-					});
-					break;
-
-				default:
-					console.warn(`Tipo de pregunta no soportado en reading comprehension: ${question.type}`);
-					// Saltar a la siguiente pregunta si no se reconoce el tipo
-					handleQuestionAnswer(false);
-					break;
-			}
+			// Renderizar la pregunta según su tipo
+			renderIndividualReadingQuestion(question, individualQuestionContainer, handleQuestionAnswer);
 
 			container.appendChild(questionContainer);
 		}

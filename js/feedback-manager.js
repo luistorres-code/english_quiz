@@ -3,6 +3,53 @@
  * Refactorización para centralizar todas las funciones de feedback
  */
 
+// Función auxiliar para limpiar contenedores (si no está disponible globalmente)
+function clearContainer(container) {
+	if (container && typeof container.replaceChildren === "function") {
+		container.replaceChildren();
+	} else if (container) {
+		while (container.firstChild) {
+			container.removeChild(container.firstChild);
+		}
+	}
+}
+
+// Función auxiliar createElement (si no está disponible globalmente)
+function createElement(tag, options = {}) {
+	const element = document.createElement(tag);
+
+	// Agregar clases
+	if (options.className) {
+		element.className = options.className;
+	}
+
+	// Agregar contenido de texto
+	if (options.textContent) {
+		element.textContent = options.textContent;
+	}
+
+	// Agregar HTML interno
+	if (options.innerHTML) {
+		element.innerHTML = options.innerHTML;
+	}
+
+	// Agregar atributos
+	if (options.attributes) {
+		Object.entries(options.attributes).forEach(([key, value]) => {
+			element.setAttribute(key, value);
+		});
+	}
+
+	// Agregar event listeners
+	if (options.events) {
+		Object.entries(options.events).forEach(([event, handler]) => {
+			element.addEventListener(event, handler);
+		});
+	}
+
+	return element;
+}
+
 // Configuraciones por defecto para diferentes tipos de feedback
 const FEEDBACK_CONFIG = {
 	general: {
@@ -47,10 +94,24 @@ function showUnifiedFeedback(container, options = {}) {
 	const config = FEEDBACK_CONFIG[type] || FEEDBACK_CONFIG.general;
 	const finalDuration = duration !== undefined ? duration : config.duration;
 
-	// Remover feedback anterior del mismo tipo
-	const existingFeedback = container.querySelector(`.${config.className}`);
-	if (existingFeedback) {
-		existingFeedback.remove();
+	// Usar el área de feedback prominente si está disponible y es un quiz activo
+	const feedbackArea = document.getElementById("feedback-area");
+	const progressContainer = document.getElementById("progress-container");
+	const isQuizActive = progressContainer && progressContainer.style.display !== "none";
+
+	const targetContainer = feedbackArea && isQuizActive ? feedbackArea : container;
+
+	// Mostrar el área de feedback si se va a usar
+	if (targetContainer === feedbackArea) {
+		feedbackArea.style.display = "block";
+		// Limpiar contenido anterior
+		clearContainer(feedbackArea);
+	} else {
+		// Remover feedback anterior del mismo tipo en el contenedor original
+		const existingFeedback = container.querySelector(`.${config.className}`);
+		if (existingFeedback) {
+			existingFeedback.remove();
+		}
 	}
 
 	// Crear elemento de feedback según el tipo
@@ -72,8 +133,8 @@ function showUnifiedFeedback(container, options = {}) {
 			break;
 	}
 
-	// Agregar al contenedor
-	container.appendChild(feedbackElement);
+	// Agregar al contenedor target
+	targetContainer.appendChild(feedbackElement);
 
 	// Mostrar con animación si es necesario
 	if (type === "general") {
@@ -87,6 +148,10 @@ function showUnifiedFeedback(container, options = {}) {
 		setTimeout(() => {
 			if (feedbackElement && feedbackElement.parentNode) {
 				feedbackElement.remove();
+				// Ocultar el área de feedback si está vacía
+				if (targetContainer === feedbackArea && !feedbackArea.hasChildNodes()) {
+					feedbackArea.style.display = "none";
+				}
 			}
 		}, finalDuration);
 	}
@@ -195,5 +260,36 @@ function createRetryFeedback(message, additionalData, config) {
 	return retryFeedback;
 }
 
+/**
+ * Limpia el área de feedback prominente
+ */
+function clearFeedbackArea() {
+	const feedbackArea = document.getElementById("feedback-area");
+	if (feedbackArea) {
+		feedbackArea.style.display = "none";
+		clearContainer(feedbackArea);
+	}
+}
+
+/**
+ * Oculta cualquier feedback activo en un contenedor específico
+ */
+function hideFeedback(container) {
+	if (!container) return;
+
+	const feedbackElements = container.querySelectorAll(".feedback, .matching-feedback, .temporary-feedback, .retry-feedback");
+	feedbackElements.forEach((element) => {
+		element.remove();
+	});
+
+	// Si es el área de feedback prominente, ocultarla
+	const feedbackArea = document.getElementById("feedback-area");
+	if (container === feedbackArea) {
+		feedbackArea.style.display = "none";
+	}
+}
+
 // Hacer funciones disponibles globalmente
 window.showUnifiedFeedback = showUnifiedFeedback;
+window.clearFeedbackArea = clearFeedbackArea;
+window.hideFeedback = hideFeedback;
