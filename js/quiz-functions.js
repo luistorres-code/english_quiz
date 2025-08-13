@@ -1397,15 +1397,6 @@ function renderOrdering(container, questionData, onAnswer) {
 	}
 }
 
-function shuffleArray(array) {
-	const shuffled = [...array];
-	for (let i = shuffled.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-	}
-	return shuffled;
-}
-
 function updateProgressBar(currentQuestion, totalQuestions) {
 	const container = document.getElementById("progress-container");
 

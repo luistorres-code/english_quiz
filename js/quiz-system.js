@@ -487,38 +487,10 @@ function resetExerciseState() {
 
 function showExerciseInterface() {
 	ExerciseElementsManager.showExerciseInterface(elements);
-	updatePageContent();
 }
 
 function showHomeInterface() {
 	ExerciseElementsManager.showHomeInterface(elements);
-	restoreOriginalContent();
-}
-
-function updatePageContent() {
-	const titleElement = document.querySelector("h1");
-	const descriptionElement = document.querySelector("#main-description");
-
-	if (titleElement && exerciseData.title) {
-		titleElement.textContent = exerciseData.title;
-	}
-
-	if (descriptionElement && exerciseData.description) {
-		descriptionElement.textContent = exerciseData.description;
-	}
-}
-
-function restoreOriginalContent() {
-	const titleElement = document.querySelector("h1");
-	const descriptionElement = document.querySelector("#main-description");
-
-	if (titleElement) {
-		titleElement.textContent = "Ejercicios de Inglés";
-	}
-
-	if (descriptionElement) {
-		descriptionElement.textContent = "Selecciona un ejercicio para comenzar.";
-	}
 }
 
 // ---
@@ -615,32 +587,4 @@ function updateURL(exerciseFile) {
 		url.searchParams.delete("quiz");
 	}
 	window.history.pushState({}, "", url);
-}
-
-// Funciones auxiliares específicas remanentes (se moverán a sus módulos apropiados)
-
-function createFillInFeedbackMessage(answers, questionData) {
-	const incorrectAnswers = answers.filter(({ userAnswer, correctAnswer }) => userAnswer.toLowerCase() !== correctAnswer.toLowerCase());
-
-	if (incorrectAnswers.length === 0) {
-		return questionData.hint || "";
-	}
-
-	const correctAnswersList = incorrectAnswers.map(({ correctAnswer }) => `"${correctAnswer}"`).join(", ");
-
-	let message = incorrectAnswers.length === 1 ? `La respuesta correcta es: ${correctAnswersList}` : `Las respuestas correctas son: ${correctAnswersList}`;
-
-	if (questionData.hint) {
-		message += `\nPista: ${questionData.hint}`;
-	}
-
-	return message;
-}
-
-function showCorrectAnswer(input, correctAnswer) {
-	const correctSpan = createElement("span", {
-		className: "correct-answer",
-		textContent: correctAnswer,
-	});
-	input.parentNode.insertBefore(correctSpan, input.nextSibling);
 }

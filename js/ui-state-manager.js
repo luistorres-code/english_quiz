@@ -329,19 +329,11 @@ const AnswerStateManager = {
  * Funciones de conveniencia para mantener compatibilidad
  */
 
-// Funciones originales refactorizadas
-function clearContainer(container) {
-	if (container) {
-		while (container.firstChild) {
-			container.removeChild(container.firstChild);
-		}
-	}
-}
-
 function showError(message, container) {
 	if (!container) return;
 
-	clearContainer(container);
+	// Limpiar contenido existente
+	container.innerHTML = "";
 
 	const errorElement = createElement("div", {
 		className: "error-message",

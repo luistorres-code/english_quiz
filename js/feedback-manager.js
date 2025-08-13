@@ -195,41 +195,5 @@ function createRetryFeedback(message, additionalData, config) {
 	return retryFeedback;
 }
 
-// Funciones de conveniencia para mantener compatibilidad hacia atrás
-function showFeedback(container, isCorrect, message = "") {
-	return showUnifiedFeedback(container, {
-		type: "general",
-		isCorrect,
-		message,
-	});
-}
-
-function showMatchingFeedback(container, isCorrect, message) {
-	return showUnifiedFeedback(container, {
-		type: "matching",
-		isCorrect,
-		message,
-	});
-}
-
-function showTemporaryFeedback(container, message, isPositive = false) {
-	return showUnifiedFeedback(container, {
-		type: "temporary",
-		isCorrect: isPositive,
-		message,
-	});
-}
-
-function showRetryFeedback(container, answers) {
-	return showUnifiedFeedback(container, {
-		type: "retry",
-		additionalData: { answers },
-	});
-}
-
 // Hacer funciones disponibles globalmente
 window.showUnifiedFeedback = showUnifiedFeedback;
-window.showFeedback = showFeedback;
-window.showMatchingFeedback = showMatchingFeedback;
-window.showTemporaryFeedback = showTemporaryFeedback;
-window.showRetryFeedback = showRetryFeedback;
