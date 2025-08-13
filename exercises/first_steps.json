@@ -10,7 +10,8 @@
 				{ "text": "am", "isCorrect": true },
 				{ "text": "are", "isCorrect": false }
 			],
-			"hint": "Con el pronombre 'I', usamos 'am'."
+			"hint": "Con el pronombre 'I', usamos 'am'.",
+			"explanation": "Con el pronombre 'I', usamos 'am'. 'Is' se usa con 'he', 'she' o 'it', y 'are' con 'you', 'we' o 'they'."
 		},
 		{
 			"type": "fill_in_the_blanks",
@@ -34,7 +35,8 @@
 				{ "text": "goes", "isCorrect": true },
 				{ "text": "went", "isCorrect": false }
 			],
-			"hint": "Con 'he', 'she' o 'it', a los verbos se les añade 'es' o 's'."
+			"hint": "Con 'he', 'she' o 'it', a los verbos se les añade 'es' o 's'.",
+			"explanation": "Con 'he', 'she' o 'it', a los verbos se les añade 'es' o 's'."
 		},
 		{
 			"type": "true_false",
@@ -108,7 +110,8 @@
 			"type": "fill_in_the_blanks",
 			"question": "Completa con el adjetivo posesivo correcto",
 			"questionParts": ["I love ", { "answer": "my", "label": "" }, " dog."],
-			"hint": "El adjetivo posesivo para 'I' es 'my'."
+			"hint": "El adjetivo posesivo para 'I' es 'my'.",
+			"explanation": "El adjetivo posesivo para 'I' es 'my'."
 		},
 		{
 			"type": "multiple_choice",
@@ -118,7 +121,7 @@
 				{ "text": "It's ninet o'clock", "isCorrect": false },
 				{ "text": "It's ninty o'clock", "isCorrect": false }
 			],
-			"hint": "La pronunciación correcta de 9 es 'nine'."
+			"explanation": "La pronunciación correcta de 9 es 'nine'."
 		}
 	]
 }

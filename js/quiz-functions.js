@@ -784,6 +784,11 @@ function renderMultipleReadingQuestions(container, questions, mainQuestionIndex,
 				existingQuestion.remove();
 			}
 
+			// Limpiar cualquier feedback previo al cambiar de pregunta en reading comprehension
+			if (typeof clearFeedbackArea === "function") {
+				clearFeedbackArea();
+			}
+
 			// Crear contenedores para la nueva pregunta
 			const { questionContainer, individualQuestionContainer } = createReadingQuestionContainer(question, currentQuestionIndex);
 

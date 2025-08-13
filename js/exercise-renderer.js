@@ -370,33 +370,6 @@ function handleReadingComprehensionResult(result, context) {
 		}
 	}
 
-	// Mostrar feedback apropiado para reading comprehension
-	const feedbackContainer = context.container || document.getElementById("quiz") || document.body;
-	const isAllCorrect = correctAnswers === totalQuestions;
-	const percentage = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
-
-	// Crear mensaje de feedback apropiado (no estadísticas)
-	let feedbackMessage;
-	if (isAllCorrect) {
-		feedbackMessage = "¡Excelente! Has respondido correctamente todas las preguntas de comprensión.";
-	} else if (percentage >= 70) {
-		feedbackMessage = "¡Bien hecho! Has demostrado una buena comprensión del texto.";
-	} else if (percentage >= 50) {
-		feedbackMessage = "Comprensión aceptable, pero puedes mejorar tu análisis del texto.";
-	} else {
-		feedbackMessage = "Necesitas practicar más la comprensión lectora. Intenta releer el texto.";
-	}
-
-	const feedbackOptions = {
-		type: "general",
-		isCorrect: isAllCorrect,
-		message: feedbackMessage,
-	};
-
-	if (feedbackContainer && typeof feedbackContainer.querySelector === "function") {
-		showUnifiedFeedback(feedbackContainer, feedbackOptions);
-	}
-
 	// Mostrar botón siguiente
 	if (context.elements && context.elements.nextButton) {
 		// Usar solo el sistema unificado
