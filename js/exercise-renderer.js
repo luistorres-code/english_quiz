@@ -4,6 +4,18 @@
  */
 
 /**
+ * Configuración base para to/**
+ * Muestra el botón siguiente después de responder
+ */
+function showNextButtonAfterAnswer(context) {
+	if (context.elements && context.elements.nextButton) {
+		// Usar solo las funciones auxiliares, sin manipulación directa
+		manageUIState([context.elements.nextButton], "button", "show");
+		manageUIState([context.elements.nextButton], "button", "enable");
+	}
+}
+
+/**
  * Configuración base para todos los tipos de ejercicios
  */
 const EXERCISE_CONFIG = {
@@ -185,11 +197,7 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
  */
 function showNextButtonAfterAnswer(context) {
 	if (context.elements && context.elements.nextButton) {
-		context.elements.nextButton.style.display = "block";
-		context.elements.nextButton.style.visibility = "visible";
-		context.elements.nextButton.disabled = false;
-		context.elements.nextButton.classList.remove("disabled");
-
+		// Usar solo las funciones auxiliares, sin manipulación directa
 		manageUIState([context.elements.nextButton], "button", "show");
 		manageUIState([context.elements.nextButton], "button", "enable");
 	}
@@ -227,15 +235,8 @@ function handleExerciseResult(context, isCorrect, exerciseType, questionIndex) {
 	console.log(`=== TRYING TO SHOW NEXT BUTTON ===`);
 	if (context.elements && context.elements.nextButton) {
 		console.log(`Next button found, showing...`);
-		// Método directo para mostrar el botón
-		context.elements.nextButton.style.display = "block";
-		context.elements.nextButton.style.visibility = "visible";
 
-		// IMPORTANTE: Habilitar el botón (podría estar deshabilitado por requiresManualCheck)
-		context.elements.nextButton.disabled = false;
-		context.elements.nextButton.classList.remove("disabled");
-
-		// También usar el sistema unificado
+		// Usar solo el sistema unificado, sin manipulación directa
 		manageUIState([context.elements.nextButton], "button", "show");
 		manageUIState([context.elements.nextButton], "button", "enable");
 
@@ -367,11 +368,7 @@ function handleReadingComprehensionResult(result, context) {
 
 	// Mostrar botón siguiente
 	if (context.elements && context.elements.nextButton) {
-		context.elements.nextButton.style.display = "block";
-		context.elements.nextButton.style.visibility = "visible";
-		context.elements.nextButton.disabled = false;
-		context.elements.nextButton.classList.remove("disabled");
-
+		// Usar solo el sistema unificado
 		manageUIState([context.elements.nextButton], "button", "show");
 		manageUIState([context.elements.nextButton], "button", "enable");
 	}

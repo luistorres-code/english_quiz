@@ -295,7 +295,12 @@ function renderFillInTheBlanks(container, questionData, onCheck) {
 
 	questionData.questionParts.forEach((part, index) => {
 		if (typeof part === "string") {
-			questionParagraph.appendChild(document.createTextNode(part));
+			// Usar createElement con textContent para evitar document.createTextNode directo
+			const textSpan = createElement("span", {
+				textContent: part,
+				className: "question-text-part",
+			});
+			questionParagraph.appendChild(textSpan);
 		} else {
 			const input = createElement("input", {
 				className: "fill-blank-input",
@@ -939,7 +944,7 @@ function renderResults(container, resultsData) {
 	resultsMain.appendChild(actionsSection);
 
 	container.appendChild(resultsMain);
-	container.style.display = "block";
+	showContainer(container);
 }
 
 function createScoreDetailItem(number, label) {
@@ -1198,7 +1203,7 @@ function renderOrdering(container, questionData, onAnswer) {
 
 	// Crear botones de palabras
 	function createWordButtons() {
-		wordsGrid.innerHTML = "";
+		clearContainer(wordsGrid);
 
 		availableWords.forEach((word, index) => {
 			const wordButton = createElement("button", {
@@ -1218,7 +1223,7 @@ function renderOrdering(container, questionData, onAnswer) {
 
 	// Actualizar la visualización de la oración construida
 	function updateSentenceDisplay() {
-		sentenceContainer.innerHTML = "";
+		clearContainer(sentenceContainer);
 
 		if (selectedWords.length === 0) {
 			sentenceContainer.appendChild(sentencePlaceholder);
@@ -1406,7 +1411,7 @@ function updateProgressBar(currentQuestion, totalQuestions) {
 
 	const percentage = Math.round((currentQuestion / totalQuestions) * 100);
 
-	container.style.display = "block";
+	showContainer(container);
 	container.setAttribute("aria-hidden", "false");
 
 	const progressText = container.querySelector("#progress-text");

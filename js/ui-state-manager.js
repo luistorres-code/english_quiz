@@ -332,8 +332,8 @@ const AnswerStateManager = {
 function showError(message, container) {
 	if (!container) return;
 
-	// Limpiar contenido existente
-	container.innerHTML = "";
+	// Limpiar contenido existente usando función auxiliar
+	clearContainer(container);
 
 	const errorElement = createElement("div", {
 		className: "error-message",

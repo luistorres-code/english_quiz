@@ -77,17 +77,25 @@ async function loadAvailableExercises() {
 function createExerciseCards(exercises) {
 	if (!elements.exerciseCardsContainer) return;
 
-	// Limpiar contenedor
-	elements.exerciseCardsContainer.innerHTML = "";
+	// Limpiar contenedor usando la función auxiliar
+	clearContainer(elements.exerciseCardsContainer);
 
 	if (exercises.length === 0) {
-		// Estado vacío
-		const emptyState = document.createElement("div");
-		emptyState.className = "empty-exercises";
-		emptyState.innerHTML = `
-			<h3>No hay ejercicios disponibles</h3>
-			<p>Parece que no se pudieron cargar los ejercicios. Intenta recargar la página.</p>
-		`;
+		// Estado vacío usando createElement
+		const emptyState = createElement("div", {
+			className: "empty-exercises",
+		});
+
+		const emptyTitle = createElement("h3", {
+			textContent: "No hay ejercicios disponibles",
+		});
+
+		const emptyMessage = createElement("p", {
+			textContent: "Parece que no se pudieron cargar los ejercicios. Intenta recargar la página.",
+		});
+
+		emptyState.appendChild(emptyTitle);
+		emptyState.appendChild(emptyMessage);
 		elements.exerciseCardsContainer.appendChild(emptyState);
 		return;
 	}
@@ -101,33 +109,55 @@ function createExerciseCards(exercises) {
 
 // Create individual exercise card
 function createExerciseCard(exercise) {
-	const card = document.createElement("div");
-	card.className = "exercise-card";
-	card.tabIndex = 0;
-	card.setAttribute("data-exercise", exercise.value);
-	card.setAttribute("role", "button");
-	card.setAttribute("aria-label", `Cargar ejercicio: ${exercise.title}`);
+	const card = createElement("div", {
+		className: "exercise-card",
+		attributes: {
+			"data-exercise": exercise.value,
+			role: "button",
+			"aria-label": `Cargar ejercicio: ${exercise.title}`,
+			tabindex: "0",
+		},
+		events: {
+			click: () => selectExercise(exercise.value, card),
+			keydown: (e) => {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					selectExercise(exercise.value, card);
+				}
+			},
+		},
+	});
 
 	// Determinar el nivel del ejercicio basado en el nombre del archivo
 	const level = determineExerciseLevel(exercise.value);
 
-	card.innerHTML = `
-		<div class="exercise-card-content">
-			<h3 class="exercise-card-title">${exercise.title}</h3>
-		</div>
-		<div class="exercise-card-meta">
-			<span class="exercise-card-level ${level.className}">${level.label}</span>
-		</div>
-	`;
-
-	// Agregar event listeners
-	card.addEventListener("click", () => selectExercise(exercise.value, card));
-	card.addEventListener("keydown", (e) => {
-		if (e.key === "Enter" || e.key === " ") {
-			e.preventDefault();
-			selectExercise(exercise.value, card);
-		}
+	// Crear contenido de la tarjeta
+	const cardContent = createElement("div", {
+		className: "exercise-card-content",
 	});
+
+	const cardTitle = createElement("h3", {
+		className: "exercise-card-title",
+		textContent: exercise.title,
+	});
+
+	cardContent.appendChild(cardTitle);
+
+	// Crear meta información de la tarjeta
+	const cardMeta = createElement("div", {
+		className: "exercise-card-meta",
+	});
+
+	const cardLevel = createElement("span", {
+		className: `exercise-card-level ${level.className}`,
+		textContent: level.label,
+	});
+
+	cardMeta.appendChild(cardLevel);
+
+	// Ensamblar la tarjeta
+	card.appendChild(cardContent);
+	card.appendChild(cardMeta);
 
 	return card;
 }
@@ -392,27 +422,26 @@ function showResults() {
 }
 
 function getPerformanceData(percentage) {
+	let performanceLevel, performanceMessage;
+
 	if (percentage >= 90) {
-		return {
-			performanceLevel: "¡Excelente!",
-			performanceMessage: "¡Increíble trabajo! Dominas muy bien este tema.",
-		};
+		performanceLevel = "¡Excelente!";
+		performanceMessage = "¡Increíble trabajo! Dominas muy bien este tema.";
 	} else if (percentage >= 70) {
-		return {
-			performanceLevel: "¡Buen trabajo!",
-			performanceMessage: "¡Muy bien! Tienes un buen conocimiento del tema.",
-		};
+		performanceLevel = "¡Buen trabajo!";
+		performanceMessage = "¡Muy bien! Tienes un buen conocimiento del tema.";
 	} else if (percentage >= 50) {
-		return {
-			performanceLevel: "Puede mejorar",
-			performanceMessage: "Sigue practicando. ¡Estás en el camino correcto!",
-		};
+		performanceLevel = "Puede mejorar";
+		performanceMessage = "Sigue practicando. ¡Estás en el camino correcto!";
 	} else {
-		return {
-			performanceLevel: "Necesita práctica",
-			performanceMessage: "No te desanimes. Con más práctica mejorarás.",
-		};
+		performanceLevel = "Necesita práctica";
+		performanceMessage = "No te desanimes. Con más práctica mejorarás.";
 	}
+
+	return {
+		performanceLevel,
+		performanceMessage,
+	};
 }
 
 function retryExercise() {
@@ -423,9 +452,9 @@ function retryExercise() {
 	// Mezclar preguntas de nuevo
 	exerciseData.questions = shuffleArray(exerciseData.questions);
 
-	// Ocultar resultados y mostrar primera pregunta
-	elements.scoreDisplay.style.display = "none";
-	elements.container.style.display = "block";
+	// Ocultar resultados y mostrar primera pregunta usando funciones auxiliares
+	hideContainer(elements.scoreDisplay);
+	showContainer(elements.container);
 	showQuestion(0);
 }
 

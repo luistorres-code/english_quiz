@@ -95,17 +95,19 @@ function animateThemeTransition(callback) {
 	const buttonCenterX = buttonRect.left + buttonRect.width / 2;
 	const buttonCenterY = buttonRect.top + buttonRect.height / 2;
 
-	// Create ripple overlay
-	const rippleOverlay = document.createElement("div");
-	rippleOverlay.className = "theme-ripple-overlay";
+	// Create ripple overlay using función auxiliar
+	const rippleOverlay = createElement("div", {
+		className: "theme-ripple-overlay",
+	});
 
 	// Create multiple ripple circles for a wave effect
 	const rippleCount = 3;
 	const ripples = [];
 
 	for (let i = 0; i < rippleCount; i++) {
-		const ripple = document.createElement("div");
-		ripple.className = "theme-ripple";
+		const ripple = createElement("div", {
+			className: "theme-ripple",
+		});
 
 		// Calculate maximum distance to cover entire screen
 		const maxDistance = Math.max(Math.sqrt(Math.pow(buttonCenterX, 2) + Math.pow(buttonCenterY, 2)), Math.sqrt(Math.pow(window.innerWidth - buttonCenterX, 2) + Math.pow(buttonCenterY, 2)), Math.sqrt(Math.pow(buttonCenterX, 2) + Math.pow(window.innerHeight - buttonCenterY, 2)), Math.sqrt(Math.pow(window.innerWidth - buttonCenterX, 2) + Math.pow(window.innerHeight - buttonCenterY, 2)));
