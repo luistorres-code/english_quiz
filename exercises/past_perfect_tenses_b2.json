@@ -1,0 +1,265 @@
+{
+	"title": "Past Perfect Simple & Progressive - Advanced Tenses B1",
+	"description": "Domina el Pasado Perfecto Simple (had + past participle) y el Pasado Perfecto Progresivo (had been + -ing). Aprende a expresar acciones anteriores a otras acciones en el pasado.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses past perfect simple?",
+			"answerOptions": [
+				{ "text": "I have finished my homework before dinner.", "isCorrect": false },
+				{ "text": "I had finished my homework before dinner.", "isCorrect": true },
+				{ "text": "I finished my homework before dinner.", "isCorrect": false }
+			],
+			"hint": "Past perfect shows an action completed before another past action.",
+			"explanation": "'Had finished' (past perfect) shows the homework was completed before the dinner (both in the past). Simple past would just show sequence, not the 'before' relationship."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with past perfect simple:",
+			"questionParts": ["When I arrived, they ", { "answer": "had already left", "label": "past perfect simple" }, " the party."],
+			"explanation": "Past perfect simple: had + past participle. The leaving happened before the arriving, both in the past."
+		},
+		{
+			"type": "true_false",
+			"question": "Past perfect progressive emphasizes the duration of an action before another past action.",
+			"answer": "true",
+			"explanation": "Past perfect progressive (had been + -ing) emphasizes the duration or ongoing nature of an action that was happening before another past action."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'She was tired because she _____ all night.'",
+			"answerOptions": [
+				{ "text": "had been working", "isCorrect": true },
+				{ "text": "had worked", "isCorrect": false },
+				{ "text": "was working", "isCorrect": false }
+			],
+			"hint": "Which form emphasizes the continuous nature and duration of the work?",
+			"explanation": "'Had been working' (past perfect progressive) emphasizes she was working continuously all night, causing her tiredness."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the structure of past perfect simple? (auxiliary + past participle)",
+			"correctAnswer": "had + past participle",
+			"alternatives": ["had + pp", "had past participle"],
+			"caseSensitive": false,
+			"explanation": "Past perfect simple structure: had + past participle (e.g., had eaten, had gone, had seen)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with past perfect progressive:",
+			"questionParts": ["It ", { "answer": "had been raining", "label": "past perfect progressive" }, " for hours when the sun finally came out."],
+			"explanation": "Past perfect progressive: had been + -ing. Shows the rain was ongoing for a period before the sun came out."
+		},
+		{
+			"type": "matching",
+			"question": "Match each tense with its use:",
+			"pairs": [
+				{ "text1": "Past Perfect Simple", "text2": "Completed action before another past action" },
+				{ "text1": "Past Perfect Progressive", "text2": "Ongoing action before another past action" },
+				{ "text1": "Simple Past", "text2": "Completed action at specific past time" }
+			],
+			"hint": "Think about completion vs. duration and the relationship between past actions.",
+			"explanation": "Past perfect simple focuses on completion, past perfect progressive on duration, simple past on basic past actions."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange to form past perfect simple:",
+			"items": ["had", "seen", "I", "the", "movie", "before"],
+			"correctOrder": ["I", "had", "seen", "the", "movie", "before"],
+			"explanation": "Past perfect simple: Subject + had + past participle + complement. 'Before' indicates the sequence."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "When do we typically use past perfect tenses?",
+			"answerOptions": [
+				{ "text": "To talk about present situations", "isCorrect": false },
+				{ "text": "To show sequence of past events", "isCorrect": true },
+				{ "text": "To make future predictions", "isCorrect": false }
+			],
+			"hint": "Past perfect helps establish which past action happened first.",
+			"explanation": "Past perfect tenses show the relationship between past events, especially which happened first (earlier past action)."
+		},
+		{
+			"type": "true_false",
+			"question": "'Had been living' is an example of past perfect progressive.",
+			"answer": "true",
+			"explanation": "'Had been living' follows the past perfect progressive structure: had been + verb-ing."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the sequence of events:",
+			"questionParts": ["By the time the police arrived, the thief ", { "answer": "had escaped", "label": "earlier past action" }, "."],
+			"explanation": "Past perfect simple shows the escape happened before the police arrival. 'By the time' signals this sequence."
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the negative form of 'had been studying'?",
+			"correctAnswer": "had not been studying",
+			"alternatives": ["hadn't been studying", "had not been studying"],
+			"caseSensitive": false,
+			"explanation": "Negative past perfect progressive: had not been + -ing (or hadn't been + -ing)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct form: 'We _____ for two hours when it started raining.'",
+			"answerOptions": [
+				{ "text": "had walked", "isCorrect": false },
+				{ "text": "had been walking", "isCorrect": true },
+				{ "text": "were walking", "isCorrect": false }
+			],
+			"hint": "The sentence emphasizes duration ('for two hours').",
+			"explanation": "'Had been walking' emphasizes the duration of walking before the rain started. The progressive form highlights the ongoing activity."
+		},
+		{
+			"type": "ordering",
+			"question": "Form a past perfect progressive question:",
+			"items": ["How", "long", "had", "you", "been", "waiting", "?"],
+			"correctOrder": ["How", "long", "had", "you", "been", "waiting", "?"],
+			"explanation": "Past perfect progressive question: Question word + had + subject + been + verb-ing + ?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a completed action before another past event:",
+			"questionParts": ["She ", { "answer": "had finished", "label": "past perfect simple" }, " her work before the meeting started."],
+			"explanation": "Past perfect simple 'had finished' shows the work was completed before the meeting began."
+		},
+		{
+			"type": "true_false",
+			"question": "Past perfect can be used with time expressions like 'before', 'after', 'by the time'.",
+			"answer": "true",
+			"explanation": "Past perfect often appears with time expressions that show sequence: before, after, by the time, when, already, just."
+		},
+		{
+			"type": "matching",
+			"question": "Match each sentence with its tense:",
+			"pairs": [
+				{ "text1": "I had eaten before you called.", "text2": "Past Perfect Simple" },
+				{ "text1": "I had been eating when you called.", "text2": "Past Perfect Progressive" },
+				{ "text1": "I ate before you called.", "text2": "Simple Past" },
+				{ "text1": "I was eating when you called.", "text2": "Past Progressive" }
+			],
+			"hint": "Look for 'had' + past participle or 'had been' + -ing.",
+			"explanation": "Past perfect uses 'had' + past participle; past perfect progressive uses 'had been' + -ing."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which shows ongoing action before a past event?",
+			"answerOptions": [
+				{ "text": "He had lived there for 10 years.", "isCorrect": false },
+				{ "text": "He had been living there for 10 years.", "isCorrect": true },
+				{ "text": "He lived there for 10 years.", "isCorrect": false }
+			],
+			"hint": "Which form emphasizes the ongoing, continuous nature?",
+			"explanation": "'Had been living' (progressive) emphasizes the ongoing, continuous nature of living there, while 'had lived' focuses on the completed fact."
+		},
+		{
+			"type": "short_answer",
+			"question": "Complete: 'After I _____ the book, I watched TV.' (read - past perfect)",
+			"correctAnswer": "had read",
+			"alternatives": ["had read"],
+			"caseSensitive": false,
+			"explanation": "Past perfect simple: 'had read'. The reading was completed before watching TV."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Show cause and effect with past perfect:",
+			"questionParts": ["The garden was wet because it ", { "answer": "had been raining", "label": "cause in past perfect progressive" }, " all morning."],
+			"explanation": "'Had been raining' explains the cause of the wet garden. The progressive form emphasizes the duration of rain."
+		},
+		{
+			"type": "ordering",
+			"question": "Create a sentence with 'by the time':",
+			"items": ["By", "the", "time", "I", "arrived", "had", "they", "left"],
+			"correctOrder": ["By", "the", "time", "I", "arrived", "they", "had", "left"],
+			"explanation": "'By the time' + simple past, + past perfect. Shows one action was completed before another past moment."
+		},
+		{
+			"type": "true_false",
+			"question": "'Already' and 'just' can be used with past perfect simple.",
+			"answer": "true",
+			"explanation": "'Already' and 'just' are common with past perfect: 'I had already eaten' or 'I had just arrived'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'I was exhausted because I _____ for the exam all week.'",
+			"answerOptions": [
+				{ "text": "studied", "isCorrect": false },
+				{ "text": "had studied", "isCorrect": false },
+				{ "text": "had been studying", "isCorrect": true }
+			],
+			"hint": "Which form shows continuous studying over a period?",
+			"explanation": "'Had been studying' shows continuous studying over the week, explaining the exhaustion."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Use past perfect with 'never' before:",
+			"questionParts": ["I ", { "answer": "had never seen", "label": "past perfect with never" }, " such a beautiful sunset before that day."],
+			"explanation": "'Had never seen' shows this was the first time seeing such a sunset up to that past moment."
+		},
+		{
+			"type": "short_answer",
+			"question": "What auxiliary verb is used in all past perfect tenses?",
+			"correctAnswer": "had",
+			"alternatives": ["Had"],
+			"caseSensitive": false,
+			"explanation": "'Had' is the auxiliary verb for both past perfect simple (had + pp) and progressive (had been + -ing)."
+		},
+		{
+			"type": "matching",
+			"question": "Match the time expression with its typical tense:",
+			"pairs": [
+				{ "text1": "Before + past simple", "text2": "Past perfect simple" },
+				{ "text1": "For + duration", "text2": "Past perfect progressive" },
+				{ "text1": "When + past simple", "text2": "Past perfect (either form)" },
+				{ "text1": "Yesterday", "text2": "Simple past" }
+			],
+			"hint": "Consider which expressions show sequence vs. duration vs. specific time.",
+			"explanation": "Different time expressions tend to go with different tenses based on their meaning and function."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a repeated action before a past moment:",
+			"questionParts": ["She ", { "answer": "had been calling", "label": "repeated ongoing action" }, " him all day, but he didn't answer."],
+			"explanation": "'Had been calling' shows repeated, ongoing attempts to call throughout the day before the past reference point."
+		},
+		{
+			"type": "true_false",
+			"question": "Past perfect progressive always needs a duration expression like 'for' or 'since'.",
+			"answer": "false",
+			"explanation": "While past perfect progressive often uses duration expressions, it doesn't always need them. It can show ongoing action without specific duration."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is correct for actions in sequence?",
+			"answerOptions": [
+				{ "text": "After I ate dinner, I had watched TV.", "isCorrect": false },
+				{ "text": "After I had eaten dinner, I watched TV.", "isCorrect": true },
+				{ "text": "After I have eaten dinner, I watched TV.", "isCorrect": false }
+			],
+			"hint": "Which action happened first?",
+			"explanation": "'After I had eaten dinner, I watched TV' correctly shows eating happened first (past perfect), then watching (simple past)."
+		},
+		{
+			"type": "reading_comprehension",
+			"question": "Read the story and answer the questions:",
+			"readingText": ["Sarah was feeling nervous about her job interview. She had been preparing for weeks, practicing common questions and researching the company. By the time she arrived at the office, she had already rehearsed her answers dozens of times.", "When the interviewer called her name, Sarah realized she had forgotten to bring copies of her resume. She had been so focused on practicing that she hadn't thought about the practical details. Fortunately, the interviewer had printed copies from her online application."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "What had Sarah been doing for weeks?",
+					"answerOptions": [
+						{ "text": "Working at the company", "isCorrect": false },
+						{ "text": "Preparing for the interview", "isCorrect": true },
+						{ "text": "Looking for a job", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What had she forgotten to bring?",
+					"correctAnswer": "copies of her resume",
+					"alternatives": ["her resume", "resume copies", "copies of resume"]
+				}
+			]
+		}
+	]
+}
