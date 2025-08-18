@@ -1,0 +1,259 @@
+{
+	"title": "Simple Tenses - Present, Past & Future A2/B1",
+	"description": "Domina los tres tiempos simples fundamentales del inglés: Presente Simple, Pasado Simple y Futuro Simple. Aprende estructuras, usos y diferencias entre estos tiempos básicos.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence is in present simple?",
+			"answerOptions": [
+				{ "text": "She is working now.", "isCorrect": false },
+				{ "text": "She works every day.", "isCorrect": true },
+				{ "text": "She will work tomorrow.", "isCorrect": false }
+			],
+			"hint": "Present simple expresses habits and general truths.",
+			"explanation": "'She works every day' is present simple, showing a habit. 'Is working' is present continuous, 'will work' is future simple."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with present simple:",
+			"questionParts": ["The sun ", { "answer": "rises", "label": "present simple 3rd person" }, " in the east every morning."],
+			"explanation": "Present simple with 3rd person singular (the sun) adds 's': rise → rises. This expresses a general truth."
+		},
+		{
+			"type": "true_false",
+			"question": "Past simple verbs always end in -ed.",
+			"answer": "false",
+			"explanation": "Past simple has regular verbs (walk → walked) and irregular verbs (go → went, see → saw). Irregular verbs don't follow the -ed rule."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What is the past simple of 'go'?",
+			"answerOptions": [
+				{ "text": "goed", "isCorrect": false },
+				{ "text": "went", "isCorrect": true },
+				{ "text": "gone", "isCorrect": false }
+			],
+			"hint": "'Go' is an irregular verb.",
+			"explanation": "'Go' is irregular: go → went (past simple), gone (past participle). 'Goed' doesn't exist."
+		},
+		{
+			"type": "short_answer",
+			"question": "What auxiliary verb do we use for future simple?",
+			"correctAnswer": "will",
+			"alternatives": ["Will"],
+			"caseSensitive": false,
+			"explanation": "Future simple uses 'will' + base verb: I will go, she will study, they will arrive."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with past simple:",
+			"questionParts": ["Yesterday, I ", { "answer": "visited", "label": "past simple regular verb" }, " my grandmother."],
+			"explanation": "Past simple of regular verb 'visit' is 'visited' (visit + ed). Past simple shows completed actions in the past."
+		},
+		{
+			"type": "matching",
+			"question": "Match each tense with its time expression:",
+			"pairs": [
+				{ "text1": "Present Simple", "text2": "Every day, usually, always" },
+				{ "text1": "Past Simple", "text2": "Yesterday, last week, ago" },
+				{ "text1": "Future Simple", "text2": "Tomorrow, next year, will" }
+			],
+			"hint": "Think about when each tense is typically used.",
+			"explanation": "Each tense has characteristic time expressions that help identify when to use them."
+		},
+		{
+			"type": "ordering",
+			"question": "Form a negative sentence in present simple:",
+			"items": ["don't", "I", "like", "coffee"],
+			"correctOrder": ["I", "don't", "like", "coffee"],
+			"explanation": "Present simple negative: I/you/we/they + don't + base verb. He/she/it + doesn't + base verb."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is the correct future simple form?",
+			"answerOptions": [
+				{ "text": "I will going tomorrow.", "isCorrect": false },
+				{ "text": "I will go tomorrow.", "isCorrect": true },
+				{ "text": "I will to go tomorrow.", "isCorrect": false }
+			],
+			"hint": "Future simple: will + base form of verb.",
+			"explanation": "Future simple: will + base verb (go, not going or to go). 'I will go tomorrow' is correct."
+		},
+		{
+			"type": "true_false",
+			"question": "We use present simple to talk about future scheduled events.",
+			"answer": "true",
+			"explanation": "Present simple can express future for scheduled events: 'The train leaves at 8 PM' or 'The movie starts at 7:30.'"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the question in past simple:",
+			"questionParts": ["", { "answer": "Did", "label": "past simple auxiliary" }, " you see the movie last night?"],
+			"explanation": "Past simple questions use 'Did' + subject + base verb. 'Did you see' not 'Did you saw.'"
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the negative form of 'She will come'?",
+			"correctAnswer": "She will not come",
+			"alternatives": ["She won't come", "she will not come", "she won't come"],
+			"caseSensitive": false,
+			"explanation": "Future simple negative: will not (won't) + base verb. 'She will not come' or 'She won't come.'"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'He _____ to school every day.'",
+			"answerOptions": [
+				{ "text": "go", "isCorrect": false },
+				{ "text": "goes", "isCorrect": true },
+				{ "text": "going", "isCorrect": false }
+			],
+			"hint": "Present simple with he/she/it adds 's' or 'es'.",
+			"explanation": "Present simple 3rd person singular: he/she/it + verb + s/es. 'He goes' (go + es)."
+		},
+		{
+			"type": "ordering",
+			"question": "Make a question in future simple:",
+			"items": ["Will", "you", "help", "me", "?"],
+			"correctOrder": ["Will", "you", "help", "me", "?"],
+			"explanation": "Future simple question: Will + subject + base verb + complement + ?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a general truth:",
+			"questionParts": ["Water ", { "answer": "boils", "label": "general truth" }, " at 100 degrees Celsius."],
+			"explanation": "Present simple expresses general truths and scientific facts. 'Water boils' (3rd person singular + s)."
+		},
+		{
+			"type": "true_false",
+			"question": "'Didn't' is the contraction of 'did not'.",
+			"answer": "true",
+			"explanation": "'Didn't' is the contraction of 'did not,' used in past simple negatives: 'I didn't go' = 'I did not go.'"
+		},
+		{
+			"type": "matching",
+			"question": "Match each sentence with its tense:",
+			"pairs": [
+				{ "text1": "I eat breakfast at 7 AM.", "text2": "Present Simple" },
+				{ "text1": "I ate breakfast an hour ago.", "text2": "Past Simple" },
+				{ "text1": "I will eat breakfast tomorrow.", "text2": "Future Simple" },
+				{ "text1": "I am eating breakfast now.", "text2": "Present Continuous" }
+			],
+			"hint": "Look for time indicators and verb forms.",
+			"explanation": "Each tense has distinct forms and time references that help identify them."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which expresses a completed action in the past?",
+			"answerOptions": [
+				{ "text": "I write letters.", "isCorrect": false },
+				{ "text": "I wrote a letter.", "isCorrect": true },
+				{ "text": "I will write a letter.", "isCorrect": false }
+			],
+			"hint": "Past simple shows completed past actions.",
+			"explanation": "'I wrote a letter' (past simple) shows a completed past action. Present and future don't show completion in the past."
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the base form of 'bought'?",
+			"correctAnswer": "buy",
+			"alternatives": ["Buy"],
+			"caseSensitive": false,
+			"explanation": "'Buy' is the base form. Past simple: bought (irregular). Future: will buy. Present: buy/buys."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with future simple:",
+			"questionParts": ["Next year, we ", { "answer": "will travel", "label": "future simple" }, " to Europe."],
+			"explanation": "Future simple: will + base verb. 'Will travel' expresses a future plan or intention."
+		},
+		{
+			"type": "ordering",
+			"question": "Form a negative in past simple:",
+			"items": ["didn't", "They", "arrive", "on", "time"],
+			"correctOrder": ["They", "didn't", "arrive", "on", "time"],
+			"explanation": "Past simple negative: Subject + didn't + base verb. 'They didn't arrive' (not 'didn't arrived')."
+		},
+		{
+			"type": "true_false",
+			"question": "Present simple can express habits and routines.",
+			"answer": "true",
+			"explanation": "Present simple commonly expresses habits, routines, and repeated actions: 'I drink coffee every morning.'"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'Last summer, they _____ to the beach every weekend.'",
+			"answerOptions": [
+				{ "text": "go", "isCorrect": false },
+				{ "text": "went", "isCorrect": true },
+				{ "text": "will go", "isCorrect": false }
+			],
+			"hint": "'Last summer' indicates past time.",
+			"explanation": "'Last summer' requires past simple. 'Went' is the past form of 'go.' Even repeated past actions use past simple."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a future prediction:",
+			"questionParts": ["I think it ", { "answer": "will rain", "label": "future prediction" }, " tomorrow."],
+			"explanation": "Future simple with 'will' expresses predictions and opinions about the future. 'Will rain' shows a prediction."
+		},
+		{
+			"type": "short_answer",
+			"question": "What auxiliary do we use for present simple questions with 'I/you/we/they'?",
+			"correctAnswer": "do",
+			"alternatives": ["Do"],
+			"caseSensitive": false,
+			"explanation": "Present simple questions: Do (I/you/we/they) or Does (he/she/it) + subject + base verb."
+		},
+		{
+			"type": "matching",
+			"question": "Match the verb with its past simple form:",
+			"pairs": [
+				{ "text1": "make", "text2": "made" },
+				{ "text1": "take", "text2": "took" },
+				{ "text1": "break", "text2": "broke" },
+				{ "text1": "speak", "text2": "spoke" }
+			],
+			"hint": "These are all irregular verbs.",
+			"explanation": "Irregular verbs don't follow the -ed pattern: make→made, take→took, break→broke, speak→spoke."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the present simple negative:",
+			"questionParts": ["She ", { "answer": "doesn't like", "label": "3rd person negative" }, " spicy food."],
+			"explanation": "Present simple negative 3rd person: doesn't + base verb. 'She doesn't like' (not 'don't like')."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence shows a future intention or plan?",
+			"answerOptions": [
+				{ "text": "I am going to study tonight.", "isCorrect": false },
+				{ "text": "I will probably study tonight.", "isCorrect": true },
+				{ "text": "I study every night.", "isCorrect": false }
+			],
+			"hint": "Future simple with 'will' often shows spontaneous decisions or predictions.",
+			"explanation": "'Will probably study' shows a future intention/prediction. 'Going to' would show a planned intention, present simple shows habit."
+		},
+		{
+			"type": "reading_comprehension",
+			"question": "Read about Maria's routine and answer the questions:",
+			"readingText": ["Maria works as a teacher. Every day, she wakes up at 6 AM and has breakfast. She goes to school at 7:30 and teaches English to young students. Yesterday was different - she arrived late because her car broke down.", "Tomorrow will be special because her students will perform a play. Maria prepared the costumes last week, and she believes the performance will be amazing. She always enjoys these special school events."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "What does Maria do every day at 6 AM?",
+					"answerOptions": [
+						{ "text": "She goes to school", "isCorrect": false },
+						{ "text": "She wakes up", "isCorrect": true },
+						{ "text": "She teaches English", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "When did Maria prepare the costumes?",
+					"correctAnswer": "last week",
+					"alternatives": ["Last week"]
+				}
+			]
+		}
+	]
+}

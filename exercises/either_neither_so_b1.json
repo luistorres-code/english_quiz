@@ -1,0 +1,242 @@
+{
+	"title": "Either, Neither, So - Agreement and Alternatives B1",
+	"description": "Domina el uso de 'either', 'neither' y 'so' para expresar acuerdo, desacuerdo, alternativas y respuestas cortas en inglés.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'I don't like coffee.' - '_____ do I.'",
+			"answerOptions": [
+				{ "text": "So", "isCorrect": false },
+				{ "text": "Neither", "isCorrect": true },
+				{ "text": "Either", "isCorrect": false }
+			],
+			"hint": "When agreeing with a negative statement, which word do we use?",
+			"explanation": "'Neither do I' is used to agree with a negative statement. 'So' is for positive statements, and 'either' is used differently."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express agreement with a positive statement:",
+			"questionParts": ["'I love pizza.' - '", { "answer": "So", "label": "agreement with positive" }, " do I.'"],
+			"explanation": "'So do I' is used to agree with a positive statement. The structure is: So + auxiliary verb + subject."
+		},
+		{
+			"type": "true_false",
+			"question": "'Either' can be used to agree with negative statements.",
+			"answer": "false",
+			"explanation": "'Either' is not used to agree with statements. 'Neither' agrees with negative statements, and 'so' agrees with positive statements."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct response to: 'I can't swim.'",
+			"answerOptions": [
+				{ "text": "So can I.", "isCorrect": false },
+				{ "text": "Neither can I.", "isCorrect": true },
+				{ "text": "Either can I.", "isCorrect": false }
+			],
+			"hint": "The original statement is negative and uses 'can't'.",
+			"explanation": "'Neither can I' agrees with the negative statement 'I can't swim.' We use the same auxiliary verb (can) in the response."
+		},
+		{
+			"type": "short_answer",
+			"question": "Complete the agreement: 'She has been to Paris.' - '_____ have I.'",
+			"correctAnswer": "So",
+			"alternatives": ["so"],
+			"caseSensitive": false,
+			"explanation": "'So have I' agrees with the positive statement. We use 'so' + auxiliary verb 'have' + subject."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with either/or:",
+			"questionParts": ["You can choose ", { "answer": "either", "label": "choice between two" }, " tea or coffee."],
+			"explanation": "'Either...or' is used to present two alternatives or choices. Either comes before the first option."
+		},
+		{
+			"type": "matching",
+			"question": "Match each word with its function:",
+			"pairs": [
+				{ "text1": "So", "text2": "Agree with positive statements" },
+				{ "text1": "Neither", "text2": "Agree with negative statements" },
+				{ "text1": "Either", "text2": "Present alternatives (with 'or')" }
+			],
+			"hint": "Think about when each word is used in conversation.",
+			"explanation": "So: agreement with positive; Neither: agreement with negative; Either: alternatives/choices."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange to form a correct agreement:",
+			"items": ["Neither", "do", "I", "like", "spicy", "food"],
+			"correctOrder": ["Neither", "do", "I"],
+			"explanation": "For agreeing with negative statements: Neither + auxiliary verb + subject. The rest would be the original negative statement."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'I haven't finished my homework.' - '_____ have I.'",
+			"answerOptions": [
+				{ "text": "So", "isCorrect": false },
+				{ "text": "Neither", "isCorrect": true },
+				{ "text": "Either", "isCorrect": false }
+			],
+			"hint": "The original statement is negative (haven't).",
+			"explanation": "'Neither have I' agrees with the negative statement. We use 'neither' + the same auxiliary verb (have)."
+		},
+		{
+			"type": "true_false",
+			"question": "'So am I' is a correct response to 'I am tired.'",
+			"answer": "true",
+			"explanation": "'So am I' correctly agrees with the positive statement 'I am tired.' We use 'so' + be verb 'am' + subject."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express that you don't want either option:",
+			"questionParts": ["I don't want ", { "answer": "either", "label": "negative choice" }, " tea or coffee."],
+			"explanation": "In negative sentences, 'either' is used with 'or' to mean 'not this one or that one.'"
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the correct response to 'I will be there'?",
+			"correctAnswer": "So will I",
+			"alternatives": ["so will I", "So will i"],
+			"caseSensitive": false,
+			"explanation": "'So will I' agrees with the positive future statement. We use 'so' + auxiliary 'will' + subject."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'I don't _____ like tea or coffee.'",
+			"answerOptions": [
+				{ "text": "so", "isCorrect": false },
+				{ "text": "neither", "isCorrect": false },
+				{ "text": "either", "isCorrect": true }
+			],
+			"hint": "This is a negative sentence presenting two options.",
+			"explanation": "In negative sentences, we use 'either...or' to mean 'not this or that.' 'I don't like either tea or coffee.'"
+		},
+		{
+			"type": "ordering",
+			"question": "Form a sentence with either/or:",
+			"items": ["can", "either", "walk", "or", "take", "the", "bus", "We"],
+			"correctOrder": ["We", "can", "either", "walk", "or", "take", "the", "bus"],
+			"explanation": "Either...or structure: Subject + verb + either + option 1 + or + option 2."
+		},
+		{
+			"type": "true_false",
+			"question": "'Neither...nor' can replace 'either...or' in negative sentences.",
+			"answer": "true",
+			"explanation": "'Neither...nor' is used instead of 'not either...or.' For example: 'I like neither tea nor coffee' = 'I don't like either tea or coffee.'"
+		},
+		{
+			"type": "matching",
+			"question": "Match each statement with the correct agreement:",
+			"pairs": [
+				{ "text1": "I'm hungry.", "text2": "So am I." },
+				{ "text1": "I can't drive.", "text2": "Neither can I." },
+				{ "text1": "I have a car.", "text2": "So do I." },
+				{ "text1": "I won't go.", "text2": "Neither will I." }
+			],
+			"hint": "Match positive statements with 'so' and negative with 'neither'.",
+			"explanation": "Positive statements get 'so' responses, negative statements get 'neither' responses, using the same auxiliary verb."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the neither/nor structure:",
+			"questionParts": ["", { "answer": "Neither", "label": "negative choice" }, " John nor Mary likes vegetables."],
+			"explanation": "'Neither...nor' means 'not this one and not that one either.' It's a negative structure affecting both options."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is correct for: 'I don't have any money.'?",
+			"answerOptions": [
+				{ "text": "So do I.", "isCorrect": false },
+				{ "text": "Neither do I.", "isCorrect": true },
+				{ "text": "Either do I.", "isCorrect": false }
+			],
+			"hint": "The statement is negative ('don't have').",
+			"explanation": "'Neither do I' agrees with the negative statement. We use 'neither' + auxiliary 'do' + subject."
+		},
+		{
+			"type": "short_answer",
+			"question": "Complete: 'I wasn't at the party.' - '_____ was I.'",
+			"correctAnswer": "Neither",
+			"alternatives": ["neither"],
+			"caseSensitive": false,
+			"explanation": "'Neither was I' agrees with the negative past statement. We use 'neither' + was + subject."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Offer two alternatives:",
+			"questionParts": ["You can ", { "answer": "either", "label": "first alternative" }, " call me or send an email."],
+			"explanation": "'Either...or' presents two possible choices or alternatives. Either introduces the first option."
+		},
+		{
+			"type": "true_false",
+			"question": "In 'So do I,' the auxiliary verb must match the original statement.",
+			"answer": "true",
+			"explanation": "Yes, the auxiliary verb in the agreement must match the original statement. 'I like pizza' → 'So do I' (both use 'do')."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: '_____ my brother nor my sister likes sports.'",
+			"answerOptions": [
+				{ "text": "So", "isCorrect": false },
+				{ "text": "Either", "isCorrect": false },
+				{ "text": "Neither", "isCorrect": true }
+			],
+			"hint": "This is a negative statement about both people.",
+			"explanation": "'Neither...nor' means both options are negative. 'Neither my brother nor my sister likes sports' = both don't like sports."
+		},
+		{
+			"type": "ordering",
+			"question": "Form agreement with: 'I have never been to Japan.'",
+			"items": ["Neither", "have", "I"],
+			"correctOrder": ["Neither", "have", "I"],
+			"explanation": "Agreement with negative present perfect: Neither + have + subject. 'Never' makes the original statement negative."
+		},
+		{
+			"type": "matching",
+			"question": "Match the situation with the correct structure:",
+			"pairs": [
+				{ "text1": "Agreeing with positive", "text2": "So + auxiliary + subject" },
+				{ "text1": "Agreeing with negative", "text2": "Neither + auxiliary + subject" },
+				{ "text1": "Presenting two choices", "text2": "Either...or" },
+				{ "text1": "Negative about both options", "text2": "Neither...nor" }
+			],
+			"hint": "Think about the grammatical patterns for each function.",
+			"explanation": "Each structure has a specific pattern and use: So (positive agreement), Neither (negative agreement), Either...or (choices), Neither...nor (negative both)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the negative agreement:",
+			"questionParts": ["'I don't speak French.' - '", { "answer": "Neither", "label": "negative agreement" }, " do I.'"],
+			"explanation": "'Neither do I' agrees with the negative statement 'I don't speak French.' We use the same auxiliary verb 'do'."
+		},
+		{
+			"type": "short_answer",
+			"question": "What structure do we use for: 'I like neither option'?",
+			"correctAnswer": "neither...nor",
+			"alternatives": ["Neither...nor", "neither nor", "Neither nor"],
+			"caseSensitive": false,
+			"explanation": "'Neither...nor' is used to express that you don't like either of two options. It's a negative structure for both choices."
+		},
+		{
+			"type": "reading_comprehension",
+			"question": "Read the conversation and answer the questions:",
+			"readingText": ["A: 'I love traveling to new places.' B: 'So do I! I've been to either Europe or Asia every summer.'", "A: 'I haven't been to Africa yet.' B: 'Neither have I, but I'd love to go.'", "A: 'I can't decide between Thailand or Vietnam for my next trip.' B: 'Either choice would be amazing. I visited neither country last year, but both are on my list.'"],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "How does person B agree with 'I love traveling'?",
+					"answerOptions": [
+						{ "text": "Neither do I", "isCorrect": false },
+						{ "text": "So do I", "isCorrect": true },
+						{ "text": "Either do I", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What word is used to agree with the negative statement about Africa?",
+					"correctAnswer": "Neither",
+					"alternatives": ["neither"]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,350 @@
+{
+	"title": "May, Might, Could - Modal Verbs B1",
+	"description": "Domina los verbos modales MAY, MIGHT y COULD. Aprende a expresar posibilidad, probabilidad, permisos y peticiones corteses en diferentes contextos.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly expresses possibility?",
+			"answerOptions": [
+				{ "text": "It may rain tomorrow.", "isCorrect": true },
+				{ "text": "It must rain tomorrow.", "isCorrect": false },
+				{ "text": "It should rain tomorrow.", "isCorrect": false }
+			],
+			"hint": "Think about which modal expresses something that is possible but not certain.",
+			"explanation": "'May' expresses possibility without certainty. 'Must' expresses strong certainty, and 'should' expresses expectation or advice."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the appropriate modal verb:",
+			"questionParts": ["You ", { "answer": "could", "label": "modal for ability/suggestion" }, " try calling him later."],
+			"explanation": "'Could' is used here to make a polite suggestion. It's softer than 'should' and expresses a possible option."
+		},
+		{
+			"type": "true_false",
+			"question": "'Might' expresses stronger possibility than 'may'.",
+			"answer": "false",
+			"explanation": "'Might' actually expresses weaker possibility than 'may'. Both express possibility, but 'might' suggests it's less likely to happen."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is the most polite way to ask for permission?",
+			"answerOptions": [
+				{ "text": "Can I use your phone?", "isCorrect": false },
+				{ "text": "May I use your phone?", "isCorrect": true },
+				{ "text": "Will I use your phone?", "isCorrect": false }
+			],
+			"hint": "Consider which modal is traditionally considered most formal and polite.",
+			"explanation": "'May I' is the most formal and polite way to ask for permission. 'Can I' is more casual, and 'Will I' is not used for permission."
+		},
+		{
+			"type": "short_answer",
+			"question": "What modal verb expresses past ability? (e.g., When I was young, I _____ run very fast.)",
+			"correctAnswer": "could",
+			"alternatives": ["Could"],
+			"caseSensitive": false,
+			"explanation": "'Could' is the past form of 'can' and expresses past ability. Example: 'When I was young, I could run very fast.'"
+		},
+		{
+			"type": "matching",
+			"question": "Match each modal with its primary use:",
+			"pairs": [
+				{ "text1": "May", "text2": "Formal permission/possibility" },
+				{ "text1": "Might", "text2": "Weak possibility" },
+				{ "text1": "Could", "text2": "Past ability/polite requests" }
+			],
+			"hint": "Think about the strength and formality of each modal.",
+			"explanation": "May: formal permission and possibility; Might: weaker possibility; Could: past ability and polite requests/suggestions."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a polite request:",
+			"items": ["you", "could", "me", "help", "please", "?"],
+			"correctOrder": ["Could", "you", "help", "me", "please", "?"],
+			"explanation": "Polite requests with 'could' follow the pattern: Could + subject + main verb + object + please + ?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express weak possibility:",
+			"questionParts": ["She ", { "answer": "might", "label": "weak possibility" }, " be at home, but I'm not sure."],
+			"explanation": "'Might' expresses weak possibility - something that could happen but is uncertain or unlikely."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence shows the strongest possibility?",
+			"answerOptions": [
+				{ "text": "He might come to the party.", "isCorrect": false },
+				{ "text": "He may come to the party.", "isCorrect": true },
+				{ "text": "He could come to the party.", "isCorrect": false }
+			],
+			"hint": "Compare the strength of possibility between these three modals.",
+			"explanation": "'May' expresses stronger possibility than 'might' or 'could'. The order from strongest to weakest is: may > might/could."
+		},
+		{
+			"type": "true_false",
+			"question": "'Could' can only be used to talk about the past.",
+			"answer": "false",
+			"explanation": "'Could' has multiple uses: past ability, polite requests, suggestions, and hypothetical situations. It's not limited to the past."
+		},
+		{
+			"type": "short_answer",
+			"question": "Complete: '_____ I borrow your pen?' (most formal)",
+			"correctAnswer": "may",
+			"alternatives": ["May"],
+			"caseSensitive": false,
+			"explanation": "'May I' is the most formal way to ask for permission, more formal than 'can I' or 'could I'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a polite suggestion:",
+			"questionParts": ["You ", { "answer": "could", "label": "polite suggestion" }, " ask your teacher for help."],
+			"explanation": "'Could' is used to make polite suggestions. It's gentler than 'should' and presents an option rather than advice."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "In the sentence 'It might snow tonight', what does 'might' express?",
+			"answerOptions": [
+				{ "text": "Certainty", "isCorrect": false },
+				{ "text": "Weak possibility", "isCorrect": true },
+				{ "text": "Permission", "isCorrect": false }
+			],
+			"hint": "Think about how certain the speaker is about the snow.",
+			"explanation": "'Might' expresses weak possibility - there's a chance it could snow, but it's not very likely or certain."
+		},
+		{
+			"type": "ordering",
+			"question": "Create a sentence expressing formal permission:",
+			"items": ["students", "may", "the", "library", "use", "after", "hours"],
+			"correctOrder": ["Students", "may", "use", "the", "library", "after", "hours"],
+			"explanation": "When giving formal permission: Subject + may + main verb + object/complement."
+		},
+		{
+			"type": "matching",
+			"question": "Match each sentence with its function:",
+			"pairs": [
+				{ "text1": "Could you open the window?", "text2": "Polite request" },
+				{ "text1": "It may be expensive.", "text2": "Possibility" },
+				{ "text1": "I could swim when I was 5.", "text2": "Past ability" },
+				{ "text1": "You might want to check.", "text2": "Gentle suggestion" }
+			],
+			"hint": "Consider the context and purpose of each sentence.",
+			"explanation": "Each modal has different functions depending on context: could for requests/past ability, may for possibility/permission, might for weak possibility/suggestions."
+		},
+		{
+			"type": "true_false",
+			"question": "The sentence 'May you help me?' is correct English.",
+			"answer": "false",
+			"explanation": "'May' is not used for requests in questions. Use 'Could you help me?' or 'Can you help me?' for requests. 'May I' is for asking permission."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express past ability:",
+			"questionParts": ["When I lived in France, I ", { "answer": "could", "label": "past ability" }, " speak French fluently."],
+			"explanation": "'Could' expresses past ability - something you were able to do in the past but may not be able to do now."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence is most appropriate for a job interview?",
+			"answerOptions": [
+				{ "text": "Can I ask about the salary?", "isCorrect": false },
+				{ "text": "May I ask about the salary?", "isCorrect": true },
+				{ "text": "Might I ask about the salary?", "isCorrect": false }
+			],
+			"hint": "Consider which modal sounds most professional and formal.",
+			"explanation": "'May I' is the most formal and appropriate for professional situations like job interviews."
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the difference between 'can' and 'could' for requests? (Which is more polite?)",
+			"correctAnswer": "could",
+			"alternatives": ["Could", "could is more polite", "Could is more polite"],
+			"caseSensitive": false,
+			"explanation": "'Could' is more polite than 'can' for requests. 'Could you help me?' sounds more polite than 'Can you help me?'"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express uncertainty about the future:",
+			"questionParts": ["The weather ", { "answer": "might", "label": "uncertainty/weak possibility" }, " be better tomorrow."],
+			"explanation": "'Might' expresses uncertainty about future events - something that could possibly happen but you're not confident about it."
+		},
+		{
+			"type": "ordering",
+			"question": "Form a sentence expressing past ability:",
+			"items": ["years", "could", "ago", "play", "piano", "I", "the"],
+			"correctOrder": ["I", "could", "play", "the", "piano", "years", "ago"],
+			"explanation": "Past ability with 'could': Subject + could + main verb + object + time expression."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "In 'You could be right about that', what does 'could' express?",
+			"answerOptions": [
+				{ "text": "Past ability", "isCorrect": false },
+				{ "text": "Possibility", "isCorrect": true },
+				{ "text": "Permission", "isCorrect": false }
+			],
+			"hint": "Think about whether this refers to past, present possibility, or permission.",
+			"explanation": "Here 'could' expresses present possibility - it's possible that you are right, but not certain."
+		},
+		{
+			"type": "true_false",
+			"question": "'Might' and 'may' can always be used interchangeably.",
+			"answer": "false",
+			"explanation": "While both express possibility, 'may' is stronger and more formal. For permission, 'may' is preferred over 'might'. They're not always interchangeable."
+		},
+		{
+			"type": "matching",
+			"question": "Match each situation with the best modal choice:",
+			"pairs": [
+				{ "text1": "Asking teacher for permission", "text2": "May I" },
+				{ "text1": "Making a gentle suggestion", "text2": "You could" },
+				{ "text1": "Expressing weak possibility", "text2": "It might" },
+				{ "text1": "Talking about past ability", "text2": "I could" }
+			],
+			"hint": "Consider the level of formality and the specific function needed.",
+			"explanation": "Different situations require different modals based on formality, politeness, and the specific meaning you want to convey."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Make a polite request:",
+			"questionParts": ["", { "answer": "Could", "label": "polite request" }, " you please turn down the music?"],
+			"explanation": "'Could you please' is a very polite way to make requests. It's more formal than 'can you' and shows respect for the other person."
+		},
+		{
+			"type": "short_answer",
+			"question": "Which modal is best for expressing something that is possible but not very likely?",
+			"correctAnswer": "might",
+			"alternatives": ["Might"],
+			"caseSensitive": false,
+			"explanation": "'Might' expresses weak possibility - something that could happen but probably won't, or something you're not confident about."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'Students _____ not use mobile phones during exams.' (formal rule)",
+			"answerOptions": [
+				{ "text": "could", "isCorrect": false },
+				{ "text": "may", "isCorrect": true },
+				{ "text": "might", "isCorrect": false }
+			],
+			"hint": "Think about which modal is used for formal rules and regulations.",
+			"explanation": "'May not' is used for formal prohibitions and rules. It's more formal than 'cannot' or 'must not' in official contexts."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly expresses formal prohibition?",
+			"answerOptions": [
+				{ "text": "You may not smoke in this building.", "isCorrect": true },
+				{ "text": "You might not smoke in this building.", "isCorrect": false },
+				{ "text": "You could not smoke in this building.", "isCorrect": false }
+			],
+			"hint": "Think about which modal is used for official rules and prohibitions.",
+			"explanation": "'May not' is used for formal prohibitions and official rules. 'Might not' expresses weak negative possibility, and 'could not' expresses impossibility or past inability."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express that something is unlikely to happen:",
+			"questionParts": ["She ", { "answer": "might not", "label": "weak negative possibility" }, " come to the meeting today."],
+			"explanation": "'Might not' expresses weak negative possibility - it's unlikely but not impossible that she will come."
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the contraction of 'could not'?",
+			"correctAnswer": "couldn't",
+			"alternatives": ["Couldn't"],
+			"caseSensitive": false,
+			"explanation": "'Could not' contracts to 'couldn't'. This is commonly used to express past inability or present impossibility."
+		},
+		{
+			"type": "true_false",
+			"question": "'Might not' and 'may not' have the same meaning.",
+			"answer": "false",
+			"explanation": "'May not' can mean prohibition or negative possibility. 'Might not' only expresses weak negative possibility (unlikely to happen)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: 'I _____ find my keys anywhere yesterday.'",
+			"answerOptions": [
+				{ "text": "may not", "isCorrect": false },
+				{ "text": "might not", "isCorrect": false },
+				{ "text": "couldn't", "isCorrect": true }
+			],
+			"hint": "This is about past inability to do something.",
+			"explanation": "'Couldn't' expresses past inability. 'May not' and 'might not' don't work with past time expressions like 'yesterday'."
+		},
+		{
+			"type": "matching",
+			"question": "Match each negative form with its meaning:",
+			"pairs": [
+				{ "text1": "May not", "text2": "Formal prohibition" },
+				{ "text1": "Might not", "text2": "Unlikely to happen" },
+				{ "text1": "Could not", "text2": "Was unable to/impossible" }
+			],
+			"hint": "Consider the strength and type of negation each modal expresses.",
+			"explanation": "May not: formal prohibition; Might not: weak negative possibility; Could not: past inability or impossibility."
+		},
+		{
+			"type": "ordering",
+			"question": "Create a sentence about past inability:",
+			"items": ["couldn't", "I", "the", "answer", "find", "to", "problem", "the"],
+			"correctOrder": ["I", "couldn't", "find", "the", "answer", "to", "the", "problem"],
+			"explanation": "Past inability with 'couldn't': Subject + couldn't + main verb + object/complement."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express a formal rule (prohibition):",
+			"questionParts": ["Visitors ", { "answer": "may not", "label": "formal prohibition" }, " enter this area without permission."],
+			"explanation": "'May not' is used for formal prohibitions, especially in official contexts like rules, regulations, and signs."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which expresses the strongest negative possibility?",
+			"answerOptions": [
+				{ "text": "He might not come.", "isCorrect": false },
+				{ "text": "He may not come.", "isCorrect": true },
+				{ "text": "He could not come.", "isCorrect": false }
+			],
+			"hint": "Compare the strength of negative possibility between these modals.",
+			"explanation": "'May not' expresses stronger negative possibility than 'might not'. 'Could not' in this context would mean impossibility, not just possibility."
+		},
+		{
+			"type": "true_false",
+			"question": "'Couldn't' can only refer to the past.",
+			"answer": "false",
+			"explanation": "'Couldn't' can express past inability ('I couldn't swim when I was young') or present impossibility ('I couldn't eat another bite')."
+		},
+		{
+			"type": "short_answer",
+			"question": "Which negative modal expresses the weakest possibility that something won't happen?",
+			"correctAnswer": "might not",
+			"alternatives": ["Might not"],
+			"caseSensitive": false,
+			"explanation": "'Might not' expresses the weakest negative possibility - there's a small chance it won't happen, but it's not very confident."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express present impossibility:",
+			"questionParts": ["This ", { "answer": "couldn't", "label": "impossibility" }, " be the right address - the building doesn't exist."],
+			"explanation": "'Couldn't' can express present impossibility or strong disbelief about something that seems impossible."
+		},
+		{
+			"type": "reading_comprehension",
+			"question": "Read the weather forecast and answer the questions:",
+			"readingText": ["Tomorrow's weather forecast shows mixed conditions across the region. In the morning, it may be sunny with temperatures around 20°C. However, clouds might develop by afternoon, and there could be some light rain in the evening.", "The meteorologist explained: 'We may see a high-pressure system moving in, but it might not be strong enough to prevent the rain. People could experience both sunshine and showers throughout the day.'"],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "According to the forecast, what is most likely to happen in the morning?",
+					"answerOptions": [
+						{ "text": "It will definitely be sunny", "isCorrect": false },
+						{ "text": "It may be sunny", "isCorrect": true },
+						{ "text": "It might rain", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What modal verb is used to express the weakest possibility in the text?",
+					"correctAnswer": "might",
+					"alternatives": ["Might"]
+				}
+			]
+		}
+	]
+}
