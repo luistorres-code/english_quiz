@@ -1,0 +1,58 @@
+{
+	"grammarTopics": [
+		{
+			"id": "simple_tenses",
+			"title": "Tiempos Simples",
+			"subtitle": "Present, Past & Future Simple",
+			"description": "Aprende los tres tiempos fundamentales del inglés: presente, pasado y futuro simple.",
+			"level": "A2-B1",
+			"icon": "⏰",
+			"color": "#667eea"
+		},
+		{
+			"id": "continuous_tenses",
+			"title": "Tiempos Continuos",
+			"subtitle": "Present, Past & Future Continuous",
+			"description": "Domina los tiempos progresivos para expresar acciones en desarrollo.",
+			"level": "A2-B1",
+			"icon": "🔄",
+			"color": "#48bb78"
+		},
+		{
+			"id": "modal_verbs",
+			"title": "Verbos Modales",
+			"subtitle": "Can, Could, May, Might, Should, Must",
+			"description": "Aprende a usar los verbos modales para expresar habilidad, posibilidad y obligación.",
+			"level": "B1-B2",
+			"icon": "🎭",
+			"color": "#ed8936"
+		},
+		{
+			"id": "perfect_tenses",
+			"title": "Tiempos Perfectos",
+			"subtitle": "Present, Past & Future Perfect",
+			"description": "Comprende los tiempos perfectos para conectar diferentes momentos en el tiempo.",
+			"level": "B1-B2",
+			"icon": "💎",
+			"color": "#9f7aea"
+		},
+		{
+			"id": "either_neither_so",
+			"title": "Either, Neither, So",
+			"subtitle": "Agreement, Disagreement & Alternatives",
+			"description": "Domina el uso de either, neither y so para expresar acuerdo, desacuerdo y alternativas.",
+			"level": "B1",
+			"icon": "⚖️",
+			"color": "#38b2ac"
+		},
+		{
+			"id": "may_might_could",
+			"title": "May, Might, Could",
+			"subtitle": "Modal Verbs for Possibility, Permission & Requests",
+			"description": "Aprende los verbos modales may, might y could para posibilidad, permiso y peticiones corteses.",
+			"level": "B1",
+			"icon": "🎯",
+			"color": "#805ad5"
+		}
+	]
+}

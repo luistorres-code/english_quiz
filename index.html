@@ -26,14 +26,44 @@
 				</div>
 			</header>
 			<section class="quiz-selector" role="region" aria-labelledby="selector-title">
-				<h2 id="selector-title">Selecciona un ejercicio para comenzar:</h2>
-				<div id="exercise-cards-container" class="exercise-cards-grid">
-					<!-- Las tarjetas de ejercicios se cargan dinámicamente -->
-					<div class="loading-card">
-						<div class="loading-spinner"></div>
-						<p>Cargando ejercicios...</p>
+				<h2 id="selector-title">¿Qué quieres hacer hoy?</h2>
+
+				<!-- Navigation Menu -->
+				<nav class="main-navigation" role="navigation" aria-label="Navegación principal">
+					<button id="exercises-tab" class="nav-tab active" type="button" aria-pressed="true">
+						<span class="nav-icon">🎯</span>
+						<span class="nav-text">Ejercicios</span>
+					</button>
+					<button id="grammar-tab" class="nav-tab" type="button" aria-pressed="false">
+						<span class="nav-icon">📚</span>
+						<span class="nav-text">Gramática</span>
+					</button>
+				</nav>
+
+				<!-- Exercises Section -->
+				<div id="exercises-section" class="content-section active">
+					<h3>Selecciona un ejercicio para comenzar:</h3>
+					<div id="exercise-cards-container" class="exercise-cards-grid">
+						<!-- Las tarjetas de ejercicios se cargan dinámicamente -->
+						<div class="loading-card">
+							<div class="loading-spinner"></div>
+							<p>Cargando ejercicios...</p>
+						</div>
 					</div>
 				</div>
+
+				<!-- Grammar Section -->
+				<div id="grammar-section" class="content-section">
+					<h3>Estudia gramática inglesa:</h3>
+					<div id="grammar-topics-container" class="grammar-topics-grid">
+						<!-- Los temas de gramática se cargan dinámicamente -->
+						<div class="loading-card">
+							<div class="loading-spinner"></div>
+							<p>Cargando temas de gramática...</p>
+						</div>
+					</div>
+				</div>
+
 				<div id="selector-help" class="visually-hidden">Selecciona un ejercicio de las tarjetas para comenzar a practicar inglés</div>
 			</section>
 
@@ -61,6 +91,20 @@
 				<!-- El feedback se mostrará aquí de manera prominente -->
 			</div>
 
+			<!-- Grammar Study View -->
+			<div id="grammar-study" class="grammar-study-container" style="display: none">
+				<header class="grammar-header">
+					<button id="grammar-back-button" class="back-button" type="button" aria-label="Volver a la selección de gramática">
+						<span class="back-icon" aria-hidden="true">←</span>
+						<span class="back-text">Volver</span>
+					</button>
+					<h1 id="grammar-title">Gramática</h1>
+				</header>
+				<div id="grammar-content" class="grammar-content">
+					<!-- El contenido de gramática se carga aquí -->
+				</div>
+			</div>
+
 			<div id="quiz" role="main"></div>
 
 			<nav class="navigation-buttons" role="navigation" aria-label="Navegación del ejercicio">
@@ -76,6 +120,7 @@
 		<script src="./js/feedback-manager.js"></script>
 		<script src="./js/ui-state-manager.js"></script>
 		<script src="./js/exercise-renderer.js"></script>
+		<script src="./js/grammar-system.js"></script>
 		<script src="./js/quiz-system.js"></script>
 		<script src="./js/app.js"></script>
 	</body>

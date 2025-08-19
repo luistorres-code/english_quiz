@@ -460,6 +460,17 @@ function goHome() {
 	resetSystem();
 	showHomeInterface();
 	updateURL(null);
+
+	// Asegurar que la vista de gramática esté oculta
+	const grammarStudy = document.getElementById("grammar-study");
+	if (grammarStudy) {
+		grammarStudy.style.display = "none";
+	}
+
+	// Restaurar la vista de ejercicios por defecto
+	if (window.grammarSystem) {
+		window.grammarSystem.switchToExercises();
+	}
 }
 
 function shareResults(percentage, score, total) {

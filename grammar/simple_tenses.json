@@ -1,0 +1,195 @@
+{
+	"title": "Tiempos Simples en Inglés",
+	"subtitle": "Present Simple, Past Simple & Future Simple",
+	"level": "A2-B1",
+	"estimatedTime": "15-20 minutos",
+	"sections": [
+		{
+			"title": "Present Simple (Presente Simple)",
+			"structure": "Subject + Verb (base form / +s for 3rd person)",
+			"description": "El presente simple se usa para expresar hábitos, rutinas, verdades generales y estados permanentes.",
+			"uses": [
+				{
+					"use": "Hábitos y rutinas diarias",
+					"example": "I drink coffee every morning.",
+					"translation": "Bebo café todas las mañanas.",
+					"note": "Se usa con adverbios de frecuencia como always, usually, often, sometimes, never."
+				},
+				{
+					"use": "Verdades generales y hechos científicos",
+					"example": "The sun rises in the east.",
+					"translation": "El sol sale por el este.",
+					"note": "Para cosas que son siempre verdad o leyes naturales."
+				},
+				{
+					"use": "Estados permanentes",
+					"example": "She lives in Madrid.",
+					"translation": "Ella vive en Madrid.",
+					"note": "Para situaciones que consideramos permanentes o de larga duración."
+				},
+				{
+					"use": "Horarios y programas",
+					"example": "The train leaves at 9 AM.",
+					"translation": "El tren sale a las 9 AM.",
+					"note": "Para eventos programados y horarios oficiales."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + Verb (+s for he/she/it)",
+					"examples": ["I work in an office → Trabajo en una oficina", "You study English → Estudias inglés", "He/She works hard → Él/Ella trabaja duro", "We live here → Vivimos aquí", "They play football → Juegan fútbol"],
+					"rules": ["Para he, she, it se agrega -s al verbo", "Si el verbo termina en -s, -sh, -ch, -x, -o se agrega -es: go→goes, watch→watches", "Si termina en consonante + y, cambia y por i y agrega -es: study→studies"]
+				},
+				"negative": {
+					"structure": "Subject + don't/doesn't + Verb (base form)",
+					"examples": ["I don't work → No trabajo", "You don't study → No estudias", "He/She doesn't work → Él/Ella no trabaja", "We don't live here → No vivimos aquí", "They don't play → No juegan"],
+					"rules": ["Para I, you, we, they: don't + verbo base", "Para he, she, it: doesn't + verbo base", "El verbo principal siempre va en forma base (sin -s)"]
+				},
+				"interrogative": {
+					"structure": "Do/Does + Subject + Verb (base form)?",
+					"examples": ["Do you work? → ¿Trabajas?", "Do they study? → ¿Estudian?", "Does he work? → ¿Él trabaja?", "Does she live here? → ¿Ella vive aquí?"],
+					"rules": ["Para I, you, we, they: Do + sujeto + verbo base", "Para he, she, it: Does + sujeto + verbo base", "Respuestas cortas: Yes, I do. / No, I don't. / Yes, she does. / No, she doesn't."]
+				}
+			},
+			"timeExpressions": ["every day/week/month/year", "always, usually, often, sometimes, rarely, never", "on Mondays, on weekends", "in the morning/afternoon/evening", "at night, at 8 o'clock"]
+		},
+		{
+			"title": "Past Simple (Pasado Simple)",
+			"structure": "Subject + Verb-ed (regular) / 2nd form (irregular)",
+			"description": "El pasado simple se usa para expresar acciones completadas en un momento específico del pasado.",
+			"uses": [
+				{
+					"use": "Acciones completadas en el pasado",
+					"example": "I visited Paris last year.",
+					"translation": "Visité París el año pasado.",
+					"note": "Con tiempo específico mencionado o implícito."
+				},
+				{
+					"use": "Secuencia de eventos en el pasado",
+					"example": "He arrived, ate dinner, and went to bed.",
+					"translation": "Llegó, cenó y se fue a la cama.",
+					"note": "Para narrar una serie de acciones que ocurrieron una después de otra."
+				},
+				{
+					"use": "Hábitos en el pasado",
+					"example": "When I was young, I played soccer every day.",
+					"translation": "Cuando era joven, jugaba fútbol todos los días.",
+					"note": "Para rutinas o hábitos que ya no ocurren."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + Verb-ed / 2nd form",
+					"examples": ["I worked yesterday → Trabajé ayer", "She studied last night → Ella estudió anoche", "We went to the cinema → Fuimos al cine", "They saw the movie → Vieron la película"],
+					"rules": ["Verbos regulares: agregar -ed (work→worked)", "Si termina en -e, solo agregar -d (live→lived)", "Si termina en consonante + y, cambiar y por i y agregar -ed (study→studied)", "Verbos irregulares: usar la segunda forma (go→went, see→saw)"]
+				},
+				"negative": {
+					"structure": "Subject + didn't + Verb (base form)",
+					"examples": ["I didn't work → No trabajé", "She didn't study → Ella no estudió", "We didn't go → No fuimos", "They didn't see → No vieron"],
+					"rules": ["Usar didn't + verbo base para todas las personas", "El verbo principal siempre en forma base, no en pasado"]
+				},
+				"interrogative": {
+					"structure": "Did + Subject + Verb (base form)?",
+					"examples": ["Did you work? → ¿Trabajaste?", "Did she study? → ¿Estudió ella?", "Did they go? → ¿Fueron?", "Did he see the movie? → ¿Vio él la película?"],
+					"rules": ["Usar Did + sujeto + verbo base para todas las personas", "Respuestas cortas: Yes, I did. / No, I didn't."]
+				}
+			},
+			"timeExpressions": ["yesterday", "last week/month/year/night", "ago (two days ago, a week ago)", "in 2020, in the past", "when I was young", "at that time"],
+			"irregularVerbs": [
+				{ "base": "be", "past": "was/were", "meaning": "ser/estar" },
+				{ "base": "go", "past": "went", "meaning": "ir" },
+				{ "base": "see", "past": "saw", "meaning": "ver" },
+				{ "base": "have", "past": "had", "meaning": "tener" },
+				{ "base": "do", "past": "did", "meaning": "hacer" },
+				{ "base": "get", "past": "got", "meaning": "obtener" },
+				{ "base": "make", "past": "made", "meaning": "hacer" },
+				{ "base": "come", "past": "came", "meaning": "venir" },
+				{ "base": "take", "past": "took", "meaning": "tomar" },
+				{ "base": "give", "past": "gave", "meaning": "dar" }
+			]
+		},
+		{
+			"title": "Future Simple (Futuro Simple)",
+			"structure": "Subject + will + Verb (base form)",
+			"description": "El futuro simple se usa para expresar predicciones, decisiones espontáneas y promesas.",
+			"uses": [
+				{
+					"use": "Predicciones sobre el futuro",
+					"example": "It will rain tomorrow.",
+					"translation": "Lloverá mañana.",
+					"note": "Para lo que creemos que pasará, sin evidencia presente."
+				},
+				{
+					"use": "Decisiones espontáneas",
+					"example": "I'm thirsty. I'll drink some water.",
+					"translation": "Tengo sed. Beberé agua.",
+					"note": "Decisiones que tomamos en el momento de hablar."
+				},
+				{
+					"use": "Promesas y ofertas",
+					"example": "I will help you with your homework.",
+					"translation": "Te ayudaré con tu tarea.",
+					"note": "Para comprometerse a hacer algo o ofrecer ayuda."
+				},
+				{
+					"use": "Hechos futuros",
+					"example": "The sun will rise at 6 AM tomorrow.",
+					"translation": "El sol saldrá a las 6 AM mañana.",
+					"note": "Para eventos que sabemos que ocurrirán."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + will + Verb",
+					"examples": ["I will work → Trabajaré", "You will study → Estudiarás", "She will travel → Ella viajará", "We will meet → Nos encontraremos", "They will arrive → Llegarán"],
+					"rules": ["Will se usa para todas las personas", "Contracciones: I'll, you'll, he'll, she'll, it'll, we'll, they'll", "El verbo principal siempre en forma base"]
+				},
+				"negative": {
+					"structure": "Subject + will not (won't) + Verb",
+					"examples": ["I won't work → No trabajaré", "You won't study → No estudiarás", "She won't travel → Ella no viajará", "We won't meet → No nos encontraremos"],
+					"rules": ["Will not = won't (contracción muy común)", "Won't se usa para todas las personas"]
+				},
+				"interrogative": {
+					"structure": "Will + Subject + Verb?",
+					"examples": ["Will you work? → ¿Trabajarás?", "Will she travel? → ¿Viajará ella?", "Will they arrive on time? → ¿Llegarán a tiempo?", "Will it rain? → ¿Lloverá?"],
+					"rules": ["Will + sujeto + verbo base para todas las personas", "Respuestas cortas: Yes, I will. / No, I won't."]
+				}
+			},
+			"timeExpressions": ["tomorrow", "next week/month/year", "in the future", "soon, later", "in two hours/days", "tonight"]
+		}
+	],
+	"comparison": {
+		"title": "Comparación de los Tres Tiempos",
+		"examples": [
+			{
+				"present": "I work in an office. (hábito actual)",
+				"past": "I worked in a factory last year. (acción completada)",
+				"future": "I will work from home next month. (plan/predicción)",
+				"translation": "Trabajo en una oficina / Trabajé en una fábrica / Trabajaré desde casa"
+			},
+			{
+				"present": "She studies English every day. (rutina)",
+				"past": "She studied French in school. (período completado)",
+				"future": "She will study German next year. (intención futura)",
+				"translation": "Estudia inglés / Estudió francés / Estudiará alemán"
+			}
+		]
+	},
+	"tips": [
+		{
+			"title": "Presente Simple",
+			"content": "Recuerda que solo la tercera persona singular (he/she/it) lleva 's' en afirmativo, pero en negativo e interrogativo usa la forma base.",
+			"example": "He works BUT He doesn't work / Does he work?"
+		},
+		{
+			"title": "Pasado Simple",
+			"content": "En negativo e interrogativo, SIEMPRE usa la forma base del verbo, no la forma de pasado.",
+			"example": "✓ Did you go? ✗ Did you went?"
+		},
+		{
+			"title": "Futuro Simple",
+			"content": "Para planes definidos usa 'going to', para predicciones y decisiones espontáneas usa 'will'.",
+			"example": "I'm going to study tonight (plan) vs I think it will rain (predicción)"
+		}
+	]
+}

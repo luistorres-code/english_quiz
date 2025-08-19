@@ -1,0 +1,214 @@
+{
+	"title": "Either, Neither, So",
+	"subtitle": "Agreement, Disagreement & Alternatives",
+	"level": "B1",
+	"estimatedTime": "12-15 min",
+	"sections": [
+		{
+			"title": "So - Agreement with Positive Statements",
+			"structure": "So + auxiliary verb + subject",
+			"description": "Se usa 'so' para expresar acuerdo con declaraciones positivas.",
+			"uses": [
+				{
+					"use": "Acuerdo con presente simple",
+					"example": "A: I like pizza. B: So do I.",
+					"translation": "A: Me gusta la pizza. B: A mí también.",
+					"note": "Usar 'do' como auxiliar para presente simple"
+				},
+				{
+					"use": "Acuerdo con be verb",
+					"example": "A: I am tired. B: So am I.",
+					"translation": "A: Estoy cansado. B: Yo también.",
+					"note": "Usar el mismo verbo 'be' (am/is/are)"
+				},
+				{
+					"use": "Acuerdo con modales",
+					"example": "A: I can swim. B: So can I.",
+					"translation": "A: Sé nadar. B: Yo también.",
+					"note": "Usar el mismo verbo modal"
+				},
+				{
+					"use": "Acuerdo con tiempos perfectos",
+					"example": "A: I have been to Paris. B: So have I.",
+					"translation": "A: He estado en París. B: Yo también.",
+					"note": "Usar 'have/has' como auxiliar"
+				}
+			],
+			"forms": {
+				"Presente simple": {
+					"structure": "So + do/does + subject",
+					"examples": ["So do I", "So does he", "So do we", "So do they"]
+				},
+				"Pasado simple": {
+					"structure": "So + did + subject",
+					"examples": ["So did I", "So did he", "So did we", "So did they"]
+				},
+				"Be verb": {
+					"structure": "So + am/is/are/was/were + subject",
+					"examples": ["So am I", "So is she", "So are we", "So was I", "So were they"]
+				},
+				"Verbos modales": {
+					"structure": "So + modal + subject",
+					"examples": ["So can I", "So will he", "So should we", "So could they"]
+				},
+				"Perfectos": {
+					"structure": "So + have/has/had + subject",
+					"examples": ["So have I", "So has she", "So had we"]
+				}
+			}
+		},
+		{
+			"title": "Neither - Agreement with Negative Statements",
+			"structure": "Neither + auxiliary verb + subject",
+			"description": "Se usa 'neither' para expresar acuerdo con declaraciones negativas.",
+			"uses": [
+				{
+					"use": "Acuerdo con negativo presente",
+					"example": "A: I don't like coffee. B: Neither do I.",
+					"translation": "A: No me gusta el café. B: A mí tampoco.",
+					"note": "Usar 'do' como auxiliar para presente simple negativo"
+				},
+				{
+					"use": "Acuerdo con be verb negativo",
+					"example": "A: I'm not ready. B: Neither am I.",
+					"translation": "A: No estoy listo. B: Yo tampoco.",
+					"note": "Usar el mismo verbo 'be'"
+				},
+				{
+					"use": "Acuerdo con modales negativos",
+					"example": "A: I can't drive. B: Neither can I.",
+					"translation": "A: No sé manejar. B: Yo tampoco.",
+					"note": "Usar el mismo verbo modal sin negación"
+				},
+				{
+					"use": "Acuerdo con perfectos negativos",
+					"example": "A: I haven't been there. B: Neither have I.",
+					"translation": "A: No he estado ahí. B: Yo tampoco.",
+					"note": "Usar 'have/has' sin negación"
+				}
+			],
+			"forms": {
+				"Presente simple": {
+					"structure": "Neither + do/does + subject",
+					"examples": ["Neither do I", "Neither does he", "Neither do we", "Neither do they"]
+				},
+				"Pasado simple": {
+					"structure": "Neither + did + subject",
+					"examples": ["Neither did I", "Neither did he", "Neither did we", "Neither did they"]
+				},
+				"Be verb": {
+					"structure": "Neither + am/is/are/was/were + subject",
+					"examples": ["Neither am I", "Neither is she", "Neither are we", "Neither was I", "Neither were they"]
+				},
+				"Verbos modales": {
+					"structure": "Neither + modal + subject",
+					"examples": ["Neither can I", "Neither will he", "Neither should we", "Neither could they"]
+				},
+				"Perfectos": {
+					"structure": "Neither + have/has/had + subject",
+					"examples": ["Neither have I", "Neither has she", "Neither had we"]
+				}
+			}
+		},
+		{
+			"title": "Either...or - Alternatives and Choices",
+			"structure": "Either...or",
+			"description": "Se usa 'either...or' para presentar dos opciones o alternativas.",
+			"uses": [
+				{
+					"use": "Ofrecer dos opciones",
+					"example": "You can either call me or send an email.",
+					"translation": "Puedes llamarme o enviar un email.",
+					"note": "Presentar dos alternativas positivas"
+				},
+				{
+					"use": "En oraciones negativas",
+					"example": "I don't like either tea or coffee.",
+					"translation": "No me gusta ni el té ni el café.",
+					"note": "En negativo significa 'ni...ni'"
+				},
+				{
+					"use": "Con sujetos",
+					"example": "Either John or Mary will come.",
+					"translation": "O John o Mary vendrá.",
+					"note": "El verbo concuerda con el sujeto más cercano"
+				}
+			],
+			"forms": {
+				"Con verbos": {
+					"structure": "Subject + verb + either + option 1 + or + option 2",
+					"examples": ["I can either walk or drive", "She will either study or work", "We can either stay or leave"]
+				},
+				"Con sujetos": {
+					"structure": "Either + subject 1 + or + subject 2 + verb",
+					"examples": ["Either Tom or his brother is coming", "Either you or I have to go", "Either the students or the teacher has the key"]
+				},
+				"Negativo": {
+					"structure": "Subject + don't/doesn't + verb + either + option 1 + or + option 2",
+					"examples": ["I don't want either cake or ice cream", "She doesn't like either cats or dogs", "We don't need either help or advice"]
+				}
+			}
+		},
+		{
+			"title": "Neither...nor - Negative Alternatives",
+			"structure": "Neither...nor",
+			"description": "Se usa 'neither...nor' para expresar que ninguna de las dos opciones es cierta.",
+			"uses": [
+				{
+					"use": "Ninguna de dos opciones",
+					"example": "Neither John nor Mary likes vegetables.",
+					"translation": "Ni a John ni a Mary les gustan las verduras.",
+					"note": "Expresa negación de ambas opciones"
+				},
+				{
+					"use": "Reemplazar either...or en negativo",
+					"example": "I like neither tea nor coffee. = I don't like either tea or coffee.",
+					"translation": "No me gusta ni el té ni el café.",
+					"note": "Misma idea, forma más directa"
+				},
+				{
+					"use": "Con sujetos múltiples",
+					"example": "Neither the teacher nor the students were ready.",
+					"translation": "Ni el profesor ni los estudiantes estaban listos.",
+					"note": "Verbo concuerda con el sujeto más cercano"
+				}
+			],
+			"forms": {
+				"Estructura básica": {
+					"structure": "Neither + option 1 + nor + option 2",
+					"examples": ["Neither hot nor cold", "Neither big nor small", "Neither early nor late"]
+				},
+				"Con sujetos": {
+					"structure": "Neither + subject 1 + nor + subject 2 + verb",
+					"examples": ["Neither Tom nor his sister likes pizza", "Neither you nor I know the answer", "Neither the car nor the bike works"]
+				},
+				"Con verbos": {
+					"structure": "Subject + neither + verb 1 + nor + verb 2",
+					"examples": ["He neither smokes nor drinks", "She neither calls nor writes", "We neither run nor walk"]
+				}
+			}
+		}
+	],
+	"tips": [
+		{
+			"title": "Orden de palabras en acuerdos",
+			"content": "En 'So' y 'Neither', el orden es: So/Neither + auxiliary + subject. El auxiliar debe coincidir con el de la oración original.",
+			"example": "'I like music' → 'So do I' (no 'So I do')"
+		},
+		{
+			"title": "Diferencia: So vs Neither",
+			"content": "So = acuerdo con positivo | Neither = acuerdo con negativo. No confundir con 'either' que es para opciones.",
+			"example": "'I'm happy' → 'So am I' | 'I'm not happy' → 'Neither am I'"
+		},
+		{
+			"title": "Either vs Neither en opciones",
+			"content": "Either...or = una de dos opciones | Neither...nor = ninguna de las dos opciones",
+			"example": "Either A or B (una opción) vs Neither A nor B (ninguna opción)"
+		},
+		{
+			"title": "Concordancia verbal",
+			"content": "Con either...or y neither...nor, el verbo concuerda con el sujeto más cercano.",
+			"example": "Either John or his friends are coming (plural 'are' por 'friends')"
+		}
+	]
+}

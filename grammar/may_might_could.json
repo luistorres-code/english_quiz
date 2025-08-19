@@ -1,0 +1,212 @@
+{
+	"title": "May, Might, Could",
+	"subtitle": "Modal Verbs for Possibility, Permission & Requests",
+	"level": "B1",
+	"estimatedTime": "15-18 min",
+	"sections": [
+		{
+			"title": "May - Formal Permission & Possibility",
+			"structure": "Subject + may + base verb",
+			"description": "Se usa 'may' para pedir permiso formal y expresar posibilidad moderada.",
+			"uses": [
+				{
+					"use": "Permiso formal",
+					"example": "May I use your phone?",
+					"translation": "¿Puedo usar tu teléfono?",
+					"note": "Forma más formal que 'can' para pedir permiso"
+				},
+				{
+					"use": "Dar permiso formal",
+					"example": "Students may use the library after hours.",
+					"translation": "Los estudiantes pueden usar la biblioteca después del horario.",
+					"note": "Para reglas y permisos oficiales"
+				},
+				{
+					"use": "Posibilidad moderada",
+					"example": "It may rain tomorrow.",
+					"translation": "Puede que llueva mañana.",
+					"note": "Posibilidad del 50% aproximadamente"
+				},
+				{
+					"use": "Prohibición formal",
+					"example": "You may not smoke in this building.",
+					"translation": "No puede fumar en este edificio.",
+					"note": "Prohibición en contextos formales"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + may + base verb",
+					"examples": ["I may go", "You may leave", "He may call", "We may visit", "They may agree"]
+				},
+				"negative": {
+					"structure": "Subject + may not + base verb",
+					"examples": ["I may not go", "You may not leave", "He may not call", "We may not visit", "They may not agree"]
+				},
+				"interrogative": {
+					"structure": "May + subject + base verb?",
+					"examples": ["May I go?", "May we leave?", "May he call?", "May they visit?"],
+					"note": "Solo para pedir permiso, no para preguntas sobre posibilidad"
+				}
+			}
+		},
+		{
+			"title": "Might - Weak Possibility & Polite Suggestions",
+			"structure": "Subject + might + base verb",
+			"description": "Se usa 'might' para expresar posibilidad débil y hacer sugerencias suaves.",
+			"uses": [
+				{
+					"use": "Posibilidad débil",
+					"example": "She might be at home, but I'm not sure.",
+					"translation": "Puede que esté en casa, pero no estoy seguro.",
+					"note": "Posibilidad menor al 50%, menos seguro que 'may'"
+				},
+				{
+					"use": "Sugerencias suaves",
+					"example": "You might want to check your email.",
+					"translation": "Podrías querer revisar tu email.",
+					"note": "Sugerencia indirecta, más suave que 'should'"
+				},
+				{
+					"use": "Posibilidad en el pasado (reported speech)",
+					"example": "He said it might rain.",
+					"translation": "Dijo que podría llover.",
+					"note": "Forma pasada de 'may' en estilo indirecto"
+				},
+				{
+					"use": "Situaciones hipotéticas",
+					"example": "If you studied more, you might pass the exam.",
+					"translation": "Si estudiaras más, podrías aprobar el examen.",
+					"note": "En condicionales para posibilidad"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + might + base verb",
+					"examples": ["I might go", "You might like it", "He might call", "We might stay", "They might agree"]
+				},
+				"negative": {
+					"structure": "Subject + might not + base verb",
+					"examples": ["I might not go", "You might not like it", "He might not call", "We might not stay", "They might not agree"]
+				},
+				"interrogative": {
+					"structure": "Might + subject + base verb?",
+					"examples": ["Might he call?", "Might they come?"],
+					"note": "Menos común en preguntas, principalmente en formal/literario"
+				}
+			}
+		},
+		{
+			"title": "Could - Past Ability, Polite Requests & Possibility",
+			"structure": "Subject + could + base verb",
+			"description": "Se usa 'could' para habilidad pasada, peticiones corteses y posibilidad presente.",
+			"uses": [
+				{
+					"use": "Habilidad en el pasado",
+					"example": "When I was young, I could run very fast.",
+					"translation": "Cuando era joven, podía correr muy rápido.",
+					"note": "Forma pasada de 'can' para habilidades"
+				},
+				{
+					"use": "Peticiones corteses",
+					"example": "Could you help me, please?",
+					"translation": "¿Podrías ayudarme, por favor?",
+					"note": "Más cortés que 'can you'"
+				},
+				{
+					"use": "Sugerencias corteses",
+					"example": "You could try calling him.",
+					"translation": "Podrías intentar llamarlo.",
+					"note": "Sugerencia más suave que 'should'"
+				},
+				{
+					"use": "Posibilidad presente",
+					"example": "It could be expensive.",
+					"translation": "Podría ser caro.",
+					"note": "Posibilidad o teoría sobre el presente"
+				},
+				{
+					"use": "Imposibilidad/incredulidad",
+					"example": "This couldn't be right!",
+					"translation": "¡Esto no puede estar bien!",
+					"note": "En negativo, expresa incredulidad"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + could + base verb",
+					"examples": ["I could swim", "You could try", "He could help", "We could go", "They could win"]
+				},
+				"negative": {
+					"structure": "Subject + could not/couldn't + base verb",
+					"examples": ["I couldn't swim", "You couldn't try", "He couldn't help", "We couldn't go", "They couldn't win"]
+				},
+				"interrogative": {
+					"structure": "Could + subject + base verb?",
+					"examples": ["Could I swim?", "Could you try?", "Could he help?", "Could we go?", "Could they win?"]
+				}
+			}
+		},
+		{
+			"title": "Comparing May, Might, Could",
+			"description": "Diferencias en fuerza, formalidad y uso entre los tres modales.",
+			"comparisons": [
+				{
+					"aspect": "Possibility Strength",
+					"may": "Moderada (≈50%)",
+					"might": "Débil (<50%)",
+					"could": "Variable (depende del contexto)",
+					"example": "It may/might/could rain → may (más probable) > might (menos probable) ≈ could"
+				},
+				{
+					"aspect": "Formality",
+					"may": "Formal",
+					"might": "Neutral",
+					"could": "Cortés",
+					"example": "Permission: May I? (formal) vs Could I? (cortés) vs Can I? (informal)"
+				},
+				{
+					"aspect": "Time Reference",
+					"may": "Presente/Futuro",
+					"might": "Presente/Futuro/Pasado reportado",
+					"could": "Pasado/Presente/Futuro",
+					"example": "Could swim (pasado) vs May/Might swim (presente/futuro)"
+				},
+				{
+					"aspect": "Permission",
+					"may": "Formal (dar/pedir)",
+					"might": "No se usa",
+					"could": "Pedir (cortés)",
+					"example": "May I leave? / Could I leave? (pero no 'Might I leave?')"
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "May vs Can para permiso",
+			"content": "May = formal/educado | Can = informal/casual. En situaciones formales prefiere 'may'.",
+			"example": "Formal: 'May I interrupt?' | Informal: 'Can I interrupt?'"
+		},
+		{
+			"title": "Could para el pasado",
+			"content": "Could expresa habilidad general en el pasado. Para acciones específicas usa 'was able to' o 'managed to'.",
+			"example": "I could swim (general) vs I was able to swim across the lake (específico)"
+		},
+		{
+			"title": "Might not vs May not",
+			"content": "Might not = posibilidad de que no | May not = prohibición O posibilidad de que no (contexto lo define)",
+			"example": "He might not come (posible que no venga) vs You may not enter (prohibido entrar)"
+		},
+		{
+			"title": "Grados de cortesía en peticiones",
+			"content": "Could you > Can you > Will you (de más cortés a menos cortés)",
+			"example": "'Could you help?' (muy cortés) vs 'Can you help?' (normal) vs 'Help me' (directo)"
+		},
+		{
+			"title": "No confundir con other modals",
+			"content": "Must = obligación/certeza | Should = consejo/expectativa | Will = futuro/voluntad",
+			"example": "You must study (obligación) vs You could study (sugerencia) vs You should study (consejo)"
+		}
+	]
+}

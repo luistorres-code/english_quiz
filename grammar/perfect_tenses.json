@@ -1,0 +1,194 @@
+{
+	"title": "Tiempos Perfectos",
+	"subtitle": "Present, Past & Future Perfect",
+	"level": "B1-B2",
+	"estimatedTime": "20-25 min",
+	"sections": [
+		{
+			"title": "Present Perfect",
+			"structure": "Subject + have/has + past participle",
+			"description": "El presente perfecto conecta el pasado con el presente. Se usa para acciones que ocurrieron en el pasado pero tienen relevancia en el presente.",
+			"uses": [
+				{
+					"use": "Experiencias de vida",
+					"example": "I have visited Paris",
+					"translation": "He visitado París",
+					"note": "No importa cuándo, importa la experiencia"
+				},
+				{
+					"use": "Acciones recientes con resultado presente",
+					"example": "She has finished her homework",
+					"translation": "Ella ha terminado su tarea",
+					"note": "La acción está completa y afecta el presente"
+				},
+				{
+					"use": "Acciones que continúan hasta ahora",
+					"example": "I have lived here for 5 years",
+					"translation": "He vivido aquí por 5 años",
+					"note": "Empezó en el pasado y continúa hasta ahora"
+				},
+				{
+					"use": "Cambios a través del tiempo",
+					"example": "The city has grown rapidly",
+					"translation": "La ciudad ha crecido rápidamente",
+					"note": "Cambio gradual hasta el presente"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + have/has + past participle",
+					"examples": ["I have worked", "You have played", "He/She/It has slept", "We have learned", "They have run"],
+					"rules": ["I, you, we, they + have", "He, she, it + has"]
+				},
+				"negative": {
+					"structure": "Subject + have/has + not + past participle",
+					"examples": ["I have not worked", "You have not played", "He/She/It has not slept", "We have not learned", "They have not run"]
+				},
+				"interrogative": {
+					"structure": "Have/Has + subject + past participle?",
+					"examples": ["Have I worked?", "Have you played?", "Has he/she/it slept?", "Have we learned?", "Have they run?"]
+				}
+			},
+			"timeExpressions": ["just", "already", "yet", "never", "ever", "since", "for", "recently", "lately", "so far", "up to now"],
+			"irregularVerbs": [
+				{
+					"base": "go",
+					"past": "gone",
+					"meaning": "ir"
+				},
+				{
+					"base": "see",
+					"past": "seen",
+					"meaning": "ver"
+				},
+				{
+					"base": "do",
+					"past": "done",
+					"meaning": "hacer"
+				},
+				{
+					"base": "take",
+					"past": "taken",
+					"meaning": "tomar"
+				},
+				{
+					"base": "write",
+					"past": "written",
+					"meaning": "escribir"
+				},
+				{
+					"base": "eat",
+					"past": "eaten",
+					"meaning": "comer"
+				}
+			]
+		},
+		{
+			"title": "Past Perfect",
+			"structure": "Subject + had + past participle",
+			"description": "El pasado perfecto se usa para acciones que ocurrieron antes de otro momento o acción en el pasado.",
+			"uses": [
+				{
+					"use": "Acción antes de otra en el pasado",
+					"example": "I had finished dinner when she arrived",
+					"translation": "Había terminado de cenar cuando ella llegó",
+					"note": "Primera acción: terminar cena, segunda: ella llegó"
+				},
+				{
+					"use": "Experiencias hasta un punto del pasado",
+					"example": "By 2020, I had visited 10 countries",
+					"translation": "Para 2020, había visitado 10 países",
+					"note": "Experiencias acumuladas hasta un momento específico"
+				},
+				{
+					"use": "Causa y efecto en el pasado",
+					"example": "She was tired because she had worked all night",
+					"translation": "Estaba cansada porque había trabajado toda la noche",
+					"note": "La causa (trabajar) ocurrió antes del efecto (estar cansada)"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + had + past participle",
+					"examples": ["I had worked", "You had played", "He/She/It had slept", "We had learned", "They had run"]
+				},
+				"negative": {
+					"structure": "Subject + had + not + past participle",
+					"examples": ["I had not worked", "You had not played", "He/She/It had not slept", "We had not learned", "They had not run"]
+				},
+				"interrogative": {
+					"structure": "Had + subject + past participle?",
+					"examples": ["Had I worked?", "Had you played?", "Had he/she/it slept?", "Had we learned?", "Had they run?"]
+				}
+			},
+			"timeExpressions": ["before", "after", "when", "by the time", "already", "just", "never", "ever", "until", "by then"]
+		},
+		{
+			"title": "Future Perfect",
+			"structure": "Subject + will have + past participle",
+			"description": "El futuro perfecto se usa para acciones que estarán completadas antes de un momento específico en el futuro.",
+			"uses": [
+				{
+					"use": "Acción completada antes de un tiempo futuro",
+					"example": "I will have finished by 6 PM",
+					"translation": "Habré terminado para las 6 PM",
+					"note": "La acción estará completa antes de las 6 PM"
+				},
+				{
+					"use": "Experiencias hasta un punto futuro",
+					"example": "By next year, I will have lived here for 10 years",
+					"translation": "Para el próximo año, habré vivido aquí por 10 años",
+					"note": "Duración acumulada hasta un momento futuro"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + will have + past participle",
+					"examples": ["I will have worked", "You will have played", "He/She/It will have slept", "We will have learned", "They will have run"]
+				},
+				"negative": {
+					"structure": "Subject + will not have + past participle",
+					"examples": ["I will not have worked", "You will not have played", "He/She/It will not have slept", "We will not have learned", "They will not have run"]
+				},
+				"interrogative": {
+					"structure": "Will + subject + have + past participle?",
+					"examples": ["Will I have worked?", "Will you have played?", "Will he/she/it have slept?", "Will we have learned?", "Will they have run?"]
+				}
+			},
+			"timeExpressions": ["by then", "by the time", "by + time/date", "before", "until", "in + time period"]
+		}
+	],
+	"comparison": {
+		"title": "Comparación de Tiempos Perfectos",
+		"examples": [
+			{
+				"present": "I have finished my work (relevante ahora)",
+				"past": "I had finished my work when you called (antes de que llamaras)",
+				"future": "I will have finished my work by 5 PM (completado antes de las 5)",
+				"translation": "He terminado / Había terminado / Habré terminado mi trabajo"
+			}
+		]
+	},
+	"tips": [
+		{
+			"title": "Present Perfect vs Past Simple",
+			"content": "Present Perfect: sin tiempo específico, relevante ahora | Past Simple: tiempo específico, completamente en el pasado",
+			"example": "I have seen that movie (experiencia) vs I saw that movie yesterday (tiempo específico)"
+		},
+		{
+			"title": "Since vs For",
+			"content": "Since = punto de inicio específico | For = duración de tiempo",
+			"example": "I have lived here since 2020 (desde) vs for 3 years (durante)"
+		},
+		{
+			"title": "Yet vs Already",
+			"content": "Yet = en preguntas y negativas (aún no) | Already = en afirmativas (ya)",
+			"example": "Have you finished yet? | I have already finished"
+		},
+		{
+			"title": "Participios irregulares comunes",
+			"content": "Muchos verbos tienen participios irregulares diferentes del pasado simple",
+			"example": "go → went → gone | see → saw → seen | do → did → done"
+		}
+	]
+}

@@ -1,0 +1,139 @@
+{
+	"title": "Tiempos Continuos",
+	"subtitle": "Present, Past & Future Continuous",
+	"level": "A2-B1",
+	"estimatedTime": "15-20 min",
+	"sections": [
+		{
+			"title": "Present Continuous",
+			"structure": "Subject + am/is/are + verb-ing",
+			"description": "El presente continuo se usa para acciones que están ocurriendo ahora o acciones temporales.",
+			"uses": [
+				{
+					"use": "Acciones que ocurren ahora",
+					"example": "I am reading a book",
+					"translation": "Estoy leyendo un libro",
+					"note": "La acción está sucediendo en el momento de hablar"
+				},
+				{
+					"use": "Acciones temporales",
+					"example": "She is studying English this month",
+					"translation": "Ella está estudiando inglés este mes",
+					"note": "No necesariamente en este momento, pero en este período"
+				},
+				{
+					"use": "Planes futuros",
+					"example": "We are meeting tomorrow",
+					"translation": "Nos vamos a reunir mañana",
+					"note": "Planes ya organizados para el futuro cercano"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + am/is/are + verb-ing",
+					"examples": ["I am working", "You are playing", "He/She/It is sleeping", "We are learning", "They are running"]
+				},
+				"negative": {
+					"structure": "Subject + am/is/are + not + verb-ing",
+					"examples": ["I am not working", "You are not playing", "He/She/It is not sleeping", "We are not learning", "They are not running"]
+				},
+				"interrogative": {
+					"structure": "Am/Is/Are + subject + verb-ing?",
+					"examples": ["Am I working?", "Are you playing?", "Is he/she/it sleeping?", "Are we learning?", "Are they running?"]
+				}
+			},
+			"timeExpressions": ["now", "right now", "at the moment", "currently", "today", "this week/month/year", "these days"]
+		},
+		{
+			"title": "Past Continuous",
+			"structure": "Subject + was/were + verb-ing",
+			"description": "El pasado continuo se usa para acciones que estaban en progreso en un momento específico del pasado.",
+			"uses": [
+				{
+					"use": "Acciones en progreso en el pasado",
+					"example": "I was watching TV at 8 PM",
+					"translation": "Estaba viendo TV a las 8 PM",
+					"note": "La acción estaba en progreso en un momento específico"
+				},
+				{
+					"use": "Acciones interrumpidas",
+					"example": "I was sleeping when the phone rang",
+					"translation": "Estaba durmiendo cuando sonó el teléfono",
+					"note": "Una acción continua fue interrumpida por otra"
+				},
+				{
+					"use": "Dos acciones simultáneas",
+					"example": "While I was cooking, she was cleaning",
+					"translation": "Mientras yo cocinaba, ella limpiaba",
+					"note": "Dos acciones ocurriendo al mismo tiempo"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + was/were + verb-ing",
+					"examples": ["I was working", "You were playing", "He/She/It was sleeping", "We were learning", "They were running"]
+				},
+				"negative": {
+					"structure": "Subject + was/were + not + verb-ing",
+					"examples": ["I was not working", "You were not playing", "He/She/It was not sleeping", "We were not learning", "They were not running"]
+				},
+				"interrogative": {
+					"structure": "Was/Were + subject + verb-ing?",
+					"examples": ["Was I working?", "Were you playing?", "Was he/she/it sleeping?", "Were we learning?", "Were they running?"]
+				}
+			},
+			"timeExpressions": ["at 3 o'clock", "yesterday at this time", "when...", "while...", "during", "all day/night", "from... to..."]
+		},
+		{
+			"title": "Future Continuous",
+			"structure": "Subject + will be + verb-ing",
+			"description": "El futuro continuo se usa para acciones que estarán en progreso en un momento específico del futuro.",
+			"uses": [
+				{
+					"use": "Acciones en progreso en el futuro",
+					"example": "I will be working at 9 AM tomorrow",
+					"translation": "Estaré trabajando a las 9 AM mañana",
+					"note": "La acción estará en progreso en un momento específico futuro"
+				},
+				{
+					"use": "Duración en el futuro",
+					"example": "This time next week, I will be flying to Paris",
+					"translation": "A esta hora la próxima semana, estaré volando a París",
+					"note": "Enfatiza la duración de la acción futura"
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + will be + verb-ing",
+					"examples": ["I will be working", "You will be playing", "He/She/It will be sleeping", "We will be learning", "They will be running"]
+				},
+				"negative": {
+					"structure": "Subject + will not be + verb-ing",
+					"examples": ["I will not be working", "You will not be playing", "He/She/It will not be sleeping", "We will not be learning", "They will not be running"]
+				},
+				"interrogative": {
+					"structure": "Will + subject + be + verb-ing?",
+					"examples": ["Will I be working?", "Will you be playing?", "Will he/she/it be sleeping?", "Will we be learning?", "Will they be running?"]
+				}
+			},
+			"timeExpressions": ["at this time tomorrow", "next week at this time", "in an hour", "by then", "this time next...", "during", "all day tomorrow"]
+		}
+	],
+	"tips": [
+		{
+			"title": "Verbos que no usan forma continua",
+			"content": "Algunos verbos (stative verbs) normalmente no se usan en forma continua: be, have, know, understand, like, love, hate, want, need, believe, think (opinion).",
+			"example": "✓ I know the answer | ✗ I am knowing the answer"
+		},
+		{
+			"title": "Spelling rules para -ing",
+			"content": "• Verbos terminados en 'e': quitar la 'e' y agregar '-ing' (make → making) • Verbos de una sílaba con consonante-vocal-consonante: duplicar la consonante final (run → running) • Verbos terminados en 'ie': cambiar a 'y' (lie → lying)",
+			"example": "write → writing, stop → stopping, die → dying"
+		},
+		{
+			"title": "Diferencia: Simple vs Continuous",
+			"content": "Simple = hábitos, rutinas, hechos | Continuous = acciones en progreso, temporales",
+			"example": "I work in an office (rutina) vs I am working on a project (temporal)"
+		}
+	]
+}

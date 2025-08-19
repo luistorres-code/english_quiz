@@ -1,0 +1,213 @@
+{
+	"title": "Verbos Modales en Inglés",
+	"subtitle": "Can, Could, May, Might, Should, Must",
+	"level": "B1-B2",
+	"estimatedTime": "20-25 minutos",
+	"sections": [
+		{
+			"title": "Can (Habilidad y Posibilidad)",
+			"structure": "Subject + can + Verb (base form)",
+			"description": "Can expresa habilidad en el presente y posibilidad general.",
+			"uses": [
+				{
+					"use": "Habilidad en el presente",
+					"example": "I can speak three languages.",
+					"translation": "Puedo hablar tres idiomas.",
+					"note": "Para habilidades que tenemos ahora."
+				},
+				{
+					"use": "Posibilidad general",
+					"example": "It can be very cold in winter.",
+					"translation": "Puede hacer mucho frío en invierno.",
+					"note": "Para cosas que son posibles en general."
+				},
+				{
+					"use": "Peticiones informales",
+					"example": "Can you help me?",
+					"translation": "¿Puedes ayudarme?",
+					"note": "Forma casual de pedir algo."
+				},
+				{
+					"use": "Permisos informales",
+					"example": "You can use my computer.",
+					"translation": "Puedes usar mi computadora.",
+					"note": "Dar permiso de forma casual."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + can + Verb",
+					"examples": ["I can swim → Puedo nadar", "She can drive → Ella puede manejar", "We can help → Podemos ayudar"]
+				},
+				"negative": {
+					"structure": "Subject + cannot (can't) + Verb",
+					"examples": ["I can't swim → No puedo nadar", "She cannot drive → Ella no puede manejar"]
+				},
+				"interrogative": {
+					"structure": "Can + Subject + Verb?",
+					"examples": ["Can you swim? → ¿Puedes nadar?", "Can she drive? → ¿Puede ella manejar?"]
+				}
+			}
+		},
+		{
+			"title": "Could (Habilidad Pasada y Educación)",
+			"structure": "Subject + could + Verb (base form)",
+			"description": "Could es el pasado de can y también se usa para ser más educado.",
+			"uses": [
+				{
+					"use": "Habilidad en el pasado",
+					"example": "When I was young, I could run very fast.",
+					"translation": "Cuando era joven, podía correr muy rápido.",
+					"note": "Para habilidades que teníamos antes."
+				},
+				{
+					"use": "Peticiones más educadas",
+					"example": "Could you please close the window?",
+					"translation": "¿Podrías por favor cerrar la ventana?",
+					"note": "Más formal que 'can'."
+				},
+				{
+					"use": "Posibilidad con menos certeza",
+					"example": "It could rain later.",
+					"translation": "Podría llover más tarde.",
+					"note": "Menos probable que con 'can'."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + could + Verb",
+					"examples": ["I could play piano → Podía tocar piano", "She could speak French → Ella podía hablar francés"]
+				},
+				"negative": {
+					"structure": "Subject + could not (couldn't) + Verb",
+					"examples": ["I couldn't understand → No podía entender", "They couldn't come → No pudieron venir"]
+				},
+				"interrogative": {
+					"structure": "Could + Subject + Verb?",
+					"examples": ["Could you help? → ¿Podrías ayudar?", "Could we meet tomorrow? → ¿Podríamos reunirnos mañana?"]
+				}
+			}
+		},
+		{
+			"title": "Should (Consejo y Obligación Suave)",
+			"structure": "Subject + should + Verb (base form)",
+			"description": "Should expresa consejos, recomendaciones y obligaciones morales.",
+			"uses": [
+				{
+					"use": "Consejos y recomendaciones",
+					"example": "You should study more for the exam.",
+					"translation": "Deberías estudiar más para el examen.",
+					"note": "Para dar consejos o sugerencias."
+				},
+				{
+					"use": "Obligación moral o expectativa",
+					"example": "People should be honest.",
+					"translation": "La gente debería ser honesta.",
+					"note": "Para lo que consideramos correcto."
+				},
+				{
+					"use": "Probabilidad",
+					"example": "The train should arrive soon.",
+					"translation": "El tren debería llegar pronto.",
+					"note": "Para lo que esperamos que pase."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + should + Verb",
+					"examples": ["You should go → Deberías ir", "We should call → Deberíamos llamar"]
+				},
+				"negative": {
+					"structure": "Subject + should not (shouldn't) + Verb",
+					"examples": ["You shouldn't smoke → No deberías fumar", "We shouldn't be late → No deberíamos llegar tarde"]
+				},
+				"interrogative": {
+					"structure": "Should + Subject + Verb?",
+					"examples": ["Should I call him? → ¿Debería llamarlo?", "Should we wait? → ¿Deberíamos esperar?"]
+				}
+			}
+		},
+		{
+			"title": "Must (Obligación Fuerte y Deducción)",
+			"structure": "Subject + must + Verb (base form)",
+			"description": "Must expresa obligación fuerte y deducciones lógicas.",
+			"uses": [
+				{
+					"use": "Obligación fuerte",
+					"example": "You must wear a seatbelt.",
+					"translation": "Debes usar el cinturón de seguridad.",
+					"note": "Para reglas obligatorias."
+				},
+				{
+					"use": "Deducción lógica (certeza)",
+					"example": "He must be tired after working all day.",
+					"translation": "Debe estar cansado después de trabajar todo el día.",
+					"note": "Cuando estamos seguros de algo."
+				},
+				{
+					"use": "Necesidad personal",
+					"example": "I must finish this project today.",
+					"translation": "Debo terminar este proyecto hoy.",
+					"note": "Para necesidades urgentes."
+				}
+			],
+			"forms": {
+				"affirmative": {
+					"structure": "Subject + must + Verb",
+					"examples": ["You must study → Debes estudiar", "She must leave → Ella debe irse"]
+				},
+				"negative": {
+					"structure": "Subject + must not (mustn't) + Verb",
+					"examples": ["You mustn't smoke here → No debes fumar aquí", "We mustn't be late → No debemos llegar tarde"],
+					"rules": ["Must not = prohibición (está prohibido)", "Para 'no necesidad' usar don't have to"]
+				},
+				"interrogative": {
+					"structure": "Must + Subject + Verb?",
+					"examples": ["Must I attend? → ¿Debo asistir?", "Must we decide now? → ¿Debemos decidir ahora?"]
+				}
+			}
+		}
+	],
+	"comparison": {
+		"title": "Comparación de Modales",
+		"examples": [
+			{
+				"ability": {
+					"present": "I can swim. (habilidad presente)",
+					"past": "I could swim when I was 5. (habilidad pasada)"
+				}
+			},
+			{
+				"obligation": {
+					"strong": "You must study. (obligación fuerte)",
+					"advice": "You should study. (consejo)",
+					"permission": "You can study here. (permiso)"
+				}
+			},
+			{
+				"possibility": {
+					"general": "It can rain in April. (posibilidad general)",
+					"specific": "It could rain today. (posibilidad específica con menos certeza)",
+					"deduction": "It must be raining. (deducción - estoy seguro)"
+				}
+			}
+		]
+	},
+	"tips": [
+		{
+			"title": "Diferencia entre Can y Could",
+			"content": "Can = habilidad presente, Could = habilidad pasada o peticiones más educadas.",
+			"example": "I can swim now vs I could swim when I was young vs Could you help me?"
+		},
+		{
+			"title": "Must vs Should",
+			"content": "Must = obligación fuerte/necesidad, Should = consejo/recomendación.",
+			"example": "You must stop at red lights (ley) vs You should exercise (consejo)"
+		},
+		{
+			"title": "Negaciones importantes",
+			"content": "Mustn't = prohibición, Don't have to = no necesidad, Can't = imposibilidad.",
+			"example": "You mustn't smoke (prohibido) vs You don't have to come (opcional)"
+		}
+	]
+}
