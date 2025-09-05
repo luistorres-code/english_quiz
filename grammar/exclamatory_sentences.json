@@ -1,0 +1,155 @@
+{
+	"title": "Oraciones Exclamativas en Inglés",
+	"subtitle": "Exclamatory Sentences - What a lovely day!, How difficult!",
+	"level": "B1-B2",
+	"estimatedTime": "10-15 minutos",
+	"sections": [
+		{
+			"title": "¿Qué son las Oraciones Exclamativas?",
+			"description": "Las oraciones exclamativas expresan emociones fuertes como sorpresa, admiración, alegría, disgusto o cualquier sentimiento intenso. En inglés se forman principalmente con 'What' y 'How', y siempre terminan con signo de exclamación (!).",
+			"purpose": "Expresar emociones intensas, hacer énfasis, mostrar sorpresa o admiración",
+			"mainStructures": ["What + (artículo) + (adjetivo) + sustantivo + !", "How + adjetivo/adverbio + !"]
+		},
+		{
+			"title": "Exclamaciones con WHAT",
+			"description": "Se usa 'What' cuando queremos exclamar sobre un sustantivo (persona, lugar, cosa). La estructura varía según si el sustantivo es contable o incontable.",
+			"structures": [
+				{
+					"type": "What + a/an + adjetivo + sustantivo singular contable + !",
+					"examples": ["What a beautiful day! → ¡Qué día tan hermoso!", "What a smart girl! → ¡Qué chica tan inteligente!", "What an amazing movie! → ¡Qué película tan increíble!", "What a difficult exam! → ¡Qué examen tan difícil!"],
+					"rules": ["Usar 'a' antes de consonante", "Usar 'an' antes de vocal", "El adjetivo es opcional"]
+				},
+				{
+					"type": "What + adjetivo + sustantivo plural + !",
+					"examples": ["What beautiful flowers! → ¡Qué flores tan hermosas!", "What intelligent students! → ¡Qué estudiantes tan inteligentes!", "What expensive cars! → ¡Qué coches tan caros!", "What lovely children! → ¡Qué niños tan encantadores!"],
+					"rules": ["No se usa artículo con plurales", "El adjetivo es opcional"]
+				},
+				{
+					"type": "What + adjetivo + sustantivo incontable + !",
+					"examples": ["What beautiful music! → ¡Qué música tan hermosa!", "What terrible weather! → ¡Qué tiempo tan horrible!", "What delicious food! → ¡Qué comida tan deliciosa!", "What useful information! → ¡Qué información tan útil!"],
+					"rules": ["No se usa artículo con incontables", "El adjetivo es opcional"]
+				},
+				{
+					"type": "What + sustantivo solo + !",
+					"examples": ["What a surprise! → ¡Qué sorpresa!", "What luck! → ¡Qué suerte!", "What a mess! → ¡Qué desastre!", "What fun! → ¡Qué divertido!"],
+					"rules": ["Sin adjetivo, solo el sustantivo", "Mantiene las reglas de artículos"]
+				}
+			]
+		},
+		{
+			"title": "Exclamaciones con HOW",
+			"description": "Se usa 'How' cuando queremos exclamar sobre una cualidad (adjetivo) o la manera en que se hace algo (adverbio).",
+			"structures": [
+				{
+					"type": "How + adjetivo + !",
+					"examples": ["How beautiful! → ¡Qué hermoso!", "How difficult! → ¡Qué difícil!", "How expensive! → ¡Qué caro!", "How wonderful! → ¡Qué maravilloso!"],
+					"rules": ["Se enfoca en la cualidad", "Muy directo y enfático"]
+				},
+				{
+					"type": "How + adverbio + !",
+					"examples": ["How quickly! → ¡Qué rápido!", "How beautifully! → ¡Qué hermosamente!", "How carefully! → ¡Qué cuidadosamente!", "How well! → ¡Qué bien!"],
+					"rules": ["Se enfoca en la manera de hacer algo", "Describe acciones"]
+				},
+				{
+					"type": "How + adjetivo + sujeto + verbo + !",
+					"examples": ["How beautiful she is! → ¡Qué hermosa es!", "How difficult it was! → ¡Qué difícil fue!", "How fast he runs! → ¡Qué rápido corre!", "How smart you are! → ¡Qué inteligente eres!"],
+					"rules": ["Estructura completa con sujeto y verbo", "Más formal y detallada"]
+				}
+			]
+		},
+		{
+			"title": "Diferencia entre WHAT y HOW",
+			"comparison": [
+				{
+					"concept": "WHAT se enfoca en el SUSTANTIVO",
+					"example": "What a fast car! (nos enfocamos en el coche)",
+					"translation": "¡Qué coche tan rápido!"
+				},
+				{
+					"concept": "HOW se enfoca en el ADJETIVO/ADVERBIO",
+					"example": "How fast! (nos enfocamos en la velocidad)",
+					"translation": "¡Qué rápido!"
+				}
+			],
+			"practiceExamples": [
+				{
+					"situation": "Vemos un coche muy rápido",
+					"withWhat": "What a fast car! (enfoque en el coche)",
+					"withHow": "How fast it is! (enfoque en la velocidad)"
+				},
+				{
+					"situation": "Escuchamos música hermosa",
+					"withWhat": "What beautiful music! (enfoque en la música)",
+					"withHow": "How beautiful! (enfoque en la belleza)"
+				}
+			]
+		},
+		{
+			"title": "Otras formas de hacer exclamaciones",
+			"otherForms": [
+				{
+					"type": "So + adjetivo/adverbio + !",
+					"examples": ["So beautiful! → ¡Tan hermoso!", "So quickly! → ¡Tan rápido!", "So expensive! → ¡Tan caro!"],
+					"note": "Más informal y directo"
+				},
+				{
+					"type": "Such + sustantivo + !",
+					"examples": ["Such a beautiful day! → ¡Un día tan hermoso!", "Such lovely weather! → ¡Un tiempo tan agradable!", "Such expensive clothes! → ¡Ropa tan cara!"],
+					"note": "Similar a 'what' pero más enfático"
+				},
+				{
+					"type": "Adjetivos solos + !",
+					"examples": ["Amazing! → ¡Increíble!", "Fantastic! → ¡Fantástico!", "Terrible! → ¡Terrible!", "Perfect! → ¡Perfecto!"],
+					"note": "Muy comunes en conversación informal"
+				}
+			]
+		},
+		{
+			"title": "Transformación de oraciones normales a exclamativas",
+			"transformations": [
+				{
+					"normal": "The day is very beautiful.",
+					"exclamatory": "What a beautiful day! / How beautiful the day is!"
+				},
+				{
+					"normal": "She is very smart.",
+					"exclamatory": "What a smart girl! / How smart she is!"
+				},
+				{
+					"normal": "The weather is terrible.",
+					"exclamatory": "What terrible weather! / How terrible the weather is!"
+				},
+				{
+					"normal": "He drives very fast.",
+					"exclamatory": "How fast he drives!"
+				},
+				{
+					"normal": "The exam was very difficult.",
+					"exclamatory": "What a difficult exam! / How difficult it was!"
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "Artículos con WHAT",
+			"content": "Recuerda usar 'a/an' solo con sustantivos singulares contables. No uses artículo con plurales o incontables.",
+			"example": "What a car! / What cars! / What music!"
+		},
+		{
+			"title": "WHAT vs HOW",
+			"content": "WHAT + sustantivo, HOW + adjetivo/adverbio. Esta es la diferencia clave.",
+			"example": "What a beautiful day! vs How beautiful!"
+		},
+		{
+			"title": "Orden de palabras",
+			"content": "En exclamaciones con 'How' y sujeto, el orden es: How + adj/adv + sujeto + verbo.",
+			"example": "How fast he runs! (no 'How he runs fast!')"
+		},
+		{
+			"title": "Uso en conversación",
+			"content": "Las exclamaciones cortas (Amazing!, So beautiful!) son muy comunes en inglés hablado.",
+			"example": "A: Look at that sunset! B: Amazing! / So beautiful!"
+		}
+	]
+}

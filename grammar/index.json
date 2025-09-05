@@ -53,6 +53,51 @@
 			"level": "B1",
 			"icon": "🎯",
 			"color": "#805ad5"
+		},
+		{
+			"id": "negative_questions",
+			"title": "Preguntas Negativas",
+			"subtitle": "Don't you...?, Isn't he...?",
+			"description": "Aprende a formar y usar preguntas negativas para expresar sorpresa, confirmar información o hacer invitaciones corteses.",
+			"level": "B1-B2",
+			"icon": "❓",
+			"color": "#e53e3e"
+		},
+		{
+			"id": "tag_questions",
+			"title": "Tag Questions",
+			"subtitle": "Question Tags - You're coming, aren't you?",
+			"description": "Domina las preguntas de confirmación para buscar acuerdo, confirmar información o iniciar conversaciones.",
+			"level": "B1-B2",
+			"icon": "🏷️",
+			"color": "#dd6b20"
+		},
+		{
+			"id": "exclamatory_sentences",
+			"title": "Oraciones Exclamativas",
+			"subtitle": "What a lovely day!, How difficult!",
+			"description": "Aprende a expresar emociones fuertes usando What y How en oraciones exclamativas.",
+			"level": "B1-B2",
+			"icon": "❗",
+			"color": "#38a169"
+		},
+		{
+			"id": "clauses_of_result",
+			"title": "Oraciones de Resultado",
+			"subtitle": "So...that, Such...that",
+			"description": "Expresa consecuencias usando so...that y such...that para mostrar resultados de grados extremos.",
+			"level": "B1-B2",
+			"icon": "🎯",
+			"color": "#3182ce"
+		},
+		{
+			"id": "reflexive_pronouns",
+			"title": "Pronombres Reflexivos",
+			"subtitle": "myself, yourself, himself, herself...",
+			"description": "Aprende a usar los pronombres reflexivos para acciones que uno hace a sí mismo.",
+			"level": "A2-B1",
+			"icon": "🪞",
+			"color": "#805ad5"
 		}
 	]
 }

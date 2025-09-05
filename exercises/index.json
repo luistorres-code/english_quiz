@@ -1,14 +1,5 @@
 {
-	"exercises": [
-  "either_neither_so_b1.json",
-  "may_might_could_b1.json",
-  "past_perfect_tenses_b1.json",
-  "simple_tenses_a2_b1.json",
-  "verbs_a2.json",
-  "verbs_b1.json",
-  "vocabulary_a2.json",
-  "vocabulary_b1.json"
-],
-	"lastUpdated": "2025-08-18",
-	"version": "1.0"
+	"exercises": ["either_neither_so_b1.json", "exam_topics_mixed_b1_b2.json", "may_might_could_b1.json", "past_perfect_tenses_b1.json", "simple_tenses_a2_b1.json", "verbs_a2.json", "verbs_b1.json", "vocabulary_a2.json", "vocabulary_b1.json"],
+	"lastUpdated": "2025-09-04",
+	"version": "1.1"
 }

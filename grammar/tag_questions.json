@@ -1,0 +1,210 @@
+{
+	"title": "Tag Questions en Inglés",
+	"subtitle": "Question Tags - You are coming, aren't you?",
+	"level": "B1-B2",
+	"estimatedTime": "15-20 minutos",
+	"sections": [
+		{
+			"title": "¿Qué son las Tag Questions?",
+			"description": "Las tag questions (preguntas de confirmación) son preguntas cortas que se añaden al final de una oración para confirmar información, buscar acuerdo o iniciar conversación. Siguen una regla básica: si la oración principal es afirmativa, el tag es negativo, y viceversa.",
+			"structure": "Oración principal + , + auxiliar + pronombre + ?",
+			"basicRule": "Afirmativa + tag negativo / Negativa + tag afirmativo"
+		},
+		{
+			"title": "Regla Principal: Afirmativa + Tag Negativo",
+			"description": "Cuando la oración principal es afirmativa, el tag question es negativo.",
+			"examples": [
+				{
+					"sentence": "You are a student, aren't you?",
+					"translation": "Eres estudiante, ¿verdad?",
+					"explanation": "Oración afirmativa + tag negativo"
+				},
+				{
+					"sentence": "She works here, doesn't she?",
+					"translation": "Ella trabaja aquí, ¿no es así?",
+					"explanation": "Present simple afirmativo + doesn't"
+				},
+				{
+					"sentence": "They have finished, haven't they?",
+					"translation": "Han terminado, ¿verdad?",
+					"explanation": "Present perfect afirmativo + haven't"
+				},
+				{
+					"sentence": "You can swim, can't you?",
+					"translation": "Sabes nadar, ¿no?",
+					"explanation": "Modal afirmativo + can't"
+				}
+			]
+		},
+		{
+			"title": "Regla Principal: Negativa + Tag Afirmativo",
+			"description": "Cuando la oración principal es negativa, el tag question es afirmativo.",
+			"examples": [
+				{
+					"sentence": "You aren't busy, are you?",
+					"translation": "No estás ocupado, ¿verdad?",
+					"explanation": "Oración negativa + tag afirmativo"
+				},
+				{
+					"sentence": "She doesn't like coffee, does she?",
+					"translation": "No le gusta el café, ¿cierto?",
+					"explanation": "Present simple negativo + does"
+				},
+				{
+					"sentence": "They haven't arrived, have they?",
+					"translation": "No han llegado, ¿verdad?",
+					"explanation": "Present perfect negativo + have"
+				},
+				{
+					"sentence": "You can't drive, can you?",
+					"translation": "No sabes conducir, ¿verdad?",
+					"explanation": "Modal negativo + can"
+				}
+			]
+		},
+		{
+			"title": "Tag Questions con diferentes tiempos verbales",
+			"sections": [
+				{
+					"tense": "Present Simple (be)",
+					"affirmative": "You are tired, aren't you?",
+					"negative": "You aren't ready, are you?",
+					"rules": ["am → aren't I?", "are → aren't", "is → isn't"]
+				},
+				{
+					"tense": "Present Simple (otros verbos)",
+					"affirmative": "She works hard, doesn't she?",
+					"negative": "They don't study, do they?",
+					"rules": ["do/don't para I, you, we, they", "does/doesn't para he, she, it"]
+				},
+				{
+					"tense": "Present Continuous",
+					"affirmative": "You are working, aren't you?",
+					"negative": "She isn't coming, is she?",
+					"rules": ["am/is/are en la oración → aren't/isn't/aren't en el tag"]
+				},
+				{
+					"tense": "Past Simple (be)",
+					"affirmative": "You were there, weren't you?",
+					"negative": "She wasn't happy, was she?",
+					"rules": ["was → wasn't", "were → weren't"]
+				},
+				{
+					"tense": "Past Simple (otros verbos)",
+					"affirmative": "They arrived late, didn't they?",
+					"negative": "You didn't see him, did you?",
+					"rules": ["did/didn't para todas las personas"]
+				},
+				{
+					"tense": "Present Perfect",
+					"affirmative": "You have been here before, haven't you?",
+					"negative": "She hasn't finished, has she?",
+					"rules": ["have/has → haven't/hasn't"]
+				},
+				{
+					"tense": "Future Simple",
+					"affirmative": "You will come, won't you?",
+					"negative": "They won't be late, will they?",
+					"rules": ["will → won't", "won't → will"]
+				},
+				{
+					"tense": "Modal Verbs",
+					"affirmative": "You can help, can't you?",
+					"negative": "She shouldn't go, should she?",
+					"rules": ["Modal afirmativo → modal negativo", "Modal negativo → modal afirmativo"]
+				}
+			]
+		},
+		{
+			"title": "Casos Especiales",
+			"specialCases": [
+				{
+					"case": "I am",
+					"example": "I am right, aren't I?",
+					"note": "Con 'I am' siempre usamos 'aren't I?' (no 'amn't I?')",
+					"translation": "Tengo razón, ¿verdad?"
+				},
+				{
+					"case": "Let's",
+					"example": "Let's go to the cinema, shall we?",
+					"note": "Con 'Let's' usamos 'shall we?'",
+					"translation": "Vamos al cine, ¿te parece?"
+				},
+				{
+					"case": "Imperativo",
+					"example": "Close the door, will you?",
+					"note": "Con imperativos usamos 'will you?' o 'won't you?'",
+					"translation": "Cierra la puerta, ¿quieres?"
+				},
+				{
+					"case": "There is/are",
+					"example": "There is a problem, isn't there?",
+					"note": "Con 'there is/are' el tag usa 'there'",
+					"translation": "Hay un problema, ¿no?"
+				},
+				{
+					"case": "Nobody/Nothing",
+					"example": "Nobody came, did they?",
+					"note": "Palabras negativas como nobody, nothing requieren tag afirmativo",
+					"translation": "Nadie vino, ¿verdad?"
+				}
+			]
+		},
+		{
+			"title": "Entonación y Significado",
+			"description": "La entonación cambia el significado de las tag questions:",
+			"intonationTypes": [
+				{
+					"type": "Entonación descendente ↘",
+					"meaning": "Buscar confirmación (estamos bastante seguros)",
+					"example": "You're coming to the party, aren't you? ↘",
+					"translation": "Vienes a la fiesta, ¿verdad? (esperamos que sí)"
+				},
+				{
+					"type": "Entonación ascendente ↗",
+					"meaning": "Hacer una pregunta real (no estamos seguros)",
+					"example": "You're coming to the party, aren't you? ↗",
+					"translation": "¿Vienes a la fiesta? (realmente no sabemos)"
+				}
+			]
+		},
+		{
+			"title": "Respuestas a Tag Questions",
+			"description": "Las respuestas siguen la misma regla que las preguntas normales:",
+			"examples": [
+				{
+					"question": "You like pizza, don't you?",
+					"positiveAnswer": "Yes, I do. (Si me gusta)",
+					"negativeAnswer": "No, I don't. (Si no me gusta)"
+				},
+				{
+					"question": "You don't like coffee, do you?",
+					"positiveAnswer": "Yes, I do. (Si me gusta el café)",
+					"negativeAnswer": "No, I don't. (Si no me gusta el café)"
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "Regla básica",
+			"content": "Afirmativa + negativa, Negativa + afirmativa. Esta es la regla más importante.",
+			"example": "It's hot, isn't it? / It isn't cold, is it?"
+		},
+		{
+			"title": "Pronombres",
+			"content": "El tag question siempre usa pronombres, nunca nombres propios.",
+			"example": "Mary is here, isn't she? (no 'isn't Mary?')"
+		},
+		{
+			"title": "Mismo auxiliar",
+			"content": "El auxiliar del tag debe coincidir con el auxiliar de la oración principal.",
+			"example": "You have seen it, haven't you? (have → haven't)"
+		},
+		{
+			"title": "Entonación",
+			"content": "↘ para confirmar algo que creemos cierto, ↗ para preguntar realmente.",
+			"example": "Nice weather, isn't it? ↘ (comentario) vs ↗ (pregunta real)"
+		}
+	]
+}

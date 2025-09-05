@@ -1,0 +1,261 @@
+{
+	"title": "Examen de Gramática - Temas del Examen B1-B2",
+	"description": "Examen completo que cubre todos los temas: Negative Questions, Tag Questions, Exclamatory Sentences, Clauses of Result, Reflexive Pronouns, y Past Perfect Simple. Prepárate para tu examen con 32 reactivos variados.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which negative question is correctly formed?",
+			"answerOptions": [
+				{ "text": "Don't you like pizza?", "isCorrect": true, "rationale": "Correct formation: auxiliary negative + subject + main verb." },
+				{ "text": "Do you don't like pizza?", "isCorrect": false, "rationale": "Cannot combine 'do' and 'don't' in the same question." },
+				{ "text": "You don't like pizza?", "isCorrect": false, "rationale": "This is not a negative question structure, just a statement with rising intonation." }
+			],
+			"hint": "Remember: auxiliary negative + subject + main verb + ?"
+		},
+		{
+			"type": "true_false",
+			"question": "In tag questions, if the main clause is positive, the tag must be negative.",
+			"answer": true,
+			"explanation": "This is the basic rule: positive statement + negative tag, and negative statement + positive tag. Example: 'You are coming, aren't you?'"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the tag question:",
+			"questionParts": ["She works here, ", { "answer": "doesn't she", "label": "tag question" }, "?"],
+			"explanation": "Main clause is positive ('works'), so the tag is negative ('doesn't'). Third person singular uses 'doesn't'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct exclamatory sentence:",
+			"answerOptions": [
+				{ "text": "What a beautiful day!", "isCorrect": true, "rationale": "Correct structure: What + a + adjective + singular countable noun + !" },
+				{ "text": "What beautiful a day!", "isCorrect": false, "rationale": "Article 'a' must come before the adjective, not after." },
+				{ "text": "How a beautiful day!", "isCorrect": false, "rationale": "'How' is used with adjectives/adverbs, not with nouns." }
+			],
+			"hint": "What is used with nouns, How is used with adjectives/adverbs."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the exclamatory sentence:",
+			"questionParts": ["", { "answer": "How", "label": "exclamatory word" }, " difficult this exam is!"],
+			"explanation": "'How' is used before adjectives. 'How difficult!' focuses on the degree of difficulty."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses 'so...that'?",
+			"answerOptions": [
+				{ "text": "The exam was so easy that I finished quickly.", "isCorrect": true, "rationale": "Correct structure: so + adjective + that + result clause." },
+				{ "text": "The exam was such easy that I finished quickly.", "isCorrect": false, "rationale": "'Such' is used with nouns, not adjectives alone." },
+				{ "text": "The exam was so easy exam that I finished quickly.", "isCorrect": false, "rationale": "'So' doesn't go with nouns directly." }
+			],
+			"hint": "So + adjective/adverb + that, Such + noun + that"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct reflexive pronoun:",
+			"questionParts": ["I taught ", { "answer": "myself", "label": "reflexive pronoun" }, " to play guitar."],
+			"explanation": "'Myself' is the reflexive pronoun for 'I'. It shows that the subject (I) performed the action on himself."
+		},
+		{
+			"type": "true_false",
+			"question": "The sentence 'She feels herself tired' is correct in English.",
+			"answer": false,
+			"explanation": "Incorrect. The verb 'feel' doesn't require a reflexive pronoun in English. The correct form is 'She feels tired.'"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses past perfect?",
+			"answerOptions": [
+				{ "text": "When I arrived, they had already left.", "isCorrect": true, "rationale": "Past perfect (had left) shows an action completed before another past action (arrived)." },
+				{ "text": "When I arrived, they have already left.", "isCorrect": false, "rationale": "Present perfect doesn't work with past time reference 'when I arrived'." },
+				{ "text": "When I arrived, they already left.", "isCorrect": false, "rationale": "Past simple doesn't show the 'before' relationship clearly." }
+			],
+			"hint": "Past perfect shows an action completed before another past action."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct negative question:",
+			"items": ["you", "don't", "coffee", "like", "?"],
+			"correctOrder": ["don't", "you", "like", "coffee", "?"],
+			"explanation": "Negative questions follow: auxiliary negative + subject + main verb + object + ?"
+		},
+		{
+			"type": "matching",
+			"question": "Match each sentence with its correct tag question:",
+			"pairs": [
+				{ "text1": "You are coming", "text2": "aren't you?" },
+				{ "text1": "She doesn't work here", "text2": "does she?" },
+				{ "text1": "They will help us", "text2": "won't they?" }
+			],
+			"hint": "Remember: positive + negative tag, negative + positive tag"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the exclamatory sentence using 'such':",
+			"questionParts": ["It was ", { "answer": "such a", "label": "such + article" }, " difficult exam that many students failed."],
+			"explanation": "'Such' is used with nouns. With singular countable nouns, we need 'such a/an + adjective + noun'."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the reflexive pronoun for 'they'?",
+			"correctAnswer": "themselves",
+			"alternatives": [],
+			"caseSensitive": false,
+			"explanation": "'Themselves' is the reflexive pronoun for the subject 'they'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct response to: 'Don't you have a car?'",
+			"answerOptions": [
+				{ "text": "Yes, I do. (if you have a car)", "isCorrect": true, "rationale": "Answer according to reality, not the negative form of the question." },
+				{ "text": "No, I do. (if you have a car)", "isCorrect": false, "rationale": "This contradicts itself - if you have a car, answer 'Yes, I do.'" },
+				{ "text": "Yes, I don't. (if you don't have a car)", "isCorrect": false, "rationale": "This contradicts itself - if you don't have a car, answer 'No, I don't.'" }
+			],
+			"hint": "Always answer according to the reality, not the negative form of the question."
+		},
+		{
+			"type": "true_false",
+			"question": "The sentence 'What beautiful flowers!' is correctly formed.",
+			"answer": true,
+			"explanation": "Correct. With plural countable nouns, we use 'What + adjective + plural noun + !' (no article needed)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct structure:",
+			"questionParts": ["He drives ", { "answer": "so slowly that", "label": "so...that structure" }, " everyone overtakes him."],
+			"explanation": "'So + adverb + that' structure. 'Slowly' is an adverb describing how he drives."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence shows correct use of reflexive pronouns?",
+			"answerOptions": [
+				{ "text": "We enjoyed ourselves at the party.", "isCorrect": true, "rationale": "Correct - the subject 'we' performed the action on themselves." },
+				{ "text": "We met ourselves at the café.", "isCorrect": false, "rationale": "When 'meet' means to gather at a place, it's not reflexive." },
+				{ "text": "We got up ourselves early.", "isCorrect": false, "rationale": "'Get up' doesn't require a reflexive pronoun in English." }
+			],
+			"hint": "Reflexive pronouns are used when the subject does something to/for themselves."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange to form a correct past perfect sentence:",
+			"items": ["I", "had", "finished", "homework", "my", "dinner", "before"],
+			"correctOrder": ["I", "had", "finished", "my", "homework", "before", "dinner"],
+			"explanation": "Past perfect structure: Subject + had + past participle + object + time expression."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the tag question for 'I am right':",
+			"questionParts": ["I am right, ", { "answer": "aren't I", "label": "special tag" }, "?"],
+			"explanation": "Special case: with 'I am', the tag question is 'aren't I?' (not 'amn't I?' which doesn't exist)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which exclamatory sentence focuses on the adjective?",
+			"answerOptions": [
+				{ "text": "How expensive!", "isCorrect": true, "rationale": "'How' focuses on the adjective 'expensive' without mentioning the noun." },
+				{ "text": "What expensive cars!", "isCorrect": false, "rationale": "'What' focuses on the noun 'cars' (though it includes the adjective)." },
+				{ "text": "Such expensive!", "isCorrect": false, "rationale": "'Such' cannot be used without a noun." }
+			],
+			"hint": "'How' emphasizes the quality/adjective, 'What' emphasizes the noun."
+		},
+		{
+			"type": "true_false",
+			"question": "'By myself' means 'alone, without help from others'.",
+			"answer": true,
+			"explanation": "Correct. 'By + reflexive pronoun' emphasizes doing something independently, without assistance."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the clause of result:",
+			"questionParts": ["There was ", { "answer": "such heavy traffic that", "label": "such...that structure" }, " we were two hours late."],
+			"explanation": "'Such + adjective + uncountable noun + that'. 'Traffic' is uncountable, so no article is needed."
+		},
+		{
+			"type": "short_answer",
+			"question": "Transform to exclamatory: 'The weather is very bad.' (using 'What')",
+			"correctAnswer": "What terrible weather!",
+			"alternatives": ["What bad weather!", "What awful weather!"],
+			"caseSensitive": false,
+			"explanation": "Structure: What + adjective + uncountable noun + ! (no article with uncountable nouns)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct negative question:",
+			"answerOptions": [
+				{ "text": "Isn't she coming to the party?", "isCorrect": true, "rationale": "Correct present continuous negative question structure." },
+				{ "text": "Is she not coming to the party?", "isCorrect": false, "rationale": "This is formal but less common; contracted form is preferred." },
+				{ "text": "She isn't coming to the party?", "isCorrect": false, "rationale": "This is a statement, not a question structure." }
+			],
+			"hint": "Use contracted forms in negative questions for natural speech."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the past perfect sentence:",
+			"questionParts": ["She was tired because she ", { "answer": "had been working", "label": "past perfect progressive" }, " all night."],
+			"explanation": "Past perfect progressive (had been + -ing) shows duration of an action before another past action."
+		},
+		{
+			"type": "matching",
+			"question": "Match the sentence type with its example:",
+			"pairs": [
+				{ "text1": "Negative Question", "text2": "Don't you like ice cream?" },
+				{ "text1": "Tag Question", "text2": "You like ice cream, don't you?" },
+				{ "text1": "Exclamatory", "text2": "How delicious this ice cream is!" }
+			],
+			"hint": "Notice the different structures for each type of sentence."
+		},
+		{
+			"type": "true_false",
+			"question": "Reflexive pronouns are always necessary when the verb is reflexive in Spanish.",
+			"answer": false,
+			"explanation": "False. Many Spanish reflexive verbs are not reflexive in English (levantarse → get up, sentirse → feel)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the exclamatory sentence:",
+			"questionParts": ["", { "answer": "What", "label": "exclamatory word" }, " lovely children they are!"],
+			"explanation": "'What' is used with nouns (children). The structure is: What + adjective + plural noun + subject + verb!"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses 'such...that'?",
+			"answerOptions": [
+				{ "text": "He is such a good teacher that everyone loves him.", "isCorrect": true, "rationale": "Correct: such + a + adjective + singular countable noun + that + result." },
+				{ "text": "He is so a good teacher that everyone loves him.", "isCorrect": false, "rationale": "'So' cannot be used with articles and nouns." },
+				{ "text": "He is such good teacher that everyone loves him.", "isCorrect": false, "rationale": "Missing article 'a' before 'good teacher'." }
+			],
+			"hint": "Such + a/an + adjective + singular countable noun + that"
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange to form a correct exclamatory sentence:",
+			"items": ["fast", "how", "he", "runs", "!"],
+			"correctOrder": ["how", "fast", "he", "runs", "!"],
+			"explanation": "Structure: How + adjective/adverb + subject + verb + !"
+		},
+		{
+			"type": "short_answer",
+			"question": "What reflexive pronoun goes with 'he'?",
+			"correctAnswer": "himself",
+			"alternatives": [],
+			"caseSensitive": false,
+			"explanation": "'Himself' is the reflexive pronoun corresponding to the subject 'he'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the tag question for negative statements:",
+			"questionParts": ["They won't be late, ", { "answer": "will they", "label": "positive tag" }, "?"],
+			"explanation": "Negative statement ('won't') requires positive tag ('will'). Always use the same auxiliary verb."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which response correctly answers 'Didn't you see the movie?'",
+			"answerOptions": [
+				{ "text": "No, I didn't. (if you didn't see it)", "isCorrect": true, "rationale": "Correct - answer matches reality (didn't see = No, I didn't)." },
+				{ "text": "Yes, I didn't. (if you didn't see it)", "isCorrect": false, "rationale": "Contradictory - if you didn't see it, answer should be 'No, I didn't.'" },
+				{ "text": "No, I did. (if you saw it)", "isCorrect": false, "rationale": "Contradictory - if you saw it, answer should be 'Yes, I did.'" }
+			],
+			"hint": "Always answer based on the true situation, not the negative form of the question."
+		}
+	]
+}

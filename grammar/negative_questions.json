@@ -1,0 +1,121 @@
+{
+	"title": "Preguntas Negativas en Inglés",
+	"subtitle": "Negative Questions - Don't you...?, Isn't he...?",
+	"level": "B1-B2",
+	"estimatedTime": "10-15 minutos",
+	"sections": [
+		{
+			"title": "¿Qué son las Preguntas Negativas?",
+			"description": "Las preguntas negativas se forman usando la forma negativa del auxiliar seguida del sujeto y el verbo principal. Se usan para expresar sorpresa, confirmar algo que creemos cierto, o hacer invitaciones corteses.",
+			"structure": "Auxiliar negativo + Sujeto + Verbo principal + ?",
+			"uses": [
+				{
+					"use": "Expresar sorpresa",
+					"example": "Don't you like pizza?",
+					"translation": "¿No te gusta la pizza?",
+					"note": "Cuando esperamos una respuesta afirmativa y nos sorprende que algo sea diferente."
+				},
+				{
+					"use": "Confirmar algo que creemos cierto",
+					"example": "Isn't she your sister?",
+					"translation": "¿No es ella tu hermana?",
+					"note": "Cuando creemos que algo es verdad y queremos confirmación."
+				},
+				{
+					"use": "Hacer invitaciones corteses",
+					"example": "Won't you come to the party?",
+					"translation": "¿No vas a venir a la fiesta?",
+					"note": "Forma educada de invitar, sugiriendo que esperamos que sí vengan."
+				},
+				{
+					"use": "Mostrar incredulidad",
+					"example": "Can't you drive?",
+					"translation": "¿No sabes conducir?",
+					"note": "Cuando algo nos parece difícil de creer."
+				}
+			]
+		},
+		{
+			"title": "Formación con diferentes tiempos verbales",
+			"sections": [
+				{
+					"tense": "Present Simple",
+					"structure": "Don't/Doesn't + sujeto + verbo base + ?",
+					"examples": ["Don't you work here? → ¿No trabajas aquí?", "Doesn't she speak English? → ¿No habla ella inglés?", "Don't they live nearby? → ¿No viven cerca?"],
+					"rules": ["Don't para I, you, we, they", "Doesn't para he, she, it"]
+				},
+				{
+					"tense": "Present Continuous",
+					"structure": "Aren't/Isn't + sujeto + verb-ing + ?",
+					"examples": ["Aren't you coming with us? → ¿No vienes con nosotros?", "Isn't he working today? → ¿No está trabajando hoy?", "Aren't they studying for the exam? → ¿No están estudiando para el examen?"],
+					"rules": ["Aren't para I, you, we, they", "Isn't para he, she, it"]
+				},
+				{
+					"tense": "Past Simple",
+					"structure": "Didn't + sujeto + verbo base + ?",
+					"examples": ["Didn't you see the movie? → ¿No viste la película?", "Didn't she call you yesterday? → ¿No te llamó ayer?", "Didn't they finish the project? → ¿No terminaron el proyecto?"],
+					"rules": ["Didn't para todas las personas"]
+				},
+				{
+					"tense": "Future Simple",
+					"structure": "Won't + sujeto + verbo base + ?",
+					"examples": ["Won't you be there? → ¿No estarás ahí?", "Won't she graduate this year? → ¿No se graduará este año?", "Won't they help us? → ¿No nos ayudarán?"],
+					"rules": ["Won't para todas las personas"]
+				},
+				{
+					"tense": "Modal Verbs",
+					"structure": "Modal negativo + sujeto + verbo base + ?",
+					"examples": ["Can't you swim? → ¿No sabes nadar?", "Shouldn't we leave now? → ¿No deberíamos irnos ahora?", "Wouldn't you prefer tea? → ¿No preferirías té?"],
+					"rules": ["Can't, shouldn't, wouldn't, etc."]
+				}
+			]
+		},
+		{
+			"title": "Respuestas a Preguntas Negativas",
+			"description": "Las respuestas a preguntas negativas pueden ser confusas. La clave es responder según la realidad, no según la forma negativa de la pregunta.",
+			"examples": [
+				{
+					"question": "Don't you like coffee?",
+					"situation": "Si SÍ te gusta el café:",
+					"answer": "Yes, I do. (Sí, me gusta)",
+					"explanation": "Respuesta afirmativa porque la realidad es afirmativa"
+				},
+				{
+					"question": "Don't you like coffee?",
+					"situation": "Si NO te gusta el café:",
+					"answer": "No, I don't. (No, no me gusta)",
+					"explanation": "Respuesta negativa porque la realidad es negativa"
+				},
+				{
+					"question": "Isn't she coming?",
+					"situation": "Si SÍ viene:",
+					"answer": "Yes, she is. (Sí, viene)",
+					"explanation": "Respuesta afirmativa porque la realidad es afirmativa"
+				},
+				{
+					"question": "Isn't she coming?",
+					"situation": "Si NO viene:",
+					"answer": "No, she isn't. (No, no viene)",
+					"explanation": "Respuesta negativa porque la realidad es negativa"
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "Entonación",
+			"content": "Las preguntas negativas a menudo tienen una entonación descendente cuando expresan sorpresa o incredulidad.",
+			"example": "Don't you KNOW that? (con énfasis en 'know')"
+		},
+		{
+			"title": "Cortesía",
+			"content": "Las preguntas negativas pueden sonar más corteses para hacer invitaciones o sugerencias.",
+			"example": "Won't you sit down? (más cortés que 'Will you sit down?')"
+		},
+		{
+			"title": "Respuestas",
+			"content": "Siempre responde según la realidad, no según si la pregunta es negativa o positiva.",
+			"example": "Don't you work? → Yes, I do (si trabajas) / No, I don't (si no trabajas)"
+		}
+	]
+}

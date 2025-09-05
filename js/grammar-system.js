@@ -450,29 +450,52 @@ function createGrammarSection(section, index) {
 	title.appendChild(number);
 	title.appendChild(document.createTextNode(section.title));
 
-	const structure = createElement("div", {
-		className: "section-structure",
-	});
-
-	const structureLabel = createElement("strong", {
-		textContent: "Estructura: ",
-	});
-
-	const structureCode = createElement("code", {
-		textContent: section.structure,
-	});
-
-	structure.appendChild(structureLabel);
-	structure.appendChild(structureCode);
-
 	header.appendChild(title);
-	header.appendChild(structure);
+
+	// Structure (only if present)
+	if (section.structure) {
+		const structure = createElement("div", {
+			className: "section-structure",
+		});
+
+		const structureLabel = createElement("strong", {
+			textContent: "Estructura: ",
+		});
+
+		const structureCode = createElement("code", {
+			textContent: section.structure,
+		});
+
+		structure.appendChild(structureLabel);
+		structure.appendChild(structureCode);
+		header.appendChild(structure);
+	}
 
 	// Description
 	const description = createElement("p", {
 		className: "section-description",
 		textContent: section.description,
 	});
+
+	// Basic Rule (if present)
+	let basicRule = null;
+	if (section.basicRule) {
+		basicRule = createElement("div", {
+			className: "section-basic-rule",
+		});
+
+		const ruleLabel = createElement("strong", {
+			textContent: "Regla básica: ",
+		});
+
+		const ruleText = createElement("span", {
+			className: "basic-rule-text",
+			textContent: section.basicRule,
+		});
+
+		basicRule.appendChild(ruleLabel);
+		basicRule.appendChild(ruleText);
+	}
 
 	// Content
 	const content = createElement("div", {
@@ -483,6 +506,30 @@ function createGrammarSection(section, index) {
 	if (section.uses) {
 		const uses = createUsesSection(section.uses);
 		content.appendChild(uses);
+	}
+
+	// Examples (direct array)
+	if (section.examples && Array.isArray(section.examples)) {
+		const examples = createExamplesSection(section.examples);
+		content.appendChild(examples);
+	}
+
+	// Subsections (nested sections)
+	if (section.sections && Array.isArray(section.sections)) {
+		const subsections = createSubsectionsContainer(section.sections);
+		content.appendChild(subsections);
+	}
+
+	// Special cases
+	if (section.specialCases && Array.isArray(section.specialCases)) {
+		const specialCases = createSpecialCasesSection(section.specialCases);
+		content.appendChild(specialCases);
+	}
+
+	// Intonation types
+	if (section.intonationTypes && Array.isArray(section.intonationTypes)) {
+		const intonationTypes = createIntonationTypesSection(section.intonationTypes);
+		content.appendChild(intonationTypes);
 	}
 
 	// Forms
@@ -505,6 +552,9 @@ function createGrammarSection(section, index) {
 
 	sectionDiv.appendChild(header);
 	sectionDiv.appendChild(description);
+	if (basicRule) {
+		sectionDiv.appendChild(basicRule);
+	}
 	sectionDiv.appendChild(content);
 
 	return sectionDiv;
@@ -562,6 +612,277 @@ function createUsesSection(uses) {
 			});
 			card.appendChild(note);
 		}
+
+		grid.appendChild(card);
+	});
+
+	section.appendChild(title);
+	section.appendChild(grid);
+
+	return section;
+}
+
+/**
+ * Crea la sección de ejemplos directos
+ */
+function createExamplesSection(examples) {
+	const section = createElement("div", {
+		className: "section-examples",
+	});
+
+	const title = createElement("h4", {
+		textContent: "📝 Ejemplos:",
+	});
+
+	const grid = createElement("div", {
+		className: "examples-grid",
+	});
+
+	examples.forEach((exampleObj) => {
+		const card = createElement("div", {
+			className: "example-card",
+		});
+
+		// Sentence
+		const sentence = createElement("div", {
+			className: "example-sentence",
+		});
+
+		const sentenceEn = createElement("span", {
+			className: "example-en",
+			textContent: `"${exampleObj.sentence}"`,
+		});
+
+		const sentenceEs = createElement("span", {
+			className: "example-es",
+			textContent: exampleObj.translation,
+		});
+
+		sentence.appendChild(sentenceEn);
+		sentence.appendChild(sentenceEs);
+		card.appendChild(sentence);
+
+		// Explanation
+		if (exampleObj.explanation) {
+			const explanation = createElement("div", {
+				className: "example-explanation",
+				textContent: `💡 ${exampleObj.explanation}`,
+			});
+			card.appendChild(explanation);
+		}
+
+		grid.appendChild(card);
+	});
+
+	section.appendChild(title);
+	section.appendChild(grid);
+
+	return section;
+}
+
+/**
+ * Crea un contenedor para subsecciones anidadas
+ */
+function createSubsectionsContainer(subsections) {
+	const container = createElement("div", {
+		className: "subsections-container",
+	});
+
+	const title = createElement("h4", {
+		textContent: "📋 Detalles por tiempo verbal:",
+	});
+
+	const grid = createElement("div", {
+		className: "subsections-grid",
+	});
+
+	subsections.forEach((subsection) => {
+		const card = createElement("div", {
+			className: "subsection-card",
+		});
+
+		// Tense title
+		const tenseTitle = createElement("h5", {
+			className: "tense-title",
+			textContent: subsection.tense,
+		});
+		card.appendChild(tenseTitle);
+
+		// Affirmative example
+		if (subsection.affirmative) {
+			const affDiv = createElement("div", {
+				className: "tense-example affirmative",
+			});
+			const affLabel = createElement("strong", {
+				textContent: "✅ Afirmativo: ",
+			});
+			const affText = createElement("span", {
+				textContent: subsection.affirmative,
+			});
+			affDiv.appendChild(affLabel);
+			affDiv.appendChild(affText);
+			card.appendChild(affDiv);
+		}
+
+		// Negative example
+		if (subsection.negative) {
+			const negDiv = createElement("div", {
+				className: "tense-example negative",
+			});
+			const negLabel = createElement("strong", {
+				textContent: "❌ Negativo: ",
+			});
+			const negText = createElement("span", {
+				textContent: subsection.negative,
+			});
+			negDiv.appendChild(negLabel);
+			negDiv.appendChild(negText);
+			card.appendChild(negDiv);
+		}
+
+		// Rules
+		if (subsection.rules && subsection.rules.length > 0) {
+			const rulesDiv = createElement("div", {
+				className: "tense-rules",
+			});
+			const rulesTitle = createElement("h6", {
+				textContent: "Reglas:",
+			});
+			const rulesList = createElement("ul");
+
+			subsection.rules.forEach((rule) => {
+				const li = createElement("li", {
+					textContent: rule,
+				});
+				rulesList.appendChild(li);
+			});
+
+			rulesDiv.appendChild(rulesTitle);
+			rulesDiv.appendChild(rulesList);
+			card.appendChild(rulesDiv);
+		}
+
+		grid.appendChild(card);
+	});
+
+	container.appendChild(title);
+	container.appendChild(grid);
+
+	return container;
+}
+
+/**
+ * Crea la sección de casos especiales
+ */
+function createSpecialCasesSection(specialCases) {
+	const section = createElement("div", {
+		className: "special-cases-section",
+	});
+
+	const title = createElement("h4", {
+		textContent: "🔍 Casos especiales:",
+	});
+
+	const grid = createElement("div", {
+		className: "special-cases-grid",
+	});
+
+	specialCases.forEach((specialCase) => {
+		const card = createElement("div", {
+			className: "special-case-card",
+		});
+
+		// Case title
+		const caseTitle = createElement("h5", {
+			className: "case-title",
+			textContent: specialCase.case,
+		});
+		card.appendChild(caseTitle);
+
+		// Example
+		const example = createElement("div", {
+			className: "case-example",
+		});
+		const exampleText = createElement("span", {
+			className: "example-en",
+			textContent: `"${specialCase.example}"`,
+		});
+		const translation = createElement("span", {
+			className: "example-es",
+			textContent: specialCase.translation,
+		});
+		example.appendChild(exampleText);
+		example.appendChild(translation);
+		card.appendChild(example);
+
+		// Note
+		if (specialCase.note) {
+			const note = createElement("div", {
+				className: "case-note",
+				textContent: `💡 ${specialCase.note}`,
+			});
+			card.appendChild(note);
+		}
+
+		grid.appendChild(card);
+	});
+
+	section.appendChild(title);
+	section.appendChild(grid);
+
+	return section;
+}
+
+/**
+ * Crea la sección de tipos de entonación
+ */
+function createIntonationTypesSection(intonationTypes) {
+	const section = createElement("div", {
+		className: "intonation-types-section",
+	});
+
+	const title = createElement("h4", {
+		textContent: "🎵 Tipos de entonación:",
+	});
+
+	const grid = createElement("div", {
+		className: "intonation-grid",
+	});
+
+	intonationTypes.forEach((intonationType) => {
+		const card = createElement("div", {
+			className: "intonation-card",
+		});
+
+		// Type title
+		const typeTitle = createElement("h5", {
+			className: "intonation-type",
+			textContent: intonationType.type,
+		});
+		card.appendChild(typeTitle);
+
+		// Meaning
+		const meaning = createElement("p", {
+			className: "intonation-meaning",
+			textContent: intonationType.meaning,
+		});
+		card.appendChild(meaning);
+
+		// Example
+		const example = createElement("div", {
+			className: "intonation-example",
+		});
+		const exampleText = createElement("span", {
+			className: "example-en",
+			textContent: `"${intonationType.example}"`,
+		});
+		const translation = createElement("span", {
+			className: "example-es",
+			textContent: intonationType.translation,
+		});
+		example.appendChild(exampleText);
+		example.appendChild(translation);
+		card.appendChild(example);
 
 		grid.appendChild(card);
 	});
@@ -968,8 +1289,3 @@ function updateGrammarURL(topicId) {
 	}
 	window.history.pushState({}, "", url);
 }
-
-// Inicialización automática cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", async () => {
-	await initializeGrammarSystem();
-});

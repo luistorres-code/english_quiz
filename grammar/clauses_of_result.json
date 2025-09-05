@@ -1,0 +1,167 @@
+{
+	"title": "Oraciones de Resultado en Inglés",
+	"subtitle": "Clauses of Result - So...that, Such...that",
+	"level": "B1-B2",
+	"estimatedTime": "15-20 minutos",
+	"sections": [
+		{
+			"title": "¿Qué son las Oraciones de Resultado?",
+			"description": "Las oraciones de resultado expresan una consecuencia que ocurre debido a un grado extremo de algo. Se usan principalmente 'so...that' y 'such...that' para conectar una causa (grado intenso) con su resultado o consecuencia.",
+			"purpose": "Mostrar que algo es tan intenso que causa un resultado específico",
+			"mainStructures": ["so + adjetivo/adverbio + that", "such + (artículo) + (adjetivo) + sustantivo + that"]
+		},
+		{
+			"title": "SO + adjetivo/adverbio + THAT",
+			"description": "'So' se usa antes de adjetivos y adverbios para intensificar la cualidad, seguido de 'that' y el resultado.",
+			"structure": "Subject + verb + so + adjective/adverb + that + result clause",
+			"uses": [
+				{
+					"type": "So + adjetivo + that",
+					"examples": ["The exam was so easy that I finished in 30 minutes.", "She is so beautiful that everyone stares at her.", "The movie was so boring that I fell asleep.", "He is so tall that he hits his head on doors."],
+					"translations": ["El examen fue tan fácil que terminé en 30 minutos.", "Es tan hermosa que todos la miran.", "La película fue tan aburrida que me quedé dormido.", "Es tan alto que se golpea la cabeza con las puertas."],
+					"rules": ["So + adjetivo + that + resultado"]
+				},
+				{
+					"type": "So + adverbio + that",
+					"examples": ["He speaks so quickly that nobody understands him.", "She works so hard that she never has free time.", "They arrived so late that the movie had started.", "He drives so slowly that cars overtake him constantly."],
+					"translations": ["Habla tan rápido que nadie lo entiende.", "Trabaja tan duro que nunca tiene tiempo libre.", "Llegaron tan tarde que la película había comenzado.", "Conduce tan lento que los coches lo adelantan constantemente."],
+					"rules": ["So + adverbio + that + resultado"]
+				}
+			]
+		},
+		{
+			"title": "SUCH + sustantivo + THAT",
+			"description": "'Such' se usa antes de sustantivos (con o sin adjetivos) para intensificar, seguido de 'that' y el resultado.",
+			"structure": "Subject + verb + such + (article) + (adjective) + noun + that + result clause",
+			"uses": [
+				{
+					"type": "Such + a/an + adjetivo + sustantivo singular + that",
+					"examples": ["It was such a difficult exam that many students failed.", "She has such a beautiful voice that she should be a singer.", "He is such a good teacher that all students love him.", "It was such an expensive car that he couldn't buy it."],
+					"translations": ["Fue un examen tan difícil que muchos estudiantes reprobaron.", "Tiene una voz tan hermosa que debería ser cantante.", "Es un profesor tan bueno que todos los estudiantes lo aman.", "Era un coche tan caro que no pudo comprarlo."],
+					"rules": ["Such + a/an + adjetivo + sustantivo singular + that"]
+				},
+				{
+					"type": "Such + adjetivo + sustantivo plural + that",
+					"examples": ["They are such good friends that they do everything together.", "These are such expensive shoes that I can't afford them.", "They have such noisy neighbors that they can't sleep.", "We had such wonderful holidays that we want to go back."],
+					"translations": ["Son amigos tan buenos que hacen todo juntos.", "Son zapatos tan caros que no puedo permitírmelos.", "Tienen vecinos tan ruidosos que no pueden dormir.", "Tuvimos vacaciones tan maravillosas que queremos volver."],
+					"rules": ["Such + adjetivo + sustantivo plural + that (sin artículo)"]
+				},
+				{
+					"type": "Such + adjetivo + sustantivo incontable + that",
+					"examples": ["He has such bad luck that nothing goes right for him.", "There was such heavy traffic that we were two hours late.", "She gave me such good advice that I solved my problem.", "It was such beautiful weather that we stayed outside all day."],
+					"translations": ["Tiene tan mala suerte que nada le sale bien.", "Había tanto tráfico que llegamos dos horas tarde.", "Me dio tan buenos consejos que resolví mi problema.", "Hacía tan buen tiempo que nos quedamos fuera todo el día."],
+					"rules": ["Such + adjetivo + sustantivo incontable + that (sin artículo)"]
+				}
+			]
+		},
+		{
+			"title": "Diferencia entre SO y SUCH",
+			"comparison": [
+				{
+					"rule": "SO + adjetivo/adverbio",
+					"examples": ["So difficult (tan difícil)", "So quickly (tan rápido)", "So expensive (tan caro)"]
+				},
+				{
+					"rule": "SUCH + (artículo) + (adjetivo) + sustantivo",
+					"examples": ["Such a difficult exam (un examen tan difícil)", "Such expensive cars (coches tan caros)", "Such good weather (tan buen tiempo)"]
+				}
+			],
+			"practiceComparison": [
+				{
+					"with_so": "The exam was so difficult that I couldn't finish it.",
+					"with_such": "It was such a difficult exam that I couldn't finish it.",
+					"translation": "El examen fue tan difícil que no pude terminarlo."
+				},
+				{
+					"with_so": "She is so beautiful that everyone notices her.",
+					"with_such": "She is such a beautiful woman that everyone notices her.",
+					"translation": "Es tan hermosa que todos se fijan en ella."
+				}
+			]
+		},
+		{
+			"title": "Omisión de THAT",
+			"description": "En inglés hablado, 'that' se puede omitir sin cambiar el significado, especialmente cuando el resultado es obvio o está implícito.",
+			"examples": [
+				{
+					"with_that": "The movie was so boring that I left early.",
+					"without_that": "The movie was so boring I left early.",
+					"translation": "La película fue tan aburrida que me fui temprano."
+				},
+				{
+					"with_that": "It was such a hot day that we stayed inside.",
+					"without_that": "It was such a hot day we stayed inside.",
+					"translation": "Fue un día tan caluroso que nos quedamos adentro."
+				},
+				{
+					"with_that": "He speaks so fast that I can't understand.",
+					"without_that": "He speaks so fast I can't understand.",
+					"translation": "Habla tan rápido que no puedo entender."
+				}
+			],
+			"note": "La omisión de 'that' es más común en inglés informal y conversacional."
+		},
+		{
+			"title": "Otras estructuras de resultado",
+			"otherStructures": [
+				{
+					"structure": "Too + adjetivo/adverbio + to + infinitivo",
+					"description": "Expresa que algo es excesivo para poder hacer otra cosa",
+					"examples": ["The coffee is too hot to drink. → El café está demasiado caliente para beber.", "She speaks too quietly to hear. → Habla demasiado bajo para oír.", "The exam was too difficult to pass. → El examen fue demasiado difícil para aprobar."],
+					"note": "Significa que es imposible hacer la acción por exceso de la cualidad"
+				},
+				{
+					"structure": "Adjetivo/adverbio + enough + to + infinitivo",
+					"description": "Expresa que algo tiene el grado suficiente para poder hacer otra cosa",
+					"examples": ["She is old enough to drive. → Es lo suficientemente mayor para conducir.", "He runs fast enough to win. → Corre lo suficientemente rápido para ganar.", "The soup is hot enough to eat. → La sopa está lo suficientemente caliente para comer."],
+					"note": "Significa que sí es posible hacer la acción porque hay grado suficiente"
+				}
+			]
+		},
+		{
+			"title": "Transformaciones entre estructuras",
+			"transformations": [
+				{
+					"original": "The exam was very difficult. I couldn't finish it.",
+					"so_that": "The exam was so difficult that I couldn't finish it.",
+					"such_that": "It was such a difficult exam that I couldn't finish it.",
+					"too_to": "The exam was too difficult to finish."
+				},
+				{
+					"original": "She is very young. She can't drive.",
+					"so_that": "She is so young that she can't drive.",
+					"such_that": "She is such a young girl that she can't drive.",
+					"too_to": "She is too young to drive."
+				},
+				{
+					"original": "The music is very loud. We can't study.",
+					"so_that": "The music is so loud that we can't study.",
+					"such_that": "It is such loud music that we can't study.",
+					"too_to": "The music is too loud to study."
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "SO vs SUCH",
+			"content": "SO + adjetivo/adverbio, SUCH + sustantivo (con o sin adjetivo). Esta es la diferencia clave.",
+			"example": "So difficult vs Such a difficult exam"
+		},
+		{
+			"title": "Artículos con SUCH",
+			"content": "Recuerda usar 'a/an' solo con sustantivos singulares contables después de 'such'.",
+			"example": "Such a day / Such days / Such weather"
+		},
+		{
+			"title": "THAT opcional",
+			"content": "En inglés hablado, 'that' se puede omitir sin cambiar el significado.",
+			"example": "So tired (that) I went to bed early"
+		},
+		{
+			"title": "Resultado lógico",
+			"content": "El resultado debe ser una consecuencia lógica del grado extremo expresado.",
+			"example": "So tired that I fell asleep (lógico) vs So tired that I ate pizza (ilógico)"
+		}
+	]
+}

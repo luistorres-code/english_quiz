@@ -2898,6 +2898,27 @@ h1 {
 	margin: 1.5rem 0;
 }
 
+.section-basic-rule {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border-radius: 12px;
+	padding: 1.25rem;
+	margin: 1.5rem 0;
+	font-size: 1.05rem;
+	font-weight: 500;
+	box-shadow: var(--shadow-medium);
+}
+
+.section-basic-rule strong {
+	color: #ffd700;
+	font-weight: 600;
+}
+
+.basic-rule-text {
+	font-weight: 600;
+	color: white;
+}
+
 /* Section Content */
 .section-content {
 	margin-top: 2rem;
@@ -3220,6 +3241,234 @@ h1 {
 	border-radius: 6px;
 	font-style: italic;
 	color: var(--text-secondary);
+}
+
+/* ==================== NEW GRAMMAR SECTIONS STYLES ==================== */
+
+/* Examples Section */
+.section-examples {
+	margin: 2rem 0;
+}
+
+.examples-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 1.5rem;
+}
+
+.example-card {
+	background: var(--bg-surface);
+	border: 2px solid var(--border-primary);
+	border-radius: 12px;
+	padding: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.example-card:hover {
+	border-color: var(--text-accent);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-medium);
+}
+
+.example-sentence {
+	margin-bottom: 1rem;
+}
+
+.example-explanation {
+	background: var(--warning-bg);
+	border: 1px solid var(--warning-border);
+	border-radius: 6px;
+	padding: 0.75rem;
+	font-size: 0.9rem;
+	color: var(--warning-text);
+	margin-top: 0.75rem;
+}
+
+/* Subsections Container */
+.subsections-container {
+	margin: 2rem 0;
+}
+
+.subsections-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem;
+}
+
+.subsection-card {
+	background: var(--bg-surface);
+	border: 2px solid var(--border-primary);
+	border-radius: 12px;
+	padding: 1.5rem;
+}
+
+.tense-title {
+	margin: 0 0 1rem 0;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 1.1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid var(--border-primary);
+}
+
+.tense-example {
+	margin: 0.75rem 0;
+	padding: 0.75rem;
+	border-radius: 6px;
+}
+
+.tense-example.affirmative {
+	background: var(--success-bg);
+	border: 1px solid var(--success-border);
+}
+
+.tense-example.negative {
+	background: var(--error-bg);
+	border: 1px solid var(--error-border);
+}
+
+.tense-example strong {
+	display: inline-block;
+	margin-right: 0.5rem;
+	font-weight: 600;
+}
+
+.tense-rules {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--border-primary);
+}
+
+.tense-rules h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.tense-rules ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.tense-rules li {
+	margin-bottom: 0.4rem;
+	color: var(--text-secondary);
+	line-height: 1.4;
+	padding-left: 1.5rem;
+	position: relative;
+	font-size: 0.9rem;
+}
+
+.tense-rules li::before {
+	content: "→";
+	position: absolute;
+	left: 0;
+	color: var(--text-accent);
+	font-weight: bold;
+}
+
+/* Special Cases Section */
+.special-cases-section {
+	margin: 2rem 0;
+}
+
+.special-cases-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 1.5rem;
+}
+
+.special-case-card {
+	background: var(--bg-surface);
+	border: 2px solid var(--border-primary);
+	border-radius: 12px;
+	padding: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.special-case-card:hover {
+	border-color: var(--text-accent);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-medium);
+}
+
+.case-title {
+	margin: 0 0 1rem 0;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 0.5rem;
+	background: linear-gradient(135deg, var(--text-accent), #8b9ddc);
+	color: white;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.case-example {
+	margin: 1rem 0;
+}
+
+.case-note {
+	background: var(--warning-bg);
+	border: 1px solid var(--warning-border);
+	border-radius: 6px;
+	padding: 0.75rem;
+	font-size: 0.9rem;
+	color: var(--warning-text);
+	margin-top: 0.75rem;
+}
+
+/* Intonation Types Section */
+.intonation-types-section {
+	margin: 2rem 0;
+}
+
+.intonation-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 1.5rem;
+}
+
+.intonation-card {
+	background: var(--bg-surface);
+	border: 2px solid var(--border-primary);
+	border-radius: 12px;
+	padding: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.intonation-card:hover {
+	border-color: var(--text-accent);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-medium);
+}
+
+.intonation-type {
+	margin: 0 0 1rem 0;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 1.1rem;
+	padding: 0.75rem;
+	background: linear-gradient(135deg, #8b9ddc, #667eea);
+	color: white;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.intonation-meaning {
+	margin: 1rem 0;
+	color: var(--text-secondary);
+	font-weight: 500;
+	line-height: 1.5;
+	padding: 0.75rem;
+	background: rgba(102, 126, 234, 0.1);
+	border-radius: 6px;
+}
+
+.intonation-example {
+	margin: 1rem 0;
 }
 
 /* Error and Loading States */

@@ -1,5 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
 	initializeSystem();
+
+	// Inicializar sistema de gramática
+	if (typeof initializeGrammarSystem === "function") {
+		await initializeGrammarSystem();
+	}
 
 	// Inicializar navegación entre pestañas
 	initializeNavigation();
@@ -88,10 +93,5 @@ function switchToTab(tabName) {
 		url.searchParams.delete("exercise");
 		url.searchParams.delete("quiz");
 		window.history.pushState({}, "", url);
-
-		// Inicializar gramática si no se ha hecho
-		if (typeof initializeGrammarSystem === "function") {
-			initializeGrammarSystem();
-		}
 	}
 }

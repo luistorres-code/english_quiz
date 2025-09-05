@@ -1,0 +1,251 @@
+{
+	"title": "Pronombres Reflexivos en Inglés",
+	"subtitle": "Reflexive Pronouns - myself, yourself, himself, herself...",
+	"level": "A2-B1",
+	"estimatedTime": "15-20 minutos",
+	"sections": [
+		{
+			"title": "¿Qué son los Pronombres Reflexivos?",
+			"description": "Los pronombres reflexivos se usan cuando el sujeto y el objeto de la oración son la misma persona o cosa. Indican que la acción 'regresa' al sujeto que la realiza.",
+			"purpose": "Mostrar que alguien hace algo a sí mismo/a o por sí mismo/a",
+			"formation": "Se forman agregando -self (singular) o -selves (plural) a ciertos pronombres"
+		},
+		{
+			"title": "Lista de Pronombres Reflexivos",
+			"pronouns": [
+				{
+					"subject": "I",
+					"reflexive": "myself",
+					"example": "I hurt myself.",
+					"translation": "Me lastimé (a mí mismo)."
+				},
+				{
+					"subject": "You (singular)",
+					"reflexive": "yourself",
+					"example": "You should be proud of yourself.",
+					"translation": "Deberías estar orgulloso de ti mismo."
+				},
+				{
+					"subject": "He",
+					"reflexive": "himself",
+					"example": "He taught himself to play guitar.",
+					"translation": "Aprendió a tocar guitarra por sí mismo."
+				},
+				{
+					"subject": "She",
+					"reflexive": "herself",
+					"example": "She looked at herself in the mirror.",
+					"translation": "Se miró en el espejo."
+				},
+				{
+					"subject": "It",
+					"reflexive": "itself",
+					"example": "The cat cleaned itself.",
+					"translation": "El gato se limpió."
+				},
+				{
+					"subject": "We",
+					"reflexive": "ourselves",
+					"example": "We enjoyed ourselves at the party.",
+					"translation": "Nos divertimos en la fiesta."
+				},
+				{
+					"subject": "You (plural)",
+					"reflexive": "yourselves",
+					"example": "You should introduce yourselves.",
+					"translation": "Deberían presentarse."
+				},
+				{
+					"subject": "They",
+					"reflexive": "themselves",
+					"example": "They cooked dinner themselves.",
+					"translation": "Cocinaron la cena ellos mismos."
+				}
+			]
+		},
+		{
+			"title": "Usos de los Pronombres Reflexivos",
+			"uses": [
+				{
+					"use": "Acciones que uno hace a sí mismo",
+					"description": "Cuando el sujeto realiza una acción sobre sí mismo",
+					"examples": ["She cut herself while cooking. → Se cortó mientras cocinaba.", "I taught myself English. → Aprendí inglés por mi cuenta.", "He hurt himself playing football. → Se lastimó jugando fútbol.", "We enjoyed ourselves at the concert. → Nos divertimos en el concierto."],
+					"note": "El sujeto y el objeto son la misma persona"
+				},
+				{
+					"use": "Énfasis (by + pronombre reflexivo)",
+					"description": "Para enfatizar que alguien hizo algo sin ayuda de otros",
+					"examples": ["I fixed the car by myself. → Arreglé el coche yo solo.", "She completed the project by herself. → Completó el proyecto ella sola.", "They built the house by themselves. → Construyeron la casa ellos solos.", "Did you do this by yourself? → ¿Hiciste esto tú solo?"],
+					"note": "'By + reflexive pronoun' = sin ayuda de nadie más"
+				},
+				{
+					"use": "Después de preposiciones",
+					"description": "Cuando el pronombre reflexivo va después de una preposición",
+					"examples": ["She was talking to herself. → Estaba hablando sola.", "He was angry with himself. → Estaba enojado consigo mismo.", "They were proud of themselves. → Estaban orgullosos de sí mismos.", "I was disappointed in myself. → Estaba decepcionado de mí mismo."],
+					"note": "Común con preposiciones como to, with, of, in, for"
+				},
+				{
+					"use": "Con verbos específicos",
+					"description": "Algunos verbos requieren pronombres reflexivos para ciertos significados",
+					"examples": ["Behave yourself! → ¡Pórtate bien!", "Help yourself to some cake. → Sírvete pastel.", "Make yourself at home. → Ponte cómodo.", "Enjoy yourself! → ¡Que te diviertas!"],
+					"note": "Expresiones fijas con verbos como behave, help, make, enjoy"
+				}
+			]
+		},
+		{
+			"title": "Verbos que NO usan pronombres reflexivos",
+			"description": "Algunos verbos en español usan pronombres reflexivos, pero en inglés no:",
+			"verbs": [
+				{
+					"spanish": "levantarse",
+					"english": "get up / wake up",
+					"example": "I get up at 7 AM. (no 'I get myself up')",
+					"translation": "Me levanto a las 7 AM."
+				},
+				{
+					"spanish": "sentarse",
+					"english": "sit down",
+					"example": "Please sit down. (no 'sit yourself down')",
+					"translation": "Por favor siéntate."
+				},
+				{
+					"spanish": "acostarse",
+					"english": "go to bed / lie down",
+					"example": "I go to bed at 10 PM. (no 'I go myself to bed')",
+					"translation": "Me acuesto a las 10 PM."
+				},
+				{
+					"spanish": "bañarse",
+					"english": "take a shower / have a bath",
+					"example": "I take a shower every morning. (no 'I shower myself')",
+					"translation": "Me ducho todas las mañanas."
+				},
+				{
+					"spanish": "vestirse",
+					"english": "get dressed",
+					"example": "She gets dressed quickly. (no 'She dresses herself')",
+					"translation": "Se viste rápidamente."
+				},
+				{
+					"spanish": "sentirse",
+					"english": "feel",
+					"example": "I feel tired. (no 'I feel myself tired')",
+					"translation": "Me siento cansado."
+				}
+			],
+			"note": "Estos verbos en inglés NO requieren pronombre reflexivo, aunque en español sí."
+		},
+		{
+			"title": "Diferencia: Reflexivo vs No Reflexivo",
+			"comparisons": [
+				{
+					"reflexive": "She dressed herself. (Se vistió a sí misma)",
+					"nonReflexive": "She dressed the baby. (Vistió al bebé)",
+					"explanation": "Reflexivo: se viste a sí misma / No reflexivo: viste a otra persona"
+				},
+				{
+					"reflexive": "He hurt himself. (Se lastimó a sí mismo)",
+					"nonReflexive": "He hurt his friend. (Lastimó a su amigo)",
+					"explanation": "Reflexivo: el daño es a sí mismo / No reflexivo: el daño es a otro"
+				},
+				{
+					"reflexive": "I taught myself guitar. (Aprendí guitarra por mi cuenta)",
+					"nonReflexive": "I taught my sister guitar. (Le enseñé guitarra a mi hermana)",
+					"explanation": "Reflexivo: auto-enseñanza / No reflexivo: enseñar a otro"
+				},
+				{
+					"reflexive": "They introduced themselves. (Se presentaron)",
+					"nonReflexive": "They introduced their friends. (Presentaron a sus amigos)",
+					"explanation": "Reflexivo: se presentan a sí mismos / No reflexivo: presentan a otros"
+				}
+			]
+		},
+		{
+			"title": "Expresiones comunes con pronombres reflexivos",
+			"expressions": [
+				{
+					"expression": "by myself/yourself/himself, etc.",
+					"meaning": "solo/a, sin ayuda",
+					"example": "I prefer to work by myself. → Prefiero trabajar solo."
+				},
+				{
+					"expression": "Help yourself",
+					"meaning": "sírvete, toma lo que quieras",
+					"example": "Help yourself to some coffee. → Sírvete café."
+				},
+				{
+					"expression": "Make yourself at home",
+					"meaning": "ponte cómodo",
+					"example": "Please make yourself at home. → Por favor, ponte cómodo."
+				},
+				{
+					"expression": "Behave yourself",
+					"meaning": "pórtate bien",
+					"example": "Behave yourself at school! → ¡Pórtate bien en la escuela!"
+				},
+				{
+					"expression": "Enjoy yourself",
+					"meaning": "que te diviertas, disfruta",
+					"example": "Enjoy yourself at the party! → ¡Que te diviertas en la fiesta!"
+				},
+				{
+					"expression": "Be yourself",
+					"meaning": "sé tú mismo",
+					"example": "Just be yourself in the interview. → Solo sé tú mismo en la entrevista."
+				},
+				{
+					"expression": "Pull yourself together",
+					"meaning": "contrólate, cálmate",
+					"example": "Pull yourself together and focus! → ¡Contrólate y concéntrate!"
+				}
+			]
+		},
+		{
+			"title": "Errores comunes",
+			"commonMistakes": [
+				{
+					"mistake": "I feel myself tired.",
+					"correct": "I feel tired.",
+					"explanation": "El verbo 'feel' no requiere pronombre reflexivo en inglés."
+				},
+				{
+					"mistake": "She woke up herself at 6 AM.",
+					"correct": "She woke up at 6 AM.",
+					"explanation": "'Wake up' no requiere pronombre reflexivo."
+				},
+				{
+					"mistake": "We met ourselves at the café.",
+					"correct": "We met at the café.",
+					"explanation": "Cuando 'meet' significa 'encontrarse en un lugar', no es reflexivo."
+				},
+				{
+					"mistake": "He shaved him this morning.",
+					"correct": "He shaved himself this morning.",
+					"explanation": "Debe usar el pronombre reflexivo 'himself', no 'him'."
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "Formación",
+			"content": "my/your/him/her/it + self (singular), our/your/them + selves (plural)",
+			"example": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves"
+		},
+		{
+			"title": "Cuando usar",
+			"content": "Usa pronombres reflexivos cuando el sujeto y objeto son la misma persona/cosa.",
+			"example": "She hurt herself (ella se lastimó a sí misma)"
+		},
+		{
+			"title": "By + reflexivo",
+			"content": "'By + pronombre reflexivo' significa 'solo, sin ayuda de otros'.",
+			"example": "I did it by myself = Lo hice yo solo"
+		},
+		{
+			"title": "Verbos sin reflexivo",
+			"content": "Muchos verbos reflexivos en español NO son reflexivos en inglés (get up, sit down, feel).",
+			"example": "Me siento cansado = I feel tired (no 'I feel myself tired')"
+		}
+	]
+}
