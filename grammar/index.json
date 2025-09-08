@@ -98,6 +98,15 @@
 			"level": "A2-B1",
 			"icon": "🪞",
 			"color": "#805ad5"
+		},
+		{
+			"id": "prepositions",
+			"title": "Preposiciones",
+			"subtitle": "In, On, At, By, For, With y más",
+			"description": "Domina las preposiciones más importantes de forma super fácil y amigable. ¡Perfecto para principiantes!",
+			"level": "A2-B1",
+			"icon": "🧭",
+			"color": "#f6ad55"
 		}
 	]
 }

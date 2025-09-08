@@ -1,0 +1,174 @@
+{
+	"title": "Preposiciones en Inglés",
+	"subtitle": "In, On, At, By, For, With y más",
+	"level": "A2-B1",
+	"estimatedTime": "20-25 minutos",
+	"sections": [
+		{
+			"title": "Preposiciones de Tiempo - IN, ON, AT",
+			"description": "Las preposiciones de tiempo nos ayudan a situar las acciones en el tiempo. Son como pequeñas palabras mágicas que nos dicen CUÁNDO pasa algo. 📦 IN = períodos largos | 📅 ON = días específicos | 🎯 AT = puntos exactos.",
+			"uses": [
+				{
+					"use": "IN - Para meses, años, estaciones y partes del día",
+					"example": "I was born in January",
+					"translation": "Nací en enero",
+					"note": "💡 Piensa en IN como 'dentro de' un período de tiempo grande. Ejemplos: in 2024, in summer, in the morning"
+				},
+				{
+					"use": "ON - Para días de la semana, fechas específicas y días especiales",
+					"example": "We have class on Monday",
+					"translation": "Tenemos clase el lunes",
+					"note": "💡 Piensa en ON como 'sobre' un día específico. Ejemplos: on Christmas Day, on my birthday, on December 25th"
+				},
+				{
+					"use": "AT - Para horas específicas y momentos puntuales",
+					"example": "The meeting is at 3 o'clock",
+					"translation": "La reunión es a las 3 en punto",
+					"note": "💡 Piensa en AT como un punto exacto en el tiempo. Ejemplos: at midnight, at noon, at the same time"
+				}
+			]
+		},
+		{
+			"title": "Preposiciones de Lugar - IN, ON, AT",
+			"description": "Las preposiciones de lugar nos dicen DÓNDE está algo o alguien. Son como un GPS que nos da la ubicación exacta. 🏠 IN = dentro | 🪑 ON = superficie | 📍 AT = punto específico.",
+			"uses": [
+				{
+					"use": "IN - Dentro de espacios cerrados o áreas",
+					"example": "She lives in Madrid",
+					"translation": "Ella vive en Madrid",
+					"note": "💡 Si puedes estar 'dentro' de algo, usa IN. Ejemplos: in the house, in the car, in bed"
+				},
+				{
+					"use": "ON - Superficies, encima de algo",
+					"example": "The book is on the table",
+					"translation": "El libro está en la mesa",
+					"note": "💡 Si algo está 'encima' o 'sobre' una superficie, usa ON. Ejemplos: on the wall, on the bus, on the second floor"
+				},
+				{
+					"use": "AT - Lugares específicos, puntos de encuentro",
+					"example": "I'll meet you at school",
+					"translation": "Te veré en la escuela",
+					"note": "💡 Para lugares como 'puntos' en un mapa, usa AT. Ejemplos: at home, at the bus stop, at the corner"
+				},
+				{
+					"use": "UNDER - Debajo de algo",
+					"example": "The cat is under the table",
+					"translation": "El gato está debajo de la mesa",
+					"note": "💡 Lo opuesto a 'on', muy fácil de recordar. Ejemplos: under the bed, under the bridge"
+				},
+				{
+					"use": "BEHIND - Detrás de algo",
+					"example": "The car is behind the building",
+					"translation": "El carro está detrás del edificio",
+					"note": "💡 Si no puedes ver algo porque está 'atrás', usa BEHIND. Ejemplos: behind the door, behind you"
+				},
+				{
+					"use": "IN FRONT OF - Delante de algo",
+					"example": "There's a tree in front of the house",
+					"translation": "Hay un árbol delante de la casa",
+					"note": "💡 Lo opuesto a 'behind', muy directo. Ejemplos: in front of me, in front of the TV"
+				}
+			]
+		},
+		{
+			"title": "Preposiciones de Movimiento",
+			"description": "Estas preposiciones nos dicen hacia DÓNDE va algo o alguien. Son perfectas para describir direcciones y movimientos. → TO = hacia | ⬇️ INTO = hacia adentro | ⬆️ ONTO = hacia arriba.",
+			"uses": [
+				{
+					"use": "TO - Movimiento hacia un destino",
+					"example": "I'm going to school",
+					"translation": "Voy a la escuela",
+					"note": "💡 TO = hacia un lugar como destino final. Ejemplos: She walked to the park, We're flying to Japan"
+				},
+				{
+					"use": "INTO - Movimiento hacia adentro de algo",
+					"example": "He jumped into the pool",
+					"translation": "Saltó a la piscina",
+					"note": "💡 INTO = moverse hacia el interior de algo. Ejemplos: She put the book into the bag, The cat ran into the house"
+				},
+				{
+					"use": "ONTO - Movimiento hacia arriba de una superficie",
+					"example": "The bird flew onto the roof",
+					"translation": "El pájaro voló al tejado",
+					"note": "💡 ONTO = moverse hacia encima de algo. Ejemplos: He climbed onto the table, She stepped onto the stage"
+				}
+			]
+		},
+		{
+			"title": "Preposiciones Súper Útiles - BY, FOR, WITH",
+			"description": "Aquí tienes las preposiciones más útiles del día a día. Estas tres son especialmente importantes y las usarás constantemente.",
+			"uses": [
+				{
+					"use": "BY - Medio de transporte",
+					"example": "I go to work by car",
+					"translation": "Voy al trabajo en carro",
+					"note": "💡 BY = medio de transporte. Ejemplos: by plane, by bus. ¡Cuidado! Se dice 'on foot', no 'by foot'"
+				},
+				{
+					"use": "BY - Junto a, cerca de",
+					"example": "She's sitting by the window",
+					"translation": "Está sentada junto a la ventana",
+					"note": "💡 BY = al lado de algo. Ejemplos: by the sea, by the door"
+				},
+				{
+					"use": "BY - Antes de una hora límite",
+					"example": "Please finish this by 5 PM",
+					"translation": "Por favor termina esto antes de las 5 PM",
+					"note": "💡 BY = fecha/hora límite. Ejemplos: by tomorrow, by next week"
+				},
+				{
+					"use": "FOR - Duración de tiempo",
+					"example": "I studied English for two hours",
+					"translation": "Estudié inglés por dos horas",
+					"note": "💡 FOR = ¿cuánto tiempo? Ejemplos: for a week, for ten minutes"
+				},
+				{
+					"use": "FOR - Propósito o razón",
+					"example": "This gift is for you",
+					"translation": "Este regalo es para ti",
+					"note": "💡 FOR = ¿para qué? Ejemplos: for studying, for dinner"
+				},
+				{
+					"use": "WITH - Compañía",
+					"example": "I'm going with my friends",
+					"translation": "Voy con mis amigos",
+					"note": "💡 WITH = junto a alguien. Ejemplos: with my family, with my teacher"
+				},
+				{
+					"use": "WITH - Instrumento o herramienta",
+					"example": "I write with a pen",
+					"translation": "Escribo con un bolígrafo",
+					"note": "💡 WITH = usando algo. Ejemplos: cut with scissors, eat with a fork"
+				},
+				{
+					"use": "WITHOUT - Ausencia de algo",
+					"example": "Coffee without sugar, please",
+					"translation": "Café sin azúcar, por favor",
+					"note": "💡 WITHOUT = sin algo (opuesto a WITH). Ejemplos: without my phone, without help"
+				}
+			]
+		}
+	],
+	"tips": [
+		{
+			"title": "Tip #1: La Regla del Tamaño",
+			"content": "IN para espacios grandes (países, ciudades) → ON para superficies → AT para puntos específicos",
+			"example": "IN Spain → ON the street → AT the bus stop"
+		},
+		{
+			"title": "Tip #2: Piensa en Imágenes",
+			"content": "Visualiza: IN una caja 📦, ON una mesa 🪑, AT un punto 📍",
+			"example": "Esto te ayudará a recordar fácilmente cuál usar"
+		},
+		{
+			"title": "Tip #3: Aprende Frases Completas",
+			"content": "En lugar de memorizar reglas, aprende frases comunes completas",
+			"example": "'at home', 'in the morning', 'on Monday' - aprende como bloques"
+		},
+		{
+			"title": "Tip #4: Practica con tu Rutina",
+			"content": "Describe tu día usando preposiciones: 'I wake up AT 7, IN the morning, ON weekdays'",
+			"example": "Esto hace que las preposiciones sean naturales y memorables"
+		}
+	]
+}
