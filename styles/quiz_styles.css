@@ -1789,7 +1789,8 @@ h1 {
 }
 
 /* Estilos para ejercicios de rellenar espacios */
-.fill-in-the-blanks input {
+.fill-in-the-blanks input,
+.multi-fill-in-the-blanks input {
 	padding: 12px 16px;
 	border: 2px solid var(--border-primary);
 	border-radius: 8px;
@@ -1801,20 +1802,32 @@ h1 {
 	box-shadow: var(--shadow-light);
 }
 
-.fill-in-the-blanks input:focus {
+/* Espaciado específico para multi-fill para evitar amontonamiento */
+.multi-fill-in-the-blanks input {
+	margin: 1px 6px;
+	padding: 10px 14px;
+	min-width: 100px;
+	font-size: 1rem;
+	border-radius: 6px;
+}
+
+.fill-in-the-blanks input:focus,
+.multi-fill-in-the-blanks input:focus {
 	outline: none;
 	border-color: var(--border-focus);
 	box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
 }
 
-.fill-in-the-blanks input.correct {
+.fill-in-the-blanks input.correct,
+.multi-fill-in-the-blanks input.correct {
 	background: var(--success-bg);
 	border-color: var(--success-border);
 	color: var(--success-text);
 	font-weight: 500;
 }
 
-.fill-in-the-blanks input.incorrect {
+.fill-in-the-blanks input.incorrect,
+.multi-fill-in-the-blanks input.incorrect {
 	background: var(--error-bg);
 	border-color: var(--error-border);
 	color: var(--error-text);
@@ -1829,16 +1842,100 @@ h1 {
 }
 
 /* Alternativa: mostrar la respuesta correcta al lado del input */
-.fill-in-the-blanks input.incorrect + .correct-answer {
+.fill-in-the-blanks input.incorrect + .correct-answer,
+.multi-fill-in-the-blanks input.incorrect + .correct-answer {
 	color: var(--success-text);
 	font-weight: 500;
 	font-size: 0.9rem;
 	margin-left: 12px;
 }
 
-.fill-in-the-blanks input.incorrect + .correct-answer::before {
+.fill-in-the-blanks input.incorrect + .correct-answer::before,
+.multi-fill-in-the-blanks input.incorrect + .correct-answer::before {
 	content: "Correcto: ";
 	color: var(--text-muted);
+}
+
+/* Estilos específicos para multi fill in the blanks */
+.multi-fill-in-the-blanks .multi-text-container {
+	line-height: 1.8;
+	font-size: 1.1rem;
+	margin: 20px 0;
+	padding: 20px;
+	background: var(--bg-light);
+	border-radius: 12px;
+	border: 1px solid var(--border-light);
+	max-width: 100%;
+	word-spacing: 1px;
+	text-align: justify;
+}
+
+.multi-fill-in-the-blanks .question-text-part {
+	color: var(--text-primary);
+	display: inline;
+	margin-right: 1px;
+	margin-left: 0px;
+}
+
+/* Espaciado adicional después de una oración completa */
+.multi-fill-in-the-blanks .question-text-part.sentence-end {
+	margin-right: 8px;
+	padding-right: 2px;
+}
+
+.multi-fill-in-the-blanks .multi-blank-input {
+	min-width: 100px;
+	width: auto;
+	display: inline-block;
+	text-align: center;
+	font-weight: 500;
+	margin: 1px 6px;
+	padding: 10px 14px;
+	vertical-align: baseline;
+	border-radius: 6px;
+	position: relative;
+}
+
+.multi-fill-in-the-blanks .multi-blank-input:focus {
+	transform: scale(1.02);
+	margin: 1px 8px; /* Aumentar margen en focus para evitar superposición */
+	z-index: 10;
+}
+
+.multi-fill-in-the-blanks .check-button {
+	margin-top: 20px;
+	width: 100%;
+	max-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Mejorar espaciado en dispositivos móviles */
+@media (max-width: 768px) {
+	.multi-fill-in-the-blanks .multi-text-container {
+		padding: 18px 15px;
+		line-height: 1.9;
+		font-size: 1rem;
+		word-spacing: 1px;
+	}
+
+	.multi-fill-in-the-blanks .multi-blank-input {
+		margin: 1px 5px;
+		min-width: 85px;
+		padding: 8px 10px;
+		display: inline-block;
+	}
+
+	.multi-fill-in-the-blanks .question-text-part {
+		margin-right: 1px;
+		margin-left: 0px;
+	}
+
+	.multi-fill-in-the-blanks .question-text-part.sentence-end {
+		margin-right: 6px;
+		padding-right: 1px;
+	}
 }
 
 /* Estilos para ejercicios de matching */

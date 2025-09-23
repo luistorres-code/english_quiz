@@ -353,6 +353,94 @@ function getFillInTheBlankAnswers(container) {
 	}));
 }
 
+function renderMultiFillInTheBlanks(container, questionData, onCheck) {
+	clearContainer(container);
+
+	const questionSection = createElement("section", {
+		className: "question-section multi-fill-in-the-blanks",
+		attributes: {
+			role: "main",
+			"aria-labelledby": "question-title",
+		},
+	});
+
+	const questionTitle = createElement("h2", {
+		className: "question-text",
+		textContent: questionData.question,
+		attributes: { id: "question-title" },
+	});
+
+	const form = createElement("form", {
+		attributes: { novalidate: true },
+		events: {
+			submit: (e) => {
+				e.preventDefault();
+				const answers = getFillInTheBlankAnswers(container);
+				onCheck(answers);
+			},
+		},
+	});
+
+	const textContainer = createElement("div", {
+		className: "multi-text-container",
+		attributes: {
+			role: "group",
+			"aria-labelledby": "question-title",
+		},
+	});
+
+	questionData.questionParts.forEach((part, index) => {
+		if (typeof part === "string") {
+			// Detectar si esta parte de texto termina una oración (contiene punto, signo de exclamación o interrogación)
+			const endsWithSentence = /[.!?]\s*$/.test(part.trim());
+
+			// Usar createElement con textContent para evitar document.createTextNode directo
+			const textSpan = createElement("span", {
+				textContent: part,
+				className: endsWithSentence ? "question-text-part sentence-end" : "question-text-part",
+			});
+			textContainer.appendChild(textSpan);
+		} else {
+			const input = createElement("input", {
+				className: "fill-blank-input multi-blank-input",
+				attributes: {
+					type: "text",
+					"data-index": index,
+					"data-answer": part.answer,
+					placeholder: part.label || "...",
+					"aria-label": `Espacio en blanco ${Math.floor(index / 2) + 1}: ${part.label || "complete the text"}`,
+					autocomplete: "off",
+				},
+				events: {
+					keypress: (event) => {
+						if (event.key === "Enter") {
+							event.preventDefault();
+							const answers = getFillInTheBlankAnswers(container);
+							onCheck(answers);
+						}
+					},
+				},
+			});
+			textContainer.appendChild(input);
+		}
+	});
+
+	const checkButton = createElement("button", {
+		className: "check-button",
+		textContent: "Comprobar",
+		attributes: {
+			type: "submit",
+			"aria-describedby": "question-title",
+		},
+	});
+
+	form.appendChild(textContainer);
+	form.appendChild(checkButton);
+	questionSection.appendChild(questionTitle);
+	questionSection.appendChild(form);
+	container.appendChild(questionSection);
+}
+
 function renderMatching(container, questionData, onComplete) {
 	clearContainer(container);
 

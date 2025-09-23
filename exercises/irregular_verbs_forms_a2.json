@@ -1,0 +1,212 @@
+{
+	"title": "Irregular Verbs Forms - Level A2",
+	"description": "Practica las formas de los verbos irregulares más comunes en inglés. Aprende a reconocer y usar correctamente el pasado simple y participio pasado.",
+	"level": "A2",
+	"category": "irregular_verbs",
+	"estimatedTime": "15 minutes",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "What is the past simple form of 'go'?",
+			"answerOptions": [
+				{
+					"text": "went",
+					"isCorrect": true,
+					"rationale": "'Go' is an irregular verb. Its past simple form is 'went', not 'goed'."
+				},
+				{
+					"text": "goed",
+					"isCorrect": false,
+					"rationale": "This is incorrect. 'Go' is irregular, so we don't add -ed."
+				},
+				{
+					"text": "gone",
+					"isCorrect": false,
+					"rationale": "'Gone' is the past participle, not the past simple form."
+				},
+				{
+					"text": "goes",
+					"isCorrect": false,
+					"rationale": "'Goes' is the present simple third person form."
+				}
+			],
+			"hint": "Think about how you say 'I __ to the store yesterday.'"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence uses the correct past participle of 'eat'?",
+			"answerOptions": [
+				{
+					"text": "I have eaten breakfast already.",
+					"isCorrect": true,
+					"rationale": "'Eaten' is the correct past participle of 'eat', used with present perfect."
+				},
+				{
+					"text": "I have ate breakfast already.",
+					"isCorrect": false,
+					"rationale": "'Ate' is the past simple form, not the past participle."
+				},
+				{
+					"text": "I have eated breakfast already.",
+					"isCorrect": false,
+					"rationale": "'Eat' is irregular, so we don't add -ed."
+				},
+				{
+					"text": "I have eat breakfast already.",
+					"isCorrect": false,
+					"rationale": "The base form 'eat' cannot be used after 'have'."
+				}
+			],
+			"hint": "Remember: have/has + past participle"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What are the three forms of the verb 'write'?",
+			"answerOptions": [
+				{
+					"text": "write - wrote - written",
+					"isCorrect": true,
+					"rationale": "Correct! The three forms are: base form (write), past simple (wrote), past participle (written)."
+				},
+				{
+					"text": "write - writed - writed",
+					"isCorrect": false,
+					"rationale": "'Write' is irregular, so we don't add -ed."
+				},
+				{
+					"text": "write - wrote - wrote",
+					"isCorrect": false,
+					"rationale": "The past participle is 'written', not 'wrote'."
+				},
+				{
+					"text": "write - written - wrote",
+					"isCorrect": false,
+					"rationale": "The order is wrong. Past simple comes before past participle."
+				}
+			],
+			"hint": "Think: base form - past simple - past participle"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the sentence with the correct form of 'take':",
+			"questionParts": [
+				"Yesterday, I ",
+				{
+					"answer": "took",
+					"label": "past simple"
+				},
+				" the bus to work."
+			],
+			"hint": "Use the past simple form because of 'yesterday'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the sentence with the correct form of 'give':",
+			"questionParts": [
+				"She has ",
+				{
+					"answer": "given",
+					"label": "past participle"
+				},
+				" me a beautiful present."
+			],
+			"hint": "Use the past participle because of 'has'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which verb follows the pattern: same form for all three (base, past simple, past participle)?",
+			"answerOptions": [
+				{
+					"text": "cut",
+					"isCorrect": true,
+					"rationale": "'Cut' remains the same in all three forms: cut - cut - cut."
+				},
+				{
+					"text": "run",
+					"isCorrect": false,
+					"rationale": "'Run' changes: run - ran - run."
+				},
+				{
+					"text": "sing",
+					"isCorrect": false,
+					"rationale": "'Sing' changes: sing - sang - sung."
+				},
+				{
+					"text": "break",
+					"isCorrect": false,
+					"rationale": "'Break' changes: break - broke - broken."
+				}
+			],
+			"hint": "Some verbs never change their form!"
+		},
+		{
+			"type": "matching",
+			"question": "Match each base form with its past simple:",
+			"pairs": [
+				{
+					"text1": "begin",
+					"text2": "began"
+				},
+				{
+					"text1": "bring",
+					"text2": "brought"
+				},
+				{
+					"text1": "think",
+					"text2": "thought"
+				},
+				{
+					"text1": "buy",
+					"text2": "bought"
+				}
+			],
+			"hint": "Remember these common irregular past forms."
+		},
+		{
+			"type": "true_false",
+			"question": "The past simple of 'catch' is 'catched'.",
+			"answer": false,
+			"explanation": "The past simple of 'catch' is 'caught', not 'catched'. 'Catch' is an irregular verb."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct form of 'see':",
+			"questionParts": [
+				"I have never ",
+				{
+					"answer": "seen",
+					"label": "past participle"
+				},
+				" such a beautiful sunset."
+			],
+			"hint": "'Have never' requires the past participle."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What is the past participle of 'fly'?",
+			"answerOptions": [
+				{
+					"text": "flown",
+					"isCorrect": true,
+					"rationale": "'Flown' is the past participle of 'fly' (fly - flew - flown)."
+				},
+				{
+					"text": "flew",
+					"isCorrect": false,
+					"rationale": "'Flew' is the past simple, not the past participle."
+				},
+				{
+					"text": "flied",
+					"isCorrect": false,
+					"rationale": "'Fly' is irregular, so we don't add -ed."
+				},
+				{
+					"text": "flying",
+					"isCorrect": false,
+					"rationale": "'Flying' is the present participle (-ing form)."
+				}
+			],
+			"hint": "Think about 'The bird has __ away.'"
+		}
+	]
+}

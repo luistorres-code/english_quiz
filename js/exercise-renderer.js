@@ -29,6 +29,11 @@ const EXERCISE_CONFIG = {
 		requiresManualCheck: true,
 		callback: (answers) => ({ answers, isMultiAnswer: true }),
 	},
+	multi_fill_in_the_blanks: {
+		renderFunction: "renderMultiFillInTheBlanks",
+		requiresManualCheck: true,
+		callback: (answers) => ({ answers, isMultiAnswer: true }),
+	},
 	matching: {
 		renderFunction: "renderMatching",
 		requiresManualCheck: false,
@@ -95,6 +100,7 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
 		// Extraer información del resultado según el tipo de ejercicio
 		let isCorrect = false;
 		let questionIndex = context.currentQuestionIndex || 0;
+		let correctAnswersCount = 0; // Para almacenar el número de respuestas correctas
 
 		// Lógica simplificada para extraer isCorrect
 		if (exerciseType === "reading_comprehension") {
@@ -112,12 +118,23 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
 			isCorrect = isComplete && matchingIsCorrect;
 		} else if (exerciseType === "fill_in_the_blanks") {
 			// Para fill_in_the_blanks, procesar con función existente
-			const correctAnswers = handleFillInTheBlanksResult(result, context);
-			isCorrect = correctAnswers > 0;
+			correctAnswersCount = handleFillInTheBlanksResult(result, context);
+			isCorrect = correctAnswersCount > 0;
 
 			// IMPORTANTE: Actualizar el score manualmente porque handleFillInTheBlanksResult no lo hace
-			if (correctAnswers > 0 && context.updateScore) {
+			if (correctAnswersCount > 0 && context.updateScore) {
 				context.updateScore();
+			}
+		} else if (exerciseType === "multi_fill_in_the_blanks") {
+			// Para multi_fill_in_the_blanks, procesar cada respuesta individualmente
+			correctAnswersCount = handleMultiFillInTheBlanksResult(result, context);
+			isCorrect = correctAnswersCount > 0;
+
+			// Actualizar score por cada respuesta correcta individual
+			if (correctAnswersCount > 0 && context.updateScore) {
+				for (let i = 0; i < correctAnswersCount; i++) {
+					context.updateScore();
+				}
 			}
 		} else {
 			// Para todos los demás (multiple_choice, true_false, short_answer, ordering)
@@ -145,17 +162,27 @@ function renderUnifiedExercise(exerciseType, questionData, context, onComplete) 
 			}
 		} else {
 			// Para todos los demás ejercicios (incluyendo short_answer, ordering, fill_in_the_blanks)
-			if (exerciseType !== "fill_in_the_blanks") {
+			if (exerciseType !== "fill_in_the_blanks" && exerciseType !== "multi_fill_in_the_blanks") {
 				handleExerciseResult(context, isCorrect, exerciseType, questionIndex);
 			} else {
-				// Para fill_in_the_blanks, solo mostrar botón (ya se procesó arriba)
+				// Para fill_in_the_blanks y multi_fill_in_the_blanks, solo mostrar botón (ya se procesó arriba)
 				showNextButtonAfterAnswer(context);
 			}
 
 			if (typeof onComplete === "function") {
+				// Calcular scoreIncrement correcto según el tipo de ejercicio
+				let scoreIncrement;
+				if (exerciseType === "multi_fill_in_the_blanks" || exerciseType === "fill_in_the_blanks") {
+					// Para fill in the blanks, usar el número real de respuestas correctas ya calculado
+					scoreIncrement = correctAnswersCount;
+				} else {
+					// Para otros tipos, usar lógica tradicional
+					scoreIncrement = isCorrect ? 1 : 0;
+				}
+
 				onComplete({
 					exerciseType,
-					scoreIncrement: isCorrect ? 1 : 0,
+					scoreIncrement,
 					originalResult: result,
 					isCorrect,
 				});
@@ -275,6 +302,68 @@ function handleExerciseResult(context, isCorrect, exerciseType, questionIndex) {
 		console.error("No next button found in context!");
 	}
 }
+/**
+ * Maneja resultados específicos de multi fill in the blanks
+ * Cada respuesta correcta cuenta individualmente para el score
+ */
+function handleMultiFillInTheBlanksResult(result, context) {
+	if (!result.isMultiAnswer) return result.isCorrect ? 1 : 0;
+
+	const { answers } = result;
+	let correctCount = 0;
+	let hasRetryableAnswers = false;
+
+	answers.forEach(({ userAnswer, correctAnswer, input }) => {
+		// Obtener alternativas si existen (buscar en questionParts)
+		const partIndex = parseInt(input.getAttribute("data-index"));
+		const questionData = context.questionData;
+		const questionPart = questionData.questionParts[partIndex];
+		const alternatives = questionPart.alternatives || [];
+		const allValidAnswers = [correctAnswer, ...alternatives];
+
+		// Usar el algoritmo inteligente de análisis de respuestas
+		const analysis = analyzeUserAnswer(userAnswer, allValidAnswers);
+
+		if (analysis.isCorrect) {
+			input.classList.add("correct");
+			correctCount++; // Contar cada respuesta correcta individualmente
+			if (analysis.confidence === 100) {
+				input.setAttribute("data-feedback", "¡Perfecto!");
+			}
+		} else {
+			input.classList.add("incorrect");
+
+			if (analysis.allowRetry) {
+				hasRetryableAnswers = true;
+				input.setAttribute("data-feedback", analysis.feedback);
+				input.setAttribute("data-hint", analysis.hint || "");
+			} else {
+				showCorrectAnswer(input, correctAnswer);
+				input.disabled = true;
+			}
+		}
+	});
+
+	// Manejar lógica de reintento
+	if (hasRetryableAnswers) {
+		showRetryFeedback(context.container.querySelector(".question-section"), answers);
+		context.shouldShowNext = false;
+		return correctCount; // Retornar el número de respuestas correctas hasta ahora
+	} else {
+		// Completar el ejercicio
+		answers.forEach(({ input }) => {
+			input.disabled = true;
+		});
+
+		const feedbackMessage = createMultiFillInFeedbackMessage(answers, correctCount, context.questionData);
+		showFeedback(context.container.querySelector(".question-section"), correctCount > 0, feedbackMessage);
+
+		window.hideCheckButton(context.container);
+		context.shouldShowNext = true;
+		return correctCount; // Retornar el número total de respuestas correctas
+	}
+}
+
 /**
  * Maneja resultados específicos de fill in the blanks
  */

@@ -1,0 +1,33 @@
+{
+	"title": "Multi Fill in the Blanks - Simple Example",
+	"description": "A simple example to test the multi fill in the blanks functionality with basic sentences.",
+	"questions": [
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the sentences with the correct words:",
+			"questionParts": [
+				"My name ",
+				{
+					"answer": "is",
+					"label": "verb to be",
+					"alternatives": ["'s"]
+				},
+				" John. I ",
+				{
+					"answer": "live",
+					"label": "verb",
+					"alternatives": ["stay", "reside"]
+				},
+				" in New York. I ",
+				{
+					"answer": "work",
+					"label": "verb",
+					"alternatives": ["am working"]
+				},
+				" as a teacher."
+			],
+			"hint": "Use present simple tense for general facts and habits.",
+			"explanation": "This exercise practices basic present simple verbs: 'is' for identity, 'live' for residence, and 'work' for occupation."
+		}
+	]
+}

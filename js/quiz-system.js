@@ -286,7 +286,7 @@ function showQuestion(questionIndex) {
 	const exerciseType = questionData.type || "multiple_choice";
 
 	// Determinar si el ejercicio requiere verificación manual
-	const requiresManualCheck = ["fill_in_the_blanks", "short_answer", "ordering"].includes(exerciseType);
+	const requiresManualCheck = ["fill_in_the_blanks", "multi_fill_in_the_blanks", "short_answer", "ordering"].includes(exerciseType);
 
 	// Si requiere verificación manual, deshabilitar el botón siguiente
 	if (requiresManualCheck) {
@@ -347,6 +347,45 @@ function createFillInFeedbackMessage(answers, questionData) {
 	}
 
 	return message;
+}
+
+function createMultiFillInFeedbackMessage(answers, correctCount, questionData) {
+	const totalAnswers = answers.length;
+	const incorrectAnswers = answers.filter(({ input }) => input.classList.contains("incorrect"));
+
+	if (correctCount === totalAnswers) {
+		// Todas las respuestas correctas
+		const message = `¡Excelente! Has completado todas las respuestas correctamente (${correctCount}/${totalAnswers}).`;
+		return questionData.explanation ? `${message}\n\n${questionData.explanation}` : message;
+	} else if (correctCount > 0) {
+		// Algunas respuestas correctas
+		const incorrectList = incorrectAnswers.map(({ correctAnswer }, index) => `"${correctAnswer}"`).join(", ");
+
+		let message = `Has acertado ${correctCount} de ${totalAnswers} respuestas. `;
+
+		if (incorrectAnswers.length === 1) {
+			message += `La respuesta correcta es: ${incorrectList}`;
+		} else {
+			message += `Las respuestas correctas son: ${incorrectList}`;
+		}
+
+		if (questionData.hint) {
+			message += `\nPista: ${questionData.hint}`;
+		}
+
+		return message;
+	} else {
+		// Ninguna respuesta correcta
+		const correctAnswersList = answers.map(({ correctAnswer }) => `"${correctAnswer}"`).join(", ");
+
+		let message = `Ninguna respuesta es correcta. Las respuestas correctas son: ${correctAnswersList}`;
+
+		if (questionData.hint) {
+			message += `\nPista: ${questionData.hint}`;
+		}
+
+		return message;
+	}
 }
 
 // ---

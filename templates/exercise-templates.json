@@ -49,6 +49,37 @@
 			}
 		},
 
+		"multi_fill_in_the_blanks": {
+			"description": "Ejercicio de completar múltiples espacios en blanco en un texto largo. Cada espacio cuenta como una respuesta individual.",
+			"template": {
+				"type": "multi_fill_in_the_blanks",
+				"question": "Complete the text with the correct words:",
+				"questionParts": [
+					"I ",
+					{
+						"answer": "am",
+						"label": "verb to be",
+						"alternatives": ["'m"]
+					},
+					" Luis. I am 30 years old. I ",
+					{
+						"answer": "have",
+						"label": "verb to have",
+						"alternatives": ["'ve got", "have got"]
+					},
+					" a cat, called Mishardo. I am ",
+					{
+						"answer": "working",
+						"label": "present continuous",
+						"alternatives": ["employed"]
+					},
+					" from 9AM to 4PM."
+				],
+				"hint": "Think about the context of each sentence to choose the correct verb forms.",
+				"explanation": "Each blank tests different grammar points: verb to be, verb to have, and present continuous tense."
+			}
+		},
+
 		"matching": {
 			"description": "Ejercicio de emparejar elementos de dos columnas",
 			"template": {
@@ -147,6 +178,7 @@
 			"all_exercises": ["type", "question"],
 			"multiple_choice": ["answerOptions with isCorrect"],
 			"fill_in_the_blanks": ["questionParts with answer objects"],
+			"multi_fill_in_the_blanks": ["questionParts with answer objects"],
 			"matching": ["pairs array"],
 			"true_false": ["answer (boolean)", "explanation"],
 			"short_answer": ["correctAnswer"],

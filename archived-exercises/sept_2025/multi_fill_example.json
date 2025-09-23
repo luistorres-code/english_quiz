@@ -1,0 +1,84 @@
+{
+	"title": "Multi Fill in the Blanks Example - Personal Introduction",
+	"description": "Complete the text about Luis with the correct words. Each blank counts as an individual answer.",
+	"questions": [
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the text about Luis with the correct words:",
+			"questionParts": [
+				"I ",
+				{
+					"answer": "am",
+					"label": "verb to be",
+					"alternatives": ["'m"]
+				},
+				" Luis. I am 30 years old. I ",
+				{
+					"answer": "have",
+					"label": "verb to have",
+					"alternatives": ["'ve got", "have got"]
+				},
+				" a cat, called Mishardo. I am ",
+				{
+					"answer": "working",
+					"label": "work present continuous",
+					"alternatives": ["employed"]
+				},
+				" from 9AM to 4PM. Every morning, I ",
+				{
+					"answer": "wake up",
+					"label": "phrasal verb",
+					"alternatives": ["get up", "awake"]
+				},
+				" at 7:00 AM and ",
+				{
+					"answer": "prepare",
+					"label": "prepare verb",
+					"alternatives": ["make", "get ready"]
+				},
+				" breakfast for myself and my cat."
+			],
+			"hint": "Think about the context of each sentence: personal information, possession, current activity, daily routine.",
+			"explanation": "Each blank tests different grammar points: verb to be (am), verb to have (have), present continuous (working), phrasal verbs (wake up), and action verbs (prepare)."
+		},
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete this story about a typical day:",
+			"questionParts": [
+				"Yesterday, I ",
+				{
+					"answer": "went",
+					"label": "past tense",
+					"alternatives": ["traveled"]
+				},
+				" to the store. I ",
+				{
+					"answer": "bought",
+					"label": "past tense",
+					"alternatives": ["purchased"]
+				},
+				" some groceries and ",
+				{
+					"answer": "met",
+					"label": "past tense",
+					"alternatives": ["encountered", "saw"]
+				},
+				" my friend there. We ",
+				{
+					"answer": "talked",
+					"label": "past tense",
+					"alternatives": ["chatted", "spoke"]
+				},
+				" for a few minutes before I ",
+				{
+					"answer": "returned",
+					"label": "past tense",
+					"alternatives": ["went back", "came back"]
+				},
+				" home."
+			],
+			"hint": "All verbs should be in the past tense since the story happened 'yesterday'.",
+			"explanation": "This exercise practices past tense verbs in context: went (irregular), bought (irregular), met (irregular), talked (regular), and returned (regular)."
+		}
+	]
+}

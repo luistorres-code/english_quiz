@@ -1,0 +1,205 @@
+{
+	"title": "Irregular Verbs in Context - Level B1",
+	"description": "Practica el uso de verbos irregulares en contextos reales. Completa textos y oraciones usando las formas correctas de verbos irregulares.",
+	"level": "B1",
+	"category": "irregular_verbs",
+	"estimatedTime": "20 minutes",
+	"questions": [
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the story about Sarah's weekend with the correct verb forms:",
+			"questionParts": [
+				"Last weekend, Sarah ",
+				{
+					"answer": "woke",
+					"label": "past simple of 'wake'",
+					"alternatives": ["woke up"]
+				},
+				" up early on Saturday morning. She ",
+				{
+					"answer": "had",
+					"label": "past simple of 'have'",
+					"alternatives": []
+				},
+				" planned to meet her friends at the park. Before leaving, she ",
+				{
+					"answer": "made",
+					"label": "past simple of 'make'",
+					"alternatives": []
+				},
+				" herself a quick breakfast. When she arrived, her friends ",
+				{
+					"answer": "were",
+					"label": "past continuous of 'be'",
+					"alternatives": []
+				},
+				" already playing volleyball. They ",
+				{
+					"answer": "spent",
+					"label": "past simple of 'spend'",
+					"alternatives": []
+				},
+				" the whole morning having fun in the sun."
+			],
+			"hint": "All verbs should be in past tense forms. Pay attention to irregular past forms.",
+			"explanation": "This exercise practices common irregular verbs in past tense within a narrative context."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct form of 'break':",
+			"questionParts": [
+				"I'm sorry, I have ",
+				{
+					"answer": "broken",
+					"label": "past participle"
+				},
+				" your favorite mug."
+			],
+			"hint": "Use present perfect tense (have + past participle)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the sentence with the correct use of irregular verbs:",
+			"answerOptions": [
+				{
+					"text": "He has never driven a motorcycle before.",
+					"isCorrect": true,
+					"rationale": "'Driven' is the correct past participle of 'drive' used with present perfect."
+				},
+				{
+					"text": "He has never drived a motorcycle before.",
+					"isCorrect": false,
+					"rationale": "'Drive' is irregular; the past participle is 'driven', not 'drived'."
+				},
+				{
+					"text": "He has never drove a motorcycle before.",
+					"isCorrect": false,
+					"rationale": "'Drove' is past simple, not past participle. We need 'driven' with 'has'."
+				},
+				{
+					"text": "He never has driven a motorcycle before.",
+					"isCorrect": false,
+					"rationale": "Word order is incorrect. 'Has' should come before 'never'."
+				}
+			],
+			"hint": "Present perfect uses have/has + past participle."
+		},
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the conversation with the correct forms:",
+			"questionParts": [
+				"A: 'Have you ever ",
+				{
+					"answer": "been",
+					"label": "past participle of 'be'",
+					"alternatives": []
+				},
+				" to Paris?'\nB: 'Yes, I ",
+				{
+					"answer": "went",
+					"label": "past simple of 'go'",
+					"alternatives": []
+				},
+				" there last summer. I ",
+				{
+					"answer": "took",
+					"label": "past simple of 'take'",
+					"alternatives": []
+				},
+				" many photos of the Eiffel Tower.'\nA: 'That sounds amazing! I have never ",
+				{
+					"answer": "seen",
+					"label": "past participle of 'see'",
+					"alternatives": []
+				},
+				" it in person.'"
+			],
+			"hint": "Mix of present perfect (have + past participle) and past simple forms.",
+			"explanation": "This conversation practices switching between present perfect and past simple with irregular verbs."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct sentence with irregular verbs:",
+			"items": ["has", "always", "the truth", "told", "she"],
+			"correctOrder": ["she", "has", "always", "told", "the truth"],
+			"explanation": "Present perfect: Subject + has/have + always + past participle + object. 'Told' is the past participle of 'tell'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses the past perfect tense?",
+			"answerOptions": [
+				{
+					"text": "When I arrived, they had already eaten dinner.",
+					"isCorrect": true,
+					"rationale": "Past perfect (had + past participle) shows an action completed before another past action."
+				},
+				{
+					"text": "When I arrived, they had already ate dinner.",
+					"isCorrect": false,
+					"rationale": "'Ate' is past simple, not past participle. Should be 'eaten'."
+				},
+				{
+					"text": "When I arrived, they already eaten dinner.",
+					"isCorrect": false,
+					"rationale": "Missing the auxiliary 'had' for past perfect."
+				},
+				{
+					"text": "When I arrived, they have already eaten dinner.",
+					"isCorrect": false,
+					"rationale": "Should be 'had' (past perfect), not 'have' (present perfect)."
+				}
+			],
+			"hint": "Past perfect = had + past participle"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct form of 'forget':",
+			"questionParts": [
+				"Oh no! I ",
+				{
+					"answer": "forgot",
+					"label": "past simple"
+				},
+				" to bring my umbrella, and now it's raining!"
+			],
+			"hint": "This is a simple past action that happened earlier."
+		},
+		{
+			"type": "matching",
+			"question": "Match each sentence beginning with the correct ending:",
+			"pairs": [
+				{
+					"text1": "She has always been...",
+					"text2": "very kind to everyone."
+				},
+				{
+					"text1": "They had already left...",
+					"text2": "when we arrived at the party."
+				},
+				{
+					"text1": "I have never understood...",
+					"text2": "why he made that decision."
+				},
+				{
+					"text1": "We all knew she had won...",
+					"text2": "the competition before the official announcement."
+				}
+			],
+			"hint": "Pay attention to the tense in each sentence beginning."
+		},
+		{
+			"type": "true_false",
+			"question": "In the sentence 'I have swum in the ocean before', the verb form is correct.",
+			"answer": true,
+			"explanation": "'Swum' is the correct past participle of 'swim' (swim - swam - swum), used properly with present perfect 'have'."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the past simple form of 'ring' (as in ring a bell)?",
+			"correctAnswer": "rang",
+			"alternatives": ["ringed"],
+			"caseSensitive": false,
+			"explanation": "The verb 'ring' is irregular: ring - rang - rung. 'Rang' is the past simple form."
+		}
+	]
+}
