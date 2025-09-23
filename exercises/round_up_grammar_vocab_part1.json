@@ -1,0 +1,214 @@
+{
+	"title": "Grammar & Vocabulary Round-Up - Part 1",
+	"description": "Ejercicio comprehensivo que cubre vocabulario, phrasal verbs, reported speech y estructuras condicionales. Perfecto para repasar múltiples temas de nivel B1-B2.",
+	"level": "B1-B2",
+	"category": "mixed_grammar_vocabulary",
+	"estimatedTime": "25 minutes",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "The chef needs to ________ the soup before serving it to check if it needs more salt.",
+			"answerOptions": [
+				{
+					"text": "taste",
+					"isCorrect": true,
+					"rationale": "'Taste' is the correct verb for checking the flavor of food."
+				},
+				{
+					"text": "smell",
+					"isCorrect": false,
+					"rationale": "While you can smell food, 'taste' is more appropriate for checking seasoning."
+				},
+				{
+					"text": "touch",
+					"isCorrect": false,
+					"rationale": "'Touch' is not appropriate for checking food flavor."
+				},
+				{
+					"text": "hear",
+					"isCorrect": false,
+					"rationale": "'Hear' has nothing to do with checking food flavor."
+				}
+			],
+			"hint": "Think about what action you do to check if food needs more seasoning."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the reported speech transformation:",
+			"questionParts": [
+				"Sarah said: 'I will finish the project tomorrow.' → Sarah said that she ",
+				{
+					"answer": "would finish",
+					"label": "future in reported speech"
+				},
+				" the project the following day."
+			],
+			"hint": "Remember: 'will' changes to 'would' in reported speech, and 'tomorrow' becomes 'the following day'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "If I ________ more money, I ________ around the world.",
+			"answerOptions": [
+				{
+					"text": "had / would travel",
+					"isCorrect": true,
+					"rationale": "This is the correct second conditional structure: If + past simple, would + base verb."
+				},
+				{
+					"text": "have / will travel",
+					"isCorrect": false,
+					"rationale": "This is first conditional, not appropriate for hypothetical situations."
+				},
+				{
+					"text": "had / will travel",
+					"isCorrect": false,
+					"rationale": "Mixed conditional forms are incorrect here."
+				},
+				{
+					"text": "would have / traveled",
+					"isCorrect": false,
+					"rationale": "This is third conditional structure, not second."
+				}
+			],
+			"hint": "This is a hypothetical situation (second conditional)."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the wish sentence:",
+			"questionParts": [
+				"I don't speak French, but I'm going to Paris next month. I wish I ",
+				{
+					"answer": "could speak",
+					"label": "wish + ability"
+				},
+				" French."
+			],
+			"hint": "Use 'wish + could + base verb' to express a desired ability."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "The band's new ________ includes twelve songs and will be released next month.",
+			"answerOptions": [
+				{
+					"text": "album",
+					"isCorrect": true,
+					"rationale": "An 'album' is a collection of songs released together."
+				},
+				{
+					"text": "track",
+					"isCorrect": false,
+					"rationale": "A 'track' is a single song, not a collection."
+				},
+				{
+					"text": "studio",
+					"isCorrect": false,
+					"rationale": "A 'studio' is a place where music is recorded."
+				},
+				{
+					"text": "concert",
+					"isCorrect": false,
+					"rationale": "A 'concert' is a live performance, not a recorded collection."
+				}
+			],
+			"hint": "Think about what contains multiple songs that are sold together."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform to reported speech:",
+			"questionParts": [
+				"'Don't forget to buy milk,' my mother said. → My mother ",
+				{
+					"answer": "told me not to forget",
+					"label": "reported imperative"
+				},
+				" to buy milk."
+			],
+			"hint": "Negative imperatives in reported speech use 'told + person + not to + verb'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Could you turn ________ the music? It's too loud and I can't concentrate.",
+			"answerOptions": [
+				{
+					"text": "down",
+					"isCorrect": true,
+					"rationale": "'Turn down' means to reduce the volume."
+				},
+				{
+					"text": "up",
+					"isCorrect": false,
+					"rationale": "'Turn up' means to increase the volume."
+				},
+				{
+					"text": "off",
+					"isCorrect": false,
+					"rationale": "'Turn off' means to stop completely, but the speaker just wants it quieter."
+				},
+				{
+					"text": "on",
+					"isCorrect": false,
+					"rationale": "'Turn on' means to start, but the music is already playing."
+				}
+			],
+			"hint": "The music is too loud, so what action would make it better for concentration?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the conditional sentence:",
+			"questionParts": [
+				"If she ",
+				{
+					"answer": "studied",
+					"label": "past simple"
+				},
+				" harder, she ",
+				{
+					"answer": "would pass",
+					"label": "conditional"
+				},
+				" the exam."
+			],
+			"hint": "Second conditional: If + past simple, would + base verb."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "The lion stalked its ________ through the tall grass before attacking.",
+			"answerOptions": [
+				{
+					"text": "prey",
+					"isCorrect": true,
+					"rationale": "'Prey' refers to animals that are hunted by predators."
+				},
+				{
+					"text": "predator",
+					"isCorrect": false,
+					"rationale": "A 'predator' is the hunter, not the hunted."
+				},
+				{
+					"text": "pack",
+					"isCorrect": false,
+					"rationale": "A 'pack' is a group of animals, not something being hunted."
+				},
+				{
+					"text": "habitat",
+					"isCorrect": false,
+					"rationale": "A 'habitat' is a living environment, not something being hunted."
+				}
+			],
+			"hint": "What does a lion hunt?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the wish sentence about a past regret:",
+			"questionParts": [
+				"I didn't study enough for the test. I wish I ",
+				{
+					"answer": "had studied",
+					"label": "wish + past perfect"
+				},
+				" more."
+			],
+			"hint": "For past regrets, use 'wish + had + past participle'."
+		}
+	]
+}

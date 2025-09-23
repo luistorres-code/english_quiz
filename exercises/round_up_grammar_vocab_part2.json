@@ -1,0 +1,224 @@
+{
+	"title": "Grammar & Vocabulary Round-Up - Part 2",
+	"description": "Segundo ejercicio comprehensivo con enfoque en situaciones reales. Cubre cooking vocabulary, reported speech, wish sentences y estructuras condicionales en contextos prácticos.",
+	"level": "B1-B2",
+	"category": "mixed_grammar_vocabulary",
+	"estimatedTime": "22 minutes",
+	"questions": [
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the cooking instructions with the correct vocabulary:",
+			"questionParts": [
+				"To make a perfect omelet, first ",
+				{
+					"answer": "beat",
+					"label": "cooking verb",
+					"alternatives": ["whisk"]
+				},
+				" three eggs in a bowl. Heat some oil in a ",
+				{
+					"answer": "frying pan",
+					"label": "cooking utensil",
+					"alternatives": ["pan"]
+				},
+				" and ",
+				{
+					"answer": "pour",
+					"label": "cooking action",
+					"alternatives": []
+				},
+				" the egg mixture into it. When it's almost ready, ",
+				{
+					"answer": "fold",
+					"label": "cooking technique",
+					"alternatives": []
+				},
+				" it in half and serve immediately."
+			],
+			"hint": "Think about the specific verbs and tools used in cooking.",
+			"explanation": "This exercise practices cooking vocabulary essential for following recipes."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct reported speech sentence:",
+			"items": ["asked", "where", "the", "he", "concert", "was"],
+			"correctOrder": ["he", "asked", "where", "the", "concert", "was"],
+			"explanation": "In reported questions, the word order is: subject + reporting verb + question word + subject + verb (no inversion)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "The ________ between different cultures often involve special foods and ceremonies.",
+			"answerOptions": [
+				{
+					"text": "traditions",
+					"isCorrect": true,
+					"rationale": "'Traditions' are customs passed down through generations in cultures."
+				},
+				{
+					"text": "invitations",
+					"isCorrect": false,
+					"rationale": "'Invitations' are requests to attend events, not cultural customs."
+				},
+				{
+					"text": "celebrations",
+					"isCorrect": false,
+					"rationale": "While related, 'traditions' is more comprehensive for ongoing cultural practices."
+				},
+				{
+					"text": "ingredients",
+					"isCorrect": false,
+					"rationale": "'Ingredients' are components of recipes, not cultural practices."
+				}
+			],
+			"hint": "Think about cultural practices that are passed down through generations."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this dialogue into reported speech:",
+			"questionParts": [
+				"Teacher: 'Study hard for the exam next week.' → The teacher ",
+				{
+					"answer": "told us to study",
+					"label": "reported imperative"
+				},
+				" hard for the exam the following week."
+			],
+			"hint": "Positive imperatives become 'told + person + to + verb' in reported speech."
+		},
+		{
+			"type": "matching",
+			"question": "Match each phrasal verb with its correct meaning:",
+			"pairs": [
+				{
+					"text1": "turn up",
+					"text2": "increase volume/intensity"
+				},
+				{
+					"text1": "put up",
+					"text2": "provide accommodation"
+				},
+				{
+					"text1": "give up",
+					"text2": "stop trying/quit"
+				},
+				{
+					"text1": "look up",
+					"text2": "search for information"
+				}
+			],
+			"hint": "Think about the context where each phrasal verb would be used."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete this wish sentence about a current situation:",
+			"questionParts": [
+				"It's raining and I don't have an umbrella. I wish it ",
+				{
+					"answer": "weren't raining",
+					"label": "wish + past continuous"
+				},
+				" right now."
+			],
+			"hint": "For current situations you want to change, use 'wish + past tense'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "If you ________ the recipe carefully, the cake ________ perfect.",
+			"answerOptions": [
+				{
+					"text": "follow / will be",
+					"isCorrect": true,
+					"rationale": "First conditional: If + present simple, will + base verb for real possibilities."
+				},
+				{
+					"text": "followed / would be",
+					"isCorrect": false,
+					"rationale": "Second conditional is for hypothetical situations, not real advice."
+				},
+				{
+					"text": "had followed / would have been",
+					"isCorrect": false,
+					"rationale": "Third conditional is for past hypothetical situations."
+				},
+				{
+					"text": "follow / would be",
+					"isCorrect": false,
+					"rationale": "Mixed conditional forms are incorrect here."
+				}
+			],
+			"hint": "This is practical advice about a real possibility (first conditional)."
+		},
+		{
+			"type": "true_false",
+			"question": "In the sentence 'She said she was going to the market,' the reported speech correctly shows a past continuous action.",
+			"answer": false,
+			"explanation": "'Was going' here represents 'going to' future from the past, not past continuous. It's the reported form of 'I am going to the market.'"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the conditional sentence:",
+			"questionParts": [
+				"I'm not brave enough to bungee jump. If I ",
+				{
+					"answer": "were",
+					"label": "subjunctive 'be'"
+				},
+				" braver, I ",
+				{
+					"answer": "would try",
+					"label": "conditional"
+				},
+				" it."
+			],
+			"hint": "Use 'were' (not 'was') in the if-clause of second conditional with 'I'."
+		},
+		{
+			"type": "short_answer",
+			"question": "What cooking utensil do you use to mix ingredients thoroughly and incorporate air?",
+			"correctAnswer": "whisk",
+			"alternatives": ["a whisk", "mixer", "beater"],
+			"caseSensitive": false,
+			"explanation": "A whisk is specifically designed to mix ingredients and incorporate air, especially useful for eggs and cream."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "The detective managed to ________ the criminal who had been hiding in the forest.",
+			"answerOptions": [
+				{
+					"text": "capture",
+					"isCorrect": true,
+					"rationale": "'Capture' means to catch and hold someone, especially a criminal."
+				},
+				{
+					"text": "escape",
+					"isCorrect": false,
+					"rationale": "'Escape' means to get away, which is what the criminal was trying to do."
+				},
+				{
+					"text": "release",
+					"isCorrect": false,
+					"rationale": "'Release' means to set free, the opposite of what happened."
+				},
+				{
+					"text": "approach",
+					"isCorrect": false,
+					"rationale": "'Approach' means to come near, but doesn't imply catching."
+				}
+			],
+			"hint": "What does a detective do when they find a criminal they've been chasing?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform to reported speech:",
+			"questionParts": [
+				"'Have you finished your homework?' the teacher asked. → The teacher asked ",
+				{
+					"answer": "if we had finished",
+					"label": "reported yes/no question"
+				},
+				" our homework."
+			],
+			"hint": "Yes/no questions in reported speech use 'if' or 'whether' and change the tense back."
+		}
+	]
+}

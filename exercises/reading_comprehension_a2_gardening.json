@@ -1,0 +1,80 @@
+{
+	"title": "Reading Comprehension A2: Emma's New Hobby",
+	"description": "Nivel A2 - Lee sobre Emma y su nuevo pasatiempo de jardinería. Practica vocabulario relacionado con hobbies y actividades cotidianas.",
+	"level": "A2",
+	"category": "reading_comprehension",
+	"estimatedTime": "12 minutes",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about Emma's new hobby and answer the questions:",
+			"readingText": ["Emma is a 28-year-old teacher who lives in Manchester. Last spring, she decided to start a new hobby because she felt stressed from work and wanted to relax in her free time.", "She chose gardening because her grandmother had a beautiful garden when Emma was a child. Emma bought some basic tools: a shovel, gloves, and a watering can. She also purchased seeds for tomatoes, carrots, and flowers.", "At first, gardening was very difficult for Emma. She didn't know when to water the plants or how much sunlight they needed. Some of her first plants died because she gave them too much water. However, she didn't give up and decided to read books about gardening.", "Now, six months later, Emma has a lovely small garden behind her house. She grows fresh vegetables that she uses for cooking. Her tomatoes are red and delicious, and her flowers make her garden colorful and beautiful. Emma says gardening helps her feel calm and happy after a long day at school.", "Emma's friends are impressed with her garden. They often visit her on weekends to see her plants and eat fresh salads made with her vegetables. Emma is already planning to expand her garden next year and grow even more varieties of plants."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "Why did Emma decide to start gardening?",
+					"answerOptions": [
+						{ "text": "Because she wanted to save money on food", "isCorrect": false },
+						{ "text": "Because she felt stressed and wanted to relax", "isCorrect": true },
+						{ "text": "Because her friends recommended it", "isCorrect": false },
+						{ "text": "Because she had too much free time", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What is Emma's job?",
+					"correctAnswer": "teacher",
+					"alternatives": ["she is a teacher", "Emma is a teacher", "a teacher"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What tools did Emma buy for gardening?",
+					"answerOptions": [
+						{ "text": "A shovel, gloves, and a watering can", "isCorrect": true },
+						{ "text": "Seeds, books, and a basket", "isCorrect": false },
+						{ "text": "A ladder, rope, and scissors", "isCorrect": false },
+						{ "text": "Pots, soil, and fertilizer", "isCorrect": false }
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "Emma was immediately successful with her first plants.",
+					"answer": false,
+					"explanation": "The text states that some of her first plants died because she gave them too much water, showing she wasn't immediately successful."
+				},
+				{
+					"type": "short_answer",
+					"questionText": "How long has Emma been gardening now?",
+					"correctAnswer": "six months",
+					"alternatives": ["6 months", "six months later", "half a year"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What vegetables does Emma grow?",
+					"answerOptions": [
+						{ "text": "Potatoes and onions", "isCorrect": false },
+						{ "text": "Tomatoes and carrots", "isCorrect": true },
+						{ "text": "Lettuce and cucumbers", "isCorrect": false },
+						{ "text": "Beans and peppers", "isCorrect": false }
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "Emma plans to make her garden smaller next year.",
+					"answer": false,
+					"explanation": "Emma is planning to expand her garden next year, not make it smaller."
+				},
+				{
+					"type": "short_answer",
+					"questionText": "Who inspired Emma to start gardening?",
+					"correctAnswer": "her grandmother",
+					"alternatives": ["grandmother", "her grandma", "grandma"],
+					"caseSensitive": false
+				}
+			],
+			"hint": "Read each paragraph carefully. The questions follow the same order as the information in the text."
+		}
+	]
+}

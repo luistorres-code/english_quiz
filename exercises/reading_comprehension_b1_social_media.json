@@ -1,0 +1,90 @@
+{
+	"title": "Reading Comprehension B1: The Impact of Social Media on Modern Communication",
+	"description": "Nivel B1 - Analiza cómo las redes sociales han transformado la comunicación moderna. Practica comprensión crítica y análisis de argumentos.",
+	"level": "B1",
+	"category": "reading_comprehension",
+	"estimatedTime": "18 minutes",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about social media's impact on communication and answer the questions:",
+			"readingText": ["Social media platforms have revolutionized the way we communicate, creating both unprecedented opportunities and significant challenges for human interaction. What began as simple networking tools have evolved into complex ecosystems that influence everything from personal relationships to global politics.", "On the positive side, social media has democratized communication, allowing people from different backgrounds and geographical locations to connect instantly. Families separated by continents can maintain close relationships through video calls and instant messaging. Small businesses can reach global audiences without massive advertising budgets, and social movements can organize and spread awareness more effectively than ever before.", "However, this digital revolution has also created new problems. The constant stream of information can be overwhelming, leading to what psychologists call 'information overload.' Many users report feeling anxious or depressed after spending time on social media, particularly when comparing their lives to the carefully curated content others share. Furthermore, the speed and anonymity of online communication sometimes encourage impulsive or aggressive behavior that people would never exhibit in face-to-face interactions.", "Perhaps most concerning is the rise of 'echo chambers' - environments where people only encounter information and opinions that reinforce their existing beliefs. Social media algorithms, designed to keep users engaged, often show content similar to what users have previously liked or shared. This can lead to increased polarization and make it difficult for people to understand different perspectives or engage in constructive dialogue.", "Despite these challenges, social media isn't inherently good or bad. Like any powerful tool, its impact depends on how we use it. Digital literacy education, better platform design, and conscious user behavior could help maximize the benefits while minimizing the negative effects. The key is finding a balance that allows us to stay connected without losing our ability to think critically and communicate meaningfully."],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "According to the text, what is the main transformation social media has brought to communication?",
+					"answerOptions": [
+						{ "text": "It has made communication slower but more thoughtful", "isCorrect": false },
+						{ "text": "It has created both opportunities and challenges for human interaction", "isCorrect": true },
+						{ "text": "It has only benefited large corporations", "isCorrect": false },
+						{ "text": "It has completely replaced face-to-face communication", "isCorrect": false }
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What psychological condition is mentioned in relation to excessive information consumption?",
+					"correctAnswer": "information overload",
+					"alternatives": ["information overload syndrome", "overload", "info overload"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What are 'echo chambers' as described in the text?",
+					"answerOptions": [
+						{ "text": "Environments where people only encounter reinforcing information and opinions", "isCorrect": true },
+						{ "text": "Physical spaces designed for social media use", "isCorrect": false },
+						{ "text": "Advanced audio features in social platforms", "isCorrect": false },
+						{ "text": "Groups of people who don't use social media", "isCorrect": false }
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "The text suggests that social media is inherently negative for society.",
+					"answer": false,
+					"explanation": "The text explicitly states that social media 'isn't inherently good or bad' and that its impact depends on how we use it."
+				},
+				{
+					"type": "short_answer",
+					"questionText": "According to the passage, what can help maximize social media benefits while minimizing negative effects?",
+					"correctAnswer": "Digital literacy education, better platform design, and conscious user behavior",
+					"alternatives": ["digital literacy education", "better platform design", "conscious user behavior", "education and better design"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "Why might people behave more aggressively online than in person?",
+					"answerOptions": [
+						{ "text": "Because social media platforms encourage it", "isCorrect": false },
+						{ "text": "Because of the speed and anonymity of online communication", "isCorrect": true },
+						{ "text": "Because they have more time to think online", "isCorrect": false },
+						{ "text": "Because online communication is more formal", "isCorrect": false }
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "Social media algorithms are designed to show users diverse viewpoints to encourage debate.",
+					"answer": false,
+					"explanation": "The text states that algorithms are designed to keep users engaged by showing content similar to what they've previously liked, which can create echo chambers rather than diverse viewpoints."
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What positive example does the text give about families using social media?",
+					"correctAnswer": "Families separated by continents can maintain close relationships",
+					"alternatives": ["maintaining close relationships", "staying connected across continents", "video calls and messaging"],
+					"caseSensitive": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does the author suggest is the key to using social media effectively?",
+					"answerOptions": [
+						{ "text": "Avoiding it completely", "isCorrect": false },
+						{ "text": "Using it only for business purposes", "isCorrect": false },
+						{ "text": "Finding a balance between staying connected and thinking critically", "isCorrect": true },
+						{ "text": "Spending more time on platforms to understand them better", "isCorrect": false }
+					]
+				}
+			],
+			"hint": "This text presents multiple perspectives on social media. Pay attention to both positive and negative aspects mentioned, and notice how the author maintains a balanced viewpoint throughout."
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"RoundUp8": {
+		"A": {
+			"type": "circle_the_correct_option",
+			"instructions": "Circle the correct options.",
+			"examples": [
+				{ "question": "I can’t hear the TV. Can you turn up / down the volume?", "answer": "turn up" },
+				{ "question": "Let me interrupt / introduce you to my cousin, Justin.", "answer": "introduce" },
+				{ "question": "I don’t like any of the songs on this track / album.", "answer": "album" },
+				{ "question": "Leave the butter in the frying pan until it melts / pours.", "answer": "melts" },
+				{ "question": "Sean wanted to make lasagna, but he didn’t have any of the ingredients / instructions.", "answer": "ingredients" },
+				{ "question": "She called me a coward / warrior because I was afraid of the mouse.", "answer": "coward" },
+				{ "question": "The wolf carried its tribe / prey to the other side of the forest before eating it.", "answer": "prey" },
+				{ "question": "Sophie and Barry made their own invitations / traditions for their wedding.", "answer": "invitations" }
+			]
+		},
+		"B": {
+			"type": "choose_a_b_c",
+			"instructions": "Choose a, b, or c.",
+			"examples": [
+				{ "question": "The lead singer of this band has an amazing ________. Listen to her!", "options": ["studio", "voice", "recording"], "answer": "voice" },
+				{ "question": "Put water in a(n) ________ and let it boil.", "options": ["casserole dish", "whisk", "saucepan"], "answer": "saucepan" },
+				{ "question": "When the cake is ready, ________ it in some aluminum foil.", "options": ["wrap", "mix", "shape"], "answer": "wrap" },
+				{ "question": "Ralph, can you open a ________ of beans for me?", "options": ["slice", "plate", "can"], "answer": "can" },
+				{ "question": "The thieves tried to ________ the ancient statue, but it was too heavy for them to move.", "options": ["steal", "shoot", "approach"], "answer": "steal" },
+				{ "question": "Can you put me ________ for the night? I have nowhere to stay.", "options": ["up", "in", "down"], "answer": "up" }
+			]
+		},
+		"C": {
+			"type": "reported_speech",
+			"instructions": "Rewrite the sentences using Reported Speech.",
+			"examples": [
+				{ "direct": "Jack said, 'I went to my best friend’s wedding last weekend.'", "reported": "Jack said (that) he had gone to his best friend’s wedding the weekend before." },
+				{ "direct": "“Where is the aluminum foil?” Julia asked.", "reported": "Julia asked where the aluminum foil was." },
+				{ "direct": "Amelia said, 'Don’t touch the knife, Mark.'", "reported": "Amelia told Mark not to touch the knife." },
+				{ "direct": "My father said, 'I’m going to send the invitations tomorrow.'", "reported": "My father said (that) he was going to send the invitations the next day." }
+			]
+		},
+		"D": {
+			"type": "dialogue_completion",
+			"instructions": "Complete the dialogue with the correct form of the verbs in parentheses.",
+			"examples": [
+				{
+					"dialogue": ["A: It was Mary’s birthday yesterday and I forgot about it. Now she won’t speak to me.", "B: (1) ________ (you / be) angry if I (forget) ________ your birthday?", "A: Yeah. I would.", "A: What should I do?", "B: Well, if I (3) ________ (be) you, I (4) ________ (buy) her a nice present to apologize.", "A: If I (5) ________ (have) time, I (6) ________ (do) it. But I have to work overtime today. Could you go to the mall and get her something?", "B: I’m afraid I can’t. My car’s at the mechanic’s. I (7) ________ (go) if I (8) ________ (not have) a problem with my car.", "A: That’s OK. I’ll see what I can do."]
+				}
+			]
+		},
+		"E": {
+			"type": "wish_sentences",
+			"instructions": "Read the situations and make sentences using wish.",
+			"examples": [
+				{ "situation": "I want to be able to compose great songs.", "wish": "I wish I could compose great songs." },
+				{ "situation": "My friend’s wedding is next week. I have a lot of work to do and I can’t go.", "wish": "I wish I could go to my friend’s wedding." },
+				{ "situation": "I want to make goulash, but I don’t have the recipe.", "wish": "I wish I had the recipe for goulash." },
+				{ "situation": "I’m in Hong Kong, but I don’t know how they greet people here.", "wish": "I wish I knew how they greet people in Hong Kong." }
+			]
+		}
+	}
+}
