@@ -1,0 +1,253 @@
+{
+	"title": "Reported Speech (Estilo Indirecto)",
+	"subtitle": "Cómo reportar lo que otros dijeron",
+	"level": "B1-B2",
+	"estimatedTime": "25-30 minutos",
+	"sections": [
+		{
+			"title": "Afirmaciones (Statements)",
+			"structure": "Subject + said (that) / told someone (that) + reported statement",
+			"description": "Para reportar declaraciones, usamos 'said' o 'told' y cambiamos tiempos verbales.",
+			"uses": [
+				{
+					"use": "Reportar con 'said'",
+					"example": "\"I am tired.\" → He said (that) he was tired.",
+					"translation": "\"Estoy cansado.\" → Él dijo que estaba cansado.",
+					"note": "Usamos 'said' sin objeto directo."
+				},
+				{
+					"use": "Reportar con 'told'",
+					"example": "\"I will call you.\" → She told me (that) she would call me.",
+					"translation": "\"Te llamaré.\" → Ella me dijo que me llamaría.",
+					"note": "Usamos 'told' + objeto directo (me, him, her, etc.)."
+				}
+			],
+			"verbChanges": {
+				"title": "Cambios de Tiempos Verbales",
+				"changes": [
+					{
+						"direct": "Present Simple",
+						"reported": "Past Simple",
+						"example": "\"I work here.\" → He said he worked there."
+					},
+					{
+						"direct": "Present Continuous",
+						"reported": "Past Continuous",
+						"example": "\"I am working.\" → She said she was working."
+					},
+					{
+						"direct": "Past Simple",
+						"reported": "Past Perfect",
+						"example": "\"I went home.\" → He said he had gone home."
+					},
+					{
+						"direct": "Present Perfect",
+						"reported": "Past Perfect",
+						"example": "\"I have finished.\" → She said she had finished."
+					},
+					{
+						"direct": "Will",
+						"reported": "Would",
+						"example": "\"I will call.\" → He said he would call."
+					},
+					{
+						"direct": "Can",
+						"reported": "Could",
+						"example": "\"I can help.\" → She said she could help."
+					},
+					{
+						"direct": "Must",
+						"reported": "Had to",
+						"example": "\"I must go.\" → He said he had to go."
+					}
+				]
+			},
+			"timeChanges": {
+				"title": "Cambios de Expresiones de Tiempo",
+				"changes": [
+					{
+						"direct": "today",
+						"reported": "that day",
+						"example": "\"I'm busy today.\" → He said he was busy that day."
+					},
+					{
+						"direct": "yesterday",
+						"reported": "the previous day / the day before",
+						"example": "\"I saw him yesterday.\" → She said she had seen him the previous day."
+					},
+					{
+						"direct": "tomorrow",
+						"reported": "the next day / the following day",
+						"example": "\"I'll call tomorrow.\" → He said he would call the next day."
+					},
+					{
+						"direct": "next week",
+						"reported": "the following week",
+						"example": "\"I'm traveling next week.\" → She said she was traveling the following week."
+					},
+					{
+						"direct": "last week",
+						"reported": "the previous week / the week before",
+						"example": "\"I visited last week.\" → He said he had visited the previous week."
+					},
+					{
+						"direct": "now",
+						"reported": "then / at that moment",
+						"example": "\"I'm leaving now.\" → She said she was leaving then."
+					},
+					{
+						"direct": "here",
+						"reported": "there",
+						"example": "\"I live here.\" → He said he lived there."
+					}
+				]
+			}
+		},
+		{
+			"title": "Preguntas (Questions)",
+			"structure": "Subject + asked + (if/whether OR wh-word) + statement order",
+			"description": "Para reportar preguntas, usamos 'asked' y cambiamos el orden a forma de declaración.",
+			"uses": [
+				{
+					"use": "Preguntas Yes/No",
+					"example": "\"Are you coming?\" → She asked if/whether I was coming.",
+					"translation": "\"¿Vienes?\" → Ella preguntó si yo venía.",
+					"note": "Usamos 'if' o 'whether' para preguntas de sí/no."
+				},
+				{
+					"use": "Preguntas con Wh-",
+					"example": "\"Where do you live?\" → He asked where I lived.",
+					"translation": "\"¿Dónde vives?\" → Él preguntó dónde vivía.",
+					"note": "Mantenemos la palabra interrogativa (what, where, why, etc.)."
+				},
+				{
+					"use": "Preguntas con objeto",
+					"example": "\"What time is it?\" → She asked what time it was.",
+					"translation": "\"¿Qué hora es?\" → Ella preguntó qué hora era.",
+					"note": "Cambiamos a orden de declaración: sujeto + verbo."
+				}
+			],
+			"forms": {
+				"yesNoQuestions": {
+					"structure": "Subject + asked + if/whether + statement",
+					"examples": ["\"Do you like coffee?\" → He asked if I liked coffee.", "\"Have you finished?\" → She asked whether I had finished.", "\"Can you help me?\" → He asked if I could help him."]
+				},
+				"whQuestions": {
+					"structure": "Subject + asked + wh-word + statement",
+					"examples": ["\"What are you doing?\" → She asked what I was doing.", "\"Why did you leave?\" → He asked why I had left.", "\"How old are you?\" → She asked how old I was."]
+				}
+			}
+		},
+		{
+			"title": "Órdenes y Peticiones (Commands & Requests)",
+			"structure": "Subject + told/asked + object + (not) to + infinitive",
+			"description": "Para reportar órdenes y peticiones, usamos 'told' (órdenes) o 'asked' (peticiones) + infinitivo.",
+			"uses": [
+				{
+					"use": "Órdenes (Commands)",
+					"example": "\"Be quiet!\" → He told me to be quiet.",
+					"translation": "\"¡Cállate!\" → Él me dijo que me callara.",
+					"note": "Usamos 'told' + objeto + infinitivo para órdenes."
+				},
+				{
+					"use": "Peticiones (Requests)",
+					"example": "\"Please help me.\" → She asked me to help her.",
+					"translation": "\"Por favor ayúdame.\" → Ella me pidió que la ayudara.",
+					"note": "Usamos 'asked' + objeto + infinitivo para peticiones."
+				},
+				{
+					"use": "Órdenes negativas",
+					"example": "\"Don't go!\" → He told me not to go.",
+					"translation": "\"¡No vayas!\" → Él me dijo que no fuera.",
+					"note": "'Don't' se convierte en 'not to'."
+				},
+				{
+					"use": "Peticiones negativas",
+					"example": "\"Please don't interrupt me.\" → He asked me not to interrupt him.",
+					"translation": "\"Por favor no me interrumpas.\" → Él me pidió que no lo interrumpiera.",
+					"note": "Peticiones corteses negativas con 'not to'."
+				}
+			],
+			"forms": {
+				"commands": {
+					"structure": "Subject + told + object + (not) to + infinitive",
+					"examples": ["\"Close the door!\" → She told him to close the door.", "\"Don't smoke here!\" → He told us not to smoke there.", "\"Turn off the TV!\" → Mom told me to turn off the TV."]
+				},
+				"requests": {
+					"structure": "Subject + asked + object + (not) to + infinitive",
+					"examples": ["\"Please wait for me.\" → She asked me to wait for her.", "\"Could you help me?\" → He asked me to help him.", "\"Please don't tell anyone.\" → She asked me not to tell anyone."]
+				}
+			}
+		}
+	],
+	"pronounChanges": {
+		"title": "Cambios de Pronombres",
+		"description": "Los pronombres cambian según la perspectiva de quien reporta.",
+		"changes": [
+			{
+				"direct": "I",
+				"reported": "he/she",
+				"example": "\"I am tired.\" → He said he was tired."
+			},
+			{
+				"direct": "you",
+				"reported": "I/he/she (según contexto)",
+				"example": "\"You are late.\" → She told me I was late."
+			},
+			{
+				"direct": "we",
+				"reported": "they",
+				"example": "\"We are leaving.\" → They said they were leaving."
+			},
+			{
+				"direct": "my",
+				"reported": "his/her",
+				"example": "\"My car is broken.\" → She said her car was broken."
+			},
+			{
+				"direct": "our",
+				"reported": "their",
+				"example": "\"Our house is big.\" → They said their house was big."
+			}
+		]
+	},
+	"comparison": {
+		"title": "Comparación de Estructuras",
+		"examples": [
+			{
+				"present": "\"I work here.\" → He said he worked there. (Afirmación)",
+				"past": "\"Are you coming?\" → She asked if I was coming. (Pregunta Yes/No)",
+				"future": "\"Where do you live?\" → He asked where I lived. (Pregunta Wh-)",
+				"translation": "Afirmaciones usan said/told | Preguntas Yes/No usan if/whether | Preguntas Wh- mantienen la palabra interrogativa"
+			},
+			{
+				"present": "\"Be quiet!\" → He told me to be quiet. (Orden)",
+				"past": "\"Please help me.\" → She asked me to help her. (Petición)",
+				"future": "\"Don't go!\" → He told me not to go. (Orden negativa)",
+				"translation": "Órdenes usan told + infinitivo | Peticiones usan asked + infinitivo | Negativos usan not to"
+			}
+		]
+	},
+	"tips": [
+		{
+			"title": "Diferencia entre Say y Tell",
+			"content": "Say se usa sin objeto directo, Tell siempre lleva objeto directo (me, him, her, etc.).",
+			"example": "She said she was tired. vs She told me she was tired."
+		},
+		{
+			"title": "Orden en las preguntas reportadas",
+			"content": "En las preguntas reportadas, SIEMPRE usamos orden de declaración (sujeto + verbo).",
+			"example": "\"Where do you live?\" → He asked where I lived. (NO: where did I live)"
+		},
+		{
+			"title": "Cambios de tiempo y lugar",
+			"content": "Recuerda cambiar expresiones de tiempo y lugar según el contexto.",
+			"example": "\"I'll see you here tomorrow.\" → She said she would see me there the next day."
+		},
+		{
+			"title": "Don't en órdenes negativas",
+			"content": "\"Don't\" en estilo directo se convierte en \"not to\" en estilo indirecto.",
+			"example": "\"Don't go!\" → He told me not to go."
+		}
+	]
+}

@@ -107,6 +107,15 @@
 			"level": "A2-B1",
 			"icon": "🧭",
 			"color": "#f6ad55"
+		},
+		{
+			"id": "reported_speech",
+			"title": "Reported Speech",
+			"subtitle": "Estilo Indirecto - Reportar lo que otros dijeron",
+			"description": "Aprende a reportar afirmaciones, preguntas, órdenes y peticiones cambiando tiempos verbales y pronombres.",
+			"level": "B1-B2",
+			"icon": "🗣️",
+			"color": "#6b46c1"
 		}
 	]
 }
