@@ -1,6 +1,6 @@
 {
-	"exercises": ["irregular_verbs_forms_a2.json", "irregular_verbs_context_b1.json", "reading_comprehension_a2_gardening.json", "reading_comprehension_b1_social_media.json", "round_up_grammar_vocab_part1.json", "round_up_grammar_vocab_part2.json"],
-	"lastUpdated": "2025-09-23",
-	"version": "1.7",
-	"note": "Agregados ejercicios comprehensivos de gramática y vocabulario basados en Round Up 8"
+	"exercises": ["irregular_verbs_forms_a2.json", "irregular_verbs_context_b1.json", "reading_comprehension_a2_gardening.json", "reading_comprehension_b1_social_media.json", "round_up_grammar_vocab_part1.json", "round_up_grammar_vocab_part2.json", "reported_speech_complete_practice.json"],
+	"lastUpdated": "2025-09-24",
+	"version": "1.8",
+	"note": "Agregado ejercicio completo de Reported Speech con 30 preguntas que cubren todos los aspectos del estilo indirecto"
 }

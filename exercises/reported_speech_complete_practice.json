@@ -1,0 +1,623 @@
+{
+	"title": "Reported Speech - Complete Practice",
+	"description": "Ejercicio completo de estilo indirecto que cubre afirmaciones, preguntas, órdenes y peticiones. Practica todos los cambios de tiempos verbales, pronombres y expresiones de tiempo.",
+	"level": "B1-B2",
+	"category": "reported_speech",
+	"estimatedTime": "25-30 minutes",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Sarah said: 'I am tired.' → How do we report this?",
+			"answerOptions": [
+				{
+					"text": "Sarah said that she was tired.",
+					"isCorrect": true,
+					"rationale": "Correct! 'I' changes to 'she' and present 'am' changes to past 'was'."
+				},
+				{
+					"text": "Sarah said that I was tired.",
+					"isCorrect": false,
+					"rationale": "The pronoun should change to 'she', not remain 'I'."
+				},
+				{
+					"text": "Sarah said that she is tired.",
+					"isCorrect": false,
+					"rationale": "The tense should change from present to past: 'is' → 'was'."
+				},
+				{
+					"text": "Sarah told that she was tired.",
+					"isCorrect": false,
+					"rationale": "'Told' needs an object (told me/him/her). Use 'said' without object."
+				}
+			],
+			"hint": "Remember: 'I' → 'he/she' and present → past in reported speech."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this direct speech to reported speech:",
+			"questionParts": [
+				"Tom: 'I will call you later.' → Tom said that he ",
+				{
+					"answer": "would call",
+					"label": "will → would"
+				},
+				" me later."
+			],
+			"hint": "Remember: 'will' changes to 'would' in reported speech."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "How do we report: 'Do you like coffee?'",
+			"answerOptions": [
+				{
+					"text": "She asked if I liked coffee.",
+					"isCorrect": true,
+					"rationale": "Perfect! Yes/No questions use 'if/whether' and statement order."
+				},
+				{
+					"text": "She asked do you like coffee.",
+					"isCorrect": false,
+					"rationale": "Don't keep the question structure. Use statement order."
+				},
+				{
+					"text": "She asked that I liked coffee.",
+					"isCorrect": false,
+					"rationale": "Use 'if/whether' for Yes/No questions, not 'that'."
+				},
+				{
+					"text": "She said if I liked coffee.",
+					"isCorrect": false,
+					"rationale": "Use 'asked' for questions, not 'said'."
+				}
+			],
+			"hint": "Yes/No questions in reported speech use 'if' or 'whether'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the reported question:",
+			"questionParts": [
+				"'Where do you live?' → He asked where I ",
+				{
+					"answer": "lived",
+					"label": "present → past"
+				},
+				"."
+			],
+			"hint": "Wh- questions keep the question word but use statement order and past tense."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Report this command: 'Close the door!'",
+			"answerOptions": [
+				{
+					"text": "He told me to close the door.",
+					"isCorrect": true,
+					"rationale": "Correct! Commands use 'told + object + infinitive'."
+				},
+				{
+					"text": "He said me to close the door.",
+					"isCorrect": false,
+					"rationale": "Use 'told' for commands, not 'said'. 'Said' doesn't take an object."
+				},
+				{
+					"text": "He asked to close the door.",
+					"isCorrect": false,
+					"rationale": "'Asked' is for requests. This is a command, so use 'told'."
+				},
+				{
+					"text": "He told that I close the door.",
+					"isCorrect": false,
+					"rationale": "Commands use infinitive: 'told me TO close', not 'told that I close'."
+				}
+			],
+			"hint": "Commands use 'told + object + to + infinitive'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "How do we report: 'Please help me.'",
+			"answerOptions": [
+				{
+					"text": "She asked me to help her.",
+					"isCorrect": true,
+					"rationale": "Perfect! Polite requests use 'asked + object + infinitive'."
+				},
+				{
+					"text": "She told me to help her.",
+					"isCorrect": false,
+					"rationale": "'Please' indicates a request, so use 'asked', not 'told'."
+				},
+				{
+					"text": "She said me to help her.",
+					"isCorrect": false,
+					"rationale": "'Said' doesn't take an object. Use 'asked me'."
+				},
+				{
+					"text": "She asked to help me.",
+					"isCorrect": false,
+					"rationale": "The pronoun should change: 'me' in direct becomes 'her' in reported."
+				}
+			],
+			"hint": "Polite requests use 'asked + object + to + infinitive'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this negative command:",
+			"questionParts": [
+				"'Don't smoke here!' → He told us ",
+				{
+					"answer": "not to smoke",
+					"label": "negative infinitive"
+				},
+				" there."
+			],
+			"hint": "'Don't' becomes 'not to' in reported speech."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Mary said: 'I have finished my homework.' → Reported speech:",
+			"answerOptions": [
+				{
+					"text": "Mary said that she had finished her homework.",
+					"isCorrect": true,
+					"rationale": "Correct! Present Perfect 'have finished' → Past Perfect 'had finished'."
+				},
+				{
+					"text": "Mary said that she has finished her homework.",
+					"isCorrect": false,
+					"rationale": "Present Perfect should change to Past Perfect in reported speech."
+				},
+				{
+					"text": "Mary said that she finished her homework.",
+					"isCorrect": false,
+					"rationale": "This changes the meaning. Use Past Perfect to maintain the original meaning."
+				},
+				{
+					"text": "Mary told that she had finished her homework.",
+					"isCorrect": false,
+					"rationale": "'Told' needs an object. Use 'said that' instead."
+				}
+			],
+			"hint": "Present Perfect becomes Past Perfect in reported speech."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Change the time expression:",
+			"questionParts": [
+				"'I'm busy today.' → She said she was busy ",
+				{
+					"answer": "that day",
+					"label": "today → that day"
+				},
+				"."
+			],
+			"hint": "Time expressions change: 'today' becomes 'that day'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Transform: 'I went to Paris yesterday.'",
+			"answerOptions": [
+				{
+					"text": "He said he had gone to Paris the previous day.",
+					"isCorrect": true,
+					"rationale": "Perfect! Past Simple → Past Perfect, 'yesterday' → 'the previous day'."
+				},
+				{
+					"text": "He said he went to Paris yesterday.",
+					"isCorrect": false,
+					"rationale": "Both the tense and time expression should change."
+				},
+				{
+					"text": "He said he had gone to Paris yesterday.",
+					"isCorrect": false,
+					"rationale": "Good tense change, but 'yesterday' should become 'the previous day'."
+				},
+				{
+					"text": "He said he goes to Paris the previous day.",
+					"isCorrect": false,
+					"rationale": "Wrong tense. Past Simple should become Past Perfect."
+				}
+			],
+			"hint": "Past Simple → Past Perfect, and change time expressions."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Report this future statement:",
+			"questionParts": [
+				"'I'll see you tomorrow.' → She said she ",
+				{
+					"answer": "would see",
+					"label": "will → would"
+				},
+				" me the following day."
+			],
+			"hint": "'Will' → 'would' and 'tomorrow' → 'the following day'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "How do we report: 'Can you swim?'",
+			"answerOptions": [
+				{
+					"text": "She asked if I could swim.",
+					"isCorrect": true,
+					"rationale": "Excellent! 'Can' → 'could' and Yes/No question uses 'if'."
+				},
+				{
+					"text": "She asked can I swim.",
+					"isCorrect": false,
+					"rationale": "Don't keep question structure. Use statement order and change 'can' to 'could'."
+				},
+				{
+					"text": "She asked if I can swim.",
+					"isCorrect": false,
+					"rationale": "'Can' should change to 'could' in reported speech."
+				},
+				{
+					"text": "She said if I could swim.",
+					"isCorrect": false,
+					"rationale": "Use 'asked' for questions, not 'said'."
+				}
+			],
+			"hint": "'Can' becomes 'could' in reported questions."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this modal verb:",
+			"questionParts": [
+				"'I must leave now.' → He said he ",
+				{
+					"answer": "had to leave",
+					"label": "must → had to"
+				},
+				" then."
+			],
+			"hint": "'Must' becomes 'had to' and 'now' becomes 'then'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Report: 'What time is it?'",
+			"answerOptions": [
+				{
+					"text": "She asked what time it was.",
+					"isCorrect": true,
+					"rationale": "Perfect! Wh- questions keep the question word but use statement order."
+				},
+				{
+					"text": "She asked what time is it.",
+					"isCorrect": false,
+					"rationale": "Use statement order: 'what time it was', not 'what time is it'."
+				},
+				{
+					"text": "She asked that what time it was.",
+					"isCorrect": false,
+					"rationale": "Don't use 'that' with Wh- questions. Just 'asked what time...'."
+				},
+				{
+					"text": "She said what time it was.",
+					"isCorrect": false,
+					"rationale": "Use 'asked' for questions, not 'said'."
+				}
+			],
+			"hint": "Wh- questions use statement order: subject + verb."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Change the location reference:",
+			"questionParts": [
+				"'I live here.' → He said he lived ",
+				{
+					"answer": "there",
+					"label": "here → there"
+				},
+				"."
+			],
+			"hint": "Place references change: 'here' becomes 'there'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Transform: 'Why are you crying?'",
+			"answerOptions": [
+				{
+					"text": "She asked why I was crying.",
+					"isCorrect": true,
+					"rationale": "Correct! Keep 'why', use statement order, and change tenses."
+				},
+				{
+					"text": "She asked why are you crying.",
+					"isCorrect": false,
+					"rationale": "Use statement order and change pronouns: 'why I was crying'."
+				},
+				{
+					"text": "She asked that why I was crying.",
+					"isCorrect": false,
+					"rationale": "Don't use 'that' with Wh- questions."
+				},
+				{
+					"text": "She asked why you were crying.",
+					"isCorrect": false,
+					"rationale": "Change the pronoun: 'you' in direct speech becomes 'I' when reporting to the same person."
+				}
+			],
+			"hint": "Keep the question word but change to statement order and adjust pronouns."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Report this past continuous:",
+			"questionParts": [
+				"'I was working when you called.' → She said she ",
+				{
+					"answer": "had been working",
+					"label": "past continuous → past perfect continuous"
+				},
+				" when I had called."
+			],
+			"hint": "Past Continuous becomes Past Perfect Continuous in reported speech."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "How do we report: 'Have you ever been to London?'",
+			"answerOptions": [
+				{
+					"text": "He asked if I had ever been to London.",
+					"isCorrect": true,
+					"rationale": "Perfect! Present Perfect → Past Perfect in Yes/No questions."
+				},
+				{
+					"text": "He asked have I ever been to London.",
+					"isCorrect": false,
+					"rationale": "Use 'if' and statement order for Yes/No questions."
+				},
+				{
+					"text": "He asked if I have ever been to London.",
+					"isCorrect": false,
+					"rationale": "Present Perfect should change to Past Perfect: 'had been'."
+				},
+				{
+					"text": "He said if I had ever been to London.",
+					"isCorrect": false,
+					"rationale": "Use 'asked' for questions, not 'said'."
+				}
+			],
+			"hint": "Present Perfect becomes Past Perfect in reported questions."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this polite request:",
+			"questionParts": [
+				"'Could you please open the window?' → She ",
+				{
+					"answer": "asked me to open",
+					"label": "polite request structure"
+				},
+				" the window."
+			],
+			"hint": "Polite requests with 'could you please' become 'asked + object + to + infinitive'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Report: 'I may come to the party.'",
+			"answerOptions": [
+				{
+					"text": "She said she might come to the party.",
+					"isCorrect": true,
+					"rationale": "Correct! 'May' often changes to 'might' in reported speech."
+				},
+				{
+					"text": "She said she may come to the party.",
+					"isCorrect": false,
+					"rationale": "'May' usually changes to 'might' in reported speech for consistency."
+				},
+				{
+					"text": "She told she might come to the party.",
+					"isCorrect": false,
+					"rationale": "'Told' needs an object. Use 'said' for statements without objects."
+				},
+				{
+					"text": "She said she could come to the party.",
+					"isCorrect": false,
+					"rationale": "'May' becomes 'might', not 'could'."
+				}
+			],
+			"hint": "'May' typically becomes 'might' in reported speech."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Change this time reference:",
+			"questionParts": [
+				"'I visited them last week.' → He said he had visited them ",
+				{
+					"answer": "the previous week",
+					"label": "last week → the previous week"
+				},
+				"."
+			],
+			"hint": "'Last week' becomes 'the previous week' or 'the week before'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Transform: 'Don't be late!'",
+			"answerOptions": [
+				{
+					"text": "She told me not to be late.",
+					"isCorrect": true,
+					"rationale": "Perfect! Negative commands use 'told + object + not to + infinitive'."
+				},
+				{
+					"text": "She asked me not to be late.",
+					"isCorrect": false,
+					"rationale": "This is a command (order), not a request. Use 'told'."
+				},
+				{
+					"text": "She told me don't be late.",
+					"isCorrect": false,
+					"rationale": "Use infinitive structure: 'not to be late', not 'don't be late'."
+				},
+				{
+					"text": "She said me not to be late.",
+					"isCorrect": false,
+					"rationale": "'Said' doesn't take an object. Use 'told me'."
+				}
+			],
+			"hint": "Negative commands: 'told + object + not to + infinitive'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Report this conditional:",
+			"questionParts": [
+				"'If I have time, I will help you.' → She said that if she ",
+				{
+					"answer": "had time, she would help",
+					"label": "conditional changes"
+				},
+				" me."
+			],
+			"hint": "In conditionals: Present → Past, Will → Would."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "How do we report: 'Where have you been?'",
+			"answerOptions": [
+				{
+					"text": "He asked where I had been.",
+					"isCorrect": true,
+					"rationale": "Excellent! Present Perfect 'have been' → Past Perfect 'had been'."
+				},
+				{
+					"text": "He asked where have I been.",
+					"isCorrect": false,
+					"rationale": "Use statement order and change tense: 'where I had been'."
+				},
+				{
+					"text": "He asked where I have been.",
+					"isCorrect": false,
+					"rationale": "Present Perfect should change to Past Perfect: 'had been'."
+				},
+				{
+					"text": "He said where I had been.",
+					"isCorrect": false,
+					"rationale": "Use 'asked' for questions, not 'said'."
+				}
+			],
+			"hint": "Present Perfect becomes Past Perfect in reported questions."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform with pronoun change:",
+			"questionParts": [
+				"'We are leaving now.' → They said ",
+				{
+					"answer": "they were leaving then",
+					"label": "we → they, now → then"
+				},
+				"."
+			],
+			"hint": "'We' → 'they' and 'now' → 'then'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Report: 'I didn't see the movie.'",
+			"answerOptions": [
+				{
+					"text": "She said she hadn't seen the movie.",
+					"isCorrect": true,
+					"rationale": "Perfect! Past Simple negative → Past Perfect negative."
+				},
+				{
+					"text": "She said she didn't see the movie.",
+					"isCorrect": false,
+					"rationale": "Past Simple should change to Past Perfect: 'hadn't seen'."
+				},
+				{
+					"text": "She told she hadn't seen the movie.",
+					"isCorrect": false,
+					"rationale": "'Told' needs an object. Use 'said' without object."
+				},
+				{
+					"text": "She said she doesn't see the movie.",
+					"isCorrect": false,
+					"rationale": "Wrong tense. Past negative should become Past Perfect negative."
+				}
+			],
+			"hint": "Past Simple negative becomes Past Perfect negative."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete this reported question:",
+			"questionParts": [
+				"'How old are you?' → She asked how old I ",
+				{
+					"answer": "was",
+					"label": "present → past"
+				},
+				"."
+			],
+			"hint": "Present 'are' becomes past 'was' in reported speech."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Transform: 'Please don't tell anyone.'",
+			"answerOptions": [
+				{
+					"text": "She asked me not to tell anyone.",
+					"isCorrect": true,
+					"rationale": "Perfect! Polite negative request: 'asked + object + not to + infinitive'."
+				},
+				{
+					"text": "She told me not to tell anyone.",
+					"isCorrect": false,
+					"rationale": "'Please' indicates a request, so use 'asked', not 'told'."
+				},
+				{
+					"text": "She asked me don't tell anyone.",
+					"isCorrect": false,
+					"rationale": "Use infinitive: 'not to tell', not 'don't tell'."
+				},
+				{
+					"text": "She said me not to tell anyone.",
+					"isCorrect": false,
+					"rationale": "'Said' doesn't take an object. Use 'asked me'."
+				}
+			],
+			"hint": "Polite negative requests use 'asked + not to + infinitive'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this complex sentence:",
+			"questionParts": [
+				"'I will call you when I arrive.' → He said he ",
+				{
+					"answer": "would call me when he arrived",
+					"label": "multiple tense changes"
+				},
+				"."
+			],
+			"hint": "Both verbs change: 'will call' → 'would call', 'arrive' → 'arrived'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Final challenge - Report: 'I wish I could speak French.'",
+			"answerOptions": [
+				{
+					"text": "She said she wished she could speak French.",
+					"isCorrect": true,
+					"rationale": "Excellent! 'Wish' → 'wished', 'could' can stay the same as it's already past form."
+				},
+				{
+					"text": "She said she wish she could speak French.",
+					"isCorrect": false,
+					"rationale": "'Wish' should change to 'wished' in reported speech."
+				},
+				{
+					"text": "She told she wished she could speak French.",
+					"isCorrect": false,
+					"rationale": "'Told' needs an object. Use 'said' for statements."
+				},
+				{
+					"text": "She said she wished she can speak French.",
+					"isCorrect": false,
+					"rationale": "Keep 'could' as it's already the past form of 'can'."
+				}
+			],
+			"hint": "Present 'wish' becomes past 'wished'. 'Could' stays the same."
+		}
+	]
+}
