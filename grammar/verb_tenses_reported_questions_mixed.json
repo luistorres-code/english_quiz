@@ -1,0 +1,321 @@
+{
+	"title": "Tiempos Verbales y Discurso Indirecto - Práctica Mixta",
+	"description": "Ejercicios completos para dominar past simple, present perfect y preguntas indirectas/reported questions.",
+	"level": "B1-B2",
+	"estimatedTime": "25-30 min",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct tense: 'I _______ to London three times this year.'",
+			"answerOptions": [
+				{
+					"text": "have been",
+					"isCorrect": true,
+					"rationale": "Present perfect se usa para experiencias hasta ahora. 'This year' indica un período que continúa hasta el presente."
+				},
+				{
+					"text": "went",
+					"isCorrect": false,
+					"rationale": "Past simple se usa para acciones completadas en el pasado. 'This year' sugiere una conexión con el presente."
+				},
+				{
+					"text": "was",
+					"isCorrect": false,
+					"rationale": "'Was' indica un estado en el pasado, no el acto de viajar."
+				},
+				{
+					"text": "have gone",
+					"isCorrect": false,
+					"rationale": "'Have gone' implica que aún está allí. 'Have been' indica que fue y regresó."
+				}
+			],
+			"hint": "Piensa si la acción tiene conexión con el presente o está completamente en el pasado."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct past simple form:",
+			"questionParts": [
+				"Yesterday, she ",
+				{
+					"answer": "bought",
+					"label": "past simple de 'buy'"
+				},
+				" a new dress for the party."
+			],
+			"hint": "'Buy' es un verbo irregular: buy → bought → bought."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses present perfect?",
+			"answerOptions": [
+				{
+					"text": "I have lived here since 2020.",
+					"isCorrect": true,
+					"rationale": "Present perfect con 'since' para una acción que comenzó en el pasado y continúa hasta ahora."
+				},
+				{
+					"text": "I have lived here in 2020.",
+					"isCorrect": false,
+					"rationale": "Con fechas específicas como '2020' usamos past simple: 'I lived here in 2020'."
+				},
+				{
+					"text": "I have lived here yesterday.",
+					"isCorrect": false,
+					"rationale": "'Yesterday' es tiempo específico pasado, requiere past simple: 'I lived here yesterday'."
+				},
+				{
+					"text": "I have lived here last year.",
+					"isCorrect": false,
+					"rationale": "'Last year' es tiempo específico pasado, requiere past simple: 'I lived here last year'."
+				}
+			],
+			"hint": "Present perfect no se usa con expresiones de tiempo específico del pasado."
+		},
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the text with the correct tenses:",
+			"questionParts": [
+				"Last week, I ",
+				{
+					"answer": "met",
+					"label": "past simple de 'meet'"
+				},
+				" an old friend. We ",
+				{
+					"answer": "haven't seen",
+					"label": "present perfect negative de 'see'"
+				},
+				" each other for five years. She ",
+				{
+					"answer": "told",
+					"label": "past simple de 'tell'"
+				},
+				" me she ",
+				{
+					"answer": "has moved",
+					"label": "present perfect de 'move'"
+				},
+				" to a new city."
+			],
+			"hint": "Usa past simple para acciones específicas del pasado y present perfect para experiencias o acciones con relevancia presente.",
+			"explanation": "Past simple para eventos específicos (met, told) y present perfect para períodos de tiempo hasta ahora (haven't seen) o resultados presentes (has moved)."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Transform this direct question into an indirect question: 'Where do you live?' → 'Could you tell me _______?'",
+			"answerOptions": [
+				{
+					"text": "where you live",
+					"isCorrect": true,
+					"rationale": "En preguntas indirectas, usamos orden de afirmación (sujeto + verbo) y eliminamos el auxiliar 'do'."
+				},
+				{
+					"text": "where do you live",
+					"isCorrect": false,
+					"rationale": "En preguntas indirectas no usamos el auxiliar 'do' ni el orden de pregunta directa."
+				},
+				{
+					"text": "where you do live",
+					"isCorrect": false,
+					"rationale": "El orden es incorrecto. En preguntas indirectas es sujeto + verbo."
+				},
+				{
+					"text": "where are you living",
+					"isCorrect": false,
+					"rationale": "Cambia el tiempo verbal. La pregunta original usa presente simple, no continuo."
+				}
+			],
+			"hint": "En preguntas indirectas, usa orden de afirmación y elimina auxiliares como 'do/does'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the indirect question:",
+			"questionParts": [
+				"Do you know ",
+				{
+					"answer": "what time",
+					"label": "palabra interrogativa"
+				},
+				" the meeting ",
+				{
+					"answer": "starts",
+					"label": "verbo en orden afirmativo"
+				},
+				"?"
+			],
+			"hint": "Pregunta indirecta: 'Do you know + what time + sujeto + verbo'."
+		},
+		{
+			"type": "true_false",
+			"question": "The sentence 'I have seen that movie last night' is correct.",
+			"answer": false,
+			"explanation": "Incorrecto. 'Last night' es una expresión de tiempo específico del pasado, por lo que se debe usar past simple: 'I saw that movie last night'. Present perfect no se usa con expresiones de tiempo específico del pasado."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete the reported question: He asked me _______ I had finished my homework.",
+			"answerOptions": [
+				{
+					"text": "if",
+					"isCorrect": true,
+					"rationale": "Para reportar preguntas sí/no, usamos 'if' o 'whether'. 'If' es más común en inglés hablado."
+				},
+				{
+					"text": "that",
+					"isCorrect": false,
+					"rationale": "'That' se usa para reportar afirmaciones, no preguntas."
+				},
+				{
+					"text": "what",
+					"isCorrect": false,
+					"rationale": "'What' se usa para preguntas abiertas con información específica, no para preguntas sí/no."
+				},
+				{
+					"text": "where",
+					"isCorrect": false,
+					"rationale": "'Where' se usa para preguntas sobre ubicación, no para preguntas sí/no."
+				}
+			],
+			"hint": "Para reportar preguntas sí/no (yes/no questions), usa 'if' o 'whether'."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct indirect question:",
+			"items": ["Could", "you", "tell", "me", "what", "your", "name", "is", "?"],
+			"correctOrder": ["Could", "you", "tell", "me", "what", "your", "name", "is", "?"],
+			"explanation": "Estructura de pregunta indirecta: Could you tell me + palabra interrogativa + sujeto + verbo + ?"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct sentence with present perfect and time expressions:",
+			"answerOptions": [
+				{
+					"text": "I have already finished my work.",
+					"isCorrect": true,
+					"rationale": "'Already' se usa en afirmativas con present perfect para indicar que algo pasó antes de lo esperado."
+				},
+				{
+					"text": "I have finished already my work.",
+					"isCorrect": false,
+					"rationale": "'Already' va entre el auxiliar 'have' y el participio pasado, o al final de la oración."
+				},
+				{
+					"text": "I already have finished my work.",
+					"isCorrect": false,
+					"rationale": "'Already' no va entre el sujeto y el auxiliar en present perfect."
+				},
+				{
+					"text": "I have yet finished my work.",
+					"isCorrect": false,
+					"rationale": "'Yet' se usa en preguntas y negativas, no en afirmativas. En afirmativas usamos 'already'."
+				}
+			],
+			"hint": "'Already' se usa en afirmativas, 'yet' en preguntas y negativas con present perfect."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Transform this to reported speech: 'What time does the store close?' → She asked me",
+			"questionParts": [
+				"",
+				{
+					"answer": "what time",
+					"label": "palabra interrogativa"
+				},
+				" the store ",
+				{
+					"answer": "closed",
+					"label": "verbo en pasado"
+				},
+				"."
+			],
+			"hint": "En reported speech, los tiempos verbales retroceden: present simple → past simple."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly shows the difference between past simple and present perfect?",
+			"answerOptions": [
+				{
+					"text": "I lived in Paris (past, specific time) vs I have lived in Paris (experience, no specific time)",
+					"isCorrect": true,
+					"rationale": "Past simple para acciones completadas en tiempo específico; present perfect para experiencias sin tiempo específico."
+				},
+				{
+					"text": "Both tenses mean exactly the same thing",
+					"isCorrect": false,
+					"rationale": "Los tiempos tienen usos y significados diferentes según el contexto temporal."
+				},
+				{
+					"text": "Present perfect is only for future actions",
+					"isCorrect": false,
+					"rationale": "Present perfect conecta pasado con presente, no es para futuro."
+				},
+				{
+					"text": "Past simple is only for distant past",
+					"isCorrect": false,
+					"rationale": "Past simple se usa para cualquier acción completada en el pasado, reciente o distante."
+				}
+			],
+			"hint": "La diferencia clave es la conexión o no con el presente."
+		},
+		{
+			"type": "short_answer",
+			"question": "What word do we use to introduce indirect yes/no questions in reported speech?",
+			"correctAnswer": "if",
+			"alternatives": ["whether"],
+			"caseSensitive": false,
+			"explanation": "Para reportar preguntas sí/no usamos 'if' o 'whether'. Ejemplo: 'Are you coming?' → He asked if I was coming."
+		},
+		{
+			"type": "matching",
+			"question": "Match the direct questions with their correct indirect forms:",
+			"pairs": [
+				{
+					"text1": "Where is the bank?",
+					"text2": "Could you tell me where the bank is?"
+				},
+				{
+					"text1": "What time is it?",
+					"text2": "Do you know what time it is?"
+				},
+				{
+					"text1": "Are you busy?",
+					"text2": "Could you tell me if you are busy?"
+				},
+				{
+					"text1": "How much does it cost?",
+					"text2": "Do you know how much it costs?"
+				}
+			],
+			"hint": "En preguntas indirectas, elimina auxiliares y usa orden afirmativo."
+		},
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete this conversation with correct tenses and indirect questions:",
+			"questionParts": [
+				"A: I ",
+				{
+					"answer": "have never been",
+					"label": "present perfect negative"
+				},
+				" to Japan. ",
+				{
+					"answer": "Have you ever visited",
+					"label": "present perfect question"
+				},
+				" Tokyo?\nB: Yes, I ",
+				{
+					"answer": "went",
+					"label": "past simple"
+				},
+				" there last year. Could you tell me ",
+				{
+					"answer": "why you want",
+					"label": "indirect question"
+				},
+				" to go there?"
+			],
+			"hint": "Usa present perfect para experiencias, past simple para acciones específicas del pasado, y orden afirmativo en preguntas indirectas.",
+			"explanation": "Present perfect para experiencias de vida, past simple para tiempo específico, e indirect questions con orden afirmativo."
+		}
+	]
+}

@@ -1,0 +1,298 @@
+{
+	"title": "Comparativos y Superlativos - Práctica Completa",
+	"description": "Ejercicios completos para dominar comparativos, superlativos, comparaciones de igualdad, 'the...the' y cambios progresivos.",
+	"level": "B1-B2",
+	"estimatedTime": "25-30 min",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Complete the sentence: 'This book is _______ than the one I read last week.'",
+			"answerOptions": [
+				{
+					"text": "more interesting",
+					"isCorrect": true,
+					"rationale": "Para adjetivos de 2+ sílabas que no terminan en -y, usamos 'more + adjective' para formar el comparativo."
+				},
+				{
+					"text": "interestinger",
+					"isCorrect": false,
+					"rationale": "'Interesting' es un adjetivo largo, por lo que no añadimos -er. Usamos 'more interesting'."
+				},
+				{
+					"text": "most interesting",
+					"isCorrect": false,
+					"rationale": "'Most' se usa para superlativos, no para comparativos entre dos elementos."
+				},
+				{
+					"text": "more interested",
+					"isCorrect": false,
+					"rationale": "'Interested' describe a la persona que siente interés, no al objeto que causa interés."
+				}
+			],
+			"hint": "Recuerda las reglas para formar comparativos con adjetivos largos."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the superlative sentence:",
+			"questionParts": [
+				"Mount Everest is ",
+				{
+					"answer": "the highest",
+					"label": "superlativo de 'high'"
+				},
+				" mountain in the world."
+			],
+			"hint": "Para adjetivos cortos, usa 'the + adjective + -est'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence correctly uses 'as...as' for equal comparison?",
+			"answerOptions": [
+				{
+					"text": "She runs as fast as her brother.",
+					"isCorrect": true,
+					"rationale": "Estructura correcta: as + adjetivo/adverbio + as. 'Fast' puede ser adjetivo y adverbio."
+				},
+				{
+					"text": "She runs as faster as her brother.",
+					"isCorrect": false,
+					"rationale": "No usamos la forma comparativa 'faster' en la estructura as...as. Debe ser 'as fast as'."
+				},
+				{
+					"text": "She runs so fast as her brother.",
+					"isCorrect": false,
+					"rationale": "Para comparaciones de igualdad usamos 'as...as', no 'so...as' (que se usa en negativas)."
+				},
+				{
+					"text": "She runs as fastly as her brother.",
+					"isCorrect": false,
+					"rationale": "'Fastly' no existe. 'Fast' funciona como adverbio sin cambiar su forma."
+				}
+			],
+			"hint": "La estructura as...as usa la forma base del adjetivo o adverbio."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct form of comparison with 'less':",
+			"questionParts": [
+				"This exercise is ",
+				{
+					"answer": "less difficult",
+					"label": "comparativo con 'less'"
+				},
+				" than the previous one."
+			],
+			"hint": "'Less' + adjetivo se usa para mostrar menor grado en comparaciones."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete the 'the...the' structure: '_______ you practice, _______ you'll improve.'",
+			"answerOptions": [
+				{
+					"text": "The more, the more",
+					"isCorrect": true,
+					"rationale": "La estructura 'the + comparativo, the + comparativo' expresa que un cambio causa otro. 'The more you practice, the more you'll improve.'"
+				},
+				{
+					"text": "The most, the most",
+					"isCorrect": false,
+					"rationale": "Los superlativos no se usan en esta estructura. Necesitamos comparativos."
+				},
+				{
+					"text": "More, more",
+					"isCorrect": false,
+					"rationale": "Falta el artículo 'the' que es esencial en esta estructura."
+				},
+				{
+					"text": "The more, the most",
+					"isCorrect": false,
+					"rationale": "Ambas partes deben usar comparativos, no mezclar comparativo con superlativo."
+				}
+			],
+			"hint": "Esta estructura usa 'the' + comparativo en ambas partes para mostrar causa y efecto."
+		},
+		{
+			"type": "true_false",
+			"question": "The sentence 'She is the most tall girl in the class' is correct.",
+			"answer": false,
+			"explanation": "Incorrecto. 'Tall' es un adjetivo corto, por lo que su superlativo es 'the tallest', no 'the most tall'. Los adjetivos cortos forman el superlativo con -est."
+		},
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the text about adjectives and adverbs:",
+			"questionParts": [
+				"Maria drives very ",
+				{
+					"answer": "carefully",
+					"label": "adverbio de 'careful'",
+					"alternatives": ["cautiously"]
+				},
+				". She is a ",
+				{
+					"answer": "careful",
+					"label": "adjetivo",
+					"alternatives": ["cautious"]
+				},
+				" driver. She drives ",
+				{
+					"answer": "more carefully",
+					"label": "comparativo del adverbio",
+					"alternatives": ["more cautiously"]
+				},
+				" than her brother."
+			],
+			"hint": "Distingue entre adjetivos (describen sustantivos) y adverbios (describen verbos, adjetivos u otros adverbios).",
+			"explanation": "Los adjetivos describen sustantivos ('careful driver'), mientras que los adverbios describen acciones ('drives carefully'). Para comparativos de adverbios largos, usamos 'more + adverbio'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence shows increasing change correctly?",
+			"answerOptions": [
+				{
+					"text": "The weather is getting better and better.",
+					"isCorrect": true,
+					"rationale": "Para cambio progresivo usamos 'comparativo + and + comparativo'. 'Better' es el comparativo irregular de 'good'."
+				},
+				{
+					"text": "The weather is getting more good and more good.",
+					"isCorrect": false,
+					"rationale": "'Good' tiene un comparativo irregular: 'better'. No usamos 'more good'."
+				},
+				{
+					"text": "The weather is getting best and best.",
+					"isCorrect": false,
+					"rationale": "Para cambio progresivo usamos comparativos, no superlativos. 'Best' es superlativo."
+				},
+				{
+					"text": "The weather is getting more better and more better.",
+					"isCorrect": false,
+					"rationale": "'Better' ya es comparativo. No añadimos 'more' a comparativos irregulares."
+				}
+			],
+			"hint": "Para mostrar cambio progresivo, repite el comparativo con 'and'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct progressive change structure:",
+			"questionParts": [
+				"Technology is becoming ",
+				{
+					"answer": "more and more",
+					"label": "cambio progresivo"
+				},
+				" advanced every year."
+			],
+			"hint": "Para adjetivos largos en cambio progresivo, usa 'more and more + adjetivo'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: '_______ harder you work, _______ successful you'll become.'",
+			"answerOptions": [
+				{
+					"text": "The harder, the more",
+					"isCorrect": true,
+					"rationale": "Estructura correcta: 'The' + comparativo de 'hard' (harder) + 'the' + comparativo de 'successful' (more successful)."
+				},
+				{
+					"text": "The more hard, the more",
+					"isCorrect": false,
+					"rationale": "'Hard' es adjetivo corto, su comparativo es 'harder', no 'more hard'."
+				},
+				{
+					"text": "The harder, the most",
+					"isCorrect": false,
+					"rationale": "Ambas partes necesitan comparativos. 'Most' es superlativo."
+				},
+				{
+					"text": "Harder, more",
+					"isCorrect": false,
+					"rationale": "Falta 'the' en ambas partes de la estructura."
+				}
+			],
+			"hint": "Esta estructura siempre usa 'the' + comparativo en ambas partes."
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange these words to form a correct superlative sentence:",
+			"items": ["is", "the most", "in", "beautiful", "city", "the world", "Paris"],
+			"correctOrder": ["Paris", "is", "the most", "beautiful", "city", "in", "the world"],
+			"explanation": "Estructura del superlativo: Sujeto + verbo + the most/the -est + adjetivo + sustantivo + in/of + grupo de comparación."
+		},
+		{
+			"type": "matching",
+			"question": "Match each comparative/superlative with its correct base form:",
+			"pairs": [
+				{
+					"text1": "better",
+					"text2": "good (comparativo irregular)"
+				},
+				{
+					"text1": "the worst",
+					"text2": "bad (superlativo irregular)"
+				},
+				{
+					"text1": "farther/further",
+					"text2": "far (comparativo irregular)"
+				},
+				{
+					"text1": "the least",
+					"text2": "little (superlativo irregular)"
+				}
+			],
+			"hint": "Algunos adjetivos tienen formas irregulares para comparativos y superlativos."
+		},
+		{
+			"type": "short_answer",
+			"question": "What is the superlative form of 'expensive'?",
+			"correctAnswer": "the most expensive",
+			"alternatives": ["most expensive"],
+			"caseSensitive": false,
+			"explanation": "'Expensive' es un adjetivo largo (3+ sílabas), por lo que su superlativo se forma con 'the most + adjetivo'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete the negative comparison: 'This car is not _______ fast _______ that one.'",
+			"answerOptions": [
+				{
+					"text": "as, as",
+					"isCorrect": true,
+					"rationale": "En comparaciones negativas de igualdad usamos 'not as...as' para indicar que algo es menor."
+				},
+				{
+					"text": "so, as",
+					"isCorrect": false,
+					"rationale": "Aunque 'not so...as' es posible, es menos común que 'not as...as'."
+				},
+				{
+					"text": "as, than",
+					"isCorrect": false,
+					"rationale": "'Than' se usa con comparativos, no con la estructura as...as."
+				},
+				{
+					"text": "more, than",
+					"isCorrect": false,
+					"rationale": "Esta sería una estructura comparativa diferente, no de igualdad."
+				}
+			],
+			"hint": "Para comparaciones negativas de igualdad, usa 'not as...as'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct 'the...the' structure:",
+			"questionParts": [
+				"",
+				{
+					"answer": "The earlier",
+					"label": "the + comparativo de 'early'"
+				},
+				" you arrive, ",
+				{
+					"answer": "the better",
+					"label": "the + comparativo de 'good'"
+				},
+				" seats you'll get."
+			],
+			"hint": "Recuerda que 'early' → 'earlier' y 'good' → 'better' (irregular)."
+		}
+	]
+}
