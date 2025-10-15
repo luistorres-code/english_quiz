@@ -114,26 +114,8 @@
 			"subtitle": "Estilo Indirecto - Reportar lo que otros dijeron",
 			"description": "Aprende a reportar afirmaciones, preguntas, órdenes y peticiones cambiando tiempos verbales y pronombres.",
 			"level": "B1-B2",
-			"icon": "🗣️",
+			"icon": "�️",
 			"color": "#6b46c1"
-		},
-		{
-			"id": "comparatives_superlatives_mixed",
-			"title": "Comparativos y Superlativos",
-			"subtitle": "Comparaciones, igualdad y cambios progresivos",
-			"description": "Domina comparativos, superlativos, as...as, the...the y expresiones de cambio progresivo como 'better and better'.",
-			"level": "B1-B2",
-			"icon": "📊",
-			"color": "#f093fb"
-		},
-		{
-			"id": "verb_tenses_reported_questions_mixed",
-			"title": "Tiempos Verbales y Preguntas Indirectas",
-			"subtitle": "Past Simple, Present Perfect y Reported Questions",
-			"description": "Practica la diferencia entre past simple y present perfect, además de preguntas indirectas y reported speech.",
-			"level": "B1-B2",
-			"icon": "🕐",
-			"color": "#20bf6b"
 		}
 	]
 }
