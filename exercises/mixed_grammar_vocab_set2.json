@@ -1,0 +1,365 @@
+{
+	"title": "Set de Ejercicios Mixtos 2 - Gramática y Vocabulario",
+	"description": "Segunda colección de ejercicios variados que integran todos los temas: obligación, preferencias, make/do, deducciones modales, adjetivos descriptivos, phrasal verbs, palabras confusas y vocabulario laboral.",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence shows the correct use of 'make' vs 'do'?",
+			"answerOptions": [
+				{
+					"text": "I need to make an appointment with the dentist.",
+					"isCorrect": true,
+					"rationale": "'Make an appointment' es la expresión correcta."
+				},
+				{
+					"text": "I need to do an appointment with the dentist.",
+					"isCorrect": false,
+					"rationale": "Con 'appointment' siempre usamos 'make', no 'do'."
+				},
+				{
+					"text": "I need to take an appointment with the dentist.",
+					"isCorrect": false,
+					"rationale": "'Take' no se usa con 'appointment' en este contexto."
+				}
+			],
+			"hint": "¿Qué verbo se usa para crear una cita médica?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct modal for possibility:",
+			"questionParts": [
+				"She ",
+				{
+					"answer": "might",
+					"label": "posibilidad"
+				},
+				" be late because of the traffic."
+			],
+			"hint": "'Might' expresa posibilidad cuando no estamos seguros."
+		},
+		{
+			"type": "true_false",
+			"question": "'Information' and 'advice' are both uncountable nouns.",
+			"answer": true,
+			"explanation": "Tanto 'information' como 'advice' son sustantivos incontables. No decimos 'informations' o 'advices'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the strongest way to express preference:",
+			"answerOptions": [
+				{
+					"text": "I'd rather die than eat broccoli!",
+					"isCorrect": true,
+					"rationale": "'Would rather... than...' expresa preferencia muy fuerte."
+				},
+				{
+					"text": "I prefer not to eat broccoli.",
+					"isCorrect": false,
+					"rationale": "'Prefer' es más suave que 'would rather'."
+				},
+				{
+					"text": "I don't like broccoli.",
+					"isCorrect": false,
+					"rationale": "Esto expresa disgusto, no preferencia comparativa."
+				}
+			],
+			"hint": "¿Qué estructura expresa la preferencia más dramática?"
+		},
+		{
+			"type": "matching",
+			"question": "Match the adjectives with their intensity level:",
+			"pairs": [
+				{
+					"text1": "tired",
+					"text2": "normal level"
+				},
+				{
+					"text1": "exhausted",
+					"text2": "extreme level"
+				},
+				{
+					"text1": "pleased",
+					"text2": "normal satisfaction"
+				},
+				{
+					"text1": "delighted",
+					"text2": "extreme satisfaction"
+				}
+			],
+			"hint": "Algunos adjetivos expresan emociones más intensas que otros."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the phrasal verb:",
+			"questionParts": [
+				"Can you ",
+				{
+					"answer": "hold on",
+					"label": "esperar"
+				},
+				" a minute? I need to finish this call."
+			],
+			"hint": "'Hold on' significa esperar un momento."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the noun form of 'organize'?",
+			"answerOptions": [
+				{
+					"text": "organization",
+					"isCorrect": true,
+					"rationale": "'Organization' es el sustantivo derivado de 'organize'."
+				},
+				{
+					"text": "organizer",
+					"isCorrect": false,
+					"rationale": "'Organizer' es la persona que organiza, no el concepto."
+				},
+				{
+					"text": "organizing",
+					"isCorrect": false,
+					"rationale": "'Organizing' es el gerundio, no el sustantivo formal."
+				}
+			],
+			"hint": "¿Cuál es el sustantivo que describe el acto o sistema de organizar?"
+		},
+		{
+			"type": "true_false",
+			"question": "'You'd better not smoke here' expresses strong advice or warning.",
+			"answer": true,
+			"explanation": "'Had better' expresa consejo fuerte o advertencia, especialmente en forma negativa."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which shows a logical deduction about the past?",
+			"answerOptions": [
+				{
+					"text": "They must have left early - the meeting room is empty.",
+					"isCorrect": true,
+					"rationale": "'Must have' + participio expresa deducción lógica sobre el pasado."
+				},
+				{
+					"text": "They had to leave early - the meeting room is empty.",
+					"isCorrect": false,
+					"rationale": "'Had to' expresa obligación pasada, no deducción."
+				},
+				{
+					"text": "They should have left early - the meeting room is empty.",
+					"isCorrect": false,
+					"rationale": "'Should have' expresa lo que era recomendable, no deducción."
+				}
+			],
+			"hint": "¿Qué estructura expresa conclusión lógica sobre eventos pasados?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the expression:",
+			"questionParts": [
+				"Let me ",
+				{
+					"answer": "do",
+					"label": "hacer"
+				},
+				" some research before making a decision."
+			],
+			"hint": "Con 'research' como actividad, usamos 'do'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the difference between 'look' and 'expression'?",
+			"answerOptions": [
+				{
+					"text": "'Look' is more casual; 'expression' is more formal.",
+					"isCorrect": true,
+					"rationale": "'Look' es más informal y común; 'expression' es más formal."
+				},
+				{
+					"text": "They mean completely different things.",
+					"isCorrect": false,
+					"rationale": "Ambos se refieren a la apariencia facial."
+				},
+				{
+					"text": "'Expression' is only for emotions; 'look' is only for appearance.",
+					"isCorrect": false,
+					"rationale": "Ambos pueden referirse tanto a emociones como apariencia."
+				}
+			],
+			"hint": "Piensa en qué palabra usarías en conversación casual vs. escritura formal."
+		},
+		{
+			"type": "short_answer",
+			"question": "Complete: After working 12 hours, I'm absolutely _____.",
+			"correctAnswer": "exhausted",
+			"alternatives": ["knackered", "worn out"],
+			"explanation": "'Exhausted' expresa cansancio extremo después de mucho trabajo físico o mental."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which expresses the strongest obligation?",
+			"answerOptions": [
+				{
+					"text": "You must submit the report by Friday.",
+					"isCorrect": true,
+					"rationale": "'Must' expresa la obligación más fuerte, especialmente en contextos formales."
+				},
+				{
+					"text": "You should submit the report by Friday.",
+					"isCorrect": false,
+					"rationale": "'Should' expresa recomendación, no obligación fuerte."
+				},
+				{
+					"text": "You need to submit the report by Friday.",
+					"isCorrect": false,
+					"rationale": "'Need to' es fuerte, pero 'must' es más autoritativo."
+				}
+			],
+			"hint": "¿Qué modal suena más autoritativo y definitivo?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the phrasal verb:",
+			"questionParts": [
+				"Just ",
+				{
+					"answer": "chill out",
+					"label": "relajarse"
+				},
+				" and stop worrying about the exam."
+			],
+			"hint": "'Chill out' significa relajarse o calmarse."
+		},
+		{
+			"type": "true_false",
+			"question": "The word 'huge' can be used for both physical size and importance.",
+			"answer": true,
+			"explanation": "'Huge' puede describir tamaño físico ('a huge building') o importancia/impacto ('a huge mistake')."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What does 'make a living' mean?",
+			"answerOptions": [
+				{
+					"text": "To earn enough money to support yourself.",
+					"isCorrect": true,
+					"rationale": "'Make a living' significa ganar dinero suficiente para vivir."
+				},
+				{
+					"text": "To create a life plan.",
+					"isCorrect": false,
+					"rationale": "Eso sería 'make a plan' o 'plan your life'."
+				},
+				{
+					"text": "To build a house.",
+					"isCorrect": false,
+					"rationale": "Eso sería 'build a house' o 'make a home'."
+				}
+			],
+			"hint": "'Living' aquí se refiere a sustento económico."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express inability/impossibility:",
+			"questionParts": [
+				"That ",
+				{
+					"answer": "can't",
+					"label": "no puede"
+				},
+				" be the right answer - it doesn't make sense."
+			],
+			"hint": "'Can't' expresa imposibilidad o deducción negativa fuerte."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is correct about salary vs. income?",
+			"answerOptions": [
+				{
+					"text": "My salary is $50,000, but my total income is higher because of investments.",
+					"isCorrect": true,
+					"rationale": "Salary es el pago del trabajo; income incluye todas las fuentes."
+				},
+				{
+					"text": "My income is $50,000, but my total salary is higher because of investments.",
+					"isCorrect": false,
+					"rationale": "Los conceptos están invertidos."
+				},
+				{
+					"text": "Salary and income always refer to the same amount.",
+					"isCorrect": false,
+					"rationale": "Income puede incluir más fuentes que solo el salary."
+				}
+			],
+			"hint": "¿Cuál es más específico (trabajo) y cuál más general (todas las fuentes)?"
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange to form a preference sentence:",
+			"items": ["would", "rather", "I", "tea", "than", "coffee", "drink"],
+			"correctOrder": ["I", "would", "rather", "drink", "tea", "than", "coffee"],
+			"explanation": "La estructura es: I would rather + verb + option 1 + than + option 2."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the noun form of 'employ'?",
+			"answerOptions": [
+				{
+					"text": "employment",
+					"isCorrect": true,
+					"rationale": "'Employment' es el sustantivo que describe el estado de tener trabajo."
+				},
+				{
+					"text": "employee",
+					"isCorrect": false,
+					"rationale": "'Employee' es la persona que trabaja, no el concepto."
+				},
+				{
+					"text": "employer",
+					"isCorrect": false,
+					"rationale": "'Employer' es quien da trabajo, no el concepto general."
+				}
+			],
+			"hint": "¿Cuál es el sustantivo abstracto que describe tener un trabajo?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the extreme adjective:",
+			"questionParts": [
+				"I'm ",
+				{
+					"answer": "starving",
+					"label": "muriéndose de hambre"
+				},
+				"! I haven't eaten since breakfast."
+			],
+			"hint": "'Starving' expresa hambre extrema, más que 'hungry'."
+		},
+		{
+			"type": "true_false",
+			"question": "'Had better' is always followed by the infinitive without 'to'.",
+			"answer": true,
+			"explanation": "'Had better' se sigue del infinitivo sin 'to': 'You'd better go' (no 'to go')."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which phrasal verb means 'to solve a problem'?",
+			"answerOptions": [
+				{
+					"text": "work out",
+					"isCorrect": true,
+					"rationale": "'Work out' puede significar hacer ejercicio o resolver un problema."
+				},
+				{
+					"text": "chill out",
+					"isCorrect": false,
+					"rationale": "'Chill out' significa relajarse."
+				},
+				{
+					"text": "hold on",
+					"isCorrect": false,
+					"rationale": "'Hold on' significa esperar."
+				}
+			],
+			"hint": "'Work out' tiene dos significados principales."
+		}
+	]
+}

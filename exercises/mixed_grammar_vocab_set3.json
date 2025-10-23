@@ -1,0 +1,385 @@
+{
+	"title": "Set de Ejercicios Mixtos 3 - Gramática y Vocabulario",
+	"description": "Tercera colección de ejercicios variados que consolida todos los temas: obligación, preferencias, make/do, deducciones modales, adjetivos descriptivos, phrasal verbs, palabras confusas y vocabulario laboral.",
+	"questions": [
+		{
+			"type": "multi_fill_in_the_blanks",
+			"question": "Complete the conversation with the correct words:",
+			"questionParts": [
+				"A: You ",
+				{
+					"answer": "look",
+					"label": "expresión facial",
+					"alternatives": ["seem"]
+				},
+				" worried. What's wrong?\nB: I ",
+				{
+					"answer": "have to",
+					"label": "obligación externa"
+				},
+				" finish this project tonight, but I'm ",
+				{
+					"answer": "exhausted",
+					"label": "muy cansado"
+				},
+				".\nA: You ",
+				{
+					"answer": "should",
+					"label": "consejo"
+				},
+				" take a break. It ",
+				{
+					"answer": "can't",
+					"label": "imposibilidad"
+				},
+				" be that urgent."
+			],
+			"hint": "Piensa en el contexto de cada parte de la conversación.",
+			"explanation": "Esta conversación combina expresiones faciales, obligación, adjetivos descriptivos, consejos y deducciones."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What does 'do business' mean?",
+			"answerOptions": [
+				{
+					"text": "To conduct commercial activities or trade.",
+					"isCorrect": true,
+					"rationale": "'Do business' significa realizar actividades comerciales."
+				},
+				{
+					"text": "To create a new company.",
+					"isCorrect": false,
+					"rationale": "Crear una empresa sería 'start/establish a business'."
+				},
+				{
+					"text": "To make money quickly.",
+					"isCorrect": false,
+					"rationale": "Eso sería 'make money' o 'make a profit'."
+				}
+			],
+			"hint": "'Business' como actividad usa el verbo 'do'."
+		},
+		{
+			"type": "true_false",
+			"question": "'Could' can express both ability in the past and possibility in the present.",
+			"answer": true,
+			"explanation": "'Could' expresa habilidad pasada ('I could swim when I was 5') y posibilidad presente ('It could rain today')."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the work-related noun:",
+			"questionParts": [
+				"The company offers excellent training and ",
+				{
+					"answer": "development",
+					"label": "desarrollo profesional"
+				},
+				" opportunities for its employees."
+			],
+			"hint": "¿Cuál es el sustantivo derivado de 'develop'?"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which expresses the strongest negative deduction?",
+			"answerOptions": [
+				{
+					"text": "That can't be right - I just checked the data.",
+					"isCorrect": true,
+					"rationale": "'Can't' expresa impossibilidad o deducción negativa muy fuerte."
+				},
+				{
+					"text": "That might not be right - I just checked the data.",
+					"isCorrect": false,
+					"rationale": "'Might not' expresa incertidumbre, no deducción fuerte."
+				},
+				{
+					"text": "That shouldn't be right - I just checked the data.",
+					"isCorrect": false,
+					"rationale": "'Shouldn't' expresa lo que es inadecuado, no imposibilidad."
+				}
+			],
+			"hint": "¿Qué modal expresa que algo es imposible?"
+		},
+		{
+			"type": "matching",
+			"question": "Match the extreme adjectives with their basic equivalents:",
+			"pairs": [
+				{
+					"text1": "furious",
+					"text2": "angry"
+				},
+				{
+					"text1": "tiny",
+					"text2": "small"
+				},
+				{
+					"text1": "boiling",
+					"text2": "hot"
+				},
+				{
+					"text1": "freezing",
+					"text2": "cold"
+				}
+			],
+			"hint": "Los adjetivos extremos expresan el grado máximo de una cualidad."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct expression for creating something:",
+			"answerOptions": [
+				{
+					"text": "make a plan",
+					"isCorrect": true,
+					"rationale": "'Make' se usa para crear o producir planes, decisiones, etc."
+				},
+				{
+					"text": "do a plan",
+					"isCorrect": false,
+					"rationale": "Con 'plan' siempre usamos 'make', no 'do'."
+				},
+				{
+					"text": "take a plan",
+					"isCorrect": false,
+					"rationale": "'Take' no se usa para crear planes."
+				}
+			],
+			"hint": "¿Qué verbo usamos para crear o producir algo?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express strong preference:",
+			"questionParts": [
+				"I'd ",
+				{
+					"answer": "rather",
+					"label": "preferencia"
+				},
+				" work part-time than full-time."
+			],
+			"hint": "'Would rather' expresa preferencia fuerte entre dos opciones."
+		},
+		{
+			"type": "short_answer",
+			"question": "What phrasal verb means 'to become friends again after an argument'?",
+			"correctAnswer": "make up",
+			"alternatives": ["make up with each other"],
+			"explanation": "'Make up' significa reconciliarse o volver a ser amigos después de una pelea."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "You _____ exercise regularly if you want to stay healthy.",
+			"answerOptions": [
+				{
+					"text": "should",
+					"isCorrect": true,
+					"rationale": "'Should' expresa recomendación para la salud."
+				},
+				{
+					"text": "would rather",
+					"isCorrect": false,
+					"rationale": "'Would rather' expresa preferencia, no recomendación médica."
+				},
+				{
+					"text": "had better",
+					"isCorrect": false,
+					"rationale": "'Had better' implica consecuencias negativas inmediatas."
+				}
+			],
+			"hint": "¿Qué modal se usa para dar consejos generales sobre salud?"
+		},
+		{
+			"type": "true_false",
+			"question": "'Advice' and 'information' can both be preceded by 'some' but not 'a'.",
+			"answer": true,
+			"explanation": "Como son incontables, decimos 'some advice/information' pero no 'a advice/information'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the deduction about ability:",
+			"questionParts": [
+				"She speaks perfect French - she ",
+				{
+					"answer": "must have",
+					"label": "deducción pasada"
+				},
+				" lived in France."
+			],
+			"hint": "Usa 'must have' + participio para deducciones sobre experiencias pasadas."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the noun form of 'manage'?",
+			"answerOptions": [
+				{
+					"text": "management",
+					"isCorrect": true,
+					"rationale": "'Management' es el sustantivo que describe la actividad de dirigir."
+				},
+				{
+					"text": "manager",
+					"isCorrect": false,
+					"rationale": "'Manager' es la persona que dirige, no la actividad."
+				},
+				{
+					"text": "managing",
+					"isCorrect": false,
+					"rationale": "'Managing' es el gerundio, no el sustantivo formal."
+				}
+			],
+			"hint": "¿Cuál es el sustantivo que describe el acto de dirigir una empresa?"
+		},
+		{
+			"type": "ordering",
+			"question": "Arrange the words to form a strong recommendation:",
+			"items": ["better", "you", "had", "that", "medicine", "take"],
+			"correctOrder": ["you", "had", "better", "take", "that", "medicine"],
+			"explanation": "La estructura es: You had better + infinitive (sin 'to')."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the extreme adjective for size:",
+			"questionParts": [
+				"Their new house is ",
+				{
+					"answer": "huge",
+					"label": "enorme"
+				},
+				" - it has eight bedrooms!"
+			],
+			"hint": "'Huge' expresa un tamaño mucho mayor que 'big'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence uses 'do' correctly?",
+			"answerOptions": [
+				{
+					"text": "I need to do some homework tonight.",
+					"isCorrect": true,
+					"rationale": "'Do homework' es la expresión correcta con 'do'."
+				},
+				{
+					"text": "I need to make some homework tonight.",
+					"isCorrect": false,
+					"rationale": "Con 'homework' siempre usamos 'do', no 'make'."
+				},
+				{
+					"text": "I need to take some homework tonight.",
+					"isCorrect": false,
+					"rationale": "'Take' no se usa con 'homework'."
+				}
+			],
+			"hint": "¿Qué verbo va con actividades como homework, exercises, work?"
+		},
+		{
+			"type": "true_false",
+			"question": "You can say both 'I'm delighted to meet you' and 'I'm pleased to meet you'.",
+			"answer": true,
+			"explanation": "Ambas son correctas, pero 'delighted' expresa más entusiasmo que 'pleased'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the possibility:",
+			"questionParts": [
+				"It's cloudy - it ",
+				{
+					"answer": "may",
+					"label": "posibilidad"
+				},
+				" rain later."
+			],
+			"hint": "'May' expresa posibilidad moderada basada en evidencia visible."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the difference between salary and wages?",
+			"answerOptions": [
+				{
+					"text": "Salary is monthly/yearly; wages are usually hourly or daily.",
+					"isCorrect": true,
+					"rationale": "Salary es pago fijo; wages se calculan por horas trabajadas."
+				},
+				{
+					"text": "They mean exactly the same thing.",
+					"isCorrect": false,
+					"rationale": "Tienen diferencias importantes en cómo se calculan."
+				},
+				{
+					"text": "Wages are only for managers; salary is for workers.",
+					"isCorrect": false,
+					"rationale": "Es más bien lo contrario en muchos casos."
+				}
+			],
+			"hint": "Piensa en cómo se calcula cada tipo de pago."
+		},
+		{
+			"type": "short_answer",
+			"question": "What phrasal verb means 'to tolerate or endure something difficult'?",
+			"correctAnswer": "put up with",
+			"alternatives": ["tolerate", "endure"],
+			"explanation": "'Put up with' significa tolerar algo molesto o difícil de soportar."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Students _____ not use their phones during the exam.",
+			"answerOptions": [
+				{
+					"text": "must",
+					"isCorrect": true,
+					"rationale": "'Must not' expresa prohibición estricta en reglas de examen."
+				},
+				{
+					"text": "don't have to",
+					"isCorrect": false,
+					"rationale": "Esto significaría que es opcional, no prohibido."
+				},
+				{
+					"text": "needn't",
+					"isCorrect": false,
+					"rationale": "Esto significa que no es necesario, no que esté prohibido."
+				}
+			],
+			"hint": "¿Qué expresa prohibición completa en reglas de examen?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express work-related success:",
+			"questionParts": [
+				"Her ",
+				{
+					"answer": "promotion",
+					"label": "ascenso"
+				},
+				" to manager was well-deserved."
+			],
+			"hint": "¿Cuál es el sustantivo derivado de 'promote'?"
+		},
+		{
+			"type": "true_false",
+			"question": "'Would rather' can be followed by a past tense to talk about other people's actions.",
+			"answer": true,
+			"explanation": "Podemos decir 'I'd rather you didn't smoke here' usando pasado para hablar de otros."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: The exam was really difficult. I _____ failed.",
+			"answerOptions": [
+				{
+					"text": "might have",
+					"isCorrect": true,
+					"rationale": "'Might have' expresa posibilidad sobre resultado pasado incierto."
+				},
+				{
+					"text": "must have",
+					"isCorrect": false,
+					"rationale": "'Must have' expresaría certeza, pero hay incertidumbre."
+				},
+				{
+					"text": "can't have",
+					"isCorrect": false,
+					"rationale": "'Can't have' expresaría imposibilidad, pero es posible."
+				}
+			],
+			"hint": "El hablante no está seguro del resultado. ¿Qué modal expresa incertidumbre sobre el pasado?"
+		}
+	]
+}

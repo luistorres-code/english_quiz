@@ -1,0 +1,361 @@
+{
+	"title": "Set de Ejercicios Mixtos 1 - Gramática y Vocabulario",
+	"description": "Ejercicios variados que combinan gramática (obligación, preferencias, make/do, deducciones) y vocabulario (adjetivos descriptivos, phrasal verbs, palabras confusas, vocabulario laboral).",
+	"questions": [
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct modal to express a strong deduction:",
+			"answerOptions": [
+				{
+					"text": "She must be at home - her car is in the driveway.",
+					"isCorrect": true,
+					"rationale": "'Must' expresa deducción lógica basada en evidencia clara."
+				},
+				{
+					"text": "She might be at home - her car is in the driveway.",
+					"isCorrect": false,
+					"rationale": "'Might' expresa menos certeza de la que sugiere la evidencia."
+				},
+				{
+					"text": "She can't be at home - her car is in the driveway.",
+					"isCorrect": false,
+					"rationale": "'Can't' contradiría la evidencia presentada."
+				}
+			],
+			"hint": "La evidencia es muy clara, ¿qué modal expresa alta certeza?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct phrasal verb:",
+			"questionParts": [
+				"I need to ",
+				{
+					"answer": "catch up with",
+					"label": "ponerse al día"
+				},
+				" my work after being sick for a week."
+			],
+			"hint": "'Catch up with' significa ponerse al día o alcanzar algo que se había atrasado."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which sentence expresses a strong preference?",
+			"answerOptions": [
+				{
+					"text": "I'd rather stay home tonight than go out.",
+					"isCorrect": true,
+					"rationale": "'Would rather' expresa preferencia fuerte entre dos opciones."
+				},
+				{
+					"text": "I like staying home tonight.",
+					"isCorrect": false,
+					"rationale": "Esto expresa gusto, no preferencia comparativa."
+				},
+				{
+					"text": "I want to stay home tonight.",
+					"isCorrect": false,
+					"rationale": "Expresa deseo, no preferencia entre opciones."
+				}
+			],
+			"hint": "Busca la estructura que compare dos opciones."
+		},
+		{
+			"type": "true_false",
+			"question": "The word 'exhausted' means slightly tired.",
+			"answer": false,
+			"explanation": "'Exhausted' significa extremadamente cansado, no ligeramente cansado. Para 'slightly tired' usaríamos 'a bit tired' o simplemente 'tired'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct expression:",
+			"answerOptions": [
+				{
+					"text": "I need to make a decision about my career.",
+					"isCorrect": true,
+					"rationale": "'Make a decision' es la expresión correcta con 'make'."
+				},
+				{
+					"text": "I need to do a decision about my career.",
+					"isCorrect": false,
+					"rationale": "No se usa 'do' con 'decision'. Se dice 'make a decision'."
+				},
+				{
+					"text": "I need to take a decision about my career.",
+					"isCorrect": false,
+					"rationale": "Aunque se usa en algunos contextos, 'make a decision' es más común."
+				}
+			],
+			"hint": "¿Qué verbo se usa con 'decision'?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the correct word:",
+			"questionParts": [
+				"Can you give me some ",
+				{
+					"answer": "advice",
+					"label": "consejo"
+				},
+				" about finding a job?"
+			],
+			"hint": "'Advice' es incontable. 'Information' también es incontable pero no encaja en el contexto."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What's the difference between 'salary' and 'income'?",
+			"answerOptions": [
+				{
+					"text": "Salary is fixed monthly payment; income includes all money received.",
+					"isCorrect": true,
+					"rationale": "Salary es el pago fijo de un trabajo; income incluye todas las fuentes de dinero."
+				},
+				{
+					"text": "They mean exactly the same thing.",
+					"isCorrect": false,
+					"rationale": "Tienen significados diferentes aunque relacionados."
+				},
+				{
+					"text": "Income is only for employees; salary is for everyone.",
+					"isCorrect": false,
+					"rationale": "Es al revés: salary es específico para empleados."
+				}
+			],
+			"hint": "Piensa en cuál es más específico y cuál es más general."
+		},
+		{
+			"type": "true_false",
+			"question": "You must wear a helmet when riding a motorcycle - this expresses obligation.",
+			"answer": true,
+			"explanation": "'Must' aquí expresa obligación legal o regulatoria, especialmente en contextos de seguridad."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the sentence:",
+			"questionParts": [
+				"You'd better ",
+				{
+					"answer": "hurry up",
+					"label": "darse prisa"
+				},
+				" or you'll miss the train."
+			],
+			"hint": "'Had better' (you'd better) se usa para dar consejos fuertes o advertencias."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct adjective for extreme hunger:",
+			"answerOptions": [
+				{
+					"text": "I'm starving! I haven't eaten all day.",
+					"isCorrect": true,
+					"rationale": "'Starving' expresa hambre extrema, mucho más fuerte que 'hungry'."
+				},
+				{
+					"text": "I'm hungry! I haven't eaten all day.",
+					"isCorrect": false,
+					"rationale": "'Hungry' es normal, pero el contexto sugiere hambre extrema."
+				},
+				{
+					"text": "I'm full! I haven't eaten all day.",
+					"isCorrect": false,
+					"rationale": "'Full' significa satisfecho, lo opuesto de tener hambre."
+				}
+			],
+			"hint": "¿Qué adjetivo expresa el grado más extremo de hambre?"
+		},
+		{
+			"type": "matching",
+			"question": "Match each phrasal verb with its meaning:",
+			"pairs": [
+				{
+					"text1": "chill out",
+					"text2": "relax, calm down"
+				},
+				{
+					"text1": "hold on",
+					"text2": "wait a moment"
+				},
+				{
+					"text1": "work out",
+					"text2": "exercise or solve a problem"
+				}
+			],
+			"hint": "Piensa en el contexto donde usarías cada phrasal verb."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Choose the correct negative deduction:",
+			"answerOptions": [
+				{
+					"text": "That can't be John - he's in London this week.",
+					"isCorrect": true,
+					"rationale": "'Can't' expresa deducción negativa con alta certeza."
+				},
+				{
+					"text": "That mustn't be John - he's in London this week.",
+					"isCorrect": false,
+					"rationale": "'Mustn't' expresa prohibición, no deducción negativa."
+				},
+				{
+					"text": "That might not be John - he's in London this week.",
+					"isCorrect": false,
+					"rationale": "'Might not' expresa poca certeza, pero la evidencia es clara."
+				}
+			],
+			"hint": "¿Qué modal expresa imposibilidad o deducción negativa fuerte?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete with the work-related noun:",
+			"questionParts": [
+				"The ",
+				{
+					"answer": "management",
+					"label": "gerencia"
+				},
+				" decided to hire new employees."
+			],
+			"hint": "¿Cuál es el sustantivo derivado del verbo 'manage'?"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "What does 'do research' mean?",
+			"answerOptions": [
+				{
+					"text": "To investigate and study a topic systematically.",
+					"isCorrect": true,
+					"rationale": "'Do research' significa investigar de manera sistemática."
+				},
+				{
+					"text": "To create or build something new.",
+					"isCorrect": false,
+					"rationale": "Eso sería 'make' algo, no 'do research'."
+				},
+				{
+					"text": "To teach about a subject.",
+					"isCorrect": false,
+					"rationale": "Enseñar sería 'teach' o 'give lessons'."
+				}
+			],
+			"hint": "'Research' como actividad usa el verbo 'do'."
+		},
+		{
+			"type": "true_false",
+			"question": "'Delighted' expresses a stronger emotion than 'happy'.",
+			"answer": true,
+			"explanation": "'Delighted' expresa gran placer o satisfacción, es más intenso que 'happy'. Es similar a 'thrilled' o 'overjoyed'."
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Express preference:",
+			"questionParts": [
+				"I'd rather ",
+				{
+					"answer": "work",
+					"label": "trabajar"
+				},
+				" from home than commute to the office."
+			],
+			"hint": "Después de 'would rather' se usa el infinitivo sin 'to'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Which is the correct expression?",
+			"answerOptions": [
+				{
+					"text": "She has a confused look on her face.",
+					"isCorrect": true,
+					"rationale": "'Look' se refiere a la expresión facial de una persona."
+				},
+				{
+					"text": "She has a confused expression on her face.",
+					"isCorrect": false,
+					"rationale": "Aunque 'expression' es correcto, 'look' es más común en este contexto."
+				},
+				{
+					"text": "Both are equally correct.",
+					"isCorrect": false,
+					"rationale": "Aunque ambas son gramaticalmente correctas, 'look' es más natural."
+				}
+			],
+			"hint": "¿Qué palabra usamos más comúnmente para la expresión facial?"
+		},
+		{
+			"type": "short_answer",
+			"question": "What's the noun form of the verb 'develop'?",
+			"correctAnswer": "development",
+			"alternatives": ["development"],
+			"explanation": "'Development' es el sustantivo derivado de 'develop', muy usado en contextos profesionales."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Complete: You _____ see a doctor about that cough.",
+			"answerOptions": [
+				{
+					"text": "had better",
+					"isCorrect": true,
+					"rationale": "'Had better' expresa consejo fuerte o advertencia sobre salud."
+				},
+				{
+					"text": "would rather",
+					"isCorrect": false,
+					"rationale": "'Would rather' expresa preferencia, no consejo médico."
+				},
+				{
+					"text": "might better",
+					"isCorrect": false,
+					"rationale": "'Might better' no es una estructura correcta en inglés."
+				}
+			],
+			"hint": "¿Qué estructura se usa para dar consejos fuertes sobre salud?"
+		},
+		{
+			"type": "fill_in_the_blanks",
+			"question": "Complete the deduction:",
+			"questionParts": [
+				"The lights are off and no one answers - they ",
+				{
+					"answer": "must have",
+					"label": "deben haber"
+				},
+				" gone out."
+			],
+			"hint": "Usa 'must have' + participio pasado para deducciones sobre el pasado."
+		},
+		{
+			"type": "true_false",
+			"question": "'Huge' is more intense than 'big'.",
+			"answer": true,
+			"explanation": "'Huge' expresa un tamaño mucho mayor que 'big'. Es similar a 'enormous' o 'gigantic'."
+		},
+		{
+			"type": "multiple_choice",
+			"question": "Students _____ do their homework every night.",
+			"answerOptions": [
+				{
+					"text": "have to",
+					"isCorrect": true,
+					"rationale": "'Have to' expresa obligación externa (regla escolar)."
+				},
+				{
+					"text": "would rather",
+					"isCorrect": false,
+					"rationale": "'Would rather' expresa preferencia, no obligación."
+				},
+				{
+					"text": "had better",
+					"isCorrect": false,
+					"rationale": "'Had better' es para consejos/advertencias, no reglas escolares."
+				}
+			],
+			"hint": "¿Qué modal expresa obligación impuesta por reglas externas?"
+		},
+		{
+			"type": "ordering",
+			"question": "Put the words in the correct order:",
+			"items": ["some", "make", "I", "tea", "should"],
+			"correctOrder": ["I", "should", "make", "some", "tea"],
+			"explanation": "La estructura correcta es: Subject + modal + make + object. 'Make tea' es la expresión correcta."
+		}
+	]
+}

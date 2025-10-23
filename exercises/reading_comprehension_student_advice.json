@@ -1,0 +1,183 @@
+{
+	"title": "Comprensión de Lectura 2 - Consejos para Estudiantes",
+	"description": "Ejercicio de comprensión lectora que integra estructuras de obligación, consejos, deducciones modales, adjetivos descriptivos y expresiones comunes.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following advice column for students and answer the questions:",
+			"readingText": ["Dear Student Success Coach,", "I'm writing because I'm having huge problems with my studies. I'm absolutely starving for information about effective study techniques, but I don't know where to start. My grades are terrible, and I look confused most of the time in class. My expression must show how lost I feel!", "I'd rather study alone than in groups because I find group work distracting. However, my study advisor says I must join study groups to improve my understanding. She also told me I'd better make a study schedule or I'll fall behind even more. But honestly, I can't concentrate for more than 30 minutes at a time.", "I need to do something about my situation urgently. My parents are furious about my poor performance, and they might withdraw their financial support. The thought of losing their help is absolutely terrifying! I must find a way to turn things around quickly.", "What advice can you give me? I need some guidance on time management and study strategies. Should I hold on to my preference for studying alone, or should I force myself to join groups? I'm desperate for any information that might help.", "Sincerely, Struggling Student", "", "Dear Struggling Student,", "Your situation sounds challenging, but you needn't panic - there are many ways to improve your academic performance. First, you don't have to choose between solo and group study. You could try both methods and see what works best for different subjects.", "You'd better start with small, manageable goals. Instead of studying for hours, you might break your sessions into 25-minute chunks with short breaks. This technique could help you maintain concentration. You must also make sure you're getting enough sleep - tired students can't learn effectively.", "Regarding your parents' concerns, you should have an honest conversation with them. They must understand that improvement takes time. Your expression of worry shows you care about your education, which is a positive sign. You just need to chill out and develop better study habits gradually.", "Remember, asking for help isn't a sign of weakness - it shows wisdom. Your teachers and advisors are there to support you, so don't hesitate to reach out when you need assistance.", "Best wishes for your academic success!"],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "What does the student mean by being 'starving for information'?",
+					"answerOptions": [
+						{
+							"text": "Desperately needing information",
+							"isCorrect": true
+						},
+						{
+							"text": "Being literally hungry while studying",
+							"isCorrect": false
+						},
+						{
+							"text": "Having too much information to process",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "The student prefers group study over individual study.",
+					"answer": false
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What extreme adjective describes the student's study problems?",
+					"correctAnswer": "huge",
+					"alternatives": ["terrible", "massive"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does 'You'd better make a study schedule' express?",
+					"answerOptions": [
+						{
+							"text": "Strong advice or warning",
+							"isCorrect": true
+						},
+						{
+							"text": "A casual suggestion",
+							"isCorrect": false
+						},
+						{
+							"text": "A personal preference",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "fill_in_the_blanks",
+					"questionText": "The student's parents are _____ about the poor performance.",
+					"correctAnswer": "furious",
+					"alternatives": ["angry", "mad"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does 'hold on to' mean in this context?",
+					"answerOptions": [
+						{
+							"text": "Keep or maintain",
+							"isCorrect": true
+						},
+						{
+							"text": "Wait for someone",
+							"isCorrect": false
+						},
+						{
+							"text": "Grab something physically",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "The coach recommends panicking about the situation.",
+					"answer": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What's the difference between 'advice' and 'information' in this context?",
+					"answerOptions": [
+						{
+							"text": "Advice gives recommendations; information provides facts",
+							"isCorrect": true
+						},
+						{
+							"text": "They mean exactly the same thing",
+							"isCorrect": false
+						},
+						{
+							"text": "Information is more personal than advice",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What phrasal verb means 'to relax' in the coach's response?",
+					"correctAnswer": "chill out",
+					"alternatives": ["relax", "calm down"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "When the coach says 'you needn't panic', this means:",
+					"answerOptions": [
+						{
+							"text": "It's not necessary to panic",
+							"isCorrect": true
+						},
+						{
+							"text": "You must not panic",
+							"isCorrect": false
+						},
+						{
+							"text": "You should panic",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "The coach suggests using both solo and group study methods.",
+					"answer": true
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What type of deduction is 'tired students can't learn effectively'?",
+					"answerOptions": [
+						{
+							"text": "A general rule based on evidence",
+							"isCorrect": true
+						},
+						{
+							"text": "A personal opinion",
+							"isCorrect": false
+						},
+						{
+							"text": "A specific case study",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "fill_in_the_blanks",
+					"questionText": "The coach recommends studying in ___-minute chunks.",
+					"correctAnswer": "25",
+					"alternatives": ["twenty-five"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does the coach mean by 'Your expression of worry shows you care'?",
+					"answerOptions": [
+						{
+							"text": "Showing concern demonstrates commitment to education",
+							"isCorrect": true
+						},
+						{
+							"text": "Worrying is always a bad thing",
+							"isCorrect": false
+						},
+						{
+							"text": "Facial expressions don't matter in education",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "According to the coach, asking for help shows weakness.",
+					"answer": false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,131 @@
+{
+	"title": "Comprensión de Lectura 1 - Vida Laboral Moderna",
+	"description": "Ejercicio de comprensión lectora que integra vocabulario laboral, expresiones con make/do, y estructuras gramaticales de obligación, preferencias y deducciones.",
+	"questions": [
+		{
+			"type": "reading_comprehension",
+			"question": "Read the following text about modern work life and answer the questions:",
+			"readingText": ["Sarah Martinez is absolutely exhausted after her first week at the new marketing firm. The management made it clear that employees must arrive by 8:30 AM sharp - no exceptions. 'You'd better not be late,' her supervisor warned on the first day, 'or you'll have to make up the time later.'", "The company culture is quite demanding. Workers have to do extensive research for each campaign, and they must make crucial decisions under huge pressure. Sarah's colleague, Mike, looks frustrated most of the time. 'I'd rather work freelance than deal with this stress,' he confided to Sarah during lunch. 'The salary is good, but my total income was actually higher when I was self-employed because of the additional projects I could take on.'", "Despite the challenges, Sarah is delighted with the learning opportunities. The organization provides excellent training, and the development programs are outstanding. 'You must be thrilled to work here,' said her friend Emma. 'Well,' Sarah replied, 'I need to work out a better work-life balance, but the experience is invaluable. I just need some advice on time management.'", "Looking at her schedule, Sarah realizes she can't keep working 12-hour days. She might have to chill out on weekends to avoid burnout. The company's success is huge, but employees must also take care of their well-being. As the HR manager explained, 'You don't have to sacrifice your health for your career - that's not what we expect here.'"],
+			"questions": [
+				{
+					"type": "multiple_choice",
+					"questionText": "What does Sarah's supervisor mean by 'You'd better not be late'?",
+					"answerOptions": [
+						{
+							"text": "It's a strong warning about punctuality",
+							"isCorrect": true
+						},
+						{
+							"text": "It's a gentle suggestion about time",
+							"isCorrect": false
+						},
+						{
+							"text": "It's expressing a personal preference",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What extreme adjective describes Sarah's feeling after her first week?",
+					"correctAnswer": "exhausted",
+					"alternatives": ["exhausted"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "Why would Mike prefer freelance work?",
+					"answerOptions": [
+						{
+							"text": "To avoid the stress of the current job",
+							"isCorrect": true
+						},
+						{
+							"text": "To earn less money",
+							"isCorrect": false
+						},
+						{
+							"text": "To work longer hours",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "true_false",
+					"questionText": "Mike's total income was higher as a freelancer than his current salary.",
+					"answer": true
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What does 'work out' mean in Sarah's context?",
+					"answerOptions": [
+						{
+							"text": "To solve or figure out",
+							"isCorrect": true
+						},
+						{
+							"text": "To exercise physically",
+							"isCorrect": false
+						},
+						{
+							"text": "To leave the job",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "fill_in_the_blanks",
+					"questionText": "Complete: Sarah is _____ with the learning opportunities.",
+					"correctAnswer": "delighted",
+					"alternatives": ["thrilled", "pleased"]
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What type of modal deduction is 'You must be thrilled'?",
+					"answerOptions": [
+						{
+							"text": "A logical assumption based on the situation",
+							"isCorrect": true
+						},
+						{
+							"text": "An expression of obligation",
+							"isCorrect": false
+						},
+						{
+							"text": "A statement of necessity",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"type": "short_answer",
+					"questionText": "What phrasal verb means 'to relax' in the text?",
+					"correctAnswer": "chill out",
+					"alternatives": ["relax"]
+				},
+				{
+					"type": "true_false",
+					"questionText": "The company expects employees to sacrifice their health for work.",
+					"answer": false
+				},
+				{
+					"type": "multiple_choice",
+					"questionText": "What's the difference between 'salary' and 'income' as used in the text?",
+					"answerOptions": [
+						{
+							"text": "Salary is the fixed job payment; income includes all money sources",
+							"isCorrect": true
+						},
+						{
+							"text": "They mean exactly the same thing",
+							"isCorrect": false
+						},
+						{
+							"text": "Income is only from employment; salary includes investments",
+							"isCorrect": false
+						}
+					]
+				}
+			]
+		}
+	]
+}
