@@ -1,6 +1,13 @@
 {
-	"exercises": ["comparatives_superlatives_mixed.json", "verb_tenses_reported_questions_mixed.json"],
-	"lastUpdated": "2025-10-15",
-	"version": "2.0",
-	"note": "Archivados ejercicios anteriores. Nuevos ejercicios de práctica mixta para comparativos/superlativos y tiempos verbales con preguntas indirectas"
+	"exercises": [
+  "comparatives_superlatives_mixed.json",
+  "mixed_grammar_vocab_set1.json",
+  "mixed_grammar_vocab_set2.json",
+  "mixed_grammar_vocab_set3.json",
+  "reading_comprehension_student_advice.json",
+  "reading_comprehension_work_life.json",
+  "verb_tenses_reported_questions_mixed.json"
+],
+	"lastUpdated": "2025-10-23",
+	"version": "1.0"
 }
