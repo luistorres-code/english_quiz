@@ -146,40 +146,6 @@
 					"examples": ["Could I swim?", "Could you try?", "Could he help?", "Could we go?", "Could they win?"]
 				}
 			}
-		},
-		{
-			"title": "Comparing May, Might, Could",
-			"description": "Diferencias en fuerza, formalidad y uso entre los tres modales.",
-			"comparisons": [
-				{
-					"aspect": "Possibility Strength",
-					"may": "Moderada (≈50%)",
-					"might": "Débil (<50%)",
-					"could": "Variable (depende del contexto)",
-					"example": "It may/might/could rain → may (más probable) > might (menos probable) ≈ could"
-				},
-				{
-					"aspect": "Formality",
-					"may": "Formal",
-					"might": "Neutral",
-					"could": "Cortés",
-					"example": "Permission: May I? (formal) vs Could I? (cortés) vs Can I? (informal)"
-				},
-				{
-					"aspect": "Time Reference",
-					"may": "Presente/Futuro",
-					"might": "Presente/Futuro/Pasado reportado",
-					"could": "Pasado/Presente/Futuro",
-					"example": "Could swim (pasado) vs May/Might swim (presente/futuro)"
-				},
-				{
-					"aspect": "Permission",
-					"may": "Formal (dar/pedir)",
-					"might": "No se usa",
-					"could": "Pedir (cortés)",
-					"example": "May I leave? / Could I leave? (pero no 'Might I leave?')"
-				}
-			]
 		}
 	],
 	"tips": [
